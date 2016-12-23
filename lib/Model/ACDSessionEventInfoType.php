@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The ACD session event info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ACDSessionEventInfoType implements ArrayAccess
@@ -66,13 +66,13 @@ class ACDSessionEventInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'acd_session_event_id' => 'int',
         'time' => 'string',
         'type' => 'string',
         'user_id' => 'int',
         'custom_data' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -83,49 +83,47 @@ class ACDSessionEventInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'acd_session_event_id' => 'acd_session_event_id',
         'time' => 'time',
         'type' => 'type',
         'user_id' => 'user_id',
         'custom_data' => 'custom_data'
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'acd_session_event_id' => 'setAcdSessionEventId',
-        'time' => 'setTime',
-        'type' => 'setType',
-        'user_id' => 'setUserId',
-        'custom_data' => 'setCustomData'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'acd_session_event_id' => 'getAcdSessionEventId',
-        'time' => 'getTime',
-        'type' => 'getType',
-        'user_id' => 'getUserId',
-        'custom_data' => 'getCustomData'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'acd_session_event_id' => 'setAcdSessionEventId',
+        'time' => 'setTime',
+        'type' => 'setType',
+        'user_id' => 'setUserId',
+        'custom_data' => 'setCustomData'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'acd_session_event_id' => 'getAcdSessionEventId',
+        'time' => 'getTime',
+        'type' => 'getType',
+        'user_id' => 'getUserId',
+        'custom_data' => 'getCustomData'
+    );
 
     public static function getters()
     {
@@ -140,11 +138,11 @@ class ACDSessionEventInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -162,7 +160,7 @@ class ACDSessionEventInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['acd_session_event_id'] === null) {
             $invalid_properties[] = "'acd_session_event_id' can't be null";
         }
@@ -358,3 +356,5 @@ class ACDSessionEventInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

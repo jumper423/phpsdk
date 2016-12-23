@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The cloned account info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ClonedAccountType implements ArrayAccess
@@ -66,7 +66,7 @@ class ClonedAccountType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'account_id' => 'int',
         'account_name' => 'string',
         'account_email' => 'string',
@@ -79,7 +79,7 @@ class ClonedAccountType implements ArrayAccess
         'acd_skills' => '\Swagger\Client\Model\ClonedACDSkillType[]',
         'admin_roles' => '\Swagger\Client\Model\ClonedAdminRoleType[]',
         'admin_users' => '\Swagger\Client\Model\ClonedAdminUserType[]'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -90,7 +90,7 @@ class ClonedAccountType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'account_id' => 'account_id',
         'account_name' => 'account_name',
         'account_email' => 'account_email',
@@ -103,14 +103,18 @@ class ClonedAccountType implements ArrayAccess
         'acd_skills' => 'acd_skills',
         'admin_roles' => 'admin_roles',
         'admin_users' => 'admin_users'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'account_id' => 'setAccountId',
         'account_name' => 'setAccountName',
         'account_email' => 'setAccountEmail',
@@ -123,14 +127,18 @@ class ClonedAccountType implements ArrayAccess
         'acd_skills' => 'setAcdSkills',
         'admin_roles' => 'setAdminRoles',
         'admin_users' => 'setAdminUsers'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'account_id' => 'getAccountId',
         'account_name' => 'getAccountName',
         'account_email' => 'getAccountEmail',
@@ -143,17 +151,7 @@ class ClonedAccountType implements ArrayAccess
         'acd_skills' => 'getAcdSkills',
         'admin_roles' => 'getAdminRoles',
         'admin_users' => 'getAdminUsers'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -168,11 +166,11 @@ class ClonedAccountType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -197,7 +195,7 @@ class ClonedAccountType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['account_id'] === null) {
             $invalid_properties[] = "'account_id' can't be null";
         }
@@ -552,3 +550,5 @@ class ClonedAccountType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

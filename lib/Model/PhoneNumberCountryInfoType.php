@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetPhoneNumberCategories function result.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class PhoneNumberCountryInfoType implements ArrayAccess
@@ -66,12 +66,12 @@ class PhoneNumberCountryInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'country_code' => 'string',
         'phone_prefix' => 'string',
         'can_list_phone_numbers' => 'bool',
         'phone_categories' => '\Swagger\Client\Model\PhoneNumberCountryCategoryInfoType[]'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -82,46 +82,44 @@ class PhoneNumberCountryInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'country_code' => 'country_code',
         'phone_prefix' => 'phone_prefix',
         'can_list_phone_numbers' => 'can_list_phone_numbers',
         'phone_categories' => 'phone_categories'
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'country_code' => 'setCountryCode',
-        'phone_prefix' => 'setPhonePrefix',
-        'can_list_phone_numbers' => 'setCanListPhoneNumbers',
-        'phone_categories' => 'setPhoneCategories'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'country_code' => 'getCountryCode',
-        'phone_prefix' => 'getPhonePrefix',
-        'can_list_phone_numbers' => 'getCanListPhoneNumbers',
-        'phone_categories' => 'getPhoneCategories'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'country_code' => 'setCountryCode',
+        'phone_prefix' => 'setPhonePrefix',
+        'can_list_phone_numbers' => 'setCanListPhoneNumbers',
+        'phone_categories' => 'setPhoneCategories'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'country_code' => 'getCountryCode',
+        'phone_prefix' => 'getPhonePrefix',
+        'can_list_phone_numbers' => 'getCanListPhoneNumbers',
+        'phone_categories' => 'getPhoneCategories'
+    );
 
     public static function getters()
     {
@@ -136,11 +134,11 @@ class PhoneNumberCountryInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -157,7 +155,7 @@ class PhoneNumberCountryInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['country_code'] === null) {
             $invalid_properties[] = "'country_code' can't be null";
         }
@@ -332,3 +330,5 @@ class PhoneNumberCountryInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

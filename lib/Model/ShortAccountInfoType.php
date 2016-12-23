@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The short account info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ShortAccountInfoType implements ArrayAccess
@@ -66,7 +66,7 @@ class ShortAccountInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'account_id' => 'int',
         'frozen' => 'bool',
         'balance' => 'int',
@@ -75,7 +75,7 @@ class ShortAccountInfoType implements ArrayAccess
         'periodic_charge' => 'string',
         'next_charge' => 'string',
         'currency' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -86,7 +86,7 @@ class ShortAccountInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'account_id' => 'account_id',
         'frozen' => 'frozen',
         'balance' => 'balance',
@@ -95,14 +95,18 @@ class ShortAccountInfoType implements ArrayAccess
         'periodic_charge' => 'periodic_charge',
         'next_charge' => 'next_charge',
         'currency' => 'currency'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'account_id' => 'setAccountId',
         'frozen' => 'setFrozen',
         'balance' => 'setBalance',
@@ -111,14 +115,18 @@ class ShortAccountInfoType implements ArrayAccess
         'periodic_charge' => 'setPeriodicCharge',
         'next_charge' => 'setNextCharge',
         'currency' => 'setCurrency'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'account_id' => 'getAccountId',
         'frozen' => 'getFrozen',
         'balance' => 'getBalance',
@@ -127,17 +135,7 @@ class ShortAccountInfoType implements ArrayAccess
         'periodic_charge' => 'getPeriodicCharge',
         'next_charge' => 'getNextCharge',
         'currency' => 'getCurrency'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -152,11 +150,11 @@ class ShortAccountInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -177,7 +175,7 @@ class ShortAccountInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['account_id'] === null) {
             $invalid_properties[] = "'account_id' can't be null";
         }
@@ -424,3 +422,5 @@ class ShortAccountInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

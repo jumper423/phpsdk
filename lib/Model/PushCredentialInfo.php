@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The push credentials list item info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class PushCredentialInfo implements ArrayAccess
@@ -66,14 +66,14 @@ class PushCredentialInfo implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'push_credential_id' => 'int',
         'push_provider_id' => 'int',
         'push_provider_name' => 'string',
         'external_app_name' => 'string',
         'cert_credential' => '\Swagger\Client\Model\CertCredentialType',
         'applications' => '\Swagger\Client\Model\ApplicationInfoType[]'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -84,52 +84,50 @@ class PushCredentialInfo implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'push_credential_id' => 'push_credential_id',
         'push_provider_id' => 'push_provider_id',
         'push_provider_name' => 'push_provider_name',
         'external_app_name' => 'external_app_name',
         'cert_credential' => 'cert_credential',
         'applications' => 'applications'
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'push_credential_id' => 'setPushCredentialId',
-        'push_provider_id' => 'setPushProviderId',
-        'push_provider_name' => 'setPushProviderName',
-        'external_app_name' => 'setExternalAppName',
-        'cert_credential' => 'setCertCredential',
-        'applications' => 'setApplications'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'push_credential_id' => 'getPushCredentialId',
-        'push_provider_id' => 'getPushProviderId',
-        'push_provider_name' => 'getPushProviderName',
-        'external_app_name' => 'getExternalAppName',
-        'cert_credential' => 'getCertCredential',
-        'applications' => 'getApplications'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'push_credential_id' => 'setPushCredentialId',
+        'push_provider_id' => 'setPushProviderId',
+        'push_provider_name' => 'setPushProviderName',
+        'external_app_name' => 'setExternalAppName',
+        'cert_credential' => 'setCertCredential',
+        'applications' => 'setApplications'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'push_credential_id' => 'getPushCredentialId',
+        'push_provider_id' => 'getPushProviderId',
+        'push_provider_name' => 'getPushProviderName',
+        'external_app_name' => 'getExternalAppName',
+        'cert_credential' => 'getCertCredential',
+        'applications' => 'getApplications'
+    );
 
     public static function getters()
     {
@@ -144,11 +142,11 @@ class PushCredentialInfo implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -167,7 +165,7 @@ class PushCredentialInfo implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['push_credential_id'] === null) {
             $invalid_properties[] = "'push_credential_id' can't be null";
         }
@@ -390,3 +388,5 @@ class PushCredentialInfo implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

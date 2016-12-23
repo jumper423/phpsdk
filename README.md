@@ -47,15 +47,15 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\AccountsAuthenticationApi();
+$api_instance = new Voximplant\Client\Api\AccountsAuthenticationApi();
 
 try {
     $result = $api_instance->logon();

@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The PSTN black list item info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class PstnBlackListInfoType implements ArrayAccess
@@ -66,10 +66,10 @@ class PstnBlackListInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'pstn_blacklist_id' => 'int',
         'pstn_blacklist_phone_' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -80,40 +80,38 @@ class PstnBlackListInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'pstn_blacklist_id' => 'pstn_blacklist_id',
         'pstn_blacklist_phone_' => 'pstn_blacklist_phone '
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'pstn_blacklist_id' => 'setPstnBlacklistId',
-        'pstn_blacklist_phone_' => 'setPstnBlacklistPhone_'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'pstn_blacklist_id' => 'getPstnBlacklistId',
-        'pstn_blacklist_phone_' => 'getPstnBlacklistPhone_'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'pstn_blacklist_id' => 'setPstnBlacklistId',
+        'pstn_blacklist_phone_' => 'setPstnBlacklistPhone_'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'pstn_blacklist_id' => 'getPstnBlacklistId',
+        'pstn_blacklist_phone_' => 'getPstnBlacklistPhone_'
+    );
 
     public static function getters()
     {
@@ -128,11 +126,11 @@ class PstnBlackListInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -147,7 +145,7 @@ class PstnBlackListInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['pstn_blacklist_id'] === null) {
             $invalid_properties[] = "'pstn_blacklist_id' can't be null";
         }
@@ -274,3 +272,5 @@ class PstnBlackListInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

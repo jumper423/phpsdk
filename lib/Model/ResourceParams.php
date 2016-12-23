@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The available resource parameters.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ResourceParams implements ArrayAccess
@@ -66,11 +66,11 @@ class ResourceParams implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'allowed' => 'string[]',
         'forbidden' => 'string[]',
         'requested' => 'string[]'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -81,43 +81,41 @@ class ResourceParams implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'allowed' => 'allowed',
         'forbidden' => 'forbidden',
         'requested' => 'requested'
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'allowed' => 'setAllowed',
-        'forbidden' => 'setForbidden',
-        'requested' => 'setRequested'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'allowed' => 'getAllowed',
-        'forbidden' => 'getForbidden',
-        'requested' => 'getRequested'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'allowed' => 'setAllowed',
+        'forbidden' => 'setForbidden',
+        'requested' => 'setRequested'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'allowed' => 'getAllowed',
+        'forbidden' => 'getForbidden',
+        'requested' => 'getRequested'
+    );
 
     public static function getters()
     {
@@ -132,11 +130,11 @@ class ResourceParams implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -152,7 +150,7 @@ class ResourceParams implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         return $invalid_properties;
     }
 
@@ -288,3 +286,5 @@ class ResourceParams implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

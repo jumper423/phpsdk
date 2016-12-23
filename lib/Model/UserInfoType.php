@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetUsers function result.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class UserInfoType implements ArrayAccess
@@ -66,7 +66,7 @@ class UserInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'user_id' => 'int',
         'user_name' => 'string',
         'user_display_name' => 'string',
@@ -80,7 +80,7 @@ class UserInfoType implements ArrayAccess
         'skills' => '\Swagger\Client\Model\SkillInfoType[]',
         'acd_queues' => '\Swagger\Client\Model\ACDQueueOperatorInfoType[]',
         'modified' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -91,7 +91,7 @@ class UserInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'user_id' => 'user_id',
         'user_name' => 'user_name',
         'user_display_name' => 'user_display_name',
@@ -105,14 +105,18 @@ class UserInfoType implements ArrayAccess
         'skills' => 'skills',
         'acd_queues' => 'acd_queues',
         'modified' => 'modified'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'user_id' => 'setUserId',
         'user_name' => 'setUserName',
         'user_display_name' => 'setUserDisplayName',
@@ -126,14 +130,18 @@ class UserInfoType implements ArrayAccess
         'skills' => 'setSkills',
         'acd_queues' => 'setAcdQueues',
         'modified' => 'setModified'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'user_id' => 'getUserId',
         'user_name' => 'getUserName',
         'user_display_name' => 'getUserDisplayName',
@@ -147,17 +155,7 @@ class UserInfoType implements ArrayAccess
         'skills' => 'getSkills',
         'acd_queues' => 'getAcdQueues',
         'modified' => 'getModified'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -172,11 +170,11 @@ class UserInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -202,7 +200,7 @@ class UserInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['user_id'] === null) {
             $invalid_properties[] = "'user_id' can't be null";
         }
@@ -596,3 +594,5 @@ class UserInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

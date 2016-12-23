@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description Detailing job telephone calls
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class CallListDetailType implements ArrayAccess
@@ -66,7 +66,7 @@ class CallListDetailType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'list_id' => 'int',
         'custom_data' => 'string',
         'start_execution_time' => 'string',
@@ -76,7 +76,7 @@ class CallListDetailType implements ArrayAccess
         'attmepts_left' => 'int',
         'status_id' => 'int',
         'status' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -87,7 +87,7 @@ class CallListDetailType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'list_id' => 'list_id',
         'custom_data' => 'custom_data',
         'start_execution_time' => 'start_execution_time',
@@ -97,14 +97,18 @@ class CallListDetailType implements ArrayAccess
         'attmepts_left' => 'attmepts_left',
         'status_id' => 'status_id',
         'status' => 'status'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'list_id' => 'setListId',
         'custom_data' => 'setCustomData',
         'start_execution_time' => 'setStartExecutionTime',
@@ -114,14 +118,18 @@ class CallListDetailType implements ArrayAccess
         'attmepts_left' => 'setAttmeptsLeft',
         'status_id' => 'setStatusId',
         'status' => 'setStatus'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'list_id' => 'getListId',
         'custom_data' => 'getCustomData',
         'start_execution_time' => 'getStartExecutionTime',
@@ -131,17 +139,7 @@ class CallListDetailType implements ArrayAccess
         'attmepts_left' => 'getAttmeptsLeft',
         'status_id' => 'getStatusId',
         'status' => 'getStatus'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -156,11 +154,11 @@ class CallListDetailType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -182,7 +180,7 @@ class CallListDetailType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['list_id'] === null) {
             $invalid_properties[] = "'list_id' can't be null";
         }
@@ -498,3 +496,5 @@ class CallListDetailType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

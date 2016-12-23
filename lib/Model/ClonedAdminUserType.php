@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The cloned admin user info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ClonedAdminUserType implements ArrayAccess
@@ -66,11 +66,11 @@ class ClonedAdminUserType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'admin_user_id' => 'int',
         'admin_user_name' => 'string',
         'admin_user_api_key' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -81,43 +81,41 @@ class ClonedAdminUserType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'admin_user_id' => 'admin_user_id',
         'admin_user_name' => 'admin_user_name',
         'admin_user_api_key' => 'admin_user_api_key'
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'admin_user_id' => 'setAdminUserId',
-        'admin_user_name' => 'setAdminUserName',
-        'admin_user_api_key' => 'setAdminUserApiKey'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'admin_user_id' => 'getAdminUserId',
-        'admin_user_name' => 'getAdminUserName',
-        'admin_user_api_key' => 'getAdminUserApiKey'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'admin_user_id' => 'setAdminUserId',
+        'admin_user_name' => 'setAdminUserName',
+        'admin_user_api_key' => 'setAdminUserApiKey'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'admin_user_id' => 'getAdminUserId',
+        'admin_user_name' => 'getAdminUserName',
+        'admin_user_api_key' => 'getAdminUserApiKey'
+    );
 
     public static function getters()
     {
@@ -132,11 +130,11 @@ class ClonedAdminUserType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -152,7 +150,7 @@ class ClonedAdminUserType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['admin_user_id'] === null) {
             $invalid_properties[] = "'admin_user_id' can't be null";
         }
@@ -306,3 +304,5 @@ class ClonedAdminUserType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

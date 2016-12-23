@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The RegulationAddress record
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class RegulationAddress implements ArrayAccess
@@ -66,7 +66,7 @@ class RegulationAddress implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'regulation_address_id' => 'int',
         'external_id' => 'string',
         'country_code' => 'string',
@@ -84,7 +84,7 @@ class RegulationAddress implements ArrayAccess
         'status' => 'string',
         'reject_message' => 'string',
         'phone_region_code' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -95,7 +95,7 @@ class RegulationAddress implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'regulation_address_id' => 'regulation_address_id',
         'external_id' => 'external_id',
         'country_code' => 'country_code',
@@ -113,14 +113,18 @@ class RegulationAddress implements ArrayAccess
         'status' => 'status',
         'reject_message' => 'reject_message',
         'phone_region_code' => 'phone_region_code'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'regulation_address_id' => 'setRegulationAddressId',
         'external_id' => 'setExternalId',
         'country_code' => 'setCountryCode',
@@ -138,14 +142,18 @@ class RegulationAddress implements ArrayAccess
         'status' => 'setStatus',
         'reject_message' => 'setRejectMessage',
         'phone_region_code' => 'setPhoneRegionCode'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'regulation_address_id' => 'getRegulationAddressId',
         'external_id' => 'getExternalId',
         'country_code' => 'getCountryCode',
@@ -163,17 +171,7 @@ class RegulationAddress implements ArrayAccess
         'status' => 'getStatus',
         'reject_message' => 'getRejectMessage',
         'phone_region_code' => 'getPhoneRegionCode'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -188,11 +186,11 @@ class RegulationAddress implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -222,7 +220,7 @@ class RegulationAddress implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['regulation_address_id'] === null) {
             $invalid_properties[] = "'regulation_address_id' can't be null";
         }
@@ -706,3 +704,5 @@ class RegulationAddress implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

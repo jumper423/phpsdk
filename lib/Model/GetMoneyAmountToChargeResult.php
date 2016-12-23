@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetMoneyAmountToCharge function result.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class GetMoneyAmountToChargeResult implements ArrayAccess
@@ -66,7 +66,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'amount' => 'int',
         'min_amount' => 'int',
         'bank_card_amount_usd' => 'int',
@@ -74,7 +74,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
         'robokassa_amount_rub' => 'int',
         'min_robokassa_amount_rub' => 'int',
         'subscriptions' => '\Swagger\Client\Model\SubscriptionsToChargeType[]'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -85,7 +85,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'amount' => 'amount',
         'min_amount' => 'min_amount',
         'bank_card_amount_usd' => 'bank_card_amount_usd',
@@ -93,14 +93,18 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
         'robokassa_amount_rub' => 'robokassa_amount_rub',
         'min_robokassa_amount_rub' => 'min_robokassa_amount_rub',
         'subscriptions' => 'subscriptions'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'amount' => 'setAmount',
         'min_amount' => 'setMinAmount',
         'bank_card_amount_usd' => 'setBankCardAmountUsd',
@@ -108,14 +112,18 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
         'robokassa_amount_rub' => 'setRobokassaAmountRub',
         'min_robokassa_amount_rub' => 'setMinRobokassaAmountRub',
         'subscriptions' => 'setSubscriptions'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'amount' => 'getAmount',
         'min_amount' => 'getMinAmount',
         'bank_card_amount_usd' => 'getBankCardAmountUsd',
@@ -123,17 +131,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
         'robokassa_amount_rub' => 'getRobokassaAmountRub',
         'min_robokassa_amount_rub' => 'getMinRobokassaAmountRub',
         'subscriptions' => 'getSubscriptions'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -148,11 +146,11 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -172,7 +170,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['amount'] === null) {
             $invalid_properties[] = "'amount' can't be null";
         }
@@ -404,3 +402,5 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

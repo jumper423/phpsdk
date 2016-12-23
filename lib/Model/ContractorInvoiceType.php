@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetContractorInvoices result.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ContractorInvoiceType implements ArrayAccess
@@ -66,7 +66,7 @@ class ContractorInvoiceType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'invoice_number' => 'string',
         'invoice_date' => 'string',
         'is_post_payment' => 'bool',
@@ -75,7 +75,7 @@ class ContractorInvoiceType implements ArrayAccess
         'total_amount' => 'int',
         'paid_amount' => 'int',
         'services' => '\Swagger\Client\Model\ContractorInvoiceServiceType'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -86,7 +86,7 @@ class ContractorInvoiceType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'invoice_number' => 'invoice_number',
         'invoice_date' => 'invoice_date',
         'is_post_payment' => 'is_post_payment',
@@ -95,14 +95,18 @@ class ContractorInvoiceType implements ArrayAccess
         'total_amount' => 'total_amount',
         'paid_amount' => 'paid_amount',
         'services' => 'services'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'invoice_number' => 'setInvoiceNumber',
         'invoice_date' => 'setInvoiceDate',
         'is_post_payment' => 'setIsPostPayment',
@@ -111,14 +115,18 @@ class ContractorInvoiceType implements ArrayAccess
         'total_amount' => 'setTotalAmount',
         'paid_amount' => 'setPaidAmount',
         'services' => 'setServices'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'invoice_number' => 'getInvoiceNumber',
         'invoice_date' => 'getInvoiceDate',
         'is_post_payment' => 'getIsPostPayment',
@@ -127,17 +135,7 @@ class ContractorInvoiceType implements ArrayAccess
         'total_amount' => 'getTotalAmount',
         'paid_amount' => 'getPaidAmount',
         'services' => 'getServices'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -152,11 +150,11 @@ class ContractorInvoiceType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -177,7 +175,7 @@ class ContractorInvoiceType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['invoice_number'] === null) {
             $invalid_properties[] = "'invoice_number' can't be null";
         }
@@ -442,3 +440,5 @@ class ContractorInvoiceType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

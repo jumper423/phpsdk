@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The ACD queue state.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ACDQueueStateType implements ArrayAccess
@@ -66,13 +66,13 @@ class ACDQueueStateType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'acd_queue_id' => 'int',
         'ready_operators' => '\Swagger\Client\Model\ACDReadyOperatorStateType[]',
         'locked_operators' => '\Swagger\Client\Model\ACDLockedOperatorStateType[]',
         'servicing_calls' => '\Swagger\Client\Model\ACDServicingCallStateType[]',
         'waiting_calls' => '\Swagger\Client\Model\ACDWaitingCallStateType[]'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -83,49 +83,47 @@ class ACDQueueStateType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'acd_queue_id' => 'acd_queue_id',
         'ready_operators' => 'ready_operators',
         'locked_operators' => 'locked_operators',
         'servicing_calls' => 'servicing_calls',
         'waiting_calls' => 'waiting_calls'
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'acd_queue_id' => 'setAcdQueueId',
-        'ready_operators' => 'setReadyOperators',
-        'locked_operators' => 'setLockedOperators',
-        'servicing_calls' => 'setServicingCalls',
-        'waiting_calls' => 'setWaitingCalls'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'acd_queue_id' => 'getAcdQueueId',
-        'ready_operators' => 'getReadyOperators',
-        'locked_operators' => 'getLockedOperators',
-        'servicing_calls' => 'getServicingCalls',
-        'waiting_calls' => 'getWaitingCalls'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'acd_queue_id' => 'setAcdQueueId',
+        'ready_operators' => 'setReadyOperators',
+        'locked_operators' => 'setLockedOperators',
+        'servicing_calls' => 'setServicingCalls',
+        'waiting_calls' => 'setWaitingCalls'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'acd_queue_id' => 'getAcdQueueId',
+        'ready_operators' => 'getReadyOperators',
+        'locked_operators' => 'getLockedOperators',
+        'servicing_calls' => 'getServicingCalls',
+        'waiting_calls' => 'getWaitingCalls'
+    );
 
     public static function getters()
     {
@@ -140,11 +138,11 @@ class ACDQueueStateType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -162,7 +160,7 @@ class ACDQueueStateType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['acd_queue_id'] === null) {
             $invalid_properties[] = "'acd_queue_id' can't be null";
         }
@@ -346,3 +344,5 @@ class ACDQueueStateType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

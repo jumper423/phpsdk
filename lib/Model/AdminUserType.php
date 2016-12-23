@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetAdminUsers function result.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class AdminUserType implements ArrayAccess
@@ -66,7 +66,7 @@ class AdminUserType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'admin_user_id' => 'int',
         'admin_user_name' => 'string',
         'admin_user_display_name' => 'string',
@@ -74,7 +74,7 @@ class AdminUserType implements ArrayAccess
         'modified' => 'string',
         'access_entries' => 'string[]',
         'admin_roles' => '\Swagger\Client\Model\AdminRoleType[]'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -85,7 +85,7 @@ class AdminUserType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'admin_user_id' => 'admin_user_id',
         'admin_user_name' => 'admin_user_name',
         'admin_user_display_name' => 'admin_user_display_name',
@@ -93,14 +93,18 @@ class AdminUserType implements ArrayAccess
         'modified' => 'modified',
         'access_entries' => 'access_entries',
         'admin_roles' => 'admin_roles'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'admin_user_id' => 'setAdminUserId',
         'admin_user_name' => 'setAdminUserName',
         'admin_user_display_name' => 'setAdminUserDisplayName',
@@ -108,14 +112,18 @@ class AdminUserType implements ArrayAccess
         'modified' => 'setModified',
         'access_entries' => 'setAccessEntries',
         'admin_roles' => 'setAdminRoles'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'admin_user_id' => 'getAdminUserId',
         'admin_user_name' => 'getAdminUserName',
         'admin_user_display_name' => 'getAdminUserDisplayName',
@@ -123,17 +131,7 @@ class AdminUserType implements ArrayAccess
         'modified' => 'getModified',
         'access_entries' => 'getAccessEntries',
         'admin_roles' => 'getAdminRoles'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -148,11 +146,11 @@ class AdminUserType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -172,7 +170,7 @@ class AdminUserType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['admin_user_id'] === null) {
             $invalid_properties[] = "'admin_user_id' can't be null";
         }
@@ -422,3 +420,5 @@ class AdminUserType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

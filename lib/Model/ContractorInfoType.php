@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetContractorInfo function result.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ContractorInfoType implements ArrayAccess
@@ -66,7 +66,7 @@ class ContractorInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'inn' => 'string',
         'kpp' => 'string',
         'company_name' => 'string',
@@ -76,7 +76,7 @@ class ContractorInfoType implements ArrayAccess
         'correspondence_email' => 'string',
         'correspondence_to' => 'string',
         'contract' => '\Swagger\Client\Model\ContractInfoType'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -87,7 +87,7 @@ class ContractorInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'inn' => 'inn',
         'kpp' => 'kpp',
         'company_name' => 'company_name',
@@ -97,14 +97,18 @@ class ContractorInfoType implements ArrayAccess
         'correspondence_email' => 'correspondence_email',
         'correspondence_to' => 'correspondence_to',
         'contract' => 'contract'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'inn' => 'setInn',
         'kpp' => 'setKpp',
         'company_name' => 'setCompanyName',
@@ -114,14 +118,18 @@ class ContractorInfoType implements ArrayAccess
         'correspondence_email' => 'setCorrespondenceEmail',
         'correspondence_to' => 'setCorrespondenceTo',
         'contract' => 'setContract'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'inn' => 'getInn',
         'kpp' => 'getKpp',
         'company_name' => 'getCompanyName',
@@ -131,17 +139,7 @@ class ContractorInfoType implements ArrayAccess
         'correspondence_email' => 'getCorrespondenceEmail',
         'correspondence_to' => 'getCorrespondenceTo',
         'contract' => 'getContract'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -156,11 +154,11 @@ class ContractorInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -182,7 +180,7 @@ class ContractorInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['inn'] === null) {
             $invalid_properties[] = "'inn' can't be null";
         }
@@ -462,3 +460,5 @@ class ContractorInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

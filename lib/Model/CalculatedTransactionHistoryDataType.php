@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The HistoryReportType.calculated_data object on HistoryReportType.history_type&#x3D;&#x3D;&#39;transactions&#39;
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class CalculatedTransactionHistoryDataType implements ArrayAccess
@@ -66,7 +66,7 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'transaction_count' => 'int',
         'total_transaction_count' => 'int',
         'start_balance' => 'string',
@@ -76,7 +76,7 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
         'user_name' => 'int',
         'is_checked' => 'bool',
         'timezone' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -87,7 +87,7 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'transaction_count' => 'transaction_count',
         'total_transaction_count' => 'total_transaction_count',
         'start_balance' => 'start_balance',
@@ -97,14 +97,18 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
         'user_name' => 'user_name',
         'is_checked' => 'is_checked',
         'timezone' => 'timezone'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'transaction_count' => 'setTransactionCount',
         'total_transaction_count' => 'setTotalTransactionCount',
         'start_balance' => 'setStartBalance',
@@ -114,14 +118,18 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
         'user_name' => 'setUserName',
         'is_checked' => 'setIsChecked',
         'timezone' => 'setTimezone'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'transaction_count' => 'getTransactionCount',
         'total_transaction_count' => 'getTotalTransactionCount',
         'start_balance' => 'getStartBalance',
@@ -131,17 +139,7 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
         'user_name' => 'getUserName',
         'is_checked' => 'getIsChecked',
         'timezone' => 'getTimezone'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -156,11 +154,11 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -182,7 +180,7 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['transaction_count'] === null) {
             $invalid_properties[] = "'transaction_count' can't be null";
         }
@@ -462,3 +460,5 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

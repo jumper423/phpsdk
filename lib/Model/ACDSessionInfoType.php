@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetACDHistory function result item.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ACDSessionInfoType implements ArrayAccess
@@ -66,7 +66,7 @@ class ACDSessionInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'acd_session_history_id' => 'int',
         'account_id' => 'int',
         'begin_time' => 'string',
@@ -77,7 +77,7 @@ class ACDSessionInfoType implements ArrayAccess
         'in_service_duration' => 'int',
         'after_service_duration' => 'int',
         'events' => '\Swagger\Client\Model\ACDSessionEventInfoType[]'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -88,7 +88,7 @@ class ACDSessionInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'acd_session_history_id' => 'acd_session_history_id',
         'account_id' => 'account_id',
         'begin_time' => 'begin_time',
@@ -99,14 +99,18 @@ class ACDSessionInfoType implements ArrayAccess
         'in_service_duration' => 'in_service_duration',
         'after_service_duration' => 'after_service_duration',
         'events' => 'events'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'acd_session_history_id' => 'setAcdSessionHistoryId',
         'account_id' => 'setAccountId',
         'begin_time' => 'setBeginTime',
@@ -117,14 +121,18 @@ class ACDSessionInfoType implements ArrayAccess
         'in_service_duration' => 'setInServiceDuration',
         'after_service_duration' => 'setAfterServiceDuration',
         'events' => 'setEvents'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'acd_session_history_id' => 'getAcdSessionHistoryId',
         'account_id' => 'getAccountId',
         'begin_time' => 'getBeginTime',
@@ -135,17 +143,7 @@ class ACDSessionInfoType implements ArrayAccess
         'in_service_duration' => 'getInServiceDuration',
         'after_service_duration' => 'getAfterServiceDuration',
         'events' => 'getEvents'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -160,11 +158,11 @@ class ACDSessionInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -187,7 +185,7 @@ class ACDSessionInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['acd_session_history_id'] === null) {
             $invalid_properties[] = "'acd_session_history_id' can't be null";
         }
@@ -494,3 +492,5 @@ class ACDSessionInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

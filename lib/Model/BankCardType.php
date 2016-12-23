@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The bank card info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class BankCardType implements ArrayAccess
@@ -66,14 +66,14 @@ class BankCardType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'auto_charge' => 'bool',
         'min_balance_' => 'int',
         'card_overrun_value' => 'int',
         'expiration_year' => 'int',
         'expiration_month' => 'int',
         'acct' => 'int'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -84,52 +84,50 @@ class BankCardType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'auto_charge' => 'auto_charge',
         'min_balance_' => 'min_balance ',
         'card_overrun_value' => 'card_overrun_value',
         'expiration_year' => 'expiration_year',
         'expiration_month' => 'expiration_month',
         'acct' => 'acct'
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'auto_charge' => 'setAutoCharge',
-        'min_balance_' => 'setMinBalance_',
-        'card_overrun_value' => 'setCardOverrunValue',
-        'expiration_year' => 'setExpirationYear',
-        'expiration_month' => 'setExpirationMonth',
-        'acct' => 'setAcct'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'auto_charge' => 'getAutoCharge',
-        'min_balance_' => 'getMinBalance_',
-        'card_overrun_value' => 'getCardOverrunValue',
-        'expiration_year' => 'getExpirationYear',
-        'expiration_month' => 'getExpirationMonth',
-        'acct' => 'getAcct'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'auto_charge' => 'setAutoCharge',
+        'min_balance_' => 'setMinBalance_',
+        'card_overrun_value' => 'setCardOverrunValue',
+        'expiration_year' => 'setExpirationYear',
+        'expiration_month' => 'setExpirationMonth',
+        'acct' => 'setAcct'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'auto_charge' => 'getAutoCharge',
+        'min_balance_' => 'getMinBalance_',
+        'card_overrun_value' => 'getCardOverrunValue',
+        'expiration_year' => 'getExpirationYear',
+        'expiration_month' => 'getExpirationMonth',
+        'acct' => 'getAcct'
+    );
 
     public static function getters()
     {
@@ -144,11 +142,11 @@ class BankCardType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -167,7 +165,7 @@ class BankCardType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['auto_charge'] === null) {
             $invalid_properties[] = "'auto_charge' can't be null";
         }
@@ -402,3 +400,5 @@ class BankCardType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

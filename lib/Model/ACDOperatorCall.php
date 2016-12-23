@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The ACD operator call type.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ACDOperatorCall implements ArrayAccess
@@ -66,7 +66,7 @@ class ACDOperatorCall implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'acd_session_history_id' => 'int',
         'acd_request_id' => 'string',
         'acd_queue_id' => 'int',
@@ -74,7 +74,7 @@ class ACDOperatorCall implements ArrayAccess
         'callerid' => 'string',
         'begin_time' => 'string',
         'submitted' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -85,7 +85,7 @@ class ACDOperatorCall implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'acd_session_history_id' => 'acd_session_history_id',
         'acd_request_id' => 'acd_request_id',
         'acd_queue_id' => 'acd_queue_id',
@@ -93,14 +93,18 @@ class ACDOperatorCall implements ArrayAccess
         'callerid' => 'callerid',
         'begin_time' => 'begin_time',
         'submitted' => 'submitted'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'acd_session_history_id' => 'setAcdSessionHistoryId',
         'acd_request_id' => 'setAcdRequestId',
         'acd_queue_id' => 'setAcdQueueId',
@@ -108,14 +112,18 @@ class ACDOperatorCall implements ArrayAccess
         'callerid' => 'setCallerid',
         'begin_time' => 'setBeginTime',
         'submitted' => 'setSubmitted'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'acd_session_history_id' => 'getAcdSessionHistoryId',
         'acd_request_id' => 'getAcdRequestId',
         'acd_queue_id' => 'getAcdQueueId',
@@ -123,17 +131,7 @@ class ACDOperatorCall implements ArrayAccess
         'callerid' => 'getCallerid',
         'begin_time' => 'getBeginTime',
         'submitted' => 'getSubmitted'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -148,11 +146,11 @@ class ACDOperatorCall implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -172,7 +170,7 @@ class ACDOperatorCall implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['acd_session_history_id'] === null) {
             $invalid_properties[] = "'acd_session_history_id' can't be null";
         }
@@ -422,3 +420,5 @@ class ACDOperatorCall implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

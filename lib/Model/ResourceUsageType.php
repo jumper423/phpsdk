@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The resource usage info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class ResourceUsageType implements ArrayAccess
@@ -66,7 +66,7 @@ class ResourceUsageType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'resource_usage_id' => 'int',
         'resource_type' => 'string',
         'cost' => 'int',
@@ -76,7 +76,7 @@ class ResourceUsageType implements ArrayAccess
         'resource_quantity' => 'int',
         'unit' => 'string',
         'ref_call_id' => 'int'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -87,7 +87,7 @@ class ResourceUsageType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'resource_usage_id' => 'resource_usage_id',
         'resource_type' => 'resource_type',
         'cost' => 'cost',
@@ -97,14 +97,18 @@ class ResourceUsageType implements ArrayAccess
         'resource_quantity' => 'resource_quantity',
         'unit' => 'unit',
         'ref_call_id' => 'ref_call_id'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'resource_usage_id' => 'setResourceUsageId',
         'resource_type' => 'setResourceType',
         'cost' => 'setCost',
@@ -114,14 +118,18 @@ class ResourceUsageType implements ArrayAccess
         'resource_quantity' => 'setResourceQuantity',
         'unit' => 'setUnit',
         'ref_call_id' => 'setRefCallId'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'resource_usage_id' => 'getResourceUsageId',
         'resource_type' => 'getResourceType',
         'cost' => 'getCost',
@@ -131,17 +139,7 @@ class ResourceUsageType implements ArrayAccess
         'resource_quantity' => 'getResourceQuantity',
         'unit' => 'getUnit',
         'ref_call_id' => 'getRefCallId'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -156,11 +154,11 @@ class ResourceUsageType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -182,7 +180,7 @@ class ResourceUsageType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['resource_usage_id'] === null) {
             $invalid_properties[] = "'resource_usage_id' can't be null";
         }
@@ -468,3 +466,5 @@ class ResourceUsageType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

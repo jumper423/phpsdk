@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetCallerIDs function result.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class CallerIDInfoType implements ArrayAccess
@@ -66,7 +66,7 @@ class CallerIDInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'callerid_id' => 'int',
         'callerid_number' => 'string',
         'active' => 'bool',
@@ -74,7 +74,7 @@ class CallerIDInfoType implements ArrayAccess
         'verification_call_attempts_left' => 'int',
         'verified_until' => 'string',
         'verification_code_callin' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -85,7 +85,7 @@ class CallerIDInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'callerid_id' => 'callerid_id',
         'callerid_number' => 'callerid_number',
         'active' => 'active',
@@ -93,14 +93,18 @@ class CallerIDInfoType implements ArrayAccess
         'verification_call_attempts_left' => 'verification_call_attempts_left',
         'verified_until' => 'verified_until',
         'verification_code_callin' => 'verification_code_callin'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'callerid_id' => 'setCalleridId',
         'callerid_number' => 'setCalleridNumber',
         'active' => 'setActive',
@@ -108,14 +112,18 @@ class CallerIDInfoType implements ArrayAccess
         'verification_call_attempts_left' => 'setVerificationCallAttemptsLeft',
         'verified_until' => 'setVerifiedUntil',
         'verification_code_callin' => 'setVerificationCodeCallin'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'callerid_id' => 'getCalleridId',
         'callerid_number' => 'getCalleridNumber',
         'active' => 'getActive',
@@ -123,17 +131,7 @@ class CallerIDInfoType implements ArrayAccess
         'verification_call_attempts_left' => 'getVerificationCallAttemptsLeft',
         'verified_until' => 'getVerifiedUntil',
         'verification_code_callin' => 'getVerificationCodeCallin'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -148,11 +146,11 @@ class CallerIDInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -172,7 +170,7 @@ class CallerIDInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['callerid_id'] === null) {
             $invalid_properties[] = "'callerid_id' can't be null";
         }
@@ -416,3 +414,5 @@ class CallerIDInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

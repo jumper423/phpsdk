@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The history report info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class HistoryReportType implements ArrayAccess
@@ -66,7 +66,7 @@ class HistoryReportType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'history_report_id' => 'int',
         'history_type' => 'string',
         'created' => 'string',
@@ -83,7 +83,7 @@ class HistoryReportType implements ArrayAccess
         'error' => '\Swagger\Client\Model\APIError',
         'filters' => 'object',
         'calculated_data' => 'object'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -94,7 +94,7 @@ class HistoryReportType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'history_report_id' => 'history_report_id',
         'history_type' => 'history_type',
         'created' => 'created',
@@ -111,14 +111,18 @@ class HistoryReportType implements ArrayAccess
         'error' => 'error',
         'filters' => 'filters',
         'calculated_data' => 'calculated_data'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'history_report_id' => 'setHistoryReportId',
         'history_type' => 'setHistoryType',
         'created' => 'setCreated',
@@ -135,14 +139,18 @@ class HistoryReportType implements ArrayAccess
         'error' => 'setError',
         'filters' => 'setFilters',
         'calculated_data' => 'setCalculatedData'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'history_report_id' => 'getHistoryReportId',
         'history_type' => 'getHistoryType',
         'created' => 'getCreated',
@@ -159,17 +167,7 @@ class HistoryReportType implements ArrayAccess
         'error' => 'getError',
         'filters' => 'getFilters',
         'calculated_data' => 'getCalculatedData'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -184,11 +182,11 @@ class HistoryReportType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -217,7 +215,7 @@ class HistoryReportType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['history_report_id'] === null) {
             $invalid_properties[] = "'history_report_id' can't be null";
         }
@@ -644,3 +642,5 @@ class HistoryReportType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The push credentials list item info.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class CertCredentialType implements ArrayAccess
@@ -66,12 +66,12 @@ class CertCredentialType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'cert_file_name' => 'string',
         'cert_password' => 'string',
         'cert_content' => 'string',
         'is_dev_mode' => 'bool'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -82,46 +82,44 @@ class CertCredentialType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'cert_file_name' => 'cert_file_name',
         'cert_password' => 'cert_password',
         'cert_content' => 'cert_content',
         'is_dev_mode' => 'is_dev_mode'
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'cert_file_name' => 'setCertFileName',
-        'cert_password' => 'setCertPassword',
-        'cert_content' => 'setCertContent',
-        'is_dev_mode' => 'setIsDevMode'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'cert_file_name' => 'getCertFileName',
-        'cert_password' => 'getCertPassword',
-        'cert_content' => 'getCertContent',
-        'is_dev_mode' => 'getIsDevMode'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'cert_file_name' => 'setCertFileName',
+        'cert_password' => 'setCertPassword',
+        'cert_content' => 'setCertContent',
+        'is_dev_mode' => 'setIsDevMode'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'cert_file_name' => 'getCertFileName',
+        'cert_password' => 'getCertPassword',
+        'cert_content' => 'getCertContent',
+        'is_dev_mode' => 'getIsDevMode'
+    );
 
     public static function getters()
     {
@@ -136,11 +134,11 @@ class CertCredentialType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -157,7 +155,7 @@ class CertCredentialType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['cert_file_name'] === null) {
             $invalid_properties[] = "'cert_file_name' can't be null";
         }
@@ -326,3 +324,5 @@ class CertCredentialType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

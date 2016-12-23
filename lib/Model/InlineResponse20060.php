@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -47,10 +47,10 @@ use \ArrayAccess;
  * InlineResponse20060 Class Doc Comment
  *
  * @category    Class */
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class InlineResponse20060 implements ArrayAccess
@@ -65,13 +65,13 @@ class InlineResponse20060 implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'result' => 'string',
         'api_key' => 'string',
         'account_id' => 'int',
         'account_name' => 'string',
         'debugger_address' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -82,49 +82,47 @@ class InlineResponse20060 implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'result' => 'result',
         'api_key' => 'api_key',
         'account_id' => 'account_id',
         'account_name' => 'account_name',
         'debugger_address' => 'debugger_address'
-    ];
-
-
-    /**
-     * Array of attributes to setter functions (for deserialization of responses)
-     * @var string[]
-     */
-    protected static $setters = [
-        'result' => 'setResult',
-        'api_key' => 'setApiKey',
-        'account_id' => 'setAccountId',
-        'account_name' => 'setAccountName',
-        'debugger_address' => 'setDebuggerAddress'
-    ];
-
-
-    /**
-     * Array of attributes to getter functions (for serialization of requests)
-     * @var string[]
-     */
-    protected static $getters = [
-        'result' => 'getResult',
-        'api_key' => 'getApiKey',
-        'account_id' => 'getAccountId',
-        'account_name' => 'getAccountName',
-        'debugger_address' => 'getDebuggerAddress'
-    ];
+    );
 
     public static function attributeMap()
     {
         return self::$attributeMap;
     }
 
+    /**
+     * Array of attributes to setter functions (for deserialization of responses)
+     * @var string[]
+     */
+    protected static $setters = array(
+        'result' => 'setResult',
+        'api_key' => 'setApiKey',
+        'account_id' => 'setAccountId',
+        'account_name' => 'setAccountName',
+        'debugger_address' => 'setDebuggerAddress'
+    );
+
     public static function setters()
     {
         return self::$setters;
     }
+
+    /**
+     * Array of attributes to getter functions (for serialization of requests)
+     * @var string[]
+     */
+    protected static $getters = array(
+        'result' => 'getResult',
+        'api_key' => 'getApiKey',
+        'account_id' => 'getAccountId',
+        'account_name' => 'getAccountName',
+        'debugger_address' => 'getDebuggerAddress'
+    );
 
     public static function getters()
     {
@@ -139,11 +137,11 @@ class InlineResponse20060 implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -161,7 +159,7 @@ class InlineResponse20060 implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         return $invalid_properties;
     }
 
@@ -339,3 +337,5 @@ class InlineResponse20060 implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

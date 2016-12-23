@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetTransactionHistory function result item.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class TransactionInfoType implements ArrayAccess
@@ -66,7 +66,7 @@ class TransactionInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'transaction_id' => 'int',
         'account_id' => 'string',
         'performed_at' => 'string',
@@ -75,7 +75,7 @@ class TransactionInfoType implements ArrayAccess
         'transaction_type' => 'string',
         'transaction_description' => 'string',
         'payment_reference' => 'string'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -86,7 +86,7 @@ class TransactionInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'transaction_id' => 'transaction_id',
         'account_id' => 'account_id',
         'performed_at' => 'performed_at',
@@ -95,14 +95,18 @@ class TransactionInfoType implements ArrayAccess
         'transaction_type' => 'transaction_type',
         'transaction_description' => 'transaction_description',
         'payment_reference' => 'payment_reference'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'transaction_id' => 'setTransactionId',
         'account_id' => 'setAccountId',
         'performed_at' => 'setPerformedAt',
@@ -111,14 +115,18 @@ class TransactionInfoType implements ArrayAccess
         'transaction_type' => 'setTransactionType',
         'transaction_description' => 'setTransactionDescription',
         'payment_reference' => 'setPaymentReference'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'transaction_id' => 'getTransactionId',
         'account_id' => 'getAccountId',
         'performed_at' => 'getPerformedAt',
@@ -127,17 +135,7 @@ class TransactionInfoType implements ArrayAccess
         'transaction_type' => 'getTransactionType',
         'transaction_description' => 'getTransactionDescription',
         'payment_reference' => 'getPaymentReference'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -152,11 +150,11 @@ class TransactionInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -177,7 +175,7 @@ class TransactionInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['transaction_id'] === null) {
             $invalid_properties[] = "'transaction_id' can't be null";
         }
@@ -454,3 +452,5 @@ class TransactionInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

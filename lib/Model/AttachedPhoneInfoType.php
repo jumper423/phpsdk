@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The GetPhoneNumbers function result item.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class AttachedPhoneInfoType implements ArrayAccess
@@ -66,7 +66,7 @@ class AttachedPhoneInfoType implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'phone_id' => 'int',
         'phone_number' => 'string',
         'phone_price' => 'int',
@@ -85,7 +85,7 @@ class AttachedPhoneInfoType implements ArrayAccess
         'verification_status' => 'string',
         'unverified_hold_until' => 'string',
         'can_be_used' => 'bool'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -96,7 +96,7 @@ class AttachedPhoneInfoType implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'phone_id' => 'phone_id',
         'phone_number' => 'phone_number',
         'phone_price' => 'phone_price',
@@ -115,14 +115,18 @@ class AttachedPhoneInfoType implements ArrayAccess
         'verification_status' => 'verification_status',
         'unverified_hold_until' => 'unverified_hold_until',
         'can_be_used' => 'can_be_used'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'phone_id' => 'setPhoneId',
         'phone_number' => 'setPhoneNumber',
         'phone_price' => 'setPhonePrice',
@@ -141,14 +145,18 @@ class AttachedPhoneInfoType implements ArrayAccess
         'verification_status' => 'setVerificationStatus',
         'unverified_hold_until' => 'setUnverifiedHoldUntil',
         'can_be_used' => 'setCanBeUsed'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'phone_id' => 'getPhoneId',
         'phone_number' => 'getPhoneNumber',
         'phone_price' => 'getPhonePrice',
@@ -167,17 +175,7 @@ class AttachedPhoneInfoType implements ArrayAccess
         'verification_status' => 'getVerificationStatus',
         'unverified_hold_until' => 'getUnverifiedHoldUntil',
         'can_be_used' => 'getCanBeUsed'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -192,11 +190,11 @@ class AttachedPhoneInfoType implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -227,7 +225,7 @@ class AttachedPhoneInfoType implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['phone_id'] === null) {
             $invalid_properties[] = "'phone_id' can't be null";
         }
@@ -744,3 +742,5 @@ class AttachedPhoneInfoType implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+

@@ -7,7 +7,7 @@
  * @category Class
  * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
- * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
  */
 
@@ -48,10 +48,10 @@ use \ArrayAccess;
  *
  * @category    Class */
  // @description The account callback. See the &#39;AccountCallbacks&#39; type.
-/**
+/** 
  * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
- * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
+ * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
  */
 class AccountCallback implements ArrayAccess
@@ -66,7 +66,7 @@ class AccountCallback implements ArrayAccess
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
-    protected static $swaggerTypes = [
+    protected static $swaggerTypes = array(
         'callback_id' => 'int',
         'type' => 'string',
         'account_id' => 'int',
@@ -98,7 +98,7 @@ class AccountCallback implements ArrayAccess
         'transaction_history_report' => '\Swagger\Client\Model\TransactionHistoryReportCallback',
         'uncharged_tariff' => '\Swagger\Client\Model\UnchargedTariffCallback',
         'unverified_subscription_detached' => '\Swagger\Client\Model\UnverifiedSubscriptionDetachedCallback'
-    ];
+    );
 
     public static function swaggerTypes()
     {
@@ -109,7 +109,7 @@ class AccountCallback implements ArrayAccess
      * Array of attributes where the key is the local name, and the value is the original name
      * @var string[]
      */
-    protected static $attributeMap = [
+    protected static $attributeMap = array(
         'callback_id' => 'callback_id',
         'type' => 'type',
         'account_id' => 'account_id',
@@ -141,14 +141,18 @@ class AccountCallback implements ArrayAccess
         'transaction_history_report' => 'transaction_history_report',
         'uncharged_tariff' => 'uncharged_tariff',
         'unverified_subscription_detached' => 'unverified_subscription_detached'
-    ];
+    );
 
+    public static function attributeMap()
+    {
+        return self::$attributeMap;
+    }
 
     /**
      * Array of attributes to setter functions (for deserialization of responses)
      * @var string[]
      */
-    protected static $setters = [
+    protected static $setters = array(
         'callback_id' => 'setCallbackId',
         'type' => 'setType',
         'account_id' => 'setAccountId',
@@ -180,14 +184,18 @@ class AccountCallback implements ArrayAccess
         'transaction_history_report' => 'setTransactionHistoryReport',
         'uncharged_tariff' => 'setUnchargedTariff',
         'unverified_subscription_detached' => 'setUnverifiedSubscriptionDetached'
-    ];
+    );
 
+    public static function setters()
+    {
+        return self::$setters;
+    }
 
     /**
      * Array of attributes to getter functions (for serialization of requests)
      * @var string[]
      */
-    protected static $getters = [
+    protected static $getters = array(
         'callback_id' => 'getCallbackId',
         'type' => 'getType',
         'account_id' => 'getAccountId',
@@ -219,17 +227,7 @@ class AccountCallback implements ArrayAccess
         'transaction_history_report' => 'getTransactionHistoryReport',
         'uncharged_tariff' => 'getUnchargedTariff',
         'unverified_subscription_detached' => 'getUnverifiedSubscriptionDetached'
-    ];
-
-    public static function attributeMap()
-    {
-        return self::$attributeMap;
-    }
-
-    public static function setters()
-    {
-        return self::$setters;
-    }
+    );
 
     public static function getters()
     {
@@ -244,11 +242,11 @@ class AccountCallback implements ArrayAccess
      * Associative array for storing property values
      * @var mixed[]
      */
-    protected $container = [];
+    protected $container = array();
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param mixed[] $data Associated array of property value initalizing the model
      */
     public function __construct(array $data = null)
     {
@@ -292,7 +290,7 @@ class AccountCallback implements ArrayAccess
      */
     public function listInvalidProperties()
     {
-        $invalid_properties = [];
+        $invalid_properties = array();
         if ($this->container['callback_id'] === null) {
             $invalid_properties[] = "'callback_id' can't be null";
         }
@@ -1082,3 +1080,5 @@ class AccountCallback implements ArrayAccess
         return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
+
+
