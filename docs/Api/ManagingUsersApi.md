@@ -1,4 +1,4 @@
-# Swagger\Client\ManagingUsersApi
+# Voximplant\ManagingUsersApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -25,15 +25,15 @@ Adds a new user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingUsersApi();
+$api_instance = new Voximplant\Api\ManagingUsersApi();
 $user_name = "user_name_example"; // string | The user name in format [a-z0-9][a-z0-9_-]{2,49}
 $user_display_name = "user_display_name_example"; // string | The user display name. The length must be less than 256.
 $user_password = "user_password_example"; // string | The user password. The length must be at least 6 symbols.
@@ -93,15 +93,15 @@ Bind the user list with the application list.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingUsersApi();
+$api_instance = new Voximplant\Api\ManagingUsersApi();
 $user_id = "user_id_example"; // string | The user ID list separated by the `;` symbol or the `all` value.
 $user_name = "user_name_example"; // string | Can be used instead of <b>user_id</b>. The user name list separated by the `;` symbol.
 $application_id = "application_id_example"; // string | The application ID list separated by the `;` symbol or the `all` value.
@@ -155,15 +155,15 @@ Deletes the user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingUsersApi();
+$api_instance = new Voximplant\Api\ManagingUsersApi();
 $user_id = "user_id_example"; // string | The user ID list separated by the `;` symbol or the `all` value.
 $user_name = "user_name_example"; // string | The user name list separated by the `;` symbol that can be used instead of <b>user_id</b>.
 
@@ -211,15 +211,15 @@ Gets the users.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingUsersApi();
+$api_instance = new Voximplant\Api\ManagingUsersApi();
 $application_id = 3.4; // float | The application ID to filter.
 $excluded_application_id = 3.4; // float | The excluded application ID to filter.
 $excluded_application_name = "excluded_application_name_example"; // string | The excluded application name to filter.
@@ -305,15 +305,15 @@ Edits the user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingUsersApi();
+$api_instance = new Voximplant\Api\ManagingUsersApi();
 $user_id = 3.4; // float | The user to edit.
 $user_name = "user_name_example"; // string | Can be used instead of <b>user_id</b>.
 $new_user_name = "new_user_name_example"; // string | The new user name in format [a-z0-9][a-z0-9_-]{2,49}
@@ -377,15 +377,15 @@ Transfer the account's money to the user or transfer the user's money to the acc
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingUsersApi();
+$api_instance = new Voximplant\Api\ManagingUsersApi();
 $user_id = "user_id_example"; // string | The user ID list separated by the `;` symbol.
 $amount = 3.4; // float | The money amount, $. The absolute amount value must be equal or greater than 0.01
 $currency = "currency_example"; // string | The amount currency. Examples: RUR, EUR, USD.

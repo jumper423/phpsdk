@@ -1,4 +1,4 @@
-# Swagger\Client\ManagingAdminUsersApi
+# Voximplant\ManagingAdminUsersApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -24,15 +24,15 @@ Adds a new admin user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Api\ManagingAdminUsersApi();
 $new_admin_user_name = "new_admin_user_name_example"; // string | The admin user name. The length must be less than 50.
 $admin_user_display_name = "admin_user_display_name_example"; // string | The admin user display name. The length must be less than 256.
 $new_admin_user_password = "new_admin_user_password_example"; // string | The admin user password. The length must be at least 6 symbols.
@@ -88,15 +88,15 @@ Attach the admin role list to the admin user list.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Api\ManagingAdminUsersApi();
 $required_admin_user_id = 3.4; // float | The admin user ID list separated by the `;` symbol or the `all` value.
 $required_admin_user_name = "required_admin_user_name_example"; // string | The admin user name to bind, can be used instead of <b>required_admin_user_id</b>.
 $admin_role_id = 3.4; // float | The attached admin role ID list separated by the `;` symbol or the `all` value.
@@ -150,15 +150,15 @@ Deletes the admin user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Api\ManagingAdminUsersApi();
 $required_admin_user_id = 3.4; // float | The admin user ID list separated by the `;` symbol or the `all` value.
 $required_admin_user_name = "required_admin_user_name_example"; // string | The admin user name to delete, can be used instead of <b>required_admin_user_id</b>.
 
@@ -206,15 +206,15 @@ Gets the admin users.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Api\ManagingAdminUsersApi();
 $required_admin_user_id = 3.4; // float | The admin user ID to filter.
 $required_admin_user_name = "required_admin_user_name_example"; // string | The admin user name part to filter.
 $admin_user_display_name = "admin_user_display_name_example"; // string | The admin user display name part to filter.
@@ -274,15 +274,15 @@ Edits the admin user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Api\ManagingAdminUsersApi();
 $required_admin_user_id = 3.4; // float | The admin user to edit.
 $required_admin_user_name = "required_admin_user_name_example"; // string | The admin user to edit, can be used instead of <b>required_admin_user_id</b>.
 $new_admin_user_name = "new_admin_user_name_example"; // string | The new admin user name. The length must be less than 50.

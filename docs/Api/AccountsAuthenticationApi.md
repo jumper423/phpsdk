@@ -1,4 +1,4 @@
-# Swagger\Client\AccountsAuthenticationApi
+# Voximplant\AccountsAuthenticationApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -21,15 +21,15 @@ Gets a temporary session ID (and a permanent 'api_key') to work with the API.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\AccountsAuthenticationApi();
+$api_instance = new Voximplant\Api\AccountsAuthenticationApi();
 
 try {
     $result = $api_instance->logon();
@@ -71,15 +71,15 @@ Forgets the session ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\AccountsAuthenticationApi();
+$api_instance = new Voximplant\Api\AccountsAuthenticationApi();
 
 try {
     $result = $api_instance->logout();

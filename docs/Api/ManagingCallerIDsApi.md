@@ -1,4 +1,4 @@
-# Swagger\Client\ManagingCallerIDsApi
+# Voximplant\ManagingCallerIDsApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -24,15 +24,15 @@ Activates the CallerID by the verification code.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingCallerIDsApi();
+$api_instance = new Voximplant\Api\ManagingCallerIDsApi();
 $callerid_id = 3.4; // float | The id of the callerID object.
 $callerid_number = "callerid_number_example"; // string | The callerID number that can be used instead of <b>callerid_id</b>.
 $verification_code = "verification_code_example"; // string | The verification code, see the VerifyCallerID function.
@@ -82,15 +82,15 @@ Adds a new caller ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingCallerIDsApi();
+$api_instance = new Voximplant\Api\ManagingCallerIDsApi();
 $callerid_number = "callerid_number_example"; // string | The callerID number.
 
 try {
@@ -136,15 +136,15 @@ Deletes the CallerID. Note: you can't delete a CID permanently (the antispam def
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingCallerIDsApi();
+$api_instance = new Voximplant\Api\ManagingCallerIDsApi();
 $callerid_id = 3.4; // float | The id of the callerID object.
 $callerid_number = "callerid_number_example"; // string | The callerID number that can be used instead of <b>callerid_id</b>.
 
@@ -192,15 +192,15 @@ Gets the account callerIDs.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingCallerIDsApi();
+$api_instance = new Voximplant\Api\ManagingCallerIDsApi();
 $callerid_id = 3.4; // float | The id of the callerID object to filter.
 $callerid_number = "callerid_number_example"; // string | The phone number to filter.
 $active = true; // bool | The active flag to filter.
@@ -256,15 +256,15 @@ Gets a verification code by make call to the callerID number.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Swagger\Client\Api\ManagingCallerIDsApi();
+$api_instance = new Voximplant\Api\ManagingCallerIDsApi();
 $callerid_id = 3.4; // float | The id of the callerID object.
 $callerid_number = "callerid_number_example"; // string | The callerID number that can be used instead of <b>callerid_id</b>.
 

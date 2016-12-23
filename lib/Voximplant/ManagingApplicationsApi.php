@@ -111,7 +111,7 @@ class ManagingApplicationsApi
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
      * @param bool $busy_on_call The busy_on_call flag. (optional)
-     * @return \Swagger\Client\Model\InlineResponse2003
+     * @return \Voximplant\InlineResponse2003
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addApplication($application_name, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
@@ -129,7 +129,7 @@ class ManagingApplicationsApi
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
      * @param bool $busy_on_call The busy_on_call flag. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addApplicationWithHttpInfo($application_name, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
@@ -194,15 +194,15 @@ class ManagingApplicationsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse2003',
+                '\Voximplant\InlineResponse2003',
                 '/AddApplication'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse2003', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse2003', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse2003', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse2003', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -218,7 +218,7 @@ class ManagingApplicationsApi
      *
      * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $application_name The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. (optional)
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \Voximplant\InlineResponse200
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delApplication($application_id = null, $application_name = null)
@@ -234,7 +234,7 @@ class ManagingApplicationsApi
      *
      * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $application_name The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delApplicationWithHttpInfo($application_id = null, $application_name = null)
@@ -287,15 +287,15 @@ class ManagingApplicationsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse200',
+                '\Voximplant\InlineResponse200',
                 '/DelApplication'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -320,7 +320,7 @@ class ManagingApplicationsApi
      * @param bool $with_scenarios Set true to get binding rules and scenarios info. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Swagger\Client\Model\InlineResponse20028
+     * @return \Voximplant\InlineResponse20028
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getApplications($application_id = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $user_id = null, $excluded_user_id = null, $showing_user_id = null, $with_rules = null, $with_scenarios = null, $count = null, $offset = null)
@@ -345,7 +345,7 @@ class ManagingApplicationsApi
      * @param bool $with_scenarios Set true to get binding rules and scenarios info. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse20028, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse20028, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getApplicationsWithHttpInfo($application_id = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $user_id = null, $excluded_user_id = null, $showing_user_id = null, $with_rules = null, $with_scenarios = null, $count = null, $offset = null)
@@ -434,15 +434,15 @@ class ManagingApplicationsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse20028',
+                '\Voximplant\InlineResponse20028',
                 '/GetApplications'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20028', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse20028', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20028', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse20028', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -462,7 +462,7 @@ class ManagingApplicationsApi
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
      * @param bool $busy_on_call The busy_on_call flag. (optional)
-     * @return \Swagger\Client\Model\InlineResponse20063
+     * @return \Voximplant\InlineResponse20063
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setApplicationInfo($application_id = null, $required_application_name = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
@@ -482,7 +482,7 @@ class ManagingApplicationsApi
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
      * @param bool $busy_on_call The busy_on_call flag. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse20063, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse20063, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setApplicationInfoWithHttpInfo($application_id = null, $required_application_name = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
@@ -551,15 +551,15 @@ class ManagingApplicationsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse20063',
+                '\Voximplant\InlineResponse20063',
                 '/SetApplicationInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20063', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse20063', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20063', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse20063', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

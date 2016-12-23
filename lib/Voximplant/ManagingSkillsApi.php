@@ -108,7 +108,7 @@ class ManagingSkillsApi
      * 
      *
      * @param string $skill_name The ACD operator skill name. The length must be less than 512. (required)
-     * @return \Swagger\Client\Model\InlineResponse20011
+     * @return \Voximplant\InlineResponse20011
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addSkill($skill_name)
@@ -123,7 +123,7 @@ class ManagingSkillsApi
      * 
      *
      * @param string $skill_name The ACD operator skill name. The length must be less than 512. (required)
-     * @return Array of \Swagger\Client\Model\InlineResponse20011, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse20011, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addSkillWithHttpInfo($skill_name)
@@ -176,15 +176,15 @@ class ManagingSkillsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse20011',
+                '\Voximplant\InlineResponse20011',
                 '/AddSkill'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20011', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse20011', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20011', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse20011', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -205,7 +205,7 @@ class ManagingSkillsApi
      * @param string $acd_queue_id The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \Voximplant\InlineResponse200
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function bindSkill($skill_id = null, $skill_name = null, $user_id = null, $user_name = null, $acd_queue_id = null, $acd_queue_name = null, $bind = null)
@@ -226,7 +226,7 @@ class ManagingSkillsApi
      * @param string $acd_queue_id The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function bindSkillWithHttpInfo($skill_id = null, $skill_name = null, $user_id = null, $user_name = null, $acd_queue_id = null, $acd_queue_name = null, $bind = null)
@@ -299,15 +299,15 @@ class ManagingSkillsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse200',
+                '\Voximplant\InlineResponse200',
                 '/BindSkill'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -323,7 +323,7 @@ class ManagingSkillsApi
      *
      * @param float $skill_id The skill ID. (optional)
      * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (optional)
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \Voximplant\InlineResponse200
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delSkill($skill_id = null, $skill_name = null)
@@ -339,7 +339,7 @@ class ManagingSkillsApi
      *
      * @param float $skill_id The skill ID. (optional)
      * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delSkillWithHttpInfo($skill_id = null, $skill_name = null)
@@ -392,15 +392,15 @@ class ManagingSkillsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse200',
+                '\Voximplant\InlineResponse200',
                 '/DelSkill'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -418,7 +418,7 @@ class ManagingSkillsApi
      * @param string $skill_name The skill name part to filter. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Swagger\Client\Model\InlineResponse20054
+     * @return \Voximplant\InlineResponse20054
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getSkills($skill_id = null, $skill_name = null, $count = null, $offset = null)
@@ -436,7 +436,7 @@ class ManagingSkillsApi
      * @param string $skill_name The skill name part to filter. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse20054, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse20054, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getSkillsWithHttpInfo($skill_id = null, $skill_name = null, $count = null, $offset = null)
@@ -497,15 +497,15 @@ class ManagingSkillsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse20054',
+                '\Voximplant\InlineResponse20054',
                 '/GetSkills'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20054', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse20054', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20054', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse20054', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -522,7 +522,7 @@ class ManagingSkillsApi
      * @param string $new_skill_name The new skill name. The length must be less than 512. (required)
      * @param float $skill_id The skill ID. (optional)
      * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (optional)
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \Voximplant\InlineResponse200
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setSkillInfo($new_skill_name, $skill_id = null, $skill_name = null)
@@ -539,7 +539,7 @@ class ManagingSkillsApi
      * @param string $new_skill_name The new skill name. The length must be less than 512. (required)
      * @param float $skill_id The skill ID. (optional)
      * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setSkillInfoWithHttpInfo($new_skill_name, $skill_id = null, $skill_name = null)
@@ -600,15 +600,15 @@ class ManagingSkillsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse200',
+                '\Voximplant\InlineResponse200',
                 '/SetSkillInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

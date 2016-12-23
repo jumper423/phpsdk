@@ -107,7 +107,7 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return \Swagger\Client\Model\InlineResponse20060
+     * @return \Voximplant\InlineResponse20060
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function logon()
@@ -121,7 +121,7 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return Array of \Swagger\Client\Model\InlineResponse20060, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse20060, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function logonWithHttpInfo()
@@ -166,15 +166,15 @@ class AccountsAuthenticationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse20060',
+                '\Voximplant\InlineResponse20060',
                 '/Logon'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20060', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse20060', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20060', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse20060', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -188,7 +188,7 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \Voximplant\InlineResponse200
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function logout()
@@ -202,7 +202,7 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function logoutWithHttpInfo()
@@ -247,15 +247,15 @@ class AccountsAuthenticationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse200',
+                '\Voximplant\InlineResponse200',
                 '/Logout'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

@@ -110,7 +110,7 @@ class ManagingCallerIDsApi
      * @param float $callerid_id The id of the callerID object. (optional)
      * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
      * @param string $verification_code The verification code, see the VerifyCallerID function. (optional)
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \Voximplant\InlineResponse200
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function activateCallerID($callerid_id = null, $callerid_number = null, $verification_code = null)
@@ -127,7 +127,7 @@ class ManagingCallerIDsApi
      * @param float $callerid_id The id of the callerID object. (optional)
      * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
      * @param string $verification_code The verification code, see the VerifyCallerID function. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function activateCallerIDWithHttpInfo($callerid_id = null, $callerid_number = null, $verification_code = null)
@@ -184,15 +184,15 @@ class ManagingCallerIDsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse200',
+                '\Voximplant\InlineResponse200',
                 '/ActivateCallerID'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -207,7 +207,7 @@ class ManagingCallerIDsApi
      * 
      *
      * @param string $callerid_number The callerID number. (optional)
-     * @return \Swagger\Client\Model\InlineResponse2004
+     * @return \Voximplant\InlineResponse2004
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addCallerID($callerid_number = null)
@@ -222,7 +222,7 @@ class ManagingCallerIDsApi
      * 
      *
      * @param string $callerid_number The callerID number. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addCallerIDWithHttpInfo($callerid_number = null)
@@ -271,15 +271,15 @@ class ManagingCallerIDsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse2004',
+                '\Voximplant\InlineResponse2004',
                 '/AddCallerID'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse2004', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse2004', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse2004', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse2004', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -295,7 +295,7 @@ class ManagingCallerIDsApi
      *
      * @param float $callerid_id The id of the callerID object. (optional)
      * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \Voximplant\InlineResponse200
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delCallerID($callerid_id = null, $callerid_number = null)
@@ -311,7 +311,7 @@ class ManagingCallerIDsApi
      *
      * @param float $callerid_id The id of the callerID object. (optional)
      * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delCallerIDWithHttpInfo($callerid_id = null, $callerid_number = null)
@@ -364,15 +364,15 @@ class ManagingCallerIDsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse200',
+                '\Voximplant\InlineResponse200',
                 '/DelCallerID'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -392,7 +392,7 @@ class ManagingCallerIDsApi
      * @param string $order_by The following values are available: &#x60;caller_number&#x60; (ascent order), &#x60;verified_until&#x60; (ascent order). (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Swagger\Client\Model\InlineResponse20034
+     * @return \Voximplant\InlineResponse20034
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getCallerIDs($callerid_id = null, $callerid_number = null, $active = null, $order_by = null, $count = null, $offset = null)
@@ -412,7 +412,7 @@ class ManagingCallerIDsApi
      * @param string $order_by The following values are available: &#x60;caller_number&#x60; (ascent order), &#x60;verified_until&#x60; (ascent order). (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse20034, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse20034, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getCallerIDsWithHttpInfo($callerid_id = null, $callerid_number = null, $active = null, $order_by = null, $count = null, $offset = null)
@@ -481,15 +481,15 @@ class ManagingCallerIDsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse20034',
+                '\Voximplant\InlineResponse20034',
                 '/GetCallerIDs'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20034', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse20034', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20034', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse20034', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -505,7 +505,7 @@ class ManagingCallerIDsApi
      *
      * @param float $callerid_id The id of the callerID object. (optional)
      * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
-     * @return \Swagger\Client\Model\InlineResponse200
+     * @return \Voximplant\InlineResponse200
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function verifyCallerID($callerid_id = null, $callerid_number = null)
@@ -521,7 +521,7 @@ class ManagingCallerIDsApi
      *
      * @param float $callerid_id The id of the callerID object. (optional)
      * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
-     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function verifyCallerIDWithHttpInfo($callerid_id = null, $callerid_number = null)
@@ -574,15 +574,15 @@ class ManagingCallerIDsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\InlineResponse200',
+                '\Voximplant\InlineResponse200',
                 '/VerifyCallerID'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
