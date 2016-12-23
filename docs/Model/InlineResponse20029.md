@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Swagger\Client\Model\AuthorizedAccountIPType[]**](AuthorizedAccountIPType.md) |  | [optional] 
+**result** | [**\Voximplamt\Client\Model\AuthorizedAccountIPType[]**](AuthorizedAccountIPType.md) |  | [optional] 
 **total_count** | **int** | The total found network count. | [optional] 
 **count** | **int** | The returned network count. | [optional] 
 

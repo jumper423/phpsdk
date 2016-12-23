@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Swagger\Client\Model\AttachedPhoneInfoType[]**](AttachedPhoneInfoType.md) |  | [optional] 
+**result** | [**\Voximplamt\Client\Model\AttachedPhoneInfoType[]**](AttachedPhoneInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found phone count. | [optional] 
 **count** | **int** | The returned phone count. | [optional] 
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant
+ * @package  Voximplamt\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Voximplant;
+namespace Voximplamt\Client;
 
-use \Voximplant\Configuration;
-use \Voximplant\ApiClient;
-use \Voximplant\ApiException;
-use \Voximplant\ObjectSerializer;
+use \Voximplamt\Client\Configuration;
+use \Voximplamt\Client\ApiClient;
+use \Voximplamt\Client\ApiException;
+use \Voximplamt\Client\ObjectSerializer;
 
 /**
  * ManagingAdminRolesApiTest Class Doc Comment
  *
  * @category Class
- * @package  Voximplant
+ * @package  Voximplamt\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen

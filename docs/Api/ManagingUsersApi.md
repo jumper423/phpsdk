@@ -1,4 +1,4 @@
-# Voximplant\ManagingUsersApi
+# Voximplamt\Client\ManagingUsersApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **addUser**
-> \Swagger\Client\Model\InlineResponse20012 addUser($user_name, $user_display_name, $user_password, $parent_accounting, $two_factor_auth_required, $mobile_phone, $user_active, $user_custom_data)
+> \Voximplamt\Client\Model\InlineResponse20012 addUser($user_name, $user_display_name, $user_password, $parent_accounting, $two_factor_auth_required, $mobile_phone, $user_active, $user_custom_data)
 
 
 
@@ -25,15 +25,15 @@ Adds a new user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingUsersApi();
+$api_instance = new Voximplamt\Client\Api\ManagingUsersApi();
 $user_name = "user_name_example"; // string | The user name in format [a-z0-9][a-z0-9_-]{2,49}
 $user_display_name = "user_display_name_example"; // string | The user display name. The length must be less than 256.
 $user_password = "user_password_example"; // string | The user password. The length must be at least 6 symbols.
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20012**](../Model/InlineResponse20012.md)
+[**\Voximplamt\Client\Model\InlineResponse20012**](../Model/InlineResponse20012.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bindUser**
-> \Swagger\Client\Model\InlineResponse200 bindUser($user_id, $user_name, $application_id, $application_name, $bind)
+> \Voximplamt\Client\Model\InlineResponse200 bindUser($user_id, $user_name, $application_id, $application_name, $bind)
 
 
 
@@ -93,15 +93,15 @@ Bind the user list with the application list.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingUsersApi();
+$api_instance = new Voximplamt\Client\Api\ManagingUsersApi();
 $user_id = "user_id_example"; // string | The user ID list separated by the `;` symbol or the `all` value.
 $user_name = "user_name_example"; // string | Can be used instead of <b>user_id</b>. The user name list separated by the `;` symbol.
 $application_id = "application_id_example"; // string | The application ID list separated by the `;` symbol or the `all` value.
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delUser**
-> \Swagger\Client\Model\InlineResponse200 delUser($user_id, $user_name)
+> \Voximplamt\Client\Model\InlineResponse200 delUser($user_id, $user_name)
 
 
 
@@ -155,15 +155,15 @@ Deletes the user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingUsersApi();
+$api_instance = new Voximplamt\Client\Api\ManagingUsersApi();
 $user_id = "user_id_example"; // string | The user ID list separated by the `;` symbol or the `all` value.
 $user_name = "user_name_example"; // string | The user name list separated by the `;` symbol that can be used instead of <b>user_id</b>.
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUsers**
-> \Swagger\Client\Model\InlineResponse20057 getUsers($application_id, $excluded_application_id, $excluded_application_name, $skill_id, $excluded_skill_id, $acd_queue_id, $user_id, $user_name, $user_active, $user_display_name, $application_name, $with_applications, $with_skills, $with_queues, $acd_status, $showing_application_id, $showing_skill_id, $count, $offset, $order_by, $return_live_balance)
+> \Voximplamt\Client\Model\InlineResponse20057 getUsers($application_id, $excluded_application_id, $excluded_application_name, $skill_id, $excluded_skill_id, $acd_queue_id, $user_id, $user_name, $user_active, $user_display_name, $application_name, $with_applications, $with_skills, $with_queues, $acd_status, $showing_application_id, $showing_skill_id, $count, $offset, $order_by, $return_live_balance)
 
 
 
@@ -211,15 +211,15 @@ Gets the users.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingUsersApi();
+$api_instance = new Voximplamt\Client\Api\ManagingUsersApi();
 $application_id = 3.4; // float | The application ID to filter.
 $excluded_application_id = 3.4; // float | The excluded application ID to filter.
 $excluded_application_name = "excluded_application_name_example"; // string | The excluded application name to filter.
@@ -279,7 +279,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20057**](../Model/InlineResponse20057.md)
+[**\Voximplamt\Client\Model\InlineResponse20057**](../Model/InlineResponse20057.md)
 
 ### Authorization
 
@@ -293,7 +293,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setUserInfo**
-> \Swagger\Client\Model\InlineResponse200 setUserInfo($user_id, $user_name, $new_user_name, $user_display_name, $user_password, $parent_accounting, $user_active, $user_custom_data, $two_factor_auth_required, $mobile_phone)
+> \Voximplamt\Client\Model\InlineResponse200 setUserInfo($user_id, $user_name, $new_user_name, $user_display_name, $user_password, $parent_accounting, $user_active, $user_custom_data, $two_factor_auth_required, $mobile_phone)
 
 
 
@@ -305,15 +305,15 @@ Edits the user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingUsersApi();
+$api_instance = new Voximplamt\Client\Api\ManagingUsersApi();
 $user_id = 3.4; // float | The user to edit.
 $user_name = "user_name_example"; // string | Can be used instead of <b>user_id</b>.
 $new_user_name = "new_user_name_example"; // string | The new user name in format [a-z0-9][a-z0-9_-]{2,49}
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -365,7 +365,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **transferMoneyToUser**
-> \Swagger\Client\Model\InlineResponse20068 transferMoneyToUser($user_id, $amount, $currency, $strict_mode, $user_transaction_description, $account_transaction_description)
+> \Voximplamt\Client\Model\InlineResponse20068 transferMoneyToUser($user_id, $amount, $currency, $strict_mode, $user_transaction_description, $account_transaction_description)
 
 
 
@@ -377,15 +377,15 @@ Transfer the account's money to the user or transfer the user's money to the acc
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingUsersApi();
+$api_instance = new Voximplamt\Client\Api\ManagingUsersApi();
 $user_id = "user_id_example"; // string | The user ID list separated by the `;` symbol.
 $amount = 3.4; // float | The money amount, $. The absolute amount value must be equal or greater than 0.01
 $currency = "currency_example"; // string | The amount currency. Examples: RUR, EUR, USD.
@@ -415,7 +415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20068**](../Model/InlineResponse20068.md)
+[**\Voximplamt\Client\Model\InlineResponse20068**](../Model/InlineResponse20068.md)
 
 ### Authorization
 

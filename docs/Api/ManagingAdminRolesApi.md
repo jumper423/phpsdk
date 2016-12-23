@@ -1,4 +1,4 @@
-# Voximplant\ManagingAdminRolesApi
+# Voximplamt\Client\ManagingAdminRolesApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAdminRole**
-> \Swagger\Client\Model\InlineResponse2001 addAdminRole($admin_role_name, $admin_role_active, $like_admin_role_id, $like_admin_role_name, $allowed_entries, $denied_entries)
+> \Voximplamt\Client\Model\InlineResponse2001 addAdminRole($admin_role_name, $admin_role_active, $like_admin_role_id, $like_admin_role_name, $allowed_entries, $denied_entries)
 
 
 
@@ -23,15 +23,15 @@ Adds a new admin role.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingAdminRolesApi();
+$api_instance = new Voximplamt\Client\Api\ManagingAdminRolesApi();
 $admin_role_name = "admin_role_name_example"; // string | The admin role name. The length must be less than 50.
 $admin_role_active = true; // bool | The admin role enable flag. If false the allowed and denied entries have no affect.
 $like_admin_role_id = "like_admin_role_id_example"; // string | The admin role ID list separated by the `;` symbol or the `all` value. The list specifies the roles from which the new role automatically copies all permissions (allowed_entries and denied_entries).
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\Voximplamt\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delAdminRole**
-> \Swagger\Client\Model\InlineResponse200 delAdminRole($admin_role_id, $admin_role_name)
+> \Voximplamt\Client\Model\InlineResponse200 delAdminRole($admin_role_id, $admin_role_name)
 
 
 
@@ -87,15 +87,15 @@ Deletes the admin role.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingAdminRolesApi();
+$api_instance = new Voximplamt\Client\Api\ManagingAdminRolesApi();
 $admin_role_id = 3.4; // float | The admin role ID list separated by the `;` symbol or the `all` value.
 $admin_role_name = "admin_role_name_example"; // string | The admin role name to delete, can be used instead of <b>admin_role_id</b>.
 
@@ -117,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAdminRoles**
-> \Swagger\Client\Model\InlineResponse20026 getAdminRoles($admin_role_id, $admin_role_name, $admin_role_active, $with_entries, $with_account_roles, $with_parent_roles, $with_system_roles, $included_admin_user_id, $excluded_admin_user_id, $full_admin_users_matching, $showing_admin_user_id, $count, $offset)
+> \Voximplamt\Client\Model\InlineResponse20026 getAdminRoles($admin_role_id, $admin_role_name, $admin_role_active, $with_entries, $with_account_roles, $with_parent_roles, $with_system_roles, $included_admin_user_id, $excluded_admin_user_id, $full_admin_users_matching, $showing_admin_user_id, $count, $offset)
 
 
 
@@ -143,15 +143,15 @@ Gets the admin roles.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingAdminRolesApi();
+$api_instance = new Voximplamt\Client\Api\ManagingAdminRolesApi();
 $admin_role_id = 3.4; // float | The admin role ID to filter.
 $admin_role_name = "admin_role_name_example"; // string | The admin role name part to filter.
 $admin_role_active = true; // bool | The admin role active flag to filter.
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20026**](../Model/InlineResponse20026.md)
+[**\Voximplamt\Client\Model\InlineResponse20026**](../Model/InlineResponse20026.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setAdminRoleInfo**
-> \Swagger\Client\Model\InlineResponse200 setAdminRoleInfo($admin_role_id, $admin_role_name, $new_admin_role_name, $admin_role_active, $entry_modification_mode, $allowed_entries, $denied_entries, $like_admin_role_id, $like_admin_role_name)
+> \Voximplamt\Client\Model\InlineResponse200 setAdminRoleInfo($admin_role_id, $admin_role_name, $new_admin_role_name, $admin_role_active, $entry_modification_mode, $allowed_entries, $denied_entries, $like_admin_role_id, $like_admin_role_name)
 
 
 
@@ -221,15 +221,15 @@ Edits the admin role. You may edit
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Api\ManagingAdminRolesApi();
+$api_instance = new Voximplamt\Client\Api\ManagingAdminRolesApi();
 $admin_role_id = 3.4; // float | The admin user to edit.
 $admin_role_name = "admin_role_name_example"; // string | The admin role to edit, can be used instead of <b>admin_role_id</b>.
 $new_admin_role_name = "new_admin_role_name_example"; // string | The new admin role name. The length must be less than 50.
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
