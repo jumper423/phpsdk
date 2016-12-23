@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Api;
+namespace Voximplant\Client\Api;
 
-use \Voximplamt\Client\Configuration;
-use \Voximplamt\Client\ApiClient;
-use \Voximplamt\Client\ApiException;
-use \Voximplamt\Client\ObjectSerializer;
+use \Voximplant\Client\Configuration;
+use \Voximplant\Client\ApiClient;
+use \Voximplant\Client\ApiException;
+use \Voximplant\Client\ObjectSerializer;
 
 /**
  * ManagingAuthorizedIPsApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingAuthorizedIPsApi
     /**
      * API Client
      *
-     * @var \Voximplamt\Client\ApiClient instance of the ApiClient
+     * @var \Voximplant\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplamt\Client\ApiClient|null $apiClient The api client to use
+     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplamt\Client\ApiClient $apiClient = null)
+    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingAuthorizedIPsApi
     /**
      * Get API client
      *
-     * @return \Voximplamt\Client\ApiClient get the API client
+     * @return \Voximplant\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingAuthorizedIPsApi
     /**
      * Set the API client
      *
-     * @param \Voximplamt\Client\ApiClient $apiClient set the API client
+     * @param \Voximplant\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingAuthorizedIPsApi
      */
-    public function setApiClient(\Voximplamt\Client\ApiClient $apiClient)
+    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -109,8 +109,8 @@ class ManagingAuthorizedIPsApi
      *
      * @param string $authorized_ip The authorized IP4 or network. (required)
      * @param bool $allowed Set false to add the IP to the blacklist. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function addAuthorizedAccountIP($authorized_ip, $allowed = null)
     {
@@ -125,8 +125,8 @@ class ManagingAuthorizedIPsApi
      *
      * @param string $authorized_ip The authorized IP4 or network. (required)
      * @param bool $allowed Set false to add the IP to the blacklist. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function addAuthorizedAccountIPWithHttpInfo($authorized_ip, $allowed = null)
     {
@@ -182,15 +182,15 @@ class ManagingAuthorizedIPsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/AddAuthorizedAccountIP'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -205,8 +205,8 @@ class ManagingAuthorizedIPsApi
      * 
      *
      * @param string $authorized_ip The IP4 to test. (required)
-     * @return \Voximplamt\Client\Model\InlineResponse20017
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20017
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function checkAuthorizedAccountIP($authorized_ip)
     {
@@ -220,8 +220,8 @@ class ManagingAuthorizedIPsApi
      * 
      *
      * @param string $authorized_ip The IP4 to test. (required)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20017, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20017, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function checkAuthorizedAccountIPWithHttpInfo($authorized_ip)
     {
@@ -273,15 +273,15 @@ class ManagingAuthorizedIPsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20017',
+                '\Voximplant\Client\Model\InlineResponse20017',
                 '/CheckAuthorizedAccountIP'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20017', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20017', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20017', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20017', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -298,8 +298,8 @@ class ManagingAuthorizedIPsApi
      * @param string $authorized_ip The authorized IP4 or network to remove. Set the &#x60;all&#x60; value to remove the all items. (optional)
      * @param string $contains_ip Can be used instead of &lt;b&gt;autharized_ip&lt;/b&gt;. Specify the parameter to remove the networks that contains the particular IP4. (optional)
      * @param bool $allowed Set true to remove the network from the white list. Set false to remove the network from the black list. Omit the parameter to remove the network from the all lists. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20020
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20020
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function delAuthorizedAccountIP($authorized_ip = null, $contains_ip = null, $allowed = null)
     {
@@ -315,8 +315,8 @@ class ManagingAuthorizedIPsApi
      * @param string $authorized_ip The authorized IP4 or network to remove. Set the &#x60;all&#x60; value to remove the all items. (optional)
      * @param string $contains_ip Can be used instead of &lt;b&gt;autharized_ip&lt;/b&gt;. Specify the parameter to remove the networks that contains the particular IP4. (optional)
      * @param bool $allowed Set true to remove the network from the white list. Set false to remove the network from the black list. Omit the parameter to remove the network from the all lists. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20020, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20020, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function delAuthorizedAccountIPWithHttpInfo($authorized_ip = null, $contains_ip = null, $allowed = null)
     {
@@ -372,15 +372,15 @@ class ManagingAuthorizedIPsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20020',
+                '\Voximplant\Client\Model\InlineResponse20020',
                 '/DelAuthorizedAccountIP'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20020', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20020', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20020', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20020', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -399,8 +399,8 @@ class ManagingAuthorizedIPsApi
      * @param bool $allowed The allowed flag to filter. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20029
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20029
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getAuthorizedAccountIPs($contains_ip, $authorized_ip = null, $allowed = null, $count = null, $offset = null)
     {
@@ -418,8 +418,8 @@ class ManagingAuthorizedIPsApi
      * @param bool $allowed The allowed flag to filter. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20029, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20029, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getAuthorizedAccountIPsWithHttpInfo($contains_ip, $authorized_ip = null, $allowed = null, $count = null, $offset = null)
     {
@@ -487,15 +487,15 @@ class ManagingAuthorizedIPsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20029',
+                '\Voximplant\Client\Model\InlineResponse20029',
                 '/GetAuthorizedAccountIPs'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20029', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20029', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20029', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20029', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

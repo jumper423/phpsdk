@@ -1,4 +1,4 @@
-# Voximplamt\Client\ManagingAuthorizedIPsApi
+# Voximplant\Client\ManagingAuthorizedIPsApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAuthorizedAccountIP**
-> \Voximplamt\Client\Model\InlineResponse200 addAuthorizedAccountIP($authorized_ip, $allowed)
+> \Voximplant\Client\Model\InlineResponse200 addAuthorizedAccountIP($authorized_ip, $allowed)
 
 
 
@@ -23,15 +23,15 @@ Adds a new authorized IP4 or network to the white/black list.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingAuthorizedIPsApi();
+$api_instance = new Voximplant\Client\Api\ManagingAuthorizedIPsApi();
 $authorized_ip = "authorized_ip_example"; // string | The authorized IP4 or network.
 $allowed = true; // bool | Set false to add the IP to the blacklist.
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **checkAuthorizedAccountIP**
-> \Voximplamt\Client\Model\InlineResponse20017 checkAuthorizedAccountIP($authorized_ip)
+> \Voximplant\Client\Model\InlineResponse20017 checkAuthorizedAccountIP($authorized_ip)
 
 
 
@@ -79,15 +79,15 @@ Tests whether the IP4 is banned or allowed.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingAuthorizedIPsApi();
+$api_instance = new Voximplant\Client\Api\ManagingAuthorizedIPsApi();
 $authorized_ip = "authorized_ip_example"; // string | The IP4 to test.
 
 try {
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20017**](../Model/InlineResponse20017.md)
+[**\Voximplant\Client\Model\InlineResponse20017**](../Model/InlineResponse20017.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delAuthorizedAccountIP**
-> \Voximplamt\Client\Model\InlineResponse20020 delAuthorizedAccountIP($authorized_ip, $contains_ip, $allowed)
+> \Voximplant\Client\Model\InlineResponse20020 delAuthorizedAccountIP($authorized_ip, $contains_ip, $allowed)
 
 
 
@@ -133,15 +133,15 @@ Removes the authorized IP4 or network from the white/black list.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingAuthorizedIPsApi();
+$api_instance = new Voximplant\Client\Api\ManagingAuthorizedIPsApi();
 $authorized_ip = "authorized_ip_example"; // string | The authorized IP4 or network to remove. Set the `all` value to remove the all items.
 $contains_ip = "contains_ip_example"; // string | Can be used instead of <b>autharized_ip</b>. Specify the parameter to remove the networks that contains the particular IP4.
 $allowed = true; // bool | Set true to remove the network from the white list. Set false to remove the network from the black list. Omit the parameter to remove the network from the all lists.
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20020**](../Model/InlineResponse20020.md)
+[**\Voximplant\Client\Model\InlineResponse20020**](../Model/InlineResponse20020.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAuthorizedAccountIPs**
-> \Voximplamt\Client\Model\InlineResponse20029 getAuthorizedAccountIPs($contains_ip, $authorized_ip, $allowed, $count, $offset)
+> \Voximplant\Client\Model\InlineResponse20029 getAuthorizedAccountIPs($contains_ip, $authorized_ip, $allowed, $count, $offset)
 
 
 
@@ -191,15 +191,15 @@ Gets the authorized IP4 or network.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingAuthorizedIPsApi();
+$api_instance = new Voximplant\Client\Api\ManagingAuthorizedIPsApi();
 $contains_ip = "contains_ip_example"; // string | Specify the parameter to filter the networks that contains the particular IP4.
 $authorized_ip = "authorized_ip_example"; // string | The authorized IP4 or network to filter.
 $allowed = true; // bool | The allowed flag to filter.
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20029**](../Model/InlineResponse20029.md)
+[**\Voximplant\Client\Model\InlineResponse20029**](../Model/InlineResponse20029.md)
 
 ### Authorization
 

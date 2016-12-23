@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 **mobile_phone** | **string** | The user mobile phone. | [optional] 
 **balance** | **int** | The user money. | 
 **user_custom_data** | **string** | The custom data. | [optional] 
-**applications** | [**\Voximplamt\Client\Model\ApplicationInfoType[]**](ApplicationInfoType.md) |  | [optional] 
-**skills** | [**\Voximplamt\Client\Model\SkillInfoType[]**](SkillInfoType.md) |  | [optional] 
-**acd_queues** | [**\Voximplamt\Client\Model\ACDQueueOperatorInfoType[]**](ACDQueueOperatorInfoType.md) |  | [optional] 
+**applications** | [**\Voximplant\Client\Model\ApplicationInfoType[]**](ApplicationInfoType.md) |  | [optional] 
+**skills** | [**\Voximplant\Client\Model\SkillInfoType[]**](SkillInfoType.md) |  | [optional] 
+**acd_queues** | [**\Voximplant\Client\Model\ACDQueueOperatorInfoType[]**](ACDQueueOperatorInfoType.md) |  | [optional] 
 **modified** | **string** | The user editing UTC date in format: YYYY-MM-DD HH:mm:SS | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

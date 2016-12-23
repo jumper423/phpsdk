@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The locked operator state.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -71,8 +71,8 @@ class ACDLockedOperatorStateType implements ArrayAccess
         'user_name' => 'string',
         'user_display_name' => 'string',
         'unreached' => 'string',
-        'locks' => '\Voximplamt\Client\Model\ACDLock[]',
-        'acd_calls' => '\Voximplamt\Client\Model\ACDOperatorCall[]'
+        'locks' => '\Voximplant\Client\Model\ACDLock[]',
+        'acd_calls' => '\Voximplant\Client\Model\ACDOperatorCall[]'
     );
 
     public static function swaggerTypes()
@@ -285,7 +285,7 @@ class ACDLockedOperatorStateType implements ArrayAccess
 
     /**
      * Gets locks
-     * @return \Voximplamt\Client\Model\ACDLock[]
+     * @return \Voximplant\Client\Model\ACDLock[]
      */
     public function getLocks()
     {
@@ -294,7 +294,7 @@ class ACDLockedOperatorStateType implements ArrayAccess
 
     /**
      * Sets locks
-     * @param \Voximplamt\Client\Model\ACDLock[] $locks
+     * @param \Voximplant\Client\Model\ACDLock[] $locks
      * @return $this
      */
     public function setLocks($locks)
@@ -306,7 +306,7 @@ class ACDLockedOperatorStateType implements ArrayAccess
 
     /**
      * Gets acd_calls
-     * @return \Voximplamt\Client\Model\ACDOperatorCall[]
+     * @return \Voximplant\Client\Model\ACDOperatorCall[]
      */
     public function getAcdCalls()
     {
@@ -315,7 +315,7 @@ class ACDLockedOperatorStateType implements ArrayAccess
 
     /**
      * Sets acd_calls
-     * @param \Voximplamt\Client\Model\ACDOperatorCall[] $acd_calls
+     * @param \Voximplant\Client\Model\ACDOperatorCall[] $acd_calls
      * @return $this
      */
     public function setAcdCalls($acd_calls)
@@ -376,10 +376,10 @@ class ACDLockedOperatorStateType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

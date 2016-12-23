@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The GetContractorInfo function result.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -75,7 +75,7 @@ class ContractorInfoType implements ArrayAccess
         'correspondence_address' => 'string',
         'correspondence_email' => 'string',
         'correspondence_to' => 'string',
-        'contract' => '\Voximplamt\Client\Model\ContractInfoType'
+        'contract' => '\Voximplant\Client\Model\ContractInfoType'
     );
 
     public static function swaggerTypes()
@@ -384,7 +384,7 @@ class ContractorInfoType implements ArrayAccess
 
     /**
      * Gets contract
-     * @return \Voximplamt\Client\Model\ContractInfoType
+     * @return \Voximplant\Client\Model\ContractInfoType
      */
     public function getContract()
     {
@@ -393,7 +393,7 @@ class ContractorInfoType implements ArrayAccess
 
     /**
      * Sets contract
-     * @param \Voximplamt\Client\Model\ContractInfoType $contract
+     * @param \Voximplant\Client\Model\ContractInfoType $contract
      * @return $this
      */
     public function setContract($contract)
@@ -454,10 +454,10 @@ class ContractorInfoType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

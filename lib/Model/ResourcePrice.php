@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The GetResourcePrice function result.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,7 +68,7 @@ class ResourcePrice implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'resource_type' => 'string',
-        'price_groups' => '\Voximplamt\Client\Model\PriceGroup[]'
+        'price_groups' => '\Voximplant\Client\Model\PriceGroup[]'
     );
 
     public static function swaggerTypes()
@@ -190,7 +190,7 @@ class ResourcePrice implements ArrayAccess
 
     /**
      * Gets price_groups
-     * @return \Voximplamt\Client\Model\PriceGroup[]
+     * @return \Voximplant\Client\Model\PriceGroup[]
      */
     public function getPriceGroups()
     {
@@ -199,7 +199,7 @@ class ResourcePrice implements ArrayAccess
 
     /**
      * Sets price_groups
-     * @param \Voximplamt\Client\Model\PriceGroup[] $price_groups
+     * @param \Voximplant\Client\Model\PriceGroup[] $price_groups
      * @return $this
      */
     public function setPriceGroups($price_groups)
@@ -260,10 +260,10 @@ class ResourcePrice implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

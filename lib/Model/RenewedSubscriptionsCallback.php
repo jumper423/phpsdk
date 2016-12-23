@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The specific account callback details.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -67,7 +67,7 @@ class RenewedSubscriptionsCallback implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'subscriptions' => '\Voximplamt\Client\Model\RenewedSubscriptionsCallbackItem[]'
+        'subscriptions' => '\Voximplant\Client\Model\RenewedSubscriptionsCallbackItem[]'
     );
 
     public static function swaggerTypes()
@@ -158,7 +158,7 @@ class RenewedSubscriptionsCallback implements ArrayAccess
 
     /**
      * Gets subscriptions
-     * @return \Voximplamt\Client\Model\RenewedSubscriptionsCallbackItem[]
+     * @return \Voximplant\Client\Model\RenewedSubscriptionsCallbackItem[]
      */
     public function getSubscriptions()
     {
@@ -167,7 +167,7 @@ class RenewedSubscriptionsCallback implements ArrayAccess
 
     /**
      * Sets subscriptions
-     * @param \Voximplamt\Client\Model\RenewedSubscriptionsCallbackItem[] $subscriptions
+     * @param \Voximplant\Client\Model\RenewedSubscriptionsCallbackItem[] $subscriptions
      * @return $this
      */
     public function setSubscriptions($subscriptions)
@@ -228,10 +228,10 @@ class RenewedSubscriptionsCallback implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

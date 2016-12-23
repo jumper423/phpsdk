@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Voximplamt\Client\Model\AdminUserType[]**](AdminUserType.md) |  | [optional] 
+**result** | [**\Voximplant\Client\Model\AdminUserType[]**](AdminUserType.md) |  | [optional] 
 **total_count** | **int** | The total found admin user count. | [optional] 
 **count** | **int** | The returned admin user count. | [optional] 
 

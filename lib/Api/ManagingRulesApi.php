@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Api;
+namespace Voximplant\Client\Api;
 
-use \Voximplamt\Client\Configuration;
-use \Voximplamt\Client\ApiClient;
-use \Voximplamt\Client\ApiException;
-use \Voximplamt\Client\ObjectSerializer;
+use \Voximplant\Client\Configuration;
+use \Voximplant\Client\ApiClient;
+use \Voximplant\Client\ApiException;
+use \Voximplant\Client\ObjectSerializer;
 
 /**
  * ManagingRulesApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingRulesApi
     /**
      * API Client
      *
-     * @var \Voximplamt\Client\ApiClient instance of the ApiClient
+     * @var \Voximplant\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplamt\Client\ApiClient|null $apiClient The api client to use
+     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplamt\Client\ApiClient $apiClient = null)
+    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingRulesApi
     /**
      * Get API client
      *
-     * @return \Voximplamt\Client\ApiClient get the API client
+     * @return \Voximplant\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingRulesApi
     /**
      * Set the API client
      *
-     * @param \Voximplamt\Client\ApiClient $apiClient set the API client
+     * @param \Voximplant\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingRulesApi
      */
-    public function setApiClient(\Voximplamt\Client\ApiClient $apiClient)
+    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -114,8 +114,8 @@ class ManagingRulesApi
      * @param string $rule_pattern_exclude The exclude pattern regex. The length must be less than 64 KB. (optional)
      * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
      * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse2008
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse2008
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function addRule($rule_name, $rule_pattern, $application_id = null, $application_name = null, $rule_pattern_exclude = null, $scenario_id = null, $scenario_name = null)
     {
@@ -135,8 +135,8 @@ class ManagingRulesApi
      * @param string $rule_pattern_exclude The exclude pattern regex. The length must be less than 64 KB. (optional)
      * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
      * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse2008, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse2008, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function addRuleWithHttpInfo($rule_name, $rule_pattern, $application_id = null, $application_name = null, $rule_pattern_exclude = null, $scenario_id = null, $scenario_name = null)
     {
@@ -216,15 +216,15 @@ class ManagingRulesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse2008',
+                '\Voximplant\Client\Model\InlineResponse2008',
                 '/AddRule'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse2008', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse2008', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse2008', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse2008', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -242,8 +242,8 @@ class ManagingRulesApi
      * @param string $rule_name Can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. The rule name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function delRule($rule_id = null, $rule_name = null, $application_id = null, $application_name = null)
     {
@@ -260,8 +260,8 @@ class ManagingRulesApi
      * @param string $rule_name Can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. The rule name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function delRuleWithHttpInfo($rule_id = null, $rule_name = null, $application_id = null, $application_name = null)
     {
@@ -321,15 +321,15 @@ class ManagingRulesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/DelRule'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -351,8 +351,8 @@ class ManagingRulesApi
      * @param bool $with_scenarios Set true to get binding scenarios info. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20050
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20050
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getRules($application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $template = null, $with_scenarios = null, $count = null, $offset = null)
     {
@@ -373,8 +373,8 @@ class ManagingRulesApi
      * @param bool $with_scenarios Set true to get binding scenarios info. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20050, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20050, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getRulesWithHttpInfo($application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $template = null, $with_scenarios = null, $count = null, $offset = null)
     {
@@ -450,15 +450,15 @@ class ManagingRulesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20050',
+                '\Voximplant\Client\Model\InlineResponse20050',
                 '/GetRules'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20050', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20050', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20050', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20050', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -473,8 +473,8 @@ class ManagingRulesApi
      * 
      *
      * @param string $rule_id The rule ID list separated by the &#x60;;&#x60; symbol. (required)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function reorderRules($rule_id)
     {
@@ -488,8 +488,8 @@ class ManagingRulesApi
      * 
      *
      * @param string $rule_id The rule ID list separated by the &#x60;;&#x60; symbol. (required)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function reorderRulesWithHttpInfo($rule_id)
     {
@@ -541,15 +541,15 @@ class ManagingRulesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/ReorderRules'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -567,8 +567,8 @@ class ManagingRulesApi
      * @param string $rule_name The new rule name. The length must be less than 512 (optional)
      * @param string $rule_pattern The new rule pattern regex. The length must be less than 64 KB. (optional)
      * @param string $rule_pattern_exclude The new exclude pattern regex. The length must be less than 64 KB. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setRuleInfo($rule_id, $rule_name = null, $rule_pattern = null, $rule_pattern_exclude = null)
     {
@@ -585,8 +585,8 @@ class ManagingRulesApi
      * @param string $rule_name The new rule name. The length must be less than 512 (optional)
      * @param string $rule_pattern The new rule pattern regex. The length must be less than 64 KB. (optional)
      * @param string $rule_pattern_exclude The new exclude pattern regex. The length must be less than 64 KB. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setRuleInfoWithHttpInfo($rule_id, $rule_name = null, $rule_pattern = null, $rule_pattern_exclude = null)
     {
@@ -650,15 +650,15 @@ class ManagingRulesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/SetRuleInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

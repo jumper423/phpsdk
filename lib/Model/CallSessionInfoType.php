@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The GetCallHistory function result item.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -77,9 +77,9 @@ class CallSessionInfoType implements ArrayAccess
         'media_server_address' => 'string',
         'log_file_url' => 'string',
         'finish_reason' => 'string',
-        'calls' => '\Voximplamt\Client\Model\CallInfoType[]',
-        'other_resource_usage' => '\Voximplamt\Client\Model\ResourceUsageType[]',
-        'records' => '\Voximplamt\Client\Model\RecordType[]'
+        'calls' => '\Voximplant\Client\Model\CallInfoType[]',
+        'other_resource_usage' => '\Voximplant\Client\Model\ResourceUsageType[]',
+        'records' => '\Voximplant\Client\Model\RecordType[]'
     );
 
     public static function swaggerTypes()
@@ -476,7 +476,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Gets calls
-     * @return \Voximplamt\Client\Model\CallInfoType[]
+     * @return \Voximplant\Client\Model\CallInfoType[]
      */
     public function getCalls()
     {
@@ -485,7 +485,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Sets calls
-     * @param \Voximplamt\Client\Model\CallInfoType[] $calls
+     * @param \Voximplant\Client\Model\CallInfoType[] $calls
      * @return $this
      */
     public function setCalls($calls)
@@ -497,7 +497,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Gets other_resource_usage
-     * @return \Voximplamt\Client\Model\ResourceUsageType[]
+     * @return \Voximplant\Client\Model\ResourceUsageType[]
      */
     public function getOtherResourceUsage()
     {
@@ -506,7 +506,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Sets other_resource_usage
-     * @param \Voximplamt\Client\Model\ResourceUsageType[] $other_resource_usage
+     * @param \Voximplant\Client\Model\ResourceUsageType[] $other_resource_usage
      * @return $this
      */
     public function setOtherResourceUsage($other_resource_usage)
@@ -518,7 +518,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Gets records
-     * @return \Voximplamt\Client\Model\RecordType[]
+     * @return \Voximplant\Client\Model\RecordType[]
      */
     public function getRecords()
     {
@@ -527,7 +527,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Sets records
-     * @param \Voximplamt\Client\Model\RecordType[] $records
+     * @param \Voximplant\Client\Model\RecordType[] $records
      * @return $this
      */
     public function setRecords($records)
@@ -588,10 +588,10 @@ class CallSessionInfoType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

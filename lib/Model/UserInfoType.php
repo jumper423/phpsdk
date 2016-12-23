@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The GetUsers function result.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -76,9 +76,9 @@ class UserInfoType implements ArrayAccess
         'mobile_phone' => 'string',
         'balance' => 'int',
         'user_custom_data' => 'string',
-        'applications' => '\Voximplamt\Client\Model\ApplicationInfoType[]',
-        'skills' => '\Voximplamt\Client\Model\SkillInfoType[]',
-        'acd_queues' => '\Voximplamt\Client\Model\ACDQueueOperatorInfoType[]',
+        'applications' => '\Voximplant\Client\Model\ApplicationInfoType[]',
+        'skills' => '\Voximplant\Client\Model\SkillInfoType[]',
+        'acd_queues' => '\Voximplant\Client\Model\ACDQueueOperatorInfoType[]',
         'modified' => 'string'
     );
 
@@ -455,7 +455,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Gets applications
-     * @return \Voximplamt\Client\Model\ApplicationInfoType[]
+     * @return \Voximplant\Client\Model\ApplicationInfoType[]
      */
     public function getApplications()
     {
@@ -464,7 +464,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Sets applications
-     * @param \Voximplamt\Client\Model\ApplicationInfoType[] $applications
+     * @param \Voximplant\Client\Model\ApplicationInfoType[] $applications
      * @return $this
      */
     public function setApplications($applications)
@@ -476,7 +476,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Gets skills
-     * @return \Voximplamt\Client\Model\SkillInfoType[]
+     * @return \Voximplant\Client\Model\SkillInfoType[]
      */
     public function getSkills()
     {
@@ -485,7 +485,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Sets skills
-     * @param \Voximplamt\Client\Model\SkillInfoType[] $skills
+     * @param \Voximplant\Client\Model\SkillInfoType[] $skills
      * @return $this
      */
     public function setSkills($skills)
@@ -497,7 +497,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Gets acd_queues
-     * @return \Voximplamt\Client\Model\ACDQueueOperatorInfoType[]
+     * @return \Voximplant\Client\Model\ACDQueueOperatorInfoType[]
      */
     public function getAcdQueues()
     {
@@ -506,7 +506,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Sets acd_queues
-     * @param \Voximplamt\Client\Model\ACDQueueOperatorInfoType[] $acd_queues
+     * @param \Voximplant\Client\Model\ACDQueueOperatorInfoType[] $acd_queues
      * @return $this
      */
     public function setAcdQueues($acd_queues)
@@ -588,10 +588,10 @@ class UserInfoType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

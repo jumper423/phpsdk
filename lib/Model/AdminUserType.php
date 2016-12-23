@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The GetAdminUsers function result.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -73,7 +73,7 @@ class AdminUserType implements ArrayAccess
         'admin_user_active' => 'bool',
         'modified' => 'string',
         'access_entries' => 'string[]',
-        'admin_roles' => '\Voximplamt\Client\Model\AdminRoleType[]'
+        'admin_roles' => '\Voximplant\Client\Model\AdminRoleType[]'
     );
 
     public static function swaggerTypes()
@@ -344,7 +344,7 @@ class AdminUserType implements ArrayAccess
 
     /**
      * Gets admin_roles
-     * @return \Voximplamt\Client\Model\AdminRoleType[]
+     * @return \Voximplant\Client\Model\AdminRoleType[]
      */
     public function getAdminRoles()
     {
@@ -353,7 +353,7 @@ class AdminUserType implements ArrayAccess
 
     /**
      * Sets admin_roles
-     * @param \Voximplamt\Client\Model\AdminRoleType[] $admin_roles
+     * @param \Voximplant\Client\Model\AdminRoleType[] $admin_roles
      * @return $this
      */
     public function setAdminRoles($admin_roles)
@@ -414,10 +414,10 @@ class AdminUserType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

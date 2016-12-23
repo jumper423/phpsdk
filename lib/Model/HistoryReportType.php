@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The history report info.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -80,7 +80,7 @@ class HistoryReportType implements ArrayAccess
         'store_until' => 'string',
         'session_count' => 'int',
         'total_session_count' => 'int',
-        'error' => '\Voximplamt\Client\Model\APIError',
+        'error' => '\Voximplant\Client\Model\APIError',
         'filters' => 'object',
         'calculated_data' => 'object'
     );
@@ -524,7 +524,7 @@ class HistoryReportType implements ArrayAccess
 
     /**
      * Gets error
-     * @return \Voximplamt\Client\Model\APIError
+     * @return \Voximplant\Client\Model\APIError
      */
     public function getError()
     {
@@ -533,7 +533,7 @@ class HistoryReportType implements ArrayAccess
 
     /**
      * Sets error
-     * @param \Voximplamt\Client\Model\APIError $error
+     * @param \Voximplant\Client\Model\APIError $error
      * @return $this
      */
     public function setError($error)
@@ -636,10 +636,10 @@ class HistoryReportType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

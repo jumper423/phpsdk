@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Api;
+namespace Voximplant\Client\Api;
 
-use \Voximplamt\Client\Configuration;
-use \Voximplamt\Client\ApiClient;
-use \Voximplamt\Client\ApiException;
-use \Voximplamt\Client\ObjectSerializer;
+use \Voximplant\Client\Configuration;
+use \Voximplant\Client\ApiClient;
+use \Voximplant\Client\ApiException;
+use \Voximplant\Client\ObjectSerializer;
 
 /**
  * AccountsAuthenticationApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class AccountsAuthenticationApi
     /**
      * API Client
      *
-     * @var \Voximplamt\Client\ApiClient instance of the ApiClient
+     * @var \Voximplant\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplamt\Client\ApiClient|null $apiClient The api client to use
+     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplamt\Client\ApiClient $apiClient = null)
+    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class AccountsAuthenticationApi
     /**
      * Get API client
      *
-     * @return \Voximplamt\Client\ApiClient get the API client
+     * @return \Voximplant\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class AccountsAuthenticationApi
     /**
      * Set the API client
      *
-     * @param \Voximplamt\Client\ApiClient $apiClient set the API client
+     * @param \Voximplant\Client\ApiClient $apiClient set the API client
      *
      * @return AccountsAuthenticationApi
      */
-    public function setApiClient(\Voximplamt\Client\ApiClient $apiClient)
+    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -107,8 +107,8 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return \Voximplamt\Client\Model\InlineResponse20060
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20060
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function logon()
     {
@@ -121,8 +121,8 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20060, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20060, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function logonWithHttpInfo()
     {
@@ -166,15 +166,15 @@ class AccountsAuthenticationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20060',
+                '\Voximplant\Client\Model\InlineResponse20060',
                 '/Logon'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20060', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20060', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20060', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20060', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -188,8 +188,8 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function logout()
     {
@@ -202,8 +202,8 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function logoutWithHttpInfo()
     {
@@ -247,15 +247,15 @@ class AccountsAuthenticationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/Logout'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

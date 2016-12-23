@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 **media_server_address** | **string** | The media server IP address. | 
 **log_file_url** | **string** | The session log URL. | 
 **finish_reason** | **string** | The finish reason | [optional] 
-**calls** | [**\Voximplamt\Client\Model\CallInfoType[]**](CallInfoType.md) |  | [optional] 
-**other_resource_usage** | [**\Voximplamt\Client\Model\ResourceUsageType[]**](ResourceUsageType.md) |  | [optional] 
-**records** | [**\Voximplamt\Client\Model\RecordType[]**](RecordType.md) |  | [optional] 
+**calls** | [**\Voximplant\Client\Model\CallInfoType[]**](CallInfoType.md) |  | [optional] 
+**other_resource_usage** | [**\Voximplant\Client\Model\ResourceUsageType[]**](ResourceUsageType.md) |  | [optional] 
+**records** | [**\Voximplant\Client\Model\RecordType[]**](RecordType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

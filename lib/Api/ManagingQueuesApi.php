@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Api;
+namespace Voximplant\Client\Api;
 
-use \Voximplamt\Client\Configuration;
-use \Voximplamt\Client\ApiClient;
-use \Voximplamt\Client\ApiException;
-use \Voximplamt\Client\ObjectSerializer;
+use \Voximplant\Client\Configuration;
+use \Voximplant\Client\ApiClient;
+use \Voximplant\Client\ApiException;
+use \Voximplant\Client\ObjectSerializer;
 
 /**
  * ManagingQueuesApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingQueuesApi
     /**
      * API Client
      *
-     * @var \Voximplamt\Client\ApiClient instance of the ApiClient
+     * @var \Voximplant\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplamt\Client\ApiClient|null $apiClient The api client to use
+     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplamt\Client\ApiClient $apiClient = null)
+    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingQueuesApi
     /**
      * Get API client
      *
-     * @return \Voximplamt\Client\ApiClient get the API client
+     * @return \Voximplant\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingQueuesApi
     /**
      * Set the API client
      *
-     * @param \Voximplamt\Client\ApiClient $apiClient set the API client
+     * @param \Voximplant\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingQueuesApi
      */
-    public function setApiClient(\Voximplamt\Client\ApiClient $apiClient)
+    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -116,8 +116,8 @@ class ManagingQueuesApi
      * @param float $max_queue_size The max queue size. (optional)
      * @param float $max_waiting_time The max predicted waiting time in minutes. The client is rejected if the predicted waiting time is greater than the max predicted waiting time. (optional)
      * @param float $average_service_time The average service time in seconds. Specify the parameter to correct or initialize the waiting time prediction. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse2007
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse2007
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function addQueue($acd_queue_name, $application_id = null, $application_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null)
     {
@@ -139,8 +139,8 @@ class ManagingQueuesApi
      * @param float $max_queue_size The max queue size. (optional)
      * @param float $max_waiting_time The max predicted waiting time in minutes. The client is rejected if the predicted waiting time is greater than the max predicted waiting time. (optional)
      * @param float $average_service_time The average service time in seconds. Specify the parameter to correct or initialize the waiting time prediction. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse2007, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse2007, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function addQueueWithHttpInfo($acd_queue_name, $application_id = null, $application_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null)
     {
@@ -224,15 +224,15 @@ class ManagingQueuesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse2007',
+                '\Voximplant\Client\Model\InlineResponse2007',
                 '/AddQueue'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse2007', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse2007', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse2007', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse2007', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -248,8 +248,8 @@ class ManagingQueuesApi
      *
      * @param float $acd_queue_id The ACD queue ID. (optional)
      * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function delQueue($acd_queue_id = null, $acd_queue_name = null)
     {
@@ -264,8 +264,8 @@ class ManagingQueuesApi
      *
      * @param float $acd_queue_id The ACD queue ID. (optional)
      * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function delQueueWithHttpInfo($acd_queue_id = null, $acd_queue_name = null)
     {
@@ -317,15 +317,15 @@ class ManagingQueuesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/DelQueue'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -340,8 +340,8 @@ class ManagingQueuesApi
      * 
      *
      * @param string $acd_queue_id The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20022
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20022
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getACDState($acd_queue_id = null)
     {
@@ -355,8 +355,8 @@ class ManagingQueuesApi
      * 
      *
      * @param string $acd_queue_id The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20022, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20022, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getACDStateWithHttpInfo($acd_queue_id = null)
     {
@@ -404,15 +404,15 @@ class ManagingQueuesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20022',
+                '\Voximplant\Client\Model\InlineResponse20022',
                 '/GetACDState'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20022', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20022', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20022', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20022', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -435,8 +435,8 @@ class ManagingQueuesApi
      * @param float $showing_skill_id The skill to show in the &#x60;skills&#x60; field output. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20046
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20046
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getQueues($acd_queue_id = null, $acd_queue_name = null, $application_id = null, $skill_id = null, $excluded_skill_id = null, $with_skills = null, $showing_skill_id = null, $count = null, $offset = null)
     {
@@ -458,8 +458,8 @@ class ManagingQueuesApi
      * @param float $showing_skill_id The skill to show in the &#x60;skills&#x60; field output. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20046, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20046, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getQueuesWithHttpInfo($acd_queue_id = null, $acd_queue_name = null, $application_id = null, $skill_id = null, $excluded_skill_id = null, $with_skills = null, $showing_skill_id = null, $count = null, $offset = null)
     {
@@ -539,15 +539,15 @@ class ManagingQueuesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20046',
+                '\Voximplant\Client\Model\InlineResponse20046',
                 '/GetQueues'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20046', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20046', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20046', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20046', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -571,8 +571,8 @@ class ManagingQueuesApi
      * @param float $max_waiting_time The max predicted waiting time in minutes. The client is rejected if the predicted waiting time is greater than the max predicted waiting time. (optional)
      * @param float $average_service_time The average service time in seconds. Specify the parameter to correct or initialize the waiting time prediction. (optional)
      * @param float $application_id The new application ID. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setQueueInfo($acd_queue_id = null, $acd_queue_name = null, $new_acd_queue_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null, $application_id = null)
     {
@@ -595,8 +595,8 @@ class ManagingQueuesApi
      * @param float $max_waiting_time The max predicted waiting time in minutes. The client is rejected if the predicted waiting time is greater than the max predicted waiting time. (optional)
      * @param float $average_service_time The average service time in seconds. Specify the parameter to correct or initialize the waiting time prediction. (optional)
      * @param float $application_id The new application ID. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setQueueInfoWithHttpInfo($acd_queue_id = null, $acd_queue_name = null, $new_acd_queue_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null, $application_id = null)
     {
@@ -680,15 +680,15 @@ class ManagingQueuesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/SetQueueInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

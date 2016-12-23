@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The ACD queue state.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,10 +68,10 @@ class ACDQueueStateType implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'acd_queue_id' => 'int',
-        'ready_operators' => '\Voximplamt\Client\Model\ACDReadyOperatorStateType[]',
-        'locked_operators' => '\Voximplamt\Client\Model\ACDLockedOperatorStateType[]',
-        'servicing_calls' => '\Voximplamt\Client\Model\ACDServicingCallStateType[]',
-        'waiting_calls' => '\Voximplamt\Client\Model\ACDWaitingCallStateType[]'
+        'ready_operators' => '\Voximplant\Client\Model\ACDReadyOperatorStateType[]',
+        'locked_operators' => '\Voximplant\Client\Model\ACDLockedOperatorStateType[]',
+        'servicing_calls' => '\Voximplant\Client\Model\ACDServicingCallStateType[]',
+        'waiting_calls' => '\Voximplant\Client\Model\ACDWaitingCallStateType[]'
     );
 
     public static function swaggerTypes()
@@ -205,7 +205,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Gets ready_operators
-     * @return \Voximplamt\Client\Model\ACDReadyOperatorStateType[]
+     * @return \Voximplant\Client\Model\ACDReadyOperatorStateType[]
      */
     public function getReadyOperators()
     {
@@ -214,7 +214,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Sets ready_operators
-     * @param \Voximplamt\Client\Model\ACDReadyOperatorStateType[] $ready_operators
+     * @param \Voximplant\Client\Model\ACDReadyOperatorStateType[] $ready_operators
      * @return $this
      */
     public function setReadyOperators($ready_operators)
@@ -226,7 +226,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Gets locked_operators
-     * @return \Voximplamt\Client\Model\ACDLockedOperatorStateType[]
+     * @return \Voximplant\Client\Model\ACDLockedOperatorStateType[]
      */
     public function getLockedOperators()
     {
@@ -235,7 +235,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Sets locked_operators
-     * @param \Voximplamt\Client\Model\ACDLockedOperatorStateType[] $locked_operators
+     * @param \Voximplant\Client\Model\ACDLockedOperatorStateType[] $locked_operators
      * @return $this
      */
     public function setLockedOperators($locked_operators)
@@ -247,7 +247,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Gets servicing_calls
-     * @return \Voximplamt\Client\Model\ACDServicingCallStateType[]
+     * @return \Voximplant\Client\Model\ACDServicingCallStateType[]
      */
     public function getServicingCalls()
     {
@@ -256,7 +256,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Sets servicing_calls
-     * @param \Voximplamt\Client\Model\ACDServicingCallStateType[] $servicing_calls
+     * @param \Voximplant\Client\Model\ACDServicingCallStateType[] $servicing_calls
      * @return $this
      */
     public function setServicingCalls($servicing_calls)
@@ -268,7 +268,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Gets waiting_calls
-     * @return \Voximplamt\Client\Model\ACDWaitingCallStateType[]
+     * @return \Voximplant\Client\Model\ACDWaitingCallStateType[]
      */
     public function getWaitingCalls()
     {
@@ -277,7 +277,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Sets waiting_calls
-     * @param \Voximplamt\Client\Model\ACDWaitingCallStateType[] $waiting_calls
+     * @param \Voximplant\Client\Model\ACDWaitingCallStateType[] $waiting_calls
      * @return $this
      */
     public function setWaitingCalls($waiting_calls)
@@ -338,10 +338,10 @@ class ACDQueueStateType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

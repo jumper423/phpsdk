@@ -1,4 +1,4 @@
-# Voximplamt\Client\ManagingPhoneNumbersApi
+# Voximplant\Client\ManagingPhoneNumbersApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **attachPhoneNumber**
-> \Voximplamt\Client\Model\InlineResponse20014 attachPhoneNumber($country_code, $phone_category_name, $phone_region_id, $phone_count, $phone_number, $country_state, $regulation_address_id)
+> \Voximplant\Client\Model\InlineResponse20014 attachPhoneNumber($country_code, $phone_category_name, $phone_region_id, $phone_count, $phone_number, $country_state, $regulation_address_id)
 
 
 
@@ -29,15 +29,15 @@ Attach the phone number to the account. To attach the German, Italian phone numb
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $country_code = "country_code_example"; // string | The country code.
 $phone_category_name = "phone_category_name_example"; // string | The phone category name. See the GetPhoneNumberCategories function.
 $phone_region_id = 3.4; // float | The phone region ID. See the GetPhoneNumberRegions function.
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20014**](../Model/InlineResponse20014.md)
+[**\Voximplant\Client\Model\InlineResponse20014**](../Model/InlineResponse20014.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bindPhoneNumberToApplication**
-> \Voximplamt\Client\Model\InlineResponse200 bindPhoneNumberToApplication($phone_id, $phone_number, $application_id, $application_name, $rule_id, $rule_name, $bind)
+> \Voximplant\Client\Model\InlineResponse200 bindPhoneNumberToApplication($phone_id, $phone_number, $application_id, $application_name, $rule_id, $rule_name, $bind)
 
 
 
@@ -95,15 +95,15 @@ Bind the phone number to the application or unbind the phone number from the app
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $phone_id = 3.4; // float | The phone ID list separated by the `;` symbol or the `all` value.
 $phone_number = "phone_number_example"; // string | The phone number list separated by the `;` symbol that can be used instead of <b>phone_id</b>.
 $application_id = 3.4; // float | The application ID.
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deactivatePhoneNumber**
-> \Voximplamt\Client\Model\InlineResponse200 deactivatePhoneNumber($phone_id, $phone_number)
+> \Voximplant\Client\Model\InlineResponse200 deactivatePhoneNumber($phone_id, $phone_number)
 
 
 
@@ -161,15 +161,15 @@ Deactivates the phone number.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $phone_id = 3.4; // float | The phone ID.
 $phone_number = "phone_number_example"; // string | The phone number that can be used instead of <b>phone_id</b>.
 
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getActualPhoneNumberRegion**
-> \Voximplamt\Client\Model\InlineResponse20025 getActualPhoneNumberRegion($country_code, $phone_category_name, $phone_region_id)
+> \Voximplant\Client\Model\InlineResponse20025 getActualPhoneNumberRegion($country_code, $phone_category_name, $phone_region_id)
 
 
 
@@ -217,15 +217,15 @@ Gets actual info the country region of the phone numbers.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $country_code = "country_code_example"; // string | The country code.
 $phone_category_name = "phone_category_name_example"; // string | The phone category name. See the GetPhoneNumberCategories function.
 $phone_region_id = 3.4; // float | The phone region ID to filter.
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20025**](../Model/InlineResponse20025.md)
+[**\Voximplant\Client\Model\InlineResponse20025**](../Model/InlineResponse20025.md)
 
 ### Authorization
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getNewPhoneNumbers**
-> \Voximplamt\Client\Model\InlineResponse20039 getNewPhoneNumbers($country_code, $phone_category_name, $phone_region_id, $country_state, $count, $offset)
+> \Voximplant\Client\Model\InlineResponse20039 getNewPhoneNumbers($country_code, $phone_category_name, $phone_region_id, $country_state, $count, $offset)
 
 
 
@@ -275,15 +275,15 @@ Gets the new phone numbers.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $country_code = "country_code_example"; // string | The country code.
 $phone_category_name = "phone_category_name_example"; // string | The phone category name. See the GetPhoneNumberCategories function.
 $phone_region_id = 3.4; // float | The phone region ID. See the GetPhoneNumberRegions function.
@@ -313,7 +313,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20039**](../Model/InlineResponse20039.md)
+[**\Voximplant\Client\Model\InlineResponse20039**](../Model/InlineResponse20039.md)
 
 ### Authorization
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhoneNumberCategories**
-> \Voximplamt\Client\Model\InlineResponse20040 getPhoneNumberCategories($country_code, $sandbox)
+> \Voximplant\Client\Model\InlineResponse20040 getPhoneNumberCategories($country_code, $sandbox)
 
 
 
@@ -339,15 +339,15 @@ Gets the phone number categories.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $country_code = "country_code_example"; // string | The country code.
 $sandbox = "sandbox_example"; // string | Flag allows you to display phone number categories only of the sandbox, real or all .The following values are possible: `all`, `true`, `false`.
 
@@ -369,7 +369,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20040**](../Model/InlineResponse20040.md)
+[**\Voximplant\Client\Model\InlineResponse20040**](../Model/InlineResponse20040.md)
 
 ### Authorization
 
@@ -383,7 +383,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhoneNumberCountryStates**
-> \Voximplamt\Client\Model\InlineResponse20041 getPhoneNumberCountryStates($country_code, $phone_category_name, $country_state)
+> \Voximplant\Client\Model\InlineResponse20041 getPhoneNumberCountryStates($country_code, $phone_category_name, $country_state)
 
 
 
@@ -395,15 +395,15 @@ Gets the phone number country states.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $country_code = "country_code_example"; // string | The country code.
 $phone_category_name = "phone_category_name_example"; // string | The phone category name. See the GetPhoneNumberCategories function.
 $country_state = "country_state_example"; // string | The country state code (example: AL, CA, ... ).
@@ -427,7 +427,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20041**](../Model/InlineResponse20041.md)
+[**\Voximplant\Client\Model\InlineResponse20041**](../Model/InlineResponse20041.md)
 
 ### Authorization
 
@@ -441,7 +441,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhoneNumberRegions**
-> \Voximplamt\Client\Model\InlineResponse20042 getPhoneNumberRegions($country_code, $phone_category_name, $country_state, $omit_empty, $phone_region_id, $phone_region_name, $phone_region_code)
+> \Voximplant\Client\Model\InlineResponse20042 getPhoneNumberRegions($country_code, $phone_category_name, $country_state, $omit_empty, $phone_region_id, $phone_region_name, $phone_region_code)
 
 
 
@@ -453,15 +453,15 @@ Gets the country regions of the phone numbers.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $country_code = "country_code_example"; // string | The country code.
 $phone_category_name = "phone_category_name_example"; // string | The phone category name. See the GetPhoneNumberCategories function.
 $country_state = "country_state_example"; // string | The country state code (example: AL, CA, ... ).
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20042**](../Model/InlineResponse20042.md)
+[**\Voximplant\Client\Model\InlineResponse20042**](../Model/InlineResponse20042.md)
 
 ### Authorization
 
@@ -507,7 +507,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhoneNumbers**
-> \Voximplamt\Client\Model\InlineResponse20043 getPhoneNumbers($phone_id, $application_id, $application_name, $is_bound_to_application, $phone_template, $country_code, $phone_category_name, $canceled, $deactivated, $auto_charge, $from_phone_next_renewal, $to_phone_next_renewal, $from_phone_purchase_date, $to_phone_purchase_date, $child_account_id, $children_phones_only, $verification_name, $verification_status, $from_unverified_hold_until, $to_unverified_hold_until, $can_be_used, $order_by, $sandbox, $count, $offset)
+> \Voximplant\Client\Model\InlineResponse20043 getPhoneNumbers($phone_id, $application_id, $application_name, $is_bound_to_application, $phone_template, $country_code, $phone_category_name, $canceled, $deactivated, $auto_charge, $from_phone_next_renewal, $to_phone_next_renewal, $from_phone_purchase_date, $to_phone_purchase_date, $child_account_id, $children_phones_only, $verification_name, $verification_status, $from_unverified_hold_until, $to_unverified_hold_until, $can_be_used, $order_by, $sandbox, $count, $offset)
 
 
 
@@ -519,15 +519,15 @@ Gets the account phone numbers.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $phone_id = 3.4; // float | The particular phone ID to filter
 $application_id = 3.4; // float | The application ID.
 $application_name = "application_name_example"; // string | The application name that can be used instead of <b>application_id</b>.
@@ -595,7 +595,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20043**](../Model/InlineResponse20043.md)
+[**\Voximplant\Client\Model\InlineResponse20043**](../Model/InlineResponse20043.md)
 
 ### Authorization
 
@@ -609,7 +609,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setPhoneNumberInfo**
-> \Voximplamt\Client\Model\InlineResponse200 setPhoneNumberInfo($auto_charge, $phone_id, $phone_number)
+> \Voximplant\Client\Model\InlineResponse200 setPhoneNumberInfo($auto_charge, $phone_id, $phone_number)
 
 
 
@@ -621,15 +621,15 @@ Configure the phone number.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPhoneNumbersApi();
+$api_instance = new Voximplant\Client\Api\ManagingPhoneNumbersApi();
 $auto_charge = true; // bool | Is auto charge enable?
 $phone_id = 3.4; // float | The phone ID list separated by the `;` symbol or the `all` value.
 $phone_number = "phone_number_example"; // string | The phone number that can be used instead of <b>phone_id</b>.
@@ -653,7 +653,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

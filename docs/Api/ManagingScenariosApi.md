@@ -1,4 +1,4 @@
-# Voximplamt\Client\ManagingScenariosApi
+# Voximplant\Client\ManagingScenariosApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **addScenario**
-> \Voximplamt\Client\Model\InlineResponse2009 addScenario($scenario_name, $scenario_script)
+> \Voximplant\Client\Model\InlineResponse2009 addScenario($scenario_name, $scenario_script)
 
 
 
@@ -27,15 +27,15 @@ Adds a new scenario. Please use the POST method.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingScenariosApi();
+$api_instance = new Voximplant\Client\Api\ManagingScenariosApi();
 $scenario_name = "scenario_name_example"; // string | The scenario name. The length must be less than 30
 $scenario_script = "scenario_script_example"; // string | The scenario text. The length must be less than 128 KB.
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse2009**](../Model/InlineResponse2009.md)
+[**\Voximplant\Client\Model\InlineResponse2009**](../Model/InlineResponse2009.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bindScenario**
-> \Voximplamt\Client\Model\InlineResponse200 bindScenario($scenario_id, $scenario_name, $rule_id, $rule_name, $application_id, $application_name, $bind)
+> \Voximplant\Client\Model\InlineResponse200 bindScenario($scenario_id, $scenario_name, $rule_id, $rule_name, $application_id, $application_name, $bind)
 
 
 
@@ -83,15 +83,15 @@ Bind the scenario list with the rule. You should specify the application_id or a
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingScenariosApi();
+$api_instance = new Voximplant\Client\Api\ManagingScenariosApi();
 $scenario_id = "scenario_id_example"; // string | The scenario ID list separated by the `;` symbol.
 $scenario_name = "scenario_name_example"; // string | Can be used instead of <b>scenario_id</b>. The scenario name list separated by the `;` symbol.
 $rule_id = 3.4; // float | The rule ID.
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delScenario**
-> \Voximplamt\Client\Model\InlineResponse200 delScenario($scenario_id)
+> \Voximplant\Client\Model\InlineResponse200 delScenario($scenario_id)
 
 
 
@@ -149,15 +149,15 @@ Deletes the scenario.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingScenariosApi();
+$api_instance = new Voximplant\Client\Api\ManagingScenariosApi();
 $scenario_id = "scenario_id_example"; // string | The scenario ID list separated by the `;` symbol or the `all` value.
 
 try {
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getScenarios**
-> \Voximplamt\Client\Model\InlineResponse20051 getScenarios($scenario_id, $with_script, $count, $offset)
+> \Voximplant\Client\Model\InlineResponse20051 getScenarios($scenario_id, $with_script, $count, $offset)
 
 
 
@@ -203,15 +203,15 @@ Gets the account's scenarios.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingScenariosApi();
+$api_instance = new Voximplant\Client\Api\ManagingScenariosApi();
 $scenario_id = 3.4; // float | The scenario ID to filter
 $with_script = true; // bool | Set true to get the scenario text. You must specify the `scenario_id` too!
 $count = 3.4; // float | The max returning record count.
@@ -237,7 +237,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20051**](../Model/InlineResponse20051.md)
+[**\Voximplant\Client\Model\InlineResponse20051**](../Model/InlineResponse20051.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **reorderScenarios**
-> \Voximplamt\Client\Model\InlineResponse200 reorderScenarios($rule_id, $rule_name, $scenario_id)
+> \Voximplant\Client\Model\InlineResponse200 reorderScenarios($rule_id, $rule_name, $scenario_id)
 
 
 
@@ -263,15 +263,15 @@ Sets the scenario loading order.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingScenariosApi();
+$api_instance = new Voximplant\Client\Api\ManagingScenariosApi();
 $rule_id = 3.4; // float | The rule ID.
 $rule_name = "rule_name_example"; // string | The rule name that can be used instead of <b>rule_id</b>.
 $scenario_id = "scenario_id_example"; // string | The scenario ID list separated by the `;` symbol.
@@ -295,7 +295,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -309,7 +309,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setScenarioInfo**
-> \Voximplamt\Client\Model\InlineResponse200 setScenarioInfo($scenario_id, $required_scenario_name, $scenario_name, $scenario_script)
+> \Voximplant\Client\Model\InlineResponse200 setScenarioInfo($scenario_id, $required_scenario_name, $scenario_name, $scenario_script)
 
 
 
@@ -321,15 +321,15 @@ Edits the scenario. Please use the POST method.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingScenariosApi();
+$api_instance = new Voximplant\Client\Api\ManagingScenariosApi();
 $scenario_id = 3.4; // float | The scenario ID.
 $required_scenario_name = "required_scenario_name_example"; // string | The name of the scenario to edit, can be used instead of <b>scenario_id</b>.
 $scenario_name = "scenario_name_example"; // string | The new scenario name. The length must be less than 30
@@ -355,7 +355,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -369,7 +369,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **startConference**
-> \Voximplamt\Client\Model\InlineResponse20064 startConference($conference_name, $rule_id, $user_id, $user_name, $script_custom_data, $reference_ip)
+> \Voximplant\Client\Model\InlineResponse20064 startConference($conference_name, $rule_id, $user_id, $user_name, $script_custom_data, $reference_ip)
 
 
 
@@ -381,15 +381,15 @@ Start a new conference or join the conference.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingScenariosApi();
+$api_instance = new Voximplant\Client\Api\ManagingScenariosApi();
 $conference_name = "conference_name_example"; // string | The conference name. The name length must be less than 50 symbols.
 $rule_id = 3.4; // float | The rule ID.
 $user_id = 3.4; // float | The user ID. Run the scripts from the user if set.
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20064**](../Model/InlineResponse20064.md)
+[**\Voximplant\Client\Model\InlineResponse20064**](../Model/InlineResponse20064.md)
 
 ### Authorization
 
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **startScenarios**
-> \Voximplamt\Client\Model\InlineResponse20066 startScenarios($rule_id, $user_id, $user_name, $script_custom_data, $reference_ip)
+> \Voximplant\Client\Model\InlineResponse20066 startScenarios($rule_id, $user_id, $user_name, $script_custom_data, $reference_ip)
 
 
 
@@ -445,15 +445,15 @@ Run the JavaScript scenarios on a VoxImplant server. The scenarios run in a new 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingScenariosApi();
+$api_instance = new Voximplant\Client\Api\ManagingScenariosApi();
 $rule_id = 3.4; // float | The rule ID.
 $user_id = 3.4; // float | The user ID. Run the scripts from the user if set.
 $user_name = "user_name_example"; // string | The user name that can be used instead of <b>user_id</b>. Run the scripts from the user if set.
@@ -481,7 +481,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20066**](../Model/InlineResponse20066.md)
+[**\Voximplant\Client\Model\InlineResponse20066**](../Model/InlineResponse20066.md)
 
 ### Authorization
 

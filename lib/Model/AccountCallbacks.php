@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The HTTP account callbacks body.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -67,7 +67,7 @@ class AccountCallbacks implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'callbacks' => '\Voximplamt\Client\Model\AccountCallback[]'
+        'callbacks' => '\Voximplant\Client\Model\AccountCallback[]'
     );
 
     public static function swaggerTypes()
@@ -158,7 +158,7 @@ class AccountCallbacks implements ArrayAccess
 
     /**
      * Gets callbacks
-     * @return \Voximplamt\Client\Model\AccountCallback[]
+     * @return \Voximplant\Client\Model\AccountCallback[]
      */
     public function getCallbacks()
     {
@@ -167,7 +167,7 @@ class AccountCallbacks implements ArrayAccess
 
     /**
      * Sets callbacks
-     * @param \Voximplamt\Client\Model\AccountCallback[] $callbacks
+     * @param \Voximplant\Client\Model\AccountCallback[] $callbacks
      * @return $this
      */
     public function setCallbacks($callbacks)
@@ -228,10 +228,10 @@ class AccountCallbacks implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

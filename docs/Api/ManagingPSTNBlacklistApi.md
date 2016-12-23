@@ -1,4 +1,4 @@
-# Voximplamt\Client\ManagingPSTNBlacklistApi
+# Voximplant\Client\ManagingPSTNBlacklistApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addPstnBlackListItem**
-> \Voximplamt\Client\Model\InlineResponse2005 addPstnBlackListItem($pstn_blacklist_phone)
+> \Voximplant\Client\Model\InlineResponse2005 addPstnBlackListItem($pstn_blacklist_phone)
 
 
 
@@ -23,15 +23,15 @@ Add a new phone number to the PSTN blacklist.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPSTNBlacklistApi();
+$api_instance = new Voximplant\Client\Api\ManagingPSTNBlacklistApi();
 $pstn_blacklist_phone = "pstn_blacklist_phone_example"; // string | The phone number in format e164.
 
 try {
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\Voximplant\Client\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delPstnBlackListItem**
-> \Voximplamt\Client\Model\InlineResponse200 delPstnBlackListItem($pstn_blacklist_id)
+> \Voximplant\Client\Model\InlineResponse200 delPstnBlackListItem($pstn_blacklist_id)
 
 
 
@@ -77,15 +77,15 @@ Remove phone number from the PSTN blacklist.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPSTNBlacklistApi();
+$api_instance = new Voximplant\Client\Api\ManagingPSTNBlacklistApi();
 $pstn_blacklist_id = 3.4; // float | The PSTN black list item ID.
 
 try {
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPstnBlackList**
-> \Voximplamt\Client\Model\InlineResponse20044 getPstnBlackList($pstn_blacklist_id, $pstn_blacklist_phone, $count, $offset)
+> \Voximplant\Client\Model\InlineResponse20044 getPstnBlackList($pstn_blacklist_id, $pstn_blacklist_phone, $count, $offset)
 
 
 
@@ -131,15 +131,15 @@ Add a new phone number to the PSTN blacklist.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPSTNBlacklistApi();
+$api_instance = new Voximplant\Client\Api\ManagingPSTNBlacklistApi();
 $pstn_blacklist_id = 3.4; // float | The PSTN black list item ID for filter.
 $pstn_blacklist_phone = "pstn_blacklist_phone_example"; // string | The phone number in format e164 for filter.
 $count = 3.4; // float | The max returning record count.
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20044**](../Model/InlineResponse20044.md)
+[**\Voximplant\Client\Model\InlineResponse20044**](../Model/InlineResponse20044.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setPstnBlackListItem**
-> \Voximplamt\Client\Model\InlineResponse200 setPstnBlackListItem($pstn_blacklist_id, $pstn_blacklist_phone)
+> \Voximplant\Client\Model\InlineResponse200 setPstnBlackListItem($pstn_blacklist_id, $pstn_blacklist_phone)
 
 
 
@@ -191,15 +191,15 @@ Update the PSTN blacklist item.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingPSTNBlacklistApi();
+$api_instance = new Voximplant\Client\Api\ManagingPSTNBlacklistApi();
 $pstn_blacklist_id = 3.4; // float | The PSTN black list item ID.
 $pstn_blacklist_phone = "pstn_blacklist_phone_example"; // string | The new phone number in format e164.
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

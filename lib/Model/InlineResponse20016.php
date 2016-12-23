@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -66,8 +66,8 @@ class InlineResponse20016 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Voximplamt\Client\Model\ChargeAccountResult',
-        'account_info' => '\Voximplamt\Client\Model\ShortAccountInfoType'
+        'result' => '\Voximplant\Client\Model\ChargeAccountResult',
+        'account_info' => '\Voximplant\Client\Model\ShortAccountInfoType'
     );
 
     public static function swaggerTypes()
@@ -162,7 +162,7 @@ class InlineResponse20016 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Voximplamt\Client\Model\ChargeAccountResult
+     * @return \Voximplant\Client\Model\ChargeAccountResult
      */
     public function getResult()
     {
@@ -171,7 +171,7 @@ class InlineResponse20016 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Voximplamt\Client\Model\ChargeAccountResult $result
+     * @param \Voximplant\Client\Model\ChargeAccountResult $result
      * @return $this
      */
     public function setResult($result)
@@ -183,7 +183,7 @@ class InlineResponse20016 implements ArrayAccess
 
     /**
      * Gets account_info
-     * @return \Voximplamt\Client\Model\ShortAccountInfoType
+     * @return \Voximplant\Client\Model\ShortAccountInfoType
      */
     public function getAccountInfo()
     {
@@ -192,7 +192,7 @@ class InlineResponse20016 implements ArrayAccess
 
     /**
      * Sets account_info
-     * @param \Voximplamt\Client\Model\ShortAccountInfoType $account_info
+     * @param \Voximplant\Client\Model\ShortAccountInfoType $account_info
      * @return $this
      */
     public function setAccountInfo($account_info)
@@ -253,10 +253,10 @@ class InlineResponse20016 implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

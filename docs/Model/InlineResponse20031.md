@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Voximplamt\Client\Model\CallSessionInfoType[]**](CallSessionInfoType.md) |  | [optional] 
+**result** | [**\Voximplant\Client\Model\CallSessionInfoType[]**](CallSessionInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found call session count (sync mode). | [optional] 
 **count** | **int** | The returned call session count (sync mode). | [optional] 
 **timezone** | **string** | The used timezone. | [optional] 

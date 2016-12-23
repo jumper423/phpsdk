@@ -1,4 +1,4 @@
-# Voximplamt\Client\ManagingCallListsApi
+# Voximplant\Client\ManagingCallListsApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **appendToCallList**
-> \Voximplamt\Client\Model\InlineResponse20013 appendToCallList($file_content, $list_id, $list_name, $encoding, $delimiter)
+> \Voximplant\Client\Model\InlineResponse20013 appendToCallList($file_content, $list_id, $list_name, $encoding, $delimiter)
 
 
 
@@ -27,15 +27,15 @@ Appending new task to existing call list.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingCallListsApi();
+$api_instance = new Voximplant\Client\Api\ManagingCallListsApi();
 $file_content = "file_content_example"; // string | Send as Body Request or multiform.
 $list_id = 3.4; // float | The call list ID
 $list_name = "list_name_example"; // string | Can be used instead of <b>list_id</b>. The unique name call list
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
+[**\Voximplant\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createCallList**
-> \Voximplamt\Client\Model\InlineResponse20013 createCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds, $queue_id, $avg_waiting_sec, $encoding, $delimiter)
+> \Voximplant\Client\Model\InlineResponse20013 createCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds, $queue_id, $avg_waiting_sec, $encoding, $delimiter)
 
 
 
@@ -89,15 +89,15 @@ Adds a new CSV file for processing. To send a file, use the request body. To set
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingCallListsApi();
+$api_instance = new Voximplant\Client\Api\ManagingCallListsApi();
 $rule_id = 3.4; // float | The rule ID.
 $priority = 3.4; // float | Priority tasks
 $max_simultaneous = 3.4; // float | Number simultaneously processed tasks.
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
+[**\Voximplant\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createManualCallList**
-> \Voximplamt\Client\Model\InlineResponse20013 createManualCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds, $encoding, $delimiter)
+> \Voximplant\Client\Model\InlineResponse20013 createManualCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds, $encoding, $delimiter)
 
 
 
@@ -163,15 +163,15 @@ Adds a new CSV file for manual processing. To send a file, use the request body.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingCallListsApi();
+$api_instance = new Voximplant\Client\Api\ManagingCallListsApi();
 $rule_id = 3.4; // float | The rule ID.
 $priority = 3.4; // float | Priority tasks
 $max_simultaneous = 3.4; // float | Number simultaneously processed tasks.
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
+[**\Voximplant\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCallListDetails**
-> \Voximplamt\Client\Model\InlineResponse20032 getCallListDetails($list_id, $count, $offset, $output, $encoding, $delimiter)
+> \Voximplant\Client\Model\InlineResponse20032 getCallListDetails($list_id, $count, $offset, $output, $encoding, $delimiter)
 
 
 
@@ -233,15 +233,15 @@ Get details of the tasks of outgoing calls. Default return CSV file.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingCallListsApi();
+$api_instance = new Voximplant\Client\Api\ManagingCallListsApi();
 $list_id = 3.4; // float | The list ID.
 $count = 3.4; // float | Maximum number of entries in the result
 $offset = 3.4; // float | Offset from beginning of the list
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20032**](../Model/InlineResponse20032.md)
+[**\Voximplant\Client\Model\InlineResponse20032**](../Model/InlineResponse20032.md)
 
 ### Authorization
 
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCallLists**
-> \Voximplamt\Client\Model\InlineResponse20033 getCallLists($name, $is_active, $from_date, $to_date, $type_list, $count, $offset)
+> \Voximplant\Client\Model\InlineResponse20033 getCallLists($name, $is_active, $from_date, $to_date, $type_list, $count, $offset)
 
 
 
@@ -297,15 +297,15 @@ Get all lists of outgoing calls registered user
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingCallListsApi();
+$api_instance = new Voximplant\Client\Api\ManagingCallListsApi();
 $name = "name_example"; // string | Find call lists by name
 $is_active = true; // bool | Find only active call lists
 $from_date = "from_date_example"; // string | The UTC from date filter in format YYYY-MM-DD HH:mm:SS
@@ -337,7 +337,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20033**](../Model/InlineResponse20033.md)
+[**\Voximplant\Client\Model\InlineResponse20033**](../Model/InlineResponse20033.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **recoverCallList**
-> \Voximplamt\Client\Model\InlineResponse20061 recoverCallList($list_id)
+> \Voximplant\Client\Model\InlineResponse20061 recoverCallList($list_id)
 
 
 
@@ -363,15 +363,15 @@ Restore processing the task list
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingCallListsApi();
+$api_instance = new Voximplant\Client\Api\ManagingCallListsApi();
 $list_id = 3.4; // float | The list Id.
 
 try {
@@ -391,7 +391,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20061**](../Model/InlineResponse20061.md)
+[**\Voximplant\Client\Model\InlineResponse20061**](../Model/InlineResponse20061.md)
 
 ### Authorization
 
@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **startNextCallTask**
-> \Voximplamt\Client\Model\InlineResponse20065 startNextCallTask($list_id, $custom_params)
+> \Voximplant\Client\Model\InlineResponse20065 startNextCallTask($list_id, $custom_params)
 
 
 
@@ -417,15 +417,15 @@ Start processing the next task
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingCallListsApi();
+$api_instance = new Voximplant\Client\Api\ManagingCallListsApi();
 $list_id = 3.4; // float | The list Id. Сan use a set of identifiers with the separator \";\"
 $custom_params = "custom_params_example"; // string | The custom param. Use to transfer the call initiator parameters to the scenario.
 
@@ -447,7 +447,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20065**](../Model/InlineResponse20065.md)
+[**\Voximplant\Client\Model\InlineResponse20065**](../Model/InlineResponse20065.md)
 
 ### Authorization
 
@@ -461,7 +461,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **stopCallListProcessing**
-> \Voximplamt\Client\Model\InlineResponse20067 stopCallListProcessing($list_id)
+> \Voximplant\Client\Model\InlineResponse20067 stopCallListProcessing($list_id)
 
 
 
@@ -473,15 +473,15 @@ Stop processing the task list
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingCallListsApi();
+$api_instance = new Voximplant\Client\Api\ManagingCallListsApi();
 $list_id = 3.4; // float | The list Id.
 
 try {
@@ -501,7 +501,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20067**](../Model/InlineResponse20067.md)
+[**\Voximplant\Client\Model\InlineResponse20067**](../Model/InlineResponse20067.md)
 
 ### Authorization
 

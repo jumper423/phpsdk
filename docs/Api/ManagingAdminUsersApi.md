@@ -1,4 +1,4 @@
-# Voximplamt\Client\ManagingAdminUsersApi
+# Voximplant\Client\ManagingAdminUsersApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addAdminUser**
-> \Voximplamt\Client\Model\InlineResponse2002 addAdminUser($new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active, $admin_role_id, $admin_role_name)
+> \Voximplant\Client\Model\InlineResponse2002 addAdminUser($new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active, $admin_role_id, $admin_role_name)
 
 
 
@@ -24,15 +24,15 @@ Adds a new admin user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Client\Api\ManagingAdminUsersApi();
 $new_admin_user_name = "new_admin_user_name_example"; // string | The admin user name. The length must be less than 50.
 $admin_user_display_name = "admin_user_display_name_example"; // string | The admin user display name. The length must be less than 256.
 $new_admin_user_password = "new_admin_user_password_example"; // string | The admin user password. The length must be at least 6 symbols.
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\Voximplant\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **attachAdminRole**
-> \Voximplamt\Client\Model\InlineResponse200 attachAdminRole($required_admin_user_id, $required_admin_user_name, $admin_role_id, $admin_role_name, $mode)
+> \Voximplant\Client\Model\InlineResponse200 attachAdminRole($required_admin_user_id, $required_admin_user_name, $admin_role_id, $admin_role_name, $mode)
 
 
 
@@ -88,15 +88,15 @@ Attach the admin role list to the admin user list.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Client\Api\ManagingAdminUsersApi();
 $required_admin_user_id = 3.4; // float | The admin user ID list separated by the `;` symbol or the `all` value.
 $required_admin_user_name = "required_admin_user_name_example"; // string | The admin user name to bind, can be used instead of <b>required_admin_user_id</b>.
 $admin_role_id = 3.4; // float | The attached admin role ID list separated by the `;` symbol or the `all` value.
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delAdminUser**
-> \Voximplamt\Client\Model\InlineResponse200 delAdminUser($required_admin_user_id, $required_admin_user_name)
+> \Voximplant\Client\Model\InlineResponse200 delAdminUser($required_admin_user_id, $required_admin_user_name)
 
 
 
@@ -150,15 +150,15 @@ Deletes the admin user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Client\Api\ManagingAdminUsersApi();
 $required_admin_user_id = 3.4; // float | The admin user ID list separated by the `;` symbol or the `all` value.
 $required_admin_user_name = "required_admin_user_name_example"; // string | The admin user name to delete, can be used instead of <b>required_admin_user_id</b>.
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAdminUsers**
-> \Voximplamt\Client\Model\InlineResponse20027 getAdminUsers($required_admin_user_id, $required_admin_user_name, $admin_user_display_name, $admin_user_active, $with_roles, $with_access_entries, $count, $offset)
+> \Voximplant\Client\Model\InlineResponse20027 getAdminUsers($required_admin_user_id, $required_admin_user_name, $admin_user_display_name, $admin_user_active, $with_roles, $with_access_entries, $count, $offset)
 
 
 
@@ -206,15 +206,15 @@ Gets the admin users.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Client\Api\ManagingAdminUsersApi();
 $required_admin_user_id = 3.4; // float | The admin user ID to filter.
 $required_admin_user_name = "required_admin_user_name_example"; // string | The admin user name part to filter.
 $admin_user_display_name = "admin_user_display_name_example"; // string | The admin user display name part to filter.
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse20027**](../Model/InlineResponse20027.md)
+[**\Voximplant\Client\Model\InlineResponse20027**](../Model/InlineResponse20027.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setAdminUserInfo**
-> \Voximplamt\Client\Model\InlineResponse200 setAdminUserInfo($required_admin_user_id, $required_admin_user_name, $new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active)
+> \Voximplant\Client\Model\InlineResponse200 setAdminUserInfo($required_admin_user_id, $required_admin_user_name, $new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active)
 
 
 
@@ -274,15 +274,15 @@ Edits the admin user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplamt\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplamt\Client\Api\ManagingAdminUsersApi();
+$api_instance = new Voximplant\Client\Api\ManagingAdminUsersApi();
 $required_admin_user_id = 3.4; // float | The admin user to edit.
 $required_admin_user_name = "required_admin_user_name_example"; // string | The admin user to edit, can be used instead of <b>required_admin_user_id</b>.
 $new_admin_user_name = "new_admin_user_name_example"; // string | The new admin user name. The length must be less than 50.
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplamt\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

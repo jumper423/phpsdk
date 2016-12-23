@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Api;
+namespace Voximplant\Client\Api;
 
-use \Voximplamt\Client\Configuration;
-use \Voximplamt\Client\ApiClient;
-use \Voximplamt\Client\ApiException;
-use \Voximplamt\Client\ObjectSerializer;
+use \Voximplant\Client\Configuration;
+use \Voximplant\Client\ApiClient;
+use \Voximplant\Client\ApiException;
+use \Voximplant\Client\ObjectSerializer;
 
 /**
  * ManagingSIPRegistrationApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingSIPRegistrationApi
     /**
      * API Client
      *
-     * @var \Voximplamt\Client\ApiClient instance of the ApiClient
+     * @var \Voximplant\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplamt\Client\ApiClient|null $apiClient The api client to use
+     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplamt\Client\ApiClient $apiClient = null)
+    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingSIPRegistrationApi
     /**
      * Get API client
      *
-     * @return \Voximplamt\Client\ApiClient get the API client
+     * @return \Voximplant\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingSIPRegistrationApi
     /**
      * Set the API client
      *
-     * @param \Voximplamt\Client\ApiClient $apiClient set the API client
+     * @param \Voximplant\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingSIPRegistrationApi
      */
-    public function setApiClient(\Voximplamt\Client\ApiClient $apiClient)
+    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -113,8 +113,8 @@ class ManagingSIPRegistrationApi
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function bindSipRegistration($sip_registration_id, $application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $bind = null)
     {
@@ -133,8 +133,8 @@ class ManagingSIPRegistrationApi
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function bindSipRegistrationWithHttpInfo($sip_registration_id, $application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $bind = null)
     {
@@ -206,15 +206,15 @@ class ManagingSIPRegistrationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/BindSipRegistration'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -233,8 +233,8 @@ class ManagingSIPRegistrationApi
      * @param string $auth_user The SIP authentications user (optional)
      * @param string $outbound_proxy The outbound SIP proxy (optional)
      * @param string $password The SIP password (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20019
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20019
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function createSipRegistration($username, $proxy, $auth_user = null, $outbound_proxy = null, $password = null)
     {
@@ -252,8 +252,8 @@ class ManagingSIPRegistrationApi
      * @param string $auth_user The SIP authentications user (optional)
      * @param string $outbound_proxy The outbound SIP proxy (optional)
      * @param string $password The SIP password (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20019, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20019, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function createSipRegistrationWithHttpInfo($username, $proxy, $auth_user = null, $outbound_proxy = null, $password = null)
     {
@@ -325,15 +325,15 @@ class ManagingSIPRegistrationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20019',
+                '\Voximplant\Client\Model\InlineResponse20019',
                 '/CreateSipRegistration'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20019', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20019', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20019', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20019', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -348,8 +348,8 @@ class ManagingSIPRegistrationApi
      * 
      *
      * @param float $sip_registration_id The registration ID (required)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function deleteSipRegistration($sip_registration_id)
     {
@@ -363,8 +363,8 @@ class ManagingSIPRegistrationApi
      * 
      *
      * @param float $sip_registration_id The registration ID (required)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function deleteSipRegistrationWithHttpInfo($sip_registration_id)
     {
@@ -416,15 +416,15 @@ class ManagingSIPRegistrationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/DeleteSipRegistration'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -441,8 +441,8 @@ class ManagingSIPRegistrationApi
      * @param float $sip_registration_id The SIP registration ID. (optional)
      * @param string $username The SIP user name to filter. (optional)
      * @param bool $deactivated Set true to show the frozen SIP registrations only. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20052
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20052
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getSipRegistrations($sip_registration_id = null, $username = null, $deactivated = null)
     {
@@ -458,8 +458,8 @@ class ManagingSIPRegistrationApi
      * @param float $sip_registration_id The SIP registration ID. (optional)
      * @param string $username The SIP user name to filter. (optional)
      * @param bool $deactivated Set true to show the frozen SIP registrations only. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20052, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20052, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getSipRegistrationsWithHttpInfo($sip_registration_id = null, $username = null, $deactivated = null)
     {
@@ -515,15 +515,15 @@ class ManagingSIPRegistrationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20052',
+                '\Voximplant\Client\Model\InlineResponse20052',
                 '/GetSipRegistrations'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20052', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20052', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20052', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20052', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -543,8 +543,8 @@ class ManagingSIPRegistrationApi
      * @param string $auth_user The SIP authentications user (optional)
      * @param string $outbound_proxy The outbound SIP proxy (optional)
      * @param string $password The SIP password (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function updateSipRegistration($sip_registration_id, $username, $proxy, $auth_user = null, $outbound_proxy = null, $password = null)
     {
@@ -563,8 +563,8 @@ class ManagingSIPRegistrationApi
      * @param string $auth_user The SIP authentications user (optional)
      * @param string $outbound_proxy The outbound SIP proxy (optional)
      * @param string $password The SIP password (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function updateSipRegistrationWithHttpInfo($sip_registration_id, $username, $proxy, $auth_user = null, $outbound_proxy = null, $password = null)
     {
@@ -644,15 +644,15 @@ class ManagingSIPRegistrationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/UpdateSipRegistration'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

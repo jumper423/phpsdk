@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,14 +38,14 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client;
+namespace Voximplant\Client;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -93,7 +93,7 @@ class Configuration
     /**
      * The default instance of ApiClient
      *
-     * @var \Voximplamt\Client\ApiClient
+     * @var \Voximplant\Client\ApiClient
      */
     protected $defaultHeaders = array();
 
@@ -519,7 +519,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (Voximplamt\Client) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (Voximplant\Client) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . phpversion() . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 1.0.0' . PHP_EOL;

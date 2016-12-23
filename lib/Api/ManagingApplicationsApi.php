@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Api;
+namespace Voximplant\Client\Api;
 
-use \Voximplamt\Client\Configuration;
-use \Voximplamt\Client\ApiClient;
-use \Voximplamt\Client\ApiException;
-use \Voximplamt\Client\ObjectSerializer;
+use \Voximplant\Client\Configuration;
+use \Voximplant\Client\ApiClient;
+use \Voximplant\Client\ApiException;
+use \Voximplant\Client\ObjectSerializer;
 
 /**
  * ManagingApplicationsApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingApplicationsApi
     /**
      * API Client
      *
-     * @var \Voximplamt\Client\ApiClient instance of the ApiClient
+     * @var \Voximplant\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplamt\Client\ApiClient|null $apiClient The api client to use
+     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplamt\Client\ApiClient $apiClient = null)
+    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingApplicationsApi
     /**
      * Get API client
      *
-     * @return \Voximplamt\Client\ApiClient get the API client
+     * @return \Voximplant\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingApplicationsApi
     /**
      * Set the API client
      *
-     * @param \Voximplamt\Client\ApiClient $apiClient set the API client
+     * @param \Voximplant\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingApplicationsApi
      */
-    public function setApiClient(\Voximplamt\Client\ApiClient $apiClient)
+    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -111,8 +111,8 @@ class ManagingApplicationsApi
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
      * @param bool $busy_on_call The busy_on_call flag. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse2003
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse2003
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function addApplication($application_name, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
     {
@@ -129,8 +129,8 @@ class ManagingApplicationsApi
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
      * @param bool $busy_on_call The busy_on_call flag. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function addApplicationWithHttpInfo($application_name, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
     {
@@ -194,15 +194,15 @@ class ManagingApplicationsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse2003',
+                '\Voximplant\Client\Model\InlineResponse2003',
                 '/AddApplication'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse2003', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse2003', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse2003', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse2003', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -218,8 +218,8 @@ class ManagingApplicationsApi
      *
      * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $application_name The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function delApplication($application_id = null, $application_name = null)
     {
@@ -234,8 +234,8 @@ class ManagingApplicationsApi
      *
      * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $application_name The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function delApplicationWithHttpInfo($application_id = null, $application_name = null)
     {
@@ -287,15 +287,15 @@ class ManagingApplicationsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/DelApplication'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -320,8 +320,8 @@ class ManagingApplicationsApi
      * @param bool $with_scenarios Set true to get binding rules and scenarios info. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20028
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20028
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getApplications($application_id = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $user_id = null, $excluded_user_id = null, $showing_user_id = null, $with_rules = null, $with_scenarios = null, $count = null, $offset = null)
     {
@@ -345,8 +345,8 @@ class ManagingApplicationsApi
      * @param bool $with_scenarios Set true to get binding rules and scenarios info. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20028, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20028, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getApplicationsWithHttpInfo($application_id = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $user_id = null, $excluded_user_id = null, $showing_user_id = null, $with_rules = null, $with_scenarios = null, $count = null, $offset = null)
     {
@@ -434,15 +434,15 @@ class ManagingApplicationsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20028',
+                '\Voximplant\Client\Model\InlineResponse20028',
                 '/GetApplications'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20028', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20028', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20028', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20028', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -462,8 +462,8 @@ class ManagingApplicationsApi
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
      * @param bool $busy_on_call The busy_on_call flag. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20063
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20063
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setApplicationInfo($application_id = null, $required_application_name = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
     {
@@ -482,8 +482,8 @@ class ManagingApplicationsApi
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
      * @param bool $busy_on_call The busy_on_call flag. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20063, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20063, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setApplicationInfoWithHttpInfo($application_id = null, $required_application_name = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
     {
@@ -551,15 +551,15 @@ class ManagingApplicationsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20063',
+                '\Voximplant\Client\Model\InlineResponse20063',
                 '/SetApplicationInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20063', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20063', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20063', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20063', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

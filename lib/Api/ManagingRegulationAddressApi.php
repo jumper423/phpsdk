@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Api;
+namespace Voximplant\Client\Api;
 
-use \Voximplamt\Client\Configuration;
-use \Voximplamt\Client\ApiClient;
-use \Voximplamt\Client\ApiException;
-use \Voximplamt\Client\ObjectSerializer;
+use \Voximplant\Client\Configuration;
+use \Voximplant\Client\ApiClient;
+use \Voximplant\Client\ApiException;
+use \Voximplant\Client\ObjectSerializer;
 
 /**
  * ManagingRegulationAddressApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingRegulationAddressApi
     /**
      * API Client
      *
-     * @var \Voximplamt\Client\ApiClient instance of the ApiClient
+     * @var \Voximplant\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplamt\Client\ApiClient|null $apiClient The api client to use
+     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplamt\Client\ApiClient $apiClient = null)
+    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingRegulationAddressApi
     /**
      * Get API client
      *
-     * @return \Voximplamt\Client\ApiClient get the API client
+     * @return \Voximplant\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingRegulationAddressApi
     /**
      * Set the API client
      *
-     * @param \Voximplamt\Client\ApiClient $apiClient set the API client
+     * @param \Voximplant\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingRegulationAddressApi
      */
-    public function setApiClient(\Voximplamt\Client\ApiClient $apiClient)
+    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -121,8 +121,8 @@ class ManagingRegulationAddressApi
      * @param string $phone_owner_last_name This is the last name for the end user of the created address. It is a mandatory field if the salutation is MR or MS. (optional)
      * @param string $phone_owner_company This is the company name for the end user of the created address. It is a mandatory field if the salutation is COMPANY. (optional)
      * @param string $phone_owner_building_letter This is the building letter which can also be used for additional information on the street number. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20018
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20018
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function createRegulationAddress($phone_category_name, $destination_country_code, $proof, $phone_owner_salutation, $phone_owner_zip_code, $phone_owner_city, $phone_owner_street, $phone_owner_building_number, $phone_owner_country_code = null, $phone_region_code = null, $phone_owner_first_name = null, $phone_owner_last_name = null, $phone_owner_company = null, $phone_owner_building_letter = null)
     {
@@ -149,8 +149,8 @@ class ManagingRegulationAddressApi
      * @param string $phone_owner_last_name This is the last name for the end user of the created address. It is a mandatory field if the salutation is MR or MS. (optional)
      * @param string $phone_owner_company This is the company name for the end user of the created address. It is a mandatory field if the salutation is COMPANY. (optional)
      * @param string $phone_owner_building_letter This is the building letter which can also be used for additional information on the street number. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20018, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20018, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function createRegulationAddressWithHttpInfo($phone_category_name, $destination_country_code, $proof, $phone_owner_salutation, $phone_owner_zip_code, $phone_owner_city, $phone_owner_street, $phone_owner_building_number, $phone_owner_country_code = null, $phone_region_code = null, $phone_owner_first_name = null, $phone_owner_last_name = null, $phone_owner_company = null, $phone_owner_building_letter = null)
     {
@@ -282,15 +282,15 @@ class ManagingRegulationAddressApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20018',
+                '\Voximplant\Client\Model\InlineResponse20018',
                 '/CreateRegulationAddress'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20018', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20018', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20018', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20018', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -307,8 +307,8 @@ class ManagingRegulationAddressApi
      * @param string $country_code The country code (required)
      * @param string $phone_category_name The phone category name. (required)
      * @param string $phone_region_code The phone region code. Mandatory for regulation type LOCAL (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20030
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20030
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getAvailibleRegulations($country_code, $phone_category_name, $phone_region_code = null)
     {
@@ -324,8 +324,8 @@ class ManagingRegulationAddressApi
      * @param string $country_code The country code (required)
      * @param string $phone_category_name The phone category name. (required)
      * @param string $phone_region_code The phone region code. Mandatory for regulation type LOCAL (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20030, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20030, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getAvailibleRegulationsWithHttpInfo($country_code, $phone_category_name, $phone_region_code = null)
     {
@@ -389,15 +389,15 @@ class ManagingRegulationAddressApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20030',
+                '\Voximplant\Client\Model\InlineResponse20030',
                 '/GetAvailibleRegulations'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20030', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20030', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20030', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20030', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -412,8 +412,8 @@ class ManagingRegulationAddressApi
      * 
      *
      * @param string $country_code The country code A2 (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20035
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20035
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getCountries($country_code = null)
     {
@@ -427,8 +427,8 @@ class ManagingRegulationAddressApi
      * 
      *
      * @param string $country_code The country code A2 (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20035, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20035, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getCountriesWithHttpInfo($country_code = null)
     {
@@ -476,15 +476,15 @@ class ManagingRegulationAddressApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20035',
+                '\Voximplant\Client\Model\InlineResponse20035',
                 '/GetCountries'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20035', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20035', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20035', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20035', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -503,8 +503,8 @@ class ManagingRegulationAddressApi
      * @param string $city_name The pattern of city&#x60;s name (optional)
      * @param int $count The returned regions count. (optional)
      * @param int $offset The record count to omit. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20047
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20047
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getRegions($country_code, $phone_category_name, $city_name = null, $count = null, $offset = null)
     {
@@ -522,8 +522,8 @@ class ManagingRegulationAddressApi
      * @param string $city_name The pattern of city&#x60;s name (optional)
      * @param int $count The returned regions count. (optional)
      * @param int $offset The record count to omit. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20047, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20047, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getRegionsWithHttpInfo($country_code, $phone_category_name, $city_name = null, $count = null, $offset = null)
     {
@@ -595,15 +595,15 @@ class ManagingRegulationAddressApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20047',
+                '\Voximplant\Client\Model\InlineResponse20047',
                 '/GetRegions'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20047', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20047', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20047', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20047', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -623,8 +623,8 @@ class ManagingRegulationAddressApi
      * @param float $regulation_address_id The regulation address ID. (optional)
      * @param bool $verified Show only verified regulation address. (optional)
      * @param bool $in_progress Show only in progress regulation address. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20048
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20048
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getRegulationsAddress($country_code = null, $phone_category_name = null, $phone_region_code = null, $regulation_address_id = null, $verified = null, $in_progress = null)
     {
@@ -643,8 +643,8 @@ class ManagingRegulationAddressApi
      * @param float $regulation_address_id The regulation address ID. (optional)
      * @param bool $verified Show only verified regulation address. (optional)
      * @param bool $in_progress Show only in progress regulation address. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20048, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20048, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getRegulationsAddressWithHttpInfo($country_code = null, $phone_category_name = null, $phone_region_code = null, $regulation_address_id = null, $verified = null, $in_progress = null)
     {
@@ -712,15 +712,15 @@ class ManagingRegulationAddressApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20048',
+                '\Voximplant\Client\Model\InlineResponse20048',
                 '/GetRegulationsAddress'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20048', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20048', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20048', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20048', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -738,8 +738,8 @@ class ManagingRegulationAddressApi
      * @param string $phone_region_code The phone region code (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20058
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20058
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getZIPCodes($country_code, $phone_region_code = null, $count = null, $offset = null)
     {
@@ -756,8 +756,8 @@ class ManagingRegulationAddressApi
      * @param string $phone_region_code The phone region code (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20058, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20058, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getZIPCodesWithHttpInfo($country_code, $phone_region_code = null, $count = null, $offset = null)
     {
@@ -821,15 +821,15 @@ class ManagingRegulationAddressApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20058',
+                '\Voximplant\Client\Model\InlineResponse20058',
                 '/GetZIPCodes'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20058', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20058', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20058', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20058', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -846,8 +846,8 @@ class ManagingRegulationAddressApi
      * @param float $regulation_address_id The regulation address ID (required)
      * @param float $phone_id The phone ID for link (required)
      * @param string $phone_number The phone number for link (required)
-     * @return \Voximplamt\Client\Model\InlineResponse20059
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20059
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function linkregulationAddress($regulation_address_id, $phone_id, $phone_number)
     {
@@ -863,8 +863,8 @@ class ManagingRegulationAddressApi
      * @param float $regulation_address_id The regulation address ID (required)
      * @param float $phone_id The phone ID for link (required)
      * @param string $phone_number The phone number for link (required)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20059, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20059, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function linkregulationAddressWithHttpInfo($regulation_address_id, $phone_id, $phone_number)
     {
@@ -932,15 +932,15 @@ class ManagingRegulationAddressApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20059',
+                '\Voximplant\Client\Model\InlineResponse20059',
                 '/LinkregulationAddress'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20059', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20059', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20059', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20059', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -956,8 +956,8 @@ class ManagingRegulationAddressApi
      *
      * @param float $regulation_address_id The regulation address id (required)
      * @param string $proof Send as Body Request or multiform. (required)
-     * @return \Voximplamt\Client\Model\InlineResponse20059
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20059
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function uploadProofOfAddress($regulation_address_id, $proof)
     {
@@ -972,8 +972,8 @@ class ManagingRegulationAddressApi
      *
      * @param float $regulation_address_id The regulation address id (required)
      * @param string $proof Send as Body Request or multiform. (required)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20059, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20059, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function uploadProofOfAddressWithHttpInfo($regulation_address_id, $proof)
     {
@@ -1033,15 +1033,15 @@ class ManagingRegulationAddressApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20059',
+                '\Voximplant\Client\Model\InlineResponse20059',
                 '/UploadProofOfAddress'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20059', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20059', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20059', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20059', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

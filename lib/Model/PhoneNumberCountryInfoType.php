@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The GetPhoneNumberCategories function result.
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -70,7 +70,7 @@ class PhoneNumberCountryInfoType implements ArrayAccess
         'country_code' => 'string',
         'phone_prefix' => 'string',
         'can_list_phone_numbers' => 'bool',
-        'phone_categories' => '\Voximplamt\Client\Model\PhoneNumberCountryCategoryInfoType[]'
+        'phone_categories' => '\Voximplant\Client\Model\PhoneNumberCountryCategoryInfoType[]'
     );
 
     public static function swaggerTypes()
@@ -254,7 +254,7 @@ class PhoneNumberCountryInfoType implements ArrayAccess
 
     /**
      * Gets phone_categories
-     * @return \Voximplamt\Client\Model\PhoneNumberCountryCategoryInfoType[]
+     * @return \Voximplant\Client\Model\PhoneNumberCountryCategoryInfoType[]
      */
     public function getPhoneCategories()
     {
@@ -263,7 +263,7 @@ class PhoneNumberCountryInfoType implements ArrayAccess
 
     /**
      * Sets phone_categories
-     * @param \Voximplamt\Client\Model\PhoneNumberCountryCategoryInfoType[] $phone_categories
+     * @param \Voximplant\Client\Model\PhoneNumberCountryCategoryInfoType[] $phone_categories
      * @return $this
      */
     public function setPhoneCategories($phone_categories)
@@ -324,10 +324,10 @@ class PhoneNumberCountryInfoType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

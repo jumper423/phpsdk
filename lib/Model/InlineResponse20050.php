@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Model;
+namespace Voximplant\Client\Model;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /** 
- * @package     Voximplamt\Client
+ * @package     Voximplant\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -66,7 +66,7 @@ class InlineResponse20050 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Voximplamt\Client\Model\RuleInfoType[]',
+        'result' => '\Voximplant\Client\Model\RuleInfoType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20050 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Voximplamt\Client\Model\RuleInfoType[]
+     * @return \Voximplant\Client\Model\RuleInfoType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20050 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Voximplamt\Client\Model\RuleInfoType[] $result
+     * @param \Voximplant\Client\Model\RuleInfoType[] $result
      * @return $this
      */
     public function setResult($result)
@@ -279,10 +279,10 @@ class InlineResponse20050 implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplamt\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

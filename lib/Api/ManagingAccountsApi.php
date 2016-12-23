@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplamt\Client\Api;
+namespace Voximplant\Client\Api;
 
-use \Voximplamt\Client\Configuration;
-use \Voximplamt\Client\ApiClient;
-use \Voximplamt\Client\ApiException;
-use \Voximplamt\Client\ObjectSerializer;
+use \Voximplant\Client\Configuration;
+use \Voximplant\Client\ApiClient;
+use \Voximplant\Client\ApiException;
+use \Voximplant\Client\ObjectSerializer;
 
 /**
  * ManagingAccountsApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplamt\Client
+ * @package  Voximplant\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingAccountsApi
     /**
      * API Client
      *
-     * @var \Voximplamt\Client\ApiClient instance of the ApiClient
+     * @var \Voximplant\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplamt\Client\ApiClient|null $apiClient The api client to use
+     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplamt\Client\ApiClient $apiClient = null)
+    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingAccountsApi
     /**
      * Get API client
      *
-     * @return \Voximplamt\Client\ApiClient get the API client
+     * @return \Voximplant\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingAccountsApi
     /**
      * Set the API client
      *
-     * @param \Voximplamt\Client\ApiClient $apiClient set the API client
+     * @param \Voximplant\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingAccountsApi
      */
-    public function setApiClient(\Voximplamt\Client\ApiClient $apiClient)
+    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -109,8 +109,8 @@ class ManagingAccountsApi
      *
      * @param string $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (optional)
      * @param string $phone_number Can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. The phone number list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20016
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20016
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function chargeAccount($phone_id = null, $phone_number = null)
     {
@@ -125,8 +125,8 @@ class ManagingAccountsApi
      *
      * @param string $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (optional)
      * @param string $phone_number Can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. The phone number list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20016, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20016, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function chargeAccountWithHttpInfo($phone_id = null, $phone_number = null)
     {
@@ -178,15 +178,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20016',
+                '\Voximplant\Client\Model\InlineResponse20016',
                 '/ChargeAccount'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20016', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20016', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20016', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20016', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -202,8 +202,8 @@ class ManagingAccountsApi
      *
      * @param string $code The verification code (auth token). (required)
      * @param string $new_account_password The password length must be at least 6 symbols. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function confirmAccountPasswordChange($code, $new_account_password = null)
     {
@@ -218,8 +218,8 @@ class ManagingAccountsApi
      *
      * @param string $code The verification code (auth token). (required)
      * @param string $new_account_password The password length must be at least 6 symbols. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function confirmAccountPasswordChangeWithHttpInfo($code, $new_account_password = null)
     {
@@ -275,15 +275,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/ConfirmAccountPasswordChange'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -304,8 +304,8 @@ class ManagingAccountsApi
      * @param string $to_unverified_hold_until Unverified subscriptions hold until the date (... to) in format: YYYY-MM-DD (optional)
      * @param string $child_account_id The child account ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param bool $children_verifications_only Set true to get the children account verifications only. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20023
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20023
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getAccountDocuments($with_details = null, $verification_name = null, $verification_status = null, $from_unverified_hold_until = null, $to_unverified_hold_until = null, $child_account_id = null, $children_verifications_only = null)
     {
@@ -325,8 +325,8 @@ class ManagingAccountsApi
      * @param string $to_unverified_hold_until Unverified subscriptions hold until the date (... to) in format: YYYY-MM-DD (optional)
      * @param string $child_account_id The child account ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param bool $children_verifications_only Set true to get the children account verifications only. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20023, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20023, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getAccountDocumentsWithHttpInfo($with_details = null, $verification_name = null, $verification_status = null, $from_unverified_hold_until = null, $to_unverified_hold_until = null, $child_account_id = null, $children_verifications_only = null)
     {
@@ -398,15 +398,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20023',
+                '\Voximplant\Client\Model\InlineResponse20023',
                 '/GetAccountDocuments'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20023', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20023', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20023', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20023', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -421,8 +421,8 @@ class ManagingAccountsApi
      * 
      *
      * @param bool $return_live_balance Set true to get the account&#x60;s live balance. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20024
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20024
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getAccountInfo($return_live_balance = null)
     {
@@ -436,8 +436,8 @@ class ManagingAccountsApi
      * 
      *
      * @param bool $return_live_balance Set true to get the account&#x60;s live balance. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20024, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20024, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getAccountInfoWithHttpInfo($return_live_balance = null)
     {
@@ -485,15 +485,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20024',
+                '\Voximplant\Client\Model\InlineResponse20024',
                 '/GetAccountInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20024', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20024', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20024', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20024', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -509,8 +509,8 @@ class ManagingAccountsApi
      *
      * @param string $currency The currency code list separated by the &#x60;;&#x60; symbol. Examples: RUR, EUR, USD (required)
      * @param string $date The date, format: YYYY-MM-DD (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20036
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20036
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getCurrencyRate($currency, $date = null)
     {
@@ -525,8 +525,8 @@ class ManagingAccountsApi
      *
      * @param string $currency The currency code list separated by the &#x60;;&#x60; symbol. Examples: RUR, EUR, USD (required)
      * @param string $date The date, format: YYYY-MM-DD (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20036, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20036, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getCurrencyRateWithHttpInfo($currency, $date = null)
     {
@@ -582,15 +582,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20036',
+                '\Voximplant\Client\Model\InlineResponse20036',
                 '/GetCurrencyRate'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20036', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20036', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20036', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20036', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -606,8 +606,8 @@ class ManagingAccountsApi
      *
      * @param string $currency The currency name. Examples: USD, RUR, EUR. (optional)
      * @param string $charge_date The next charge date, format: YYYY-MM-DD (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20038
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20038
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getMoneyAmountToCharge($currency = null, $charge_date = null)
     {
@@ -622,8 +622,8 @@ class ManagingAccountsApi
      *
      * @param string $currency The currency name. Examples: USD, RUR, EUR. (optional)
      * @param string $charge_date The next charge date, format: YYYY-MM-DD (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20038, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20038, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getMoneyAmountToChargeWithHttpInfo($currency = null, $charge_date = null)
     {
@@ -675,15 +675,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20038',
+                '\Voximplant\Client\Model\InlineResponse20038',
                 '/GetMoneyAmountToCharge'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20038', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20038', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20038', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20038', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -701,8 +701,8 @@ class ManagingAccountsApi
      * @param string $price_group_id The price group ID list separated by the &#x60;;&#x60; symbol. (optional)
      * @param string $price_group_name The price group name template to filter. (optional)
      * @param string $resource_param The resource parameter list separated by the &#x60;;&#x60; symbol. Example: a phone number list. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20049
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20049
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getResourcePrice($resource_type = null, $price_group_id = null, $price_group_name = null, $resource_param = null)
     {
@@ -719,8 +719,8 @@ class ManagingAccountsApi
      * @param string $price_group_id The price group ID list separated by the &#x60;;&#x60; symbol. (optional)
      * @param string $price_group_name The price group name template to filter. (optional)
      * @param string $resource_param The resource parameter list separated by the &#x60;;&#x60; symbol. Example: a phone number list. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20049, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20049, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getResourcePriceWithHttpInfo($resource_type = null, $price_group_id = null, $price_group_name = null, $resource_param = null)
     {
@@ -780,15 +780,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20049',
+                '\Voximplant\Client\Model\InlineResponse20049',
                 '/GetResourcePrice'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20049', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20049', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20049', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20049', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -807,8 +807,8 @@ class ManagingAccountsApi
      * @param string $subscription_template_name The subscription template name  (example: SIP registration, Phone GB, Phone RU 495, ...). (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20055
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20055
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getSubscriptionPrice($subscription_template_id = null, $subscription_template_type = null, $subscription_template_name = null, $count = null, $offset = null)
     {
@@ -826,8 +826,8 @@ class ManagingAccountsApi
      * @param string $subscription_template_name The subscription template name  (example: SIP registration, Phone GB, Phone RU 495, ...). (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20055, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20055, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function getSubscriptionPriceWithHttpInfo($subscription_template_id = null, $subscription_template_type = null, $subscription_template_name = null, $count = null, $offset = null)
     {
@@ -891,15 +891,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20055',
+                '\Voximplant\Client\Model\InlineResponse20055',
                 '/GetSubscriptionPrice'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20055', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20055', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20055', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20055', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -913,8 +913,8 @@ class ManagingAccountsApi
      *
      * 
      *
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function sendAccountPasswordChangeRequest()
     {
@@ -927,8 +927,8 @@ class ManagingAccountsApi
      *
      * 
      *
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function sendAccountPasswordChangeRequestWithHttpInfo()
     {
@@ -972,15 +972,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/SendAccountPasswordChangeRequest'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1010,8 +1010,8 @@ class ManagingAccountsApi
      * @param string $legal_entry_actual_address The address of the legal entry. (optional)
      * @param string $ogrn The OGRN of the legal entry. (optional)
      * @param string $inn The INN of the legal entry. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse20062
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse20062
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setAccountDocument($account_document, $verification_name, $is_individual = null, $individual_full_name = null, $individual_birth_date = null, $individual_passport_series = null, $individual_passport_number = null, $individual_passport_issue_date = null, $individual_passport_issued_by = null, $individual_registration_address = null, $legal_entry_full_name = null, $legal_entry_phone = null, $legal_entry_address = null, $legal_entry_actual_address = null, $ogrn = null, $inn = null)
     {
@@ -1040,8 +1040,8 @@ class ManagingAccountsApi
      * @param string $legal_entry_actual_address The address of the legal entry. (optional)
      * @param string $ogrn The OGRN of the legal entry. (optional)
      * @param string $inn The INN of the legal entry. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse20062, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse20062, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setAccountDocumentWithHttpInfo($account_document, $verification_name, $is_individual = null, $individual_full_name = null, $individual_birth_date = null, $individual_passport_series = null, $individual_passport_number = null, $individual_passport_issue_date = null, $individual_passport_issued_by = null, $individual_registration_address = null, $legal_entry_full_name = null, $legal_entry_phone = null, $legal_entry_address = null, $legal_entry_actual_address = null, $ogrn = null, $inn = null)
     {
@@ -1157,15 +1157,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse20062',
+                '\Voximplant\Client\Model\InlineResponse20062',
                 '/SetAccountDocument'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse20062', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20062', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse20062', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20062', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1196,8 +1196,8 @@ class ManagingAccountsApi
      * @param string $billing_address_zip The office ZIP. (optional)
      * @param string $billing_address_phone The office phone number. (optional)
      * @param string $account_custom_data The custom data. (optional)
-     * @return \Voximplamt\Client\Model\InlineResponse200
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return \Voximplant\Client\Model\InlineResponse200
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setAccountInfo($new_account_email = null, $new_account_password = null, $language_code = null, $location = null, $account_first_name = null, $account_last_name = null, $min_balance_to_notify = null, $account_notifications = null, $tariff_changing_notifications = null, $news_notifications = null, $send_js_error = null, $billing_address_name = null, $billing_address_country_code = null, $billing_address_address = null, $billing_address_zip = null, $billing_address_phone = null, $account_custom_data = null)
     {
@@ -1227,8 +1227,8 @@ class ManagingAccountsApi
      * @param string $billing_address_zip The office ZIP. (optional)
      * @param string $billing_address_phone The office phone number. (optional)
      * @param string $account_custom_data The custom data. (optional)
-     * @return Array of \Voximplamt\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplamt\Client\ApiException on non-2xx response
+     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Voximplant\Client\ApiException on non-2xx response
      */
     public function setAccountInfoWithHttpInfo($new_account_email = null, $new_account_password = null, $language_code = null, $location = null, $account_first_name = null, $account_last_name = null, $min_balance_to_notify = null, $account_notifications = null, $tariff_changing_notifications = null, $news_notifications = null, $send_js_error = null, $billing_address_name = null, $billing_address_country_code = null, $billing_address_address = null, $billing_address_zip = null, $billing_address_phone = null, $account_custom_data = null)
     {
@@ -1340,15 +1340,15 @@ class ManagingAccountsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplamt\Client\Model\InlineResponse200',
+                '\Voximplant\Client\Model\InlineResponse200',
                 '/SetAccountInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplamt\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplamt\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
