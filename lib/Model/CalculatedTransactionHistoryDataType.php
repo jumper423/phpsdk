@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The HistoryReportType.calculated_data object on HistoryReportType.history_type&#x3D;&#x3D;&#39;transactions&#39;
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -454,10 +454,10 @@ class CalculatedTransactionHistoryDataType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

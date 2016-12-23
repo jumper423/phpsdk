@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **correspondence_address** | **string** | The correspondence address. | [optional] 
 **correspondence_email** | **string** | The correspondence email. | [optional] 
 **correspondence_to** | **string** | The correspondence to. | [optional] 
-**contract** | [**\Voximplant\Client\Model\ContractInfoType**](ContractInfoType.md) |  | [optional] 
+**contract** | [**\Swagger\Client\Model\ContractInfoType**](ContractInfoType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

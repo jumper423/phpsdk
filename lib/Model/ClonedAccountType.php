@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The cloned account info.
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -72,13 +72,13 @@ class ClonedAccountType implements ArrayAccess
         'account_email' => 'string',
         'active' => 'bool',
         'api_key' => 'string',
-        'users' => '\Voximplant\Client\Model\ClonedUserType[]',
-        'scenarios' => '\Voximplant\Client\Model\ClonedScenarioType[]',
-        'applications' => '\Voximplant\Client\Model\ClonedApplicationType[]',
-        'acd_queues' => '\Voximplant\Client\Model\ClonedACDQueueType[]',
-        'acd_skills' => '\Voximplant\Client\Model\ClonedACDSkillType[]',
-        'admin_roles' => '\Voximplant\Client\Model\ClonedAdminRoleType[]',
-        'admin_users' => '\Voximplant\Client\Model\ClonedAdminUserType[]'
+        'users' => '\Swagger\Client\Model\ClonedUserType[]',
+        'scenarios' => '\Swagger\Client\Model\ClonedScenarioType[]',
+        'applications' => '\Swagger\Client\Model\ClonedApplicationType[]',
+        'acd_queues' => '\Swagger\Client\Model\ClonedACDQueueType[]',
+        'acd_skills' => '\Swagger\Client\Model\ClonedACDSkillType[]',
+        'admin_roles' => '\Swagger\Client\Model\ClonedAdminRoleType[]',
+        'admin_users' => '\Swagger\Client\Model\ClonedAdminUserType[]'
     );
 
     public static function swaggerTypes()
@@ -348,7 +348,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Gets users
-     * @return \Voximplant\Client\Model\ClonedUserType[]
+     * @return \Swagger\Client\Model\ClonedUserType[]
      */
     public function getUsers()
     {
@@ -357,7 +357,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Sets users
-     * @param \Voximplant\Client\Model\ClonedUserType[] $users
+     * @param \Swagger\Client\Model\ClonedUserType[] $users
      * @return $this
      */
     public function setUsers($users)
@@ -369,7 +369,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Gets scenarios
-     * @return \Voximplant\Client\Model\ClonedScenarioType[]
+     * @return \Swagger\Client\Model\ClonedScenarioType[]
      */
     public function getScenarios()
     {
@@ -378,7 +378,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Sets scenarios
-     * @param \Voximplant\Client\Model\ClonedScenarioType[] $scenarios
+     * @param \Swagger\Client\Model\ClonedScenarioType[] $scenarios
      * @return $this
      */
     public function setScenarios($scenarios)
@@ -390,7 +390,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Gets applications
-     * @return \Voximplant\Client\Model\ClonedApplicationType[]
+     * @return \Swagger\Client\Model\ClonedApplicationType[]
      */
     public function getApplications()
     {
@@ -399,7 +399,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Sets applications
-     * @param \Voximplant\Client\Model\ClonedApplicationType[] $applications
+     * @param \Swagger\Client\Model\ClonedApplicationType[] $applications
      * @return $this
      */
     public function setApplications($applications)
@@ -411,7 +411,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Gets acd_queues
-     * @return \Voximplant\Client\Model\ClonedACDQueueType[]
+     * @return \Swagger\Client\Model\ClonedACDQueueType[]
      */
     public function getAcdQueues()
     {
@@ -420,7 +420,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Sets acd_queues
-     * @param \Voximplant\Client\Model\ClonedACDQueueType[] $acd_queues
+     * @param \Swagger\Client\Model\ClonedACDQueueType[] $acd_queues
      * @return $this
      */
     public function setAcdQueues($acd_queues)
@@ -432,7 +432,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Gets acd_skills
-     * @return \Voximplant\Client\Model\ClonedACDSkillType[]
+     * @return \Swagger\Client\Model\ClonedACDSkillType[]
      */
     public function getAcdSkills()
     {
@@ -441,7 +441,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Sets acd_skills
-     * @param \Voximplant\Client\Model\ClonedACDSkillType[] $acd_skills
+     * @param \Swagger\Client\Model\ClonedACDSkillType[] $acd_skills
      * @return $this
      */
     public function setAcdSkills($acd_skills)
@@ -453,7 +453,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Gets admin_roles
-     * @return \Voximplant\Client\Model\ClonedAdminRoleType[]
+     * @return \Swagger\Client\Model\ClonedAdminRoleType[]
      */
     public function getAdminRoles()
     {
@@ -462,7 +462,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Sets admin_roles
-     * @param \Voximplant\Client\Model\ClonedAdminRoleType[] $admin_roles
+     * @param \Swagger\Client\Model\ClonedAdminRoleType[] $admin_roles
      * @return $this
      */
     public function setAdminRoles($admin_roles)
@@ -474,7 +474,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Gets admin_users
-     * @return \Voximplant\Client\Model\ClonedAdminUserType[]
+     * @return \Swagger\Client\Model\ClonedAdminUserType[]
      */
     public function getAdminUsers()
     {
@@ -483,7 +483,7 @@ class ClonedAccountType implements ArrayAccess
 
     /**
      * Sets admin_users
-     * @param \Voximplant\Client\Model\ClonedAdminUserType[] $admin_users
+     * @param \Swagger\Client\Model\ClonedAdminUserType[] $admin_users
      * @return $this
      */
     public function setAdminUsers($admin_users)
@@ -544,10 +544,10 @@ class ClonedAccountType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

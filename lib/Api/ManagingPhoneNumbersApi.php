@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Api;
+namespace Swagger\Client\Api;
 
-use \Voximplant\Client\Configuration;
-use \Voximplant\Client\ApiClient;
-use \Voximplant\Client\ApiException;
-use \Voximplant\Client\ObjectSerializer;
+use \Swagger\Client\Configuration;
+use \Swagger\Client\ApiClient;
+use \Swagger\Client\ApiException;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * ManagingPhoneNumbersApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingPhoneNumbersApi
     /**
      * API Client
      *
-     * @var \Voximplant\Client\ApiClient instance of the ApiClient
+     * @var \Swagger\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
+     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
+    public function __construct(\Swagger\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingPhoneNumbersApi
     /**
      * Get API client
      *
-     * @return \Voximplant\Client\ApiClient get the API client
+     * @return \Swagger\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingPhoneNumbersApi
     /**
      * Set the API client
      *
-     * @param \Voximplant\Client\ApiClient $apiClient set the API client
+     * @param \Swagger\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingPhoneNumbersApi
      */
-    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
+    public function setApiClient(\Swagger\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -114,8 +114,8 @@ class ManagingPhoneNumbersApi
      * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_count&lt;/b&gt;. See the GetNewPhoneNumbers function. (optional)
      * @param string $country_state The country state. See the GetPhoneNumberCategories and GetPhoneNumberCountryStates functions. (optional)
      * @param float $regulation_address_id The phone regulation address ID. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20014
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20014
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function attachPhoneNumber($country_code, $phone_category_name, $phone_region_id, $phone_count = null, $phone_number = null, $country_state = null, $regulation_address_id = null)
     {
@@ -135,8 +135,8 @@ class ManagingPhoneNumbersApi
      * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_count&lt;/b&gt;. See the GetNewPhoneNumbers function. (optional)
      * @param string $country_state The country state. See the GetPhoneNumberCategories and GetPhoneNumberCountryStates functions. (optional)
      * @param float $regulation_address_id The phone regulation address ID. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20014, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20014, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function attachPhoneNumberWithHttpInfo($country_code, $phone_category_name, $phone_region_id, $phone_count = null, $phone_number = null, $country_state = null, $regulation_address_id = null)
     {
@@ -220,15 +220,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20014',
+                '\Swagger\Client\Model\InlineResponse20014',
                 '/AttachPhoneNumber'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20014', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20014', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20014', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20014', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -249,8 +249,8 @@ class ManagingPhoneNumbersApi
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return \Voximplant\Client\Model\InlineResponse200
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse200
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function bindPhoneNumberToApplication($phone_id = null, $phone_number = null, $application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $bind = null)
     {
@@ -270,8 +270,8 @@ class ManagingPhoneNumbersApi
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function bindPhoneNumberToApplicationWithHttpInfo($phone_id = null, $phone_number = null, $application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $bind = null)
     {
@@ -343,15 +343,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse200',
+                '\Swagger\Client\Model\InlineResponse200',
                 '/BindPhoneNumberToApplication'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -367,8 +367,8 @@ class ManagingPhoneNumbersApi
      *
      * @param float $phone_id The phone ID. (optional)
      * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse200
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse200
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function deactivatePhoneNumber($phone_id = null, $phone_number = null)
     {
@@ -383,8 +383,8 @@ class ManagingPhoneNumbersApi
      *
      * @param float $phone_id The phone ID. (optional)
      * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function deactivatePhoneNumberWithHttpInfo($phone_id = null, $phone_number = null)
     {
@@ -436,15 +436,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse200',
+                '\Swagger\Client\Model\InlineResponse200',
                 '/DeactivatePhoneNumber'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -461,8 +461,8 @@ class ManagingPhoneNumbersApi
      * @param string $country_code The country code. (required)
      * @param string $phone_category_name The phone category name. See the GetPhoneNumberCategories function. (required)
      * @param float $phone_region_id The phone region ID to filter. (required)
-     * @return \Voximplant\Client\Model\InlineResponse20025
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20025
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getActualPhoneNumberRegion($country_code, $phone_category_name, $phone_region_id)
     {
@@ -478,8 +478,8 @@ class ManagingPhoneNumbersApi
      * @param string $country_code The country code. (required)
      * @param string $phone_category_name The phone category name. See the GetPhoneNumberCategories function. (required)
      * @param float $phone_region_id The phone region ID to filter. (required)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getActualPhoneNumberRegionWithHttpInfo($country_code, $phone_category_name, $phone_region_id)
     {
@@ -547,15 +547,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20025',
+                '\Swagger\Client\Model\InlineResponse20025',
                 '/GetActualPhoneNumberRegion'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20025', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20025', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20025', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20025', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -575,8 +575,8 @@ class ManagingPhoneNumbersApi
      * @param string $country_state The country state. See the GetPhoneNumberCategories and GetPhoneNumberCountryStates functions. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20039
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20039
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getNewPhoneNumbers($country_code, $phone_category_name, $phone_region_id, $country_state = null, $count = null, $offset = null)
     {
@@ -595,8 +595,8 @@ class ManagingPhoneNumbersApi
      * @param string $country_state The country state. See the GetPhoneNumberCategories and GetPhoneNumberCountryStates functions. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20039, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20039, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getNewPhoneNumbersWithHttpInfo($country_code, $phone_category_name, $phone_region_id, $country_state = null, $count = null, $offset = null)
     {
@@ -676,15 +676,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20039',
+                '\Swagger\Client\Model\InlineResponse20039',
                 '/GetNewPhoneNumbers'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20039', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20039', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20039', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20039', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -700,8 +700,8 @@ class ManagingPhoneNumbersApi
      *
      * @param string $country_code The country code. (optional)
      * @param string $sandbox Flag allows you to display phone number categories only of the sandbox, real or all .The following values are possible: &#x60;all&#x60;, &#x60;true&#x60;, &#x60;false&#x60;. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20040
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20040
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPhoneNumberCategories($country_code = null, $sandbox = null)
     {
@@ -716,8 +716,8 @@ class ManagingPhoneNumbersApi
      *
      * @param string $country_code The country code. (optional)
      * @param string $sandbox Flag allows you to display phone number categories only of the sandbox, real or all .The following values are possible: &#x60;all&#x60;, &#x60;true&#x60;, &#x60;false&#x60;. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20040, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20040, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPhoneNumberCategoriesWithHttpInfo($country_code = null, $sandbox = null)
     {
@@ -769,15 +769,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20040',
+                '\Swagger\Client\Model\InlineResponse20040',
                 '/GetPhoneNumberCategories'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20040', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20040', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20040', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20040', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -794,8 +794,8 @@ class ManagingPhoneNumbersApi
      * @param string $country_code The country code. (required)
      * @param string $phone_category_name The phone category name. See the GetPhoneNumberCategories function. (required)
      * @param string $country_state The country state code (example: AL, CA, ... ). (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20041
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20041
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPhoneNumberCountryStates($country_code, $phone_category_name, $country_state = null)
     {
@@ -811,8 +811,8 @@ class ManagingPhoneNumbersApi
      * @param string $country_code The country code. (required)
      * @param string $phone_category_name The phone category name. See the GetPhoneNumberCategories function. (required)
      * @param string $country_state The country state code (example: AL, CA, ... ). (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20041, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20041, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPhoneNumberCountryStatesWithHttpInfo($country_code, $phone_category_name, $country_state = null)
     {
@@ -876,15 +876,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20041',
+                '\Swagger\Client\Model\InlineResponse20041',
                 '/GetPhoneNumberCountryStates'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20041', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20041', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20041', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20041', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -905,8 +905,8 @@ class ManagingPhoneNumbersApi
      * @param float $phone_region_id The phone region ID to filter. (optional)
      * @param string $phone_region_name The phone region name to filter. (optional)
      * @param string $phone_region_code The region phone prefix to filter. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20042
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20042
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPhoneNumberRegions($country_code, $phone_category_name, $country_state = null, $omit_empty = null, $phone_region_id = null, $phone_region_name = null, $phone_region_code = null)
     {
@@ -926,8 +926,8 @@ class ManagingPhoneNumbersApi
      * @param float $phone_region_id The phone region ID to filter. (optional)
      * @param string $phone_region_name The phone region name to filter. (optional)
      * @param string $phone_region_code The region phone prefix to filter. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20042, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20042, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPhoneNumberRegionsWithHttpInfo($country_code, $phone_category_name, $country_state = null, $omit_empty = null, $phone_region_id = null, $phone_region_name = null, $phone_region_code = null)
     {
@@ -1007,15 +1007,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20042',
+                '\Swagger\Client\Model\InlineResponse20042',
                 '/GetPhoneNumberRegions'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20042', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20042', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20042', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20042', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1054,8 +1054,8 @@ class ManagingPhoneNumbersApi
      * @param string $sandbox Flag allows you to display only the numbers of the sandbox, real numbers, or all numbers .The following values are possible: &#x60;all&#x60;, &#x60;true&#x60;, &#x60;false&#x60;. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20043
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20043
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPhoneNumbers($phone_id = null, $application_id = null, $application_name = null, $is_bound_to_application = null, $phone_template = null, $country_code = null, $phone_category_name = null, $canceled = null, $deactivated = null, $auto_charge = null, $from_phone_next_renewal = null, $to_phone_next_renewal = null, $from_phone_purchase_date = null, $to_phone_purchase_date = null, $child_account_id = null, $children_phones_only = null, $verification_name = null, $verification_status = null, $from_unverified_hold_until = null, $to_unverified_hold_until = null, $can_be_used = null, $order_by = null, $sandbox = null, $count = null, $offset = null)
     {
@@ -1093,8 +1093,8 @@ class ManagingPhoneNumbersApi
      * @param string $sandbox Flag allows you to display only the numbers of the sandbox, real numbers, or all numbers .The following values are possible: &#x60;all&#x60;, &#x60;true&#x60;, &#x60;false&#x60;. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20043, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20043, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPhoneNumbersWithHttpInfo($phone_id = null, $application_id = null, $application_name = null, $is_bound_to_application = null, $phone_template = null, $country_code = null, $phone_category_name = null, $canceled = null, $deactivated = null, $auto_charge = null, $from_phone_next_renewal = null, $to_phone_next_renewal = null, $from_phone_purchase_date = null, $to_phone_purchase_date = null, $child_account_id = null, $children_phones_only = null, $verification_name = null, $verification_status = null, $from_unverified_hold_until = null, $to_unverified_hold_until = null, $can_be_used = null, $order_by = null, $sandbox = null, $count = null, $offset = null)
     {
@@ -1238,15 +1238,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20043',
+                '\Swagger\Client\Model\InlineResponse20043',
                 '/GetPhoneNumbers'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20043', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20043', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20043', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20043', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1263,8 +1263,8 @@ class ManagingPhoneNumbersApi
      * @param bool $auto_charge Is auto charge enable? (required)
      * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse200
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse200
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setPhoneNumberInfo($auto_charge, $phone_id = null, $phone_number = null)
     {
@@ -1280,8 +1280,8 @@ class ManagingPhoneNumbersApi
      * @param bool $auto_charge Is auto charge enable? (required)
      * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setPhoneNumberInfoWithHttpInfo($auto_charge, $phone_id = null, $phone_number = null)
     {
@@ -1341,15 +1341,15 @@ class ManagingPhoneNumbersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse200',
+                '\Swagger\Client\Model\InlineResponse200',
                 '/SetPhoneNumberInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

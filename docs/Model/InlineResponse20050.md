@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Voximplant\Client\Model\RuleInfoType[]**](RuleInfoType.md) |  | [optional] 
+**result** | [**\Swagger\Client\Model\RuleInfoType[]**](RuleInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found rule count. | [optional] 
 **count** | **int** | The returned rule count. | [optional] 
 

@@ -1,4 +1,4 @@
-# Voximplant\Client\AccountsAuthenticationApi
+# Swagger\Client\AccountsAuthenticationApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **logon**
-> \Voximplant\Client\Model\InlineResponse20060 logon()
+> \Swagger\Client\Model\InlineResponse20060 logon()
 
 
 
@@ -21,15 +21,15 @@ Gets a temporary session ID (and a permanent 'api_key') to work with the API.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\AccountsAuthenticationApi();
+$api_instance = new Swagger\Client\Api\AccountsAuthenticationApi();
 
 try {
     $result = $api_instance->logon();
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20060**](../Model/InlineResponse20060.md)
+[**\Swagger\Client\Model\InlineResponse20060**](../Model/InlineResponse20060.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **logout**
-> \Voximplant\Client\Model\InlineResponse200 logout()
+> \Swagger\Client\Model\InlineResponse200 logout()
 
 
 
@@ -71,15 +71,15 @@ Forgets the session ID.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\AccountsAuthenticationApi();
+$api_instance = new Swagger\Client\Api\AccountsAuthenticationApi();
 
 try {
     $result = $api_instance->logout();
@@ -95,7 +95,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

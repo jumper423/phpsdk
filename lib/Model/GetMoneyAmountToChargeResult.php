@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The GetMoneyAmountToCharge function result.
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -73,7 +73,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
         'min_bank_card_amount_usd' => 'int',
         'robokassa_amount_rub' => 'int',
         'min_robokassa_amount_rub' => 'int',
-        'subscriptions' => '\Voximplant\Client\Model\SubscriptionsToChargeType[]'
+        'subscriptions' => '\Swagger\Client\Model\SubscriptionsToChargeType[]'
     );
 
     public static function swaggerTypes()
@@ -326,7 +326,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
 
     /**
      * Gets subscriptions
-     * @return \Voximplant\Client\Model\SubscriptionsToChargeType[]
+     * @return \Swagger\Client\Model\SubscriptionsToChargeType[]
      */
     public function getSubscriptions()
     {
@@ -335,7 +335,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
 
     /**
      * Sets subscriptions
-     * @param \Voximplant\Client\Model\SubscriptionsToChargeType[] $subscriptions
+     * @param \Swagger\Client\Model\SubscriptionsToChargeType[] $subscriptions
      * @return $this
      */
     public function setSubscriptions($subscriptions)
@@ -396,10 +396,10 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

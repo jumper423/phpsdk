@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The ChargeAccount function result.
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,7 +68,7 @@ class ChargeAccountResult implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'charged_amount' => 'int',
-        'phones' => '\Voximplant\Client\Model\ChargedPhoneType[]'
+        'phones' => '\Swagger\Client\Model\ChargedPhoneType[]'
     );
 
     public static function swaggerTypes()
@@ -190,7 +190,7 @@ class ChargeAccountResult implements ArrayAccess
 
     /**
      * Gets phones
-     * @return \Voximplant\Client\Model\ChargedPhoneType[]
+     * @return \Swagger\Client\Model\ChargedPhoneType[]
      */
     public function getPhones()
     {
@@ -199,7 +199,7 @@ class ChargeAccountResult implements ArrayAccess
 
     /**
      * Sets phones
-     * @param \Voximplant\Client\Model\ChargedPhoneType[] $phones
+     * @param \Swagger\Client\Model\ChargedPhoneType[] $phones
      * @return $this
      */
     public function setPhones($phones)
@@ -260,10 +260,10 @@ class ChargeAccountResult implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

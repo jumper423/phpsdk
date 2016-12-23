@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Api;
+namespace Swagger\Client\Api;
 
-use \Voximplant\Client\Configuration;
-use \Voximplant\Client\ApiClient;
-use \Voximplant\Client\ApiException;
-use \Voximplant\Client\ObjectSerializer;
+use \Swagger\Client\Configuration;
+use \Swagger\Client\ApiClient;
+use \Swagger\Client\ApiException;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * ManagingPSTNBlacklistApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingPSTNBlacklistApi
     /**
      * API Client
      *
-     * @var \Voximplant\Client\ApiClient instance of the ApiClient
+     * @var \Swagger\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
+     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
+    public function __construct(\Swagger\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingPSTNBlacklistApi
     /**
      * Get API client
      *
-     * @return \Voximplant\Client\ApiClient get the API client
+     * @return \Swagger\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingPSTNBlacklistApi
     /**
      * Set the API client
      *
-     * @param \Voximplant\Client\ApiClient $apiClient set the API client
+     * @param \Swagger\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingPSTNBlacklistApi
      */
-    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
+    public function setApiClient(\Swagger\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -108,8 +108,8 @@ class ManagingPSTNBlacklistApi
      * 
      *
      * @param string $pstn_blacklist_phone The phone number in format e164. (required)
-     * @return \Voximplant\Client\Model\InlineResponse2005
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse2005
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addPstnBlackListItem($pstn_blacklist_phone)
     {
@@ -123,8 +123,8 @@ class ManagingPSTNBlacklistApi
      * 
      *
      * @param string $pstn_blacklist_phone The phone number in format e164. (required)
-     * @return Array of \Voximplant\Client\Model\InlineResponse2005, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse2005, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addPstnBlackListItemWithHttpInfo($pstn_blacklist_phone)
     {
@@ -176,15 +176,15 @@ class ManagingPSTNBlacklistApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse2005',
+                '\Swagger\Client\Model\InlineResponse2005',
                 '/AddPstnBlackListItem'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse2005', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse2005', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse2005', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse2005', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -199,8 +199,8 @@ class ManagingPSTNBlacklistApi
      * 
      *
      * @param float $pstn_blacklist_id The PSTN black list item ID. (required)
-     * @return \Voximplant\Client\Model\InlineResponse200
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse200
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delPstnBlackListItem($pstn_blacklist_id)
     {
@@ -214,8 +214,8 @@ class ManagingPSTNBlacklistApi
      * 
      *
      * @param float $pstn_blacklist_id The PSTN black list item ID. (required)
-     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delPstnBlackListItemWithHttpInfo($pstn_blacklist_id)
     {
@@ -267,15 +267,15 @@ class ManagingPSTNBlacklistApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse200',
+                '\Swagger\Client\Model\InlineResponse200',
                 '/DelPstnBlackListItem'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -293,8 +293,8 @@ class ManagingPSTNBlacklistApi
      * @param string $pstn_blacklist_phone The phone number in format e164 for filter. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20044
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20044
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPstnBlackList($pstn_blacklist_id = null, $pstn_blacklist_phone = null, $count = null, $offset = null)
     {
@@ -311,8 +311,8 @@ class ManagingPSTNBlacklistApi
      * @param string $pstn_blacklist_phone The phone number in format e164 for filter. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20044, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20044, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPstnBlackListWithHttpInfo($pstn_blacklist_id = null, $pstn_blacklist_phone = null, $count = null, $offset = null)
     {
@@ -372,15 +372,15 @@ class ManagingPSTNBlacklistApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20044',
+                '\Swagger\Client\Model\InlineResponse20044',
                 '/GetPstnBlackList'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20044', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20044', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20044', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20044', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -396,8 +396,8 @@ class ManagingPSTNBlacklistApi
      *
      * @param float $pstn_blacklist_id The PSTN black list item ID. (required)
      * @param string $pstn_blacklist_phone The new phone number in format e164. (required)
-     * @return \Voximplant\Client\Model\InlineResponse200
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse200
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setPstnBlackListItem($pstn_blacklist_id, $pstn_blacklist_phone)
     {
@@ -412,8 +412,8 @@ class ManagingPSTNBlacklistApi
      *
      * @param float $pstn_blacklist_id The PSTN black list item ID. (required)
      * @param string $pstn_blacklist_phone The new phone number in format e164. (required)
-     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setPstnBlackListItemWithHttpInfo($pstn_blacklist_id, $pstn_blacklist_phone)
     {
@@ -473,15 +473,15 @@ class ManagingPSTNBlacklistApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse200',
+                '\Swagger\Client\Model\InlineResponse200',
                 '/SetPstnBlackListItem'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

@@ -1,4 +1,4 @@
-# Voximplant\Client\ManagingApplicationsApi
+# Swagger\Client\ManagingApplicationsApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addApplication**
-> \Voximplant\Client\Model\InlineResponse2003 addApplication($application_name, $im_enabled, $im_roster_type, $busy_on_call)
+> \Swagger\Client\Model\InlineResponse2003 addApplication($application_name, $im_enabled, $im_roster_type, $busy_on_call)
 
 
 
@@ -23,15 +23,15 @@ Adds a new account's application.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingApplicationsApi();
+$api_instance = new Swagger\Client\Api\ManagingApplicationsApi();
 $application_name = "application_name_example"; // string | The short application name in format [a-z][a-z0-9-]{1,79}
 $im_enabled = true; // bool | Is the instant messaging (IM) enabled?
 $im_roster_type = "im_roster_type_example"; // string | The roster type (IM users list type). The following values are possible: personal, group.
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
+[**\Swagger\Client\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delApplication**
-> \Voximplant\Client\Model\InlineResponse200 delApplication($application_id, $application_name)
+> \Swagger\Client\Model\InlineResponse200 delApplication($application_id, $application_name)
 
 
 
@@ -83,15 +83,15 @@ Deletes the account's application.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingApplicationsApi();
+$api_instance = new Swagger\Client\Api\ManagingApplicationsApi();
 $application_id = "application_id_example"; // string | The application ID list separated by the `;` symbol or the `all` value.
 $application_name = "application_name_example"; // string | The application name list separated by the `;` symbol. Can be used instead of <b>appliction_id</b>.
 
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getApplications**
-> \Voximplant\Client\Model\InlineResponse20028 getApplications($application_id, $application_name, $im_enabled, $im_roster_type, $user_id, $excluded_user_id, $showing_user_id, $with_rules, $with_scenarios, $count, $offset)
+> \Swagger\Client\Model\InlineResponse20028 getApplications($application_id, $application_name, $im_enabled, $im_roster_type, $user_id, $excluded_user_id, $showing_user_id, $with_rules, $with_scenarios, $count, $offset)
 
 
 
@@ -139,15 +139,15 @@ Gets the account's applications.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingApplicationsApi();
+$api_instance = new Swagger\Client\Api\ManagingApplicationsApi();
 $application_id = 3.4; // float | The application ID to filter.
 $application_name = "application_name_example"; // string | The application name part to filter.
 $im_enabled = true; // bool | Is the instant messaging (IM) enabled?
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20028**](../Model/InlineResponse20028.md)
+[**\Swagger\Client\Model\InlineResponse20028**](../Model/InlineResponse20028.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setApplicationInfo**
-> \Voximplant\Client\Model\InlineResponse20063 setApplicationInfo($application_id, $required_application_name, $application_name, $im_enabled, $im_roster_type, $busy_on_call)
+> \Swagger\Client\Model\InlineResponse20063 setApplicationInfo($application_id, $required_application_name, $application_name, $im_enabled, $im_roster_type, $busy_on_call)
 
 
 
@@ -213,15 +213,15 @@ Edits the account's application.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingApplicationsApi();
+$api_instance = new Swagger\Client\Api\ManagingApplicationsApi();
 $application_id = 3.4; // float | The application ID.
 $required_application_name = "required_application_name_example"; // string | Can be used instead of <b>application_id</b>.
 $application_name = "application_name_example"; // string | The new short application name in format [a-z][a-z0-9-]{1,79}
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20063**](../Model/InlineResponse20063.md)
+[**\Swagger\Client\Model\InlineResponse20063**](../Model/InlineResponse20063.md)
 
 ### Authorization
 

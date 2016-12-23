@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The account callback. See the &#39;AccountCallbacks&#39; type.
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -78,26 +78,26 @@ class AccountCallback implements ArrayAccess
         'account_last_name' => 'string',
         'balance' => 'int',
         'currency' => 'string',
-        'account_document_verified' => '\Voximplant\Client\Model\AccountDocumentVerifiedCallback',
-        'account_is_frozen' => '\Voximplant\Client\Model\AccountIsFrozenCallback',
-        'activate_successful' => '\Voximplant\Client\Model\ActivateSuccessfulCallback',
-        'call_history_report' => '\Voximplant\Client\Model\CallHistoryReportCallback',
-        'card_expired' => '\Voximplant\Client\Model\CardExpiredCallback',
-        'card_expires_in_month' => '\Voximplant\Client\Model\CardExpiresInMonthCallback',
-        'card_payment' => '\Voximplant\Client\Model\CardPaymentCallback',
-        'card_payment_failed' => '\Voximplant\Client\Model\CardPaymentFailedCallback',
-        'js_fail' => '\Voximplant\Client\Model\JSFailCallback',
-        'min_balance' => '\Voximplant\Client\Model\MinBalanceCallback',
-        'regulation_address_verified' => '\Voximplant\Client\Model\RegulationAddressVerifiedCallback',
-        'renewed_subscriptions' => '\Voximplant\Client\Model\RenewedSubscriptionsCallback',
-        'reset_account_password_request' => '\Voximplant\Client\Model\ResetAccountPasswordRequestCallback',
-        'sip_registration_fail' => '\Voximplant\Client\Model\SIPRegistrationFailCallback',
-        'stagnant_account' => '\Voximplant\Client\Model\StagnantAccountCallback',
-        'subscription_is_frozen' => '\Voximplant\Client\Model\SubscriptionIsFrozenCallback',
-        'subscription_is_detached' => '\Voximplant\Client\Model\SubscriptionIsDetachedCallback',
-        'transaction_history_report' => '\Voximplant\Client\Model\TransactionHistoryReportCallback',
-        'uncharged_tariff' => '\Voximplant\Client\Model\UnchargedTariffCallback',
-        'unverified_subscription_detached' => '\Voximplant\Client\Model\UnverifiedSubscriptionDetachedCallback'
+        'account_document_verified' => '\Swagger\Client\Model\AccountDocumentVerifiedCallback',
+        'account_is_frozen' => '\Swagger\Client\Model\AccountIsFrozenCallback',
+        'activate_successful' => '\Swagger\Client\Model\ActivateSuccessfulCallback',
+        'call_history_report' => '\Swagger\Client\Model\CallHistoryReportCallback',
+        'card_expired' => '\Swagger\Client\Model\CardExpiredCallback',
+        'card_expires_in_month' => '\Swagger\Client\Model\CardExpiresInMonthCallback',
+        'card_payment' => '\Swagger\Client\Model\CardPaymentCallback',
+        'card_payment_failed' => '\Swagger\Client\Model\CardPaymentFailedCallback',
+        'js_fail' => '\Swagger\Client\Model\JSFailCallback',
+        'min_balance' => '\Swagger\Client\Model\MinBalanceCallback',
+        'regulation_address_verified' => '\Swagger\Client\Model\RegulationAddressVerifiedCallback',
+        'renewed_subscriptions' => '\Swagger\Client\Model\RenewedSubscriptionsCallback',
+        'reset_account_password_request' => '\Swagger\Client\Model\ResetAccountPasswordRequestCallback',
+        'sip_registration_fail' => '\Swagger\Client\Model\SIPRegistrationFailCallback',
+        'stagnant_account' => '\Swagger\Client\Model\StagnantAccountCallback',
+        'subscription_is_frozen' => '\Swagger\Client\Model\SubscriptionIsFrozenCallback',
+        'subscription_is_detached' => '\Swagger\Client\Model\SubscriptionIsDetachedCallback',
+        'transaction_history_report' => '\Swagger\Client\Model\TransactionHistoryReportCallback',
+        'uncharged_tariff' => '\Swagger\Client\Model\UnchargedTariffCallback',
+        'unverified_subscription_detached' => '\Swagger\Client\Model\UnverifiedSubscriptionDetachedCallback'
     );
 
     public static function swaggerTypes()
@@ -605,7 +605,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets account_document_verified
-     * @return \Voximplant\Client\Model\AccountDocumentVerifiedCallback
+     * @return \Swagger\Client\Model\AccountDocumentVerifiedCallback
      */
     public function getAccountDocumentVerified()
     {
@@ -614,7 +614,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets account_document_verified
-     * @param \Voximplant\Client\Model\AccountDocumentVerifiedCallback $account_document_verified
+     * @param \Swagger\Client\Model\AccountDocumentVerifiedCallback $account_document_verified
      * @return $this
      */
     public function setAccountDocumentVerified($account_document_verified)
@@ -626,7 +626,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets account_is_frozen
-     * @return \Voximplant\Client\Model\AccountIsFrozenCallback
+     * @return \Swagger\Client\Model\AccountIsFrozenCallback
      */
     public function getAccountIsFrozen()
     {
@@ -635,7 +635,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets account_is_frozen
-     * @param \Voximplant\Client\Model\AccountIsFrozenCallback $account_is_frozen
+     * @param \Swagger\Client\Model\AccountIsFrozenCallback $account_is_frozen
      * @return $this
      */
     public function setAccountIsFrozen($account_is_frozen)
@@ -647,7 +647,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets activate_successful
-     * @return \Voximplant\Client\Model\ActivateSuccessfulCallback
+     * @return \Swagger\Client\Model\ActivateSuccessfulCallback
      */
     public function getActivateSuccessful()
     {
@@ -656,7 +656,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets activate_successful
-     * @param \Voximplant\Client\Model\ActivateSuccessfulCallback $activate_successful
+     * @param \Swagger\Client\Model\ActivateSuccessfulCallback $activate_successful
      * @return $this
      */
     public function setActivateSuccessful($activate_successful)
@@ -668,7 +668,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets call_history_report
-     * @return \Voximplant\Client\Model\CallHistoryReportCallback
+     * @return \Swagger\Client\Model\CallHistoryReportCallback
      */
     public function getCallHistoryReport()
     {
@@ -677,7 +677,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets call_history_report
-     * @param \Voximplant\Client\Model\CallHistoryReportCallback $call_history_report
+     * @param \Swagger\Client\Model\CallHistoryReportCallback $call_history_report
      * @return $this
      */
     public function setCallHistoryReport($call_history_report)
@@ -689,7 +689,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets card_expired
-     * @return \Voximplant\Client\Model\CardExpiredCallback
+     * @return \Swagger\Client\Model\CardExpiredCallback
      */
     public function getCardExpired()
     {
@@ -698,7 +698,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets card_expired
-     * @param \Voximplant\Client\Model\CardExpiredCallback $card_expired
+     * @param \Swagger\Client\Model\CardExpiredCallback $card_expired
      * @return $this
      */
     public function setCardExpired($card_expired)
@@ -710,7 +710,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets card_expires_in_month
-     * @return \Voximplant\Client\Model\CardExpiresInMonthCallback
+     * @return \Swagger\Client\Model\CardExpiresInMonthCallback
      */
     public function getCardExpiresInMonth()
     {
@@ -719,7 +719,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets card_expires_in_month
-     * @param \Voximplant\Client\Model\CardExpiresInMonthCallback $card_expires_in_month
+     * @param \Swagger\Client\Model\CardExpiresInMonthCallback $card_expires_in_month
      * @return $this
      */
     public function setCardExpiresInMonth($card_expires_in_month)
@@ -731,7 +731,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets card_payment
-     * @return \Voximplant\Client\Model\CardPaymentCallback
+     * @return \Swagger\Client\Model\CardPaymentCallback
      */
     public function getCardPayment()
     {
@@ -740,7 +740,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets card_payment
-     * @param \Voximplant\Client\Model\CardPaymentCallback $card_payment
+     * @param \Swagger\Client\Model\CardPaymentCallback $card_payment
      * @return $this
      */
     public function setCardPayment($card_payment)
@@ -752,7 +752,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets card_payment_failed
-     * @return \Voximplant\Client\Model\CardPaymentFailedCallback
+     * @return \Swagger\Client\Model\CardPaymentFailedCallback
      */
     public function getCardPaymentFailed()
     {
@@ -761,7 +761,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets card_payment_failed
-     * @param \Voximplant\Client\Model\CardPaymentFailedCallback $card_payment_failed
+     * @param \Swagger\Client\Model\CardPaymentFailedCallback $card_payment_failed
      * @return $this
      */
     public function setCardPaymentFailed($card_payment_failed)
@@ -773,7 +773,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets js_fail
-     * @return \Voximplant\Client\Model\JSFailCallback
+     * @return \Swagger\Client\Model\JSFailCallback
      */
     public function getJsFail()
     {
@@ -782,7 +782,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets js_fail
-     * @param \Voximplant\Client\Model\JSFailCallback $js_fail
+     * @param \Swagger\Client\Model\JSFailCallback $js_fail
      * @return $this
      */
     public function setJsFail($js_fail)
@@ -794,7 +794,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets min_balance
-     * @return \Voximplant\Client\Model\MinBalanceCallback
+     * @return \Swagger\Client\Model\MinBalanceCallback
      */
     public function getMinBalance()
     {
@@ -803,7 +803,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets min_balance
-     * @param \Voximplant\Client\Model\MinBalanceCallback $min_balance
+     * @param \Swagger\Client\Model\MinBalanceCallback $min_balance
      * @return $this
      */
     public function setMinBalance($min_balance)
@@ -815,7 +815,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets regulation_address_verified
-     * @return \Voximplant\Client\Model\RegulationAddressVerifiedCallback
+     * @return \Swagger\Client\Model\RegulationAddressVerifiedCallback
      */
     public function getRegulationAddressVerified()
     {
@@ -824,7 +824,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets regulation_address_verified
-     * @param \Voximplant\Client\Model\RegulationAddressVerifiedCallback $regulation_address_verified
+     * @param \Swagger\Client\Model\RegulationAddressVerifiedCallback $regulation_address_verified
      * @return $this
      */
     public function setRegulationAddressVerified($regulation_address_verified)
@@ -836,7 +836,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets renewed_subscriptions
-     * @return \Voximplant\Client\Model\RenewedSubscriptionsCallback
+     * @return \Swagger\Client\Model\RenewedSubscriptionsCallback
      */
     public function getRenewedSubscriptions()
     {
@@ -845,7 +845,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets renewed_subscriptions
-     * @param \Voximplant\Client\Model\RenewedSubscriptionsCallback $renewed_subscriptions
+     * @param \Swagger\Client\Model\RenewedSubscriptionsCallback $renewed_subscriptions
      * @return $this
      */
     public function setRenewedSubscriptions($renewed_subscriptions)
@@ -857,7 +857,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets reset_account_password_request
-     * @return \Voximplant\Client\Model\ResetAccountPasswordRequestCallback
+     * @return \Swagger\Client\Model\ResetAccountPasswordRequestCallback
      */
     public function getResetAccountPasswordRequest()
     {
@@ -866,7 +866,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets reset_account_password_request
-     * @param \Voximplant\Client\Model\ResetAccountPasswordRequestCallback $reset_account_password_request
+     * @param \Swagger\Client\Model\ResetAccountPasswordRequestCallback $reset_account_password_request
      * @return $this
      */
     public function setResetAccountPasswordRequest($reset_account_password_request)
@@ -878,7 +878,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets sip_registration_fail
-     * @return \Voximplant\Client\Model\SIPRegistrationFailCallback
+     * @return \Swagger\Client\Model\SIPRegistrationFailCallback
      */
     public function getSipRegistrationFail()
     {
@@ -887,7 +887,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets sip_registration_fail
-     * @param \Voximplant\Client\Model\SIPRegistrationFailCallback $sip_registration_fail
+     * @param \Swagger\Client\Model\SIPRegistrationFailCallback $sip_registration_fail
      * @return $this
      */
     public function setSipRegistrationFail($sip_registration_fail)
@@ -899,7 +899,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets stagnant_account
-     * @return \Voximplant\Client\Model\StagnantAccountCallback
+     * @return \Swagger\Client\Model\StagnantAccountCallback
      */
     public function getStagnantAccount()
     {
@@ -908,7 +908,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets stagnant_account
-     * @param \Voximplant\Client\Model\StagnantAccountCallback $stagnant_account
+     * @param \Swagger\Client\Model\StagnantAccountCallback $stagnant_account
      * @return $this
      */
     public function setStagnantAccount($stagnant_account)
@@ -920,7 +920,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets subscription_is_frozen
-     * @return \Voximplant\Client\Model\SubscriptionIsFrozenCallback
+     * @return \Swagger\Client\Model\SubscriptionIsFrozenCallback
      */
     public function getSubscriptionIsFrozen()
     {
@@ -929,7 +929,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets subscription_is_frozen
-     * @param \Voximplant\Client\Model\SubscriptionIsFrozenCallback $subscription_is_frozen
+     * @param \Swagger\Client\Model\SubscriptionIsFrozenCallback $subscription_is_frozen
      * @return $this
      */
     public function setSubscriptionIsFrozen($subscription_is_frozen)
@@ -941,7 +941,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets subscription_is_detached
-     * @return \Voximplant\Client\Model\SubscriptionIsDetachedCallback
+     * @return \Swagger\Client\Model\SubscriptionIsDetachedCallback
      */
     public function getSubscriptionIsDetached()
     {
@@ -950,7 +950,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets subscription_is_detached
-     * @param \Voximplant\Client\Model\SubscriptionIsDetachedCallback $subscription_is_detached
+     * @param \Swagger\Client\Model\SubscriptionIsDetachedCallback $subscription_is_detached
      * @return $this
      */
     public function setSubscriptionIsDetached($subscription_is_detached)
@@ -962,7 +962,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets transaction_history_report
-     * @return \Voximplant\Client\Model\TransactionHistoryReportCallback
+     * @return \Swagger\Client\Model\TransactionHistoryReportCallback
      */
     public function getTransactionHistoryReport()
     {
@@ -971,7 +971,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets transaction_history_report
-     * @param \Voximplant\Client\Model\TransactionHistoryReportCallback $transaction_history_report
+     * @param \Swagger\Client\Model\TransactionHistoryReportCallback $transaction_history_report
      * @return $this
      */
     public function setTransactionHistoryReport($transaction_history_report)
@@ -983,7 +983,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets uncharged_tariff
-     * @return \Voximplant\Client\Model\UnchargedTariffCallback
+     * @return \Swagger\Client\Model\UnchargedTariffCallback
      */
     public function getUnchargedTariff()
     {
@@ -992,7 +992,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets uncharged_tariff
-     * @param \Voximplant\Client\Model\UnchargedTariffCallback $uncharged_tariff
+     * @param \Swagger\Client\Model\UnchargedTariffCallback $uncharged_tariff
      * @return $this
      */
     public function setUnchargedTariff($uncharged_tariff)
@@ -1004,7 +1004,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Gets unverified_subscription_detached
-     * @return \Voximplant\Client\Model\UnverifiedSubscriptionDetachedCallback
+     * @return \Swagger\Client\Model\UnverifiedSubscriptionDetachedCallback
      */
     public function getUnverifiedSubscriptionDetached()
     {
@@ -1013,7 +1013,7 @@ class AccountCallback implements ArrayAccess
 
     /**
      * Sets unverified_subscription_detached
-     * @param \Voximplant\Client\Model\UnverifiedSubscriptionDetachedCallback $unverified_subscription_detached
+     * @param \Swagger\Client\Model\UnverifiedSubscriptionDetachedCallback $unverified_subscription_detached
      * @return $this
      */
     public function setUnverifiedSubscriptionDetached($unverified_subscription_detached)
@@ -1074,10 +1074,10 @@ class AccountCallback implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

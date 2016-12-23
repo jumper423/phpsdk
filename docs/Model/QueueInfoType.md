@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **max_queue_size** | **int** | The max queue size. | [optional] 
 **max_waiting_time** | **int** | The max predicted waiting time in minutes. The client is rejected if the predicted waiting time is greater than the max predicted waiting time. | [optional] 
 **average_service_time** | **int** | The average service time in seconds. The parameter corrects the waiting time prediction. | [optional] 
-**skills** | [**\Voximplant\Client\Model\SkillInfoType[]**](SkillInfoType.md) |  | [optional] 
+**skills** | [**\Swagger\Client\Model\SkillInfoType[]**](SkillInfoType.md) |  | [optional] 
 **modified** | **string** | The queue editing UTC date in format: YYYY-MM-DD HH:mm:SS | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

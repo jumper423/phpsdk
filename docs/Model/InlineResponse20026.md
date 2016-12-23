@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Voximplant\Client\Model\AdminRoleType[]**](AdminRoleType.md) |  | [optional] 
+**result** | [**\Swagger\Client\Model\AdminRoleType[]**](AdminRoleType.md) |  | [optional] 
 **total_count** | **int** | The total found admin role count. | [optional] 
 **count** | **int** | The returned admin role count. | [optional] 
 

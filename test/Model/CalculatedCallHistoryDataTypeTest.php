@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Voximplant\Client;
+namespace Swagger\Client;
 
 /**
  * CalculatedCallHistoryDataTypeTest Class Doc Comment
@@ -47,7 +47,7 @@ namespace Voximplant\Client;
  * @category    Class */
 // * @description The HistoryReportType.calculated_data object on HistoryReportType.history_type&#x3D;&#x3D;&#39;calls&#39;
 /**
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen

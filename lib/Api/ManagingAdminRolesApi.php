@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Api;
+namespace Swagger\Client\Api;
 
-use \Voximplant\Client\Configuration;
-use \Voximplant\Client\ApiClient;
-use \Voximplant\Client\ApiException;
-use \Voximplant\Client\ObjectSerializer;
+use \Swagger\Client\Configuration;
+use \Swagger\Client\ApiClient;
+use \Swagger\Client\ApiException;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * ManagingAdminRolesApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingAdminRolesApi
     /**
      * API Client
      *
-     * @var \Voximplant\Client\ApiClient instance of the ApiClient
+     * @var \Swagger\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
+     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
+    public function __construct(\Swagger\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingAdminRolesApi
     /**
      * Get API client
      *
-     * @return \Voximplant\Client\ApiClient get the API client
+     * @return \Swagger\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingAdminRolesApi
     /**
      * Set the API client
      *
-     * @param \Voximplant\Client\ApiClient $apiClient set the API client
+     * @param \Swagger\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingAdminRolesApi
      */
-    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
+    public function setApiClient(\Swagger\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -113,8 +113,8 @@ class ManagingAdminRolesApi
      * @param string $like_admin_role_name The admin role name that can be used instead of &lt;b&gt;like_admin_role_id&lt;/b&gt;. The name specifies a role from which the new role automatically copies all permissions (allowed_entries and denied_entries). (optional)
      * @param string $allowed_entries The list of allowed access entries separated by the &#x60;;&#x60; symbol (the API function names). (optional)
      * @param string $denied_entries The list of denied access entries separated by the &#x60;;&#x60; symbol (the API function names). (optional)
-     * @return \Voximplant\Client\Model\InlineResponse2001
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse2001
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addAdminRole($admin_role_name, $admin_role_active = null, $like_admin_role_id = null, $like_admin_role_name = null, $allowed_entries = null, $denied_entries = null)
     {
@@ -133,8 +133,8 @@ class ManagingAdminRolesApi
      * @param string $like_admin_role_name The admin role name that can be used instead of &lt;b&gt;like_admin_role_id&lt;/b&gt;. The name specifies a role from which the new role automatically copies all permissions (allowed_entries and denied_entries). (optional)
      * @param string $allowed_entries The list of allowed access entries separated by the &#x60;;&#x60; symbol (the API function names). (optional)
      * @param string $denied_entries The list of denied access entries separated by the &#x60;;&#x60; symbol (the API function names). (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse2001, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse2001, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addAdminRoleWithHttpInfo($admin_role_name, $admin_role_active = null, $like_admin_role_id = null, $like_admin_role_name = null, $allowed_entries = null, $denied_entries = null)
     {
@@ -206,15 +206,15 @@ class ManagingAdminRolesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse2001',
+                '\Swagger\Client\Model\InlineResponse2001',
                 '/AddAdminRole'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse2001', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse2001', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse2001', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse2001', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -230,8 +230,8 @@ class ManagingAdminRolesApi
      *
      * @param float $admin_role_id The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $admin_role_name The admin role name to delete, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse200
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse200
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delAdminRole($admin_role_id = null, $admin_role_name = null)
     {
@@ -246,8 +246,8 @@ class ManagingAdminRolesApi
      *
      * @param float $admin_role_id The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $admin_role_name The admin role name to delete, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delAdminRoleWithHttpInfo($admin_role_id = null, $admin_role_name = null)
     {
@@ -299,15 +299,15 @@ class ManagingAdminRolesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse200',
+                '\Swagger\Client\Model\InlineResponse200',
                 '/DelAdminRole'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -334,8 +334,8 @@ class ManagingAdminRolesApi
      * @param float $showing_admin_user_id The admin user to show in the &#x60;admin_users&#x60; field output. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20026
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20026
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getAdminRoles($admin_role_id = null, $admin_role_name = null, $admin_role_active = null, $with_entries = null, $with_account_roles = null, $with_parent_roles = null, $with_system_roles = null, $included_admin_user_id = null, $excluded_admin_user_id = null, $full_admin_users_matching = null, $showing_admin_user_id = null, $count = null, $offset = null)
     {
@@ -361,8 +361,8 @@ class ManagingAdminRolesApi
      * @param float $showing_admin_user_id The admin user to show in the &#x60;admin_users&#x60; field output. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20026, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20026, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getAdminRolesWithHttpInfo($admin_role_id = null, $admin_role_name = null, $admin_role_active = null, $with_entries = null, $with_account_roles = null, $with_parent_roles = null, $with_system_roles = null, $included_admin_user_id = null, $excluded_admin_user_id = null, $full_admin_users_matching = null, $showing_admin_user_id = null, $count = null, $offset = null)
     {
@@ -458,15 +458,15 @@ class ManagingAdminRolesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20026',
+                '\Swagger\Client\Model\InlineResponse20026',
                 '/GetAdminRoles'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20026', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20026', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20026', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20026', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -489,8 +489,8 @@ class ManagingAdminRolesApi
      * @param string $denied_entries The list of denied access entry changes separated by the &#x60;;&#x60; symbol (the API function names). (optional)
      * @param string $like_admin_role_id The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. The list specifies the roles from which the allowed_entries and denied_entries will be merged. (optional)
      * @param string $like_admin_role_name The admin role name, can be used instead of &lt;b&gt;like_admin_role_id&lt;/b&gt;. The name specifies a role from which the allowed_entries and denied_entries will be merged. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse200
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse200
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setAdminRoleInfo($admin_role_id = null, $admin_role_name = null, $new_admin_role_name = null, $admin_role_active = null, $entry_modification_mode = null, $allowed_entries = null, $denied_entries = null, $like_admin_role_id = null, $like_admin_role_name = null)
     {
@@ -512,8 +512,8 @@ class ManagingAdminRolesApi
      * @param string $denied_entries The list of denied access entry changes separated by the &#x60;;&#x60; symbol (the API function names). (optional)
      * @param string $like_admin_role_id The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. The list specifies the roles from which the allowed_entries and denied_entries will be merged. (optional)
      * @param string $like_admin_role_name The admin role name, can be used instead of &lt;b&gt;like_admin_role_id&lt;/b&gt;. The name specifies a role from which the allowed_entries and denied_entries will be merged. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setAdminRoleInfoWithHttpInfo($admin_role_id = null, $admin_role_name = null, $new_admin_role_name = null, $admin_role_active = null, $entry_modification_mode = null, $allowed_entries = null, $denied_entries = null, $like_admin_role_id = null, $like_admin_role_name = null)
     {
@@ -593,15 +593,15 @@ class ManagingAdminRolesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse200',
+                '\Swagger\Client\Model\InlineResponse200',
                 '/SetAdminRoleInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

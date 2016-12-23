@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -48,7 +48,7 @@ use \ArrayAccess;
  *
  * @category    Class */
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -67,7 +67,7 @@ class InlineResponse20030 implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'result' => 'bool',
-        'availible_address' => '\Voximplant\Client\Model\RegulationAddress[]',
+        'availible_address' => '\Swagger\Client\Model\RegulationAddress[]',
         'count_in_progress' => 'int'
     );
 
@@ -188,7 +188,7 @@ class InlineResponse20030 implements ArrayAccess
 
     /**
      * Gets availible_address
-     * @return \Voximplant\Client\Model\RegulationAddress[]
+     * @return \Swagger\Client\Model\RegulationAddress[]
      */
     public function getAvailibleAddress()
     {
@@ -197,7 +197,7 @@ class InlineResponse20030 implements ArrayAccess
 
     /**
      * Sets availible_address
-     * @param \Voximplant\Client\Model\RegulationAddress[] $availible_address
+     * @param \Swagger\Client\Model\RegulationAddress[] $availible_address
      * @return $this
      */
     public function setAvailibleAddress($availible_address)
@@ -279,10 +279,10 @@ class InlineResponse20030 implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

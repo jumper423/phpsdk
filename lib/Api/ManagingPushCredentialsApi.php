@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Api;
+namespace Swagger\Client\Api;
 
-use \Voximplant\Client\Configuration;
-use \Voximplant\Client\ApiClient;
-use \Voximplant\Client\ApiException;
-use \Voximplant\Client\ObjectSerializer;
+use \Swagger\Client\Configuration;
+use \Swagger\Client\ApiClient;
+use \Swagger\Client\ApiException;
+use \Swagger\Client\ObjectSerializer;
 
 /**
  * ManagingPushCredentialsApi Class Doc Comment
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -60,16 +60,16 @@ class ManagingPushCredentialsApi
     /**
      * API Client
      *
-     * @var \Voximplant\Client\ApiClient instance of the ApiClient
+     * @var \Swagger\Client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Voximplant\Client\ApiClient|null $apiClient The api client to use
+     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Voximplant\Client\ApiClient $apiClient = null)
+    public function __construct(\Swagger\Client\ApiClient $apiClient = null)
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
@@ -82,7 +82,7 @@ class ManagingPushCredentialsApi
     /**
      * Get API client
      *
-     * @return \Voximplant\Client\ApiClient get the API client
+     * @return \Swagger\Client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -92,11 +92,11 @@ class ManagingPushCredentialsApi
     /**
      * Set the API client
      *
-     * @param \Voximplant\Client\ApiClient $apiClient set the API client
+     * @param \Swagger\Client\ApiClient $apiClient set the API client
      *
      * @return ManagingPushCredentialsApi
      */
-    public function setApiClient(\Voximplant\Client\ApiClient $apiClient)
+    public function setApiClient(\Swagger\Client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -114,8 +114,8 @@ class ManagingPushCredentialsApi
      * @param string $push_provider_name The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE. (optional)
      * @param int $push_provider_id The push provider id. (optional)
      * @param string $cert_file_name The parameter is required, when set &#x60;cert_content&#x60; as POST body. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse2006
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse2006
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addPushCredential($external_app_name, $cert_content, $cert_password, $is_dev_mode, $push_provider_name = null, $push_provider_id = null, $cert_file_name = null)
     {
@@ -135,8 +135,8 @@ class ManagingPushCredentialsApi
      * @param string $push_provider_name The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE. (optional)
      * @param int $push_provider_id The push provider id. (optional)
      * @param string $cert_file_name The parameter is required, when set &#x60;cert_content&#x60; as POST body. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse2006, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse2006, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function addPushCredentialWithHttpInfo($external_app_name, $cert_content, $cert_password, $is_dev_mode, $push_provider_name = null, $push_provider_id = null, $cert_file_name = null)
     {
@@ -224,15 +224,15 @@ class ManagingPushCredentialsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse2006',
+                '\Swagger\Client\Model\InlineResponse2006',
                 '/AddPushCredential'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse2006', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse2006', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse2006', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse2006', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -249,8 +249,8 @@ class ManagingPushCredentialsApi
      * @param int $push_credential_id The push credentials id. (required)
      * @param int $application_id The application id. (required)
      * @param bool $bind Set to false for unbind. Default value is true. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20015
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20015
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function bindPushCredential($push_credential_id, $application_id, $bind = null)
     {
@@ -266,8 +266,8 @@ class ManagingPushCredentialsApi
      * @param int $push_credential_id The push credentials id. (required)
      * @param int $application_id The application id. (required)
      * @param bool $bind Set to false for unbind. Default value is true. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20015, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20015, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function bindPushCredentialWithHttpInfo($push_credential_id, $application_id, $bind = null)
     {
@@ -331,15 +331,15 @@ class ManagingPushCredentialsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20015',
+                '\Swagger\Client\Model\InlineResponse20015',
                 '/BindPushCredential'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20015', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20015', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20015', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20015', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -354,8 +354,8 @@ class ManagingPushCredentialsApi
      * 
      *
      * @param int $push_credential_id The push credentials id. (required)
-     * @return \Voximplant\Client\Model\InlineResponse20015
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20015
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delPushCredential($push_credential_id)
     {
@@ -369,8 +369,8 @@ class ManagingPushCredentialsApi
      * 
      *
      * @param int $push_credential_id The push credentials id. (required)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20015, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20015, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function delPushCredentialWithHttpInfo($push_credential_id)
     {
@@ -422,15 +422,15 @@ class ManagingPushCredentialsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20015',
+                '\Swagger\Client\Model\InlineResponse20015',
                 '/DelPushCredential'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20015', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20015', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20015', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20015', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -451,8 +451,8 @@ class ManagingPushCredentialsApi
      * @param int $application_id The id of bound application. (optional)
      * @param string $external_app The push provider&#x60;s application name. (optional)
      * @param bool $with_cert Set true to get the user&#x60;s certificate. (optional)
-     * @return \Voximplant\Client\Model\InlineResponse20045
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20045
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPushCredential($push_credential_id = null, $push_provider_name = null, $push_provider_id = null, $application_name = null, $application_id = null, $external_app = null, $with_cert = null)
     {
@@ -472,8 +472,8 @@ class ManagingPushCredentialsApi
      * @param int $application_id The id of bound application. (optional)
      * @param string $external_app The push provider&#x60;s application name. (optional)
      * @param bool $with_cert Set true to get the user&#x60;s certificate. (optional)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20045, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20045, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function getPushCredentialWithHttpInfo($push_credential_id = null, $push_provider_name = null, $push_provider_id = null, $application_name = null, $application_id = null, $external_app = null, $with_cert = null)
     {
@@ -545,15 +545,15 @@ class ManagingPushCredentialsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20045',
+                '\Swagger\Client\Model\InlineResponse20045',
                 '/GetPushCredential'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20045', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20045', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20045', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20045', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -572,8 +572,8 @@ class ManagingPushCredentialsApi
      * @param string $cert_content Public and private keys in PKCS12 format. (required)
      * @param string $cert_password The secret password for private key. (required)
      * @param bool $is_dev_mode Set true for use this certificate in apple&#x60;s sandbox environment (required)
-     * @return \Voximplant\Client\Model\InlineResponse20015
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return \Swagger\Client\Model\InlineResponse20015
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setPushCredential($push_credential_id, $external_app_name, $cert_content, $cert_password, $is_dev_mode)
     {
@@ -591,8 +591,8 @@ class ManagingPushCredentialsApi
      * @param string $cert_content Public and private keys in PKCS12 format. (required)
      * @param string $cert_password The secret password for private key. (required)
      * @param bool $is_dev_mode Set true for use this certificate in apple&#x60;s sandbox environment (required)
-     * @return Array of \Voximplant\Client\Model\InlineResponse20015, HTTP status code, HTTP response headers (array of strings)
-     * @throws \Voximplant\Client\ApiException on non-2xx response
+     * @return Array of \Swagger\Client\Model\InlineResponse20015, HTTP status code, HTTP response headers (array of strings)
+     * @throws \Swagger\Client\ApiException on non-2xx response
      */
     public function setPushCredentialWithHttpInfo($push_credential_id, $external_app_name, $cert_content, $cert_password, $is_dev_mode)
     {
@@ -676,15 +676,15 @@ class ManagingPushCredentialsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Client\Model\InlineResponse20015',
+                '\Swagger\Client\Model\InlineResponse20015',
                 '/SetPushCredential'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Client\Model\InlineResponse20015', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Swagger\Client\Model\InlineResponse20015', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Client\Model\InlineResponse20015', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\InlineResponse20015', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

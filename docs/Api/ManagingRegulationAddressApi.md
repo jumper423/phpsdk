@@ -1,4 +1,4 @@
-# Voximplant\Client\ManagingRegulationAddressApi
+# Swagger\Client\ManagingRegulationAddressApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **createRegulationAddress**
-> \Voximplant\Client\Model\InlineResponse20018 createRegulationAddress($phone_category_name, $destination_country_code, $proof, $phone_owner_salutation, $phone_owner_zip_code, $phone_owner_city, $phone_owner_street, $phone_owner_building_number, $phone_owner_country_code, $phone_region_code, $phone_owner_first_name, $phone_owner_last_name, $phone_owner_company, $phone_owner_building_letter)
+> \Swagger\Client\Model\InlineResponse20018 createRegulationAddress($phone_category_name, $destination_country_code, $proof, $phone_owner_salutation, $phone_owner_zip_code, $phone_owner_city, $phone_owner_street, $phone_owner_building_number, $phone_owner_country_code, $phone_region_code, $phone_owner_first_name, $phone_owner_last_name, $phone_owner_company, $phone_owner_building_letter)
 
 
 
@@ -27,15 +27,15 @@ Add regulation address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingRegulationAddressApi();
+$api_instance = new Swagger\Client\Api\ManagingRegulationAddressApi();
 $phone_category_name = "phone_category_name_example"; // string | The phone category name.
 $destination_country_code = "destination_country_code_example"; // string | The destination country code
 $proof = "proof_example"; // string | Send as Body Request or multiform.
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20018**](../Model/InlineResponse20018.md)
+[**\Swagger\Client\Model\InlineResponse20018**](../Model/InlineResponse20018.md)
 
 ### Authorization
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAvailibleRegulations**
-> \Voximplant\Client\Model\InlineResponse20030 getAvailibleRegulations($country_code, $phone_category_name, $phone_region_code)
+> \Swagger\Client\Model\InlineResponse20030 getAvailibleRegulations($country_code, $phone_category_name, $phone_region_code)
 
 
 
@@ -107,15 +107,15 @@ Search availible regulation for link
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingRegulationAddressApi();
+$api_instance = new Swagger\Client\Api\ManagingRegulationAddressApi();
 $country_code = "country_code_example"; // string | The country code
 $phone_category_name = "phone_category_name_example"; // string | The phone category name.
 $phone_region_code = "phone_region_code_example"; // string | The phone region code. Mandatory for regulation type LOCAL
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20030**](../Model/InlineResponse20030.md)
+[**\Swagger\Client\Model\InlineResponse20030**](../Model/InlineResponse20030.md)
 
 ### Authorization
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCountries**
-> \Voximplant\Client\Model\InlineResponse20035 getCountries($country_code)
+> \Swagger\Client\Model\InlineResponse20035 getCountries($country_code)
 
 
 
@@ -165,15 +165,15 @@ Get all countries
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingRegulationAddressApi();
+$api_instance = new Swagger\Client\Api\ManagingRegulationAddressApi();
 $country_code = "country_code_example"; // string | The country code A2
 
 try {
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20035**](../Model/InlineResponse20035.md)
+[**\Swagger\Client\Model\InlineResponse20035**](../Model/InlineResponse20035.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRegions**
-> \Voximplant\Client\Model\InlineResponse20047 getRegions($country_code, $phone_category_name, $city_name, $count, $offset)
+> \Swagger\Client\Model\InlineResponse20047 getRegions($country_code, $phone_category_name, $city_name, $count, $offset)
 
 
 
@@ -219,15 +219,15 @@ Get availible regions in country
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingRegulationAddressApi();
+$api_instance = new Swagger\Client\Api\ManagingRegulationAddressApi();
 $country_code = "country_code_example"; // string | The country code A2
 $phone_category_name = "phone_category_name_example"; // string | The phone category name. Availible: GEOGRAPHIC, TOLL_FREE, NATIONAL, MOBILE
 $city_name = "city_name_example"; // string | The pattern of city`s name
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20047**](../Model/InlineResponse20047.md)
+[**\Swagger\Client\Model\InlineResponse20047**](../Model/InlineResponse20047.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRegulationsAddress**
-> \Voximplant\Client\Model\InlineResponse20048 getRegulationsAddress($country_code, $phone_category_name, $phone_region_code, $regulation_address_id, $verified, $in_progress)
+> \Swagger\Client\Model\InlineResponse20048 getRegulationsAddress($country_code, $phone_category_name, $phone_region_code, $regulation_address_id, $verified, $in_progress)
 
 
 
@@ -281,15 +281,15 @@ Search user's regulation address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingRegulationAddressApi();
+$api_instance = new Swagger\Client\Api\ManagingRegulationAddressApi();
 $country_code = "country_code_example"; // string | The country code
 $phone_category_name = "phone_category_name_example"; // string | The phone category name.
 $phone_region_code = "phone_region_code_example"; // string | The phone region code.
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20048**](../Model/InlineResponse20048.md)
+[**\Swagger\Client\Model\InlineResponse20048**](../Model/InlineResponse20048.md)
 
 ### Authorization
 
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getZIPCodes**
-> \Voximplant\Client\Model\InlineResponse20058 getZIPCodes($country_code, $phone_region_code, $count, $offset)
+> \Swagger\Client\Model\InlineResponse20058 getZIPCodes($country_code, $phone_region_code, $count, $offset)
 
 
 
@@ -345,15 +345,15 @@ Search availible zip codes
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingRegulationAddressApi();
+$api_instance = new Swagger\Client\Api\ManagingRegulationAddressApi();
 $country_code = "country_code_example"; // string | The country code
 $phone_region_code = "phone_region_code_example"; // string | The phone region code
 $count = 3.4; // float | The max returning record count.
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20058**](../Model/InlineResponse20058.md)
+[**\Swagger\Client\Model\InlineResponse20058**](../Model/InlineResponse20058.md)
 
 ### Authorization
 
@@ -393,7 +393,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **linkregulationAddress**
-> \Voximplant\Client\Model\InlineResponse20059 linkregulationAddress($regulation_address_id, $phone_id, $phone_number)
+> \Swagger\Client\Model\InlineResponse20059 linkregulationAddress($regulation_address_id, $phone_id, $phone_number)
 
 
 
@@ -405,15 +405,15 @@ Link regulation address to phone
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingRegulationAddressApi();
+$api_instance = new Swagger\Client\Api\ManagingRegulationAddressApi();
 $regulation_address_id = 3.4; // float | The regulation address ID
 $phone_id = 3.4; // float | The phone ID for link
 $phone_number = "phone_number_example"; // string | The phone number for link
@@ -437,7 +437,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
+[**\Swagger\Client\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
 
 ### Authorization
 
@@ -451,7 +451,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **uploadProofOfAddress**
-> \Voximplant\Client\Model\InlineResponse20059 uploadProofOfAddress($regulation_address_id, $proof)
+> \Swagger\Client\Model\InlineResponse20059 uploadProofOfAddress($regulation_address_id, $proof)
 
 
 
@@ -463,15 +463,15 @@ Upload proof of address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingRegulationAddressApi();
+$api_instance = new Swagger\Client\Api\ManagingRegulationAddressApi();
 $regulation_address_id = 3.4; // float | The regulation address id
 $proof = "proof_example"; // string | Send as Body Request or multiform.
 
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
+[**\Swagger\Client\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
 
 ### Authorization
 

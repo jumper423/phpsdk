@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Voximplant\Client\Model\SkillInfoType[]**](SkillInfoType.md) |  | [optional] 
+**result** | [**\Swagger\Client\Model\SkillInfoType[]**](SkillInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found skill count. | [optional] 
 **count** | **int** | The returned skill count. | [optional] 
 

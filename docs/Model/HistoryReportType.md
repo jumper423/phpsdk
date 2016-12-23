@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **store_until** | **string** | Store the report until the UTC time in format: YYYY-MM-DD HH:mm:SS. The report is completed if the field exists. | [optional] 
 **session_count** | **int** | The session count in the report. | [optional] 
 **total_session_count** | **int** | The total found filtered session count. | [optional] 
-**error** | [**\Voximplant\Client\Model\APIError**](APIError.md) |  | [optional] 
+**error** | [**\Swagger\Client\Model\APIError**](APIError.md) |  | [optional] 
 **filters** | **object** | The report order filters (the saved GetCallHistory, GetTransactionHistory parameters). | [optional] 
 **calculated_data** | **object** | The calculated report data (the specific report data, see CalculatedCallHistoryDataType, CalculatedTransactionHistoryDataType). | [optional] 
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The GetRules function result item.
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -72,7 +72,7 @@ class RuleInfoType implements ArrayAccess
         'rule_name' => 'string',
         'rule_pattern' => 'string',
         'rule_pattern_exclude' => 'string',
-        'scenarios' => '\Voximplant\Client\Model\ScenarioInfoType[]',
+        'scenarios' => '\Swagger\Client\Model\ScenarioInfoType[]',
         'modified' => 'string'
     );
 
@@ -323,7 +323,7 @@ class RuleInfoType implements ArrayAccess
 
     /**
      * Gets scenarios
-     * @return \Voximplant\Client\Model\ScenarioInfoType[]
+     * @return \Swagger\Client\Model\ScenarioInfoType[]
      */
     public function getScenarios()
     {
@@ -332,7 +332,7 @@ class RuleInfoType implements ArrayAccess
 
     /**
      * Sets scenarios
-     * @param \Voximplant\Client\Model\ScenarioInfoType[] $scenarios
+     * @param \Swagger\Client\Model\ScenarioInfoType[] $scenarios
      * @return $this
      */
     public function setScenarios($scenarios)
@@ -414,10 +414,10 @@ class RuleInfoType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

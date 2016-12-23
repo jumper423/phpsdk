@@ -1,4 +1,4 @@
-# Voximplant\Client\ManagingHistoryApi
+# Swagger\Client\ManagingHistoryApi
 
 All URIs are relative to *https://api.voximplant.com/platform_api/*
 
@@ -24,15 +24,15 @@ Downloads the required history report.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingHistoryApi();
+$api_instance = new Swagger\Client\Api\ManagingHistoryApi();
 $history_report_id = 3.4; // float | The history report ID.
 
 try {
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getACDHistory**
-> \Voximplant\Client\Model\InlineResponse20021 getACDHistory($from_date, $to_date, $acd_session_history_id, $acd_queue_id, $user_id, $operator_hangup, $unserviced, $min_waiting_time, $rejected, $with_events, $with_header, $desc_order, $count, $offset, $output)
+> \Swagger\Client\Model\InlineResponse20021 getACDHistory($from_date, $to_date, $acd_session_history_id, $acd_queue_id, $user_id, $operator_hangup, $unserviced, $min_waiting_time, $rejected, $with_events, $with_header, $desc_order, $count, $offset, $output)
 
 
 
@@ -78,15 +78,15 @@ Gets the ACD history.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingHistoryApi();
+$api_instance = new Swagger\Client\Api\ManagingHistoryApi();
 $from_date = "from_date_example"; // string | The UTC from date filter in format YYYY-MM-DD HH:mm:SS
 $to_date = "to_date_example"; // string | The UTC to date filter in format YYYY-MM-DD HH:mm:SS
 $acd_session_history_id = "acd_session_history_id_example"; // string | The ACD session history ID list separated by the `;` symbol.
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20021**](../Model/InlineResponse20021.md)
+[**\Swagger\Client\Model\InlineResponse20021**](../Model/InlineResponse20021.md)
 
 ### Authorization
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCallHistory**
-> \Voximplant\Client\Model\InlineResponse20031 getCallHistory($from_date, $to_date, $timezone, $call_session_history_id, $application_id, $application_name, $user_id, $rule_name, $remote_number, $local_number, $call_session_history_custom_data, $with_calls, $with_records, $with_other_resources, $child_account_id, $children_calls_only, $with_header, $desc_order, $count, $offset, $output, $is_async)
+> \Swagger\Client\Model\InlineResponse20031 getCallHistory($from_date, $to_date, $timezone, $call_session_history_id, $application_id, $application_name, $user_id, $rule_name, $remote_number, $local_number, $call_session_history_custom_data, $with_calls, $with_records, $with_other_resources, $child_account_id, $children_calls_only, $with_header, $desc_order, $count, $offset, $output, $is_async)
 
 
 
@@ -160,15 +160,15 @@ Gets the call history.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingHistoryApi();
+$api_instance = new Swagger\Client\Api\ManagingHistoryApi();
 $from_date = "from_date_example"; // string | The from date in the selected timezone in format YYYY-MM-DD HH:mm:SS
 $to_date = "to_date_example"; // string | The to date in the selected timezone in format YYYY-MM-DD HH:mm:SS
 $timezone = "timezone_example"; // string | The selected timezone or the `auto` value (will be used the account location).
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20031**](../Model/InlineResponse20031.md)
+[**\Swagger\Client\Model\InlineResponse20031**](../Model/InlineResponse20031.md)
 
 ### Authorization
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoryReports**
-> \Voximplant\Client\Model\InlineResponse20037 getHistoryReports($history_report_id, $history_type, $created_from, $created_to, $is_completed, $desc_order, $count, $offset)
+> \Swagger\Client\Model\InlineResponse20037 getHistoryReports($history_report_id, $history_type, $created_from, $created_to, $is_completed, $desc_order, $count, $offset)
 
 
 
@@ -256,15 +256,15 @@ Gets the history report statuses.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingHistoryApi();
+$api_instance = new Swagger\Client\Api\ManagingHistoryApi();
 $history_report_id = 3.4; // float | The history report ID to filter
 $history_type = "history_type_example"; // string | The history report type list separated by the `;` symbol or the `all` value. The following values are possible: calls, transactions.
 $created_from = "created_from_example"; // string | The UTC creation from date filter in format YYYY-MM-DD HH:mm:SS
@@ -298,7 +298,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20037**](../Model/InlineResponse20037.md)
+[**\Swagger\Client\Model\InlineResponse20037**](../Model/InlineResponse20037.md)
 
 ### Authorization
 
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTransactionHistory**
-> \Voximplant\Client\Model\InlineResponse20056 getTransactionHistory($from_date, $to_date, $timezone, $transaction_id, $payment_reference, $transaction_type, $user_id, $child_account_id, $children_transactions_only, $users_transactions_only, $desc_order, $count, $offset, $output, $is_async)
+> \Swagger\Client\Model\InlineResponse20056 getTransactionHistory($from_date, $to_date, $timezone, $transaction_id, $payment_reference, $transaction_type, $user_id, $child_account_id, $children_transactions_only, $users_transactions_only, $desc_order, $count, $offset, $output, $is_async)
 
 
 
@@ -324,15 +324,15 @@ Gets the transaction history.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_key', 'Bearer');
 // Configure API key authorization: account_name
-Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Voximplant\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
+// Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
-$api_instance = new Voximplant\Client\Api\ManagingHistoryApi();
+$api_instance = new Swagger\Client\Api\ManagingHistoryApi();
 $from_date = "from_date_example"; // string | The from date in the selected timezone in format YYYY-MM-DD HH:mm:SS
 $to_date = "to_date_example"; // string | The to date in the selected timezone in format YYYY-MM-DD HH:mm:SS
 $timezone = "timezone_example"; // string | The selected timezone or the `auto` value (will be used the account location).
@@ -380,7 +380,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Client\Model\InlineResponse20056**](../Model/InlineResponse20056.md)
+[**\Swagger\Client\Model\InlineResponse20056**](../Model/InlineResponse20056.md)
 
 ### Authorization
 

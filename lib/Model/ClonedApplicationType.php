@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The cloned application info.
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -69,7 +69,7 @@ class ClonedApplicationType implements ArrayAccess
     protected static $swaggerTypes = array(
         'application_id' => 'int',
         'application_name' => 'string',
-        'users' => '\Voximplant\Client\Model\ClonedRuleType[]'
+        'users' => '\Swagger\Client\Model\ClonedRuleType[]'
     );
 
     public static function swaggerTypes()
@@ -222,7 +222,7 @@ class ClonedApplicationType implements ArrayAccess
 
     /**
      * Gets users
-     * @return \Voximplant\Client\Model\ClonedRuleType[]
+     * @return \Swagger\Client\Model\ClonedRuleType[]
      */
     public function getUsers()
     {
@@ -231,7 +231,7 @@ class ClonedApplicationType implements ArrayAccess
 
     /**
      * Sets users
-     * @param \Voximplant\Client\Model\ClonedRuleType[] $users
+     * @param \Swagger\Client\Model\ClonedRuleType[] $users
      * @return $this
      */
     public function setUsers($users)
@@ -292,10 +292,10 @@ class ClonedApplicationType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

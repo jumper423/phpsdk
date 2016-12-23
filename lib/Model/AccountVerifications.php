@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The account verifications.
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -68,7 +68,7 @@ class AccountVerifications implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'account_id' => 'int',
-        'verifications' => '\Voximplant\Client\Model\AccountVerificationType[]'
+        'verifications' => '\Swagger\Client\Model\AccountVerificationType[]'
     );
 
     public static function swaggerTypes()
@@ -190,7 +190,7 @@ class AccountVerifications implements ArrayAccess
 
     /**
      * Gets verifications
-     * @return \Voximplant\Client\Model\AccountVerificationType[]
+     * @return \Swagger\Client\Model\AccountVerificationType[]
      */
     public function getVerifications()
     {
@@ -199,7 +199,7 @@ class AccountVerifications implements ArrayAccess
 
     /**
      * Sets verifications
-     * @param \Voximplant\Client\Model\AccountVerificationType[] $verifications
+     * @param \Swagger\Client\Model\AccountVerificationType[] $verifications
      * @return $this
      */
     public function setVerifications($verifications)
@@ -260,10 +260,10 @@ class AccountVerifications implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The account verification info. The AccountVerificationsType field.
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -70,7 +70,7 @@ class AccountVerificationType implements ArrayAccess
         'verification_name' => 'string',
         'verification_status' => 'string',
         'unverified_hold_until' => 'string',
-        'documents' => '\Voximplant\Client\Model\AccountVerificationDocument[]'
+        'documents' => '\Swagger\Client\Model\AccountVerificationDocument[]'
     );
 
     public static function swaggerTypes()
@@ -248,7 +248,7 @@ class AccountVerificationType implements ArrayAccess
 
     /**
      * Gets documents
-     * @return \Voximplant\Client\Model\AccountVerificationDocument[]
+     * @return \Swagger\Client\Model\AccountVerificationDocument[]
      */
     public function getDocuments()
     {
@@ -257,7 +257,7 @@ class AccountVerificationType implements ArrayAccess
 
     /**
      * Sets documents
-     * @param \Voximplant\Client\Model\AccountVerificationDocument[] $documents
+     * @param \Swagger\Client\Model\AccountVerificationDocument[] $documents
      * @return $this
      */
     public function setDocuments($documents)
@@ -318,10 +318,10 @@ class AccountVerificationType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

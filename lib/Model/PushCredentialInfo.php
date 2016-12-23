@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Voximplant\Client
+ * @package  Swagger\Client
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Voximplant\Client\Model;
+namespace Swagger\Client\Model;
 
 use \ArrayAccess;
 
@@ -49,7 +49,7 @@ use \ArrayAccess;
  * @category    Class */
  // @description The push credentials list item info.
 /** 
- * @package     Voximplant\Client
+ * @package     Swagger\Client
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache Licene v2
  * @link        https://github.com/swagger-api/swagger-codegen
@@ -71,8 +71,8 @@ class PushCredentialInfo implements ArrayAccess
         'push_provider_id' => 'int',
         'push_provider_name' => 'string',
         'external_app_name' => 'string',
-        'cert_credential' => '\Voximplant\Client\Model\CertCredentialType',
-        'applications' => '\Voximplant\Client\Model\ApplicationInfoType[]'
+        'cert_credential' => '\Swagger\Client\Model\CertCredentialType',
+        'applications' => '\Swagger\Client\Model\ApplicationInfoType[]'
     );
 
     public static function swaggerTypes()
@@ -291,7 +291,7 @@ class PushCredentialInfo implements ArrayAccess
 
     /**
      * Gets cert_credential
-     * @return \Voximplant\Client\Model\CertCredentialType
+     * @return \Swagger\Client\Model\CertCredentialType
      */
     public function getCertCredential()
     {
@@ -300,7 +300,7 @@ class PushCredentialInfo implements ArrayAccess
 
     /**
      * Sets cert_credential
-     * @param \Voximplant\Client\Model\CertCredentialType $cert_credential
+     * @param \Swagger\Client\Model\CertCredentialType $cert_credential
      * @return $this
      */
     public function setCertCredential($cert_credential)
@@ -312,7 +312,7 @@ class PushCredentialInfo implements ArrayAccess
 
     /**
      * Gets applications
-     * @return \Voximplant\Client\Model\ApplicationInfoType[]
+     * @return \Swagger\Client\Model\ApplicationInfoType[]
      */
     public function getApplications()
     {
@@ -321,7 +321,7 @@ class PushCredentialInfo implements ArrayAccess
 
     /**
      * Sets applications
-     * @param \Voximplant\Client\Model\ApplicationInfoType[] $applications
+     * @param \Swagger\Client\Model\ApplicationInfoType[] $applications
      * @return $this
      */
     public function setApplications($applications)
@@ -382,10 +382,10 @@ class PushCredentialInfo implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\Voximplant\Client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\Swagger\Client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 
