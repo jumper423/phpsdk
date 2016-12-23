@@ -247,15 +247,15 @@ class ManagingUsersApi
      *
      * 
      *
-     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $user_name Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $user_name Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function bindUser($user_id, $user_name, $application_id, $application_name, $bind = null)
+    public function bindUser($user_id = null, $user_name = null, $application_id = null, $application_name = null, $bind = null)
     {
         list($response) = $this->bindUserWithHttpInfo($user_id, $user_name, $application_id, $application_name, $bind);
         return $response;
@@ -266,32 +266,16 @@ class ManagingUsersApi
      *
      * 
      *
-     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $user_name Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $user_name Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function bindUserWithHttpInfo($user_id, $user_name, $application_id, $application_name, $bind = null)
+    public function bindUserWithHttpInfo($user_id = null, $user_name = null, $application_id = null, $application_name = null, $bind = null)
     {
-        // verify the required parameter 'user_id' is set
-        if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling bindUser');
-        }
-        // verify the required parameter 'user_name' is set
-        if ($user_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_name when calling bindUser');
-        }
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling bindUser');
-        }
-        // verify the required parameter 'application_name' is set
-        if ($application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_name when calling bindUser');
-        }
         // parse inputs
         $resourcePath = "/BindUser";
         $httpBody = '';
@@ -374,12 +358,12 @@ class ManagingUsersApi
      *
      * 
      *
-     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $user_name The user name list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (required)
+     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $user_name The user name list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function delUser($user_id, $user_name)
+    public function delUser($user_id = null, $user_name = null)
     {
         list($response) = $this->delUserWithHttpInfo($user_id, $user_name);
         return $response;
@@ -390,21 +374,13 @@ class ManagingUsersApi
      *
      * 
      *
-     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $user_name The user name list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (required)
+     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $user_name The user name list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function delUserWithHttpInfo($user_id, $user_name)
+    public function delUserWithHttpInfo($user_id = null, $user_name = null)
     {
-        // verify the required parameter 'user_id' is set
-        if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling delUser');
-        }
-        // verify the required parameter 'user_name' is set
-        if ($user_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_name when calling delUser');
-        }
         // parse inputs
         $resourcePath = "/DelUser";
         $httpBody = '';
@@ -682,8 +658,8 @@ class ManagingUsersApi
      *
      * 
      *
-     * @param float $user_id The user to edit. (required)
-     * @param string $user_name Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (required)
+     * @param float $user_id The user to edit. (optional)
+     * @param string $user_name Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (optional)
      * @param string $new_user_name The new user name in format [a-z0-9][a-z0-9_-]{2,49} (optional)
      * @param string $user_display_name The new user display name. The length must be less than 256. (optional)
      * @param string $user_password The new user password. The length must be at least 6 symbols. (optional)
@@ -695,7 +671,7 @@ class ManagingUsersApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function setUserInfo($user_id, $user_name, $new_user_name = null, $user_display_name = null, $user_password = null, $parent_accounting = null, $user_active = null, $user_custom_data = null, $two_factor_auth_required = null, $mobile_phone = null)
+    public function setUserInfo($user_id = null, $user_name = null, $new_user_name = null, $user_display_name = null, $user_password = null, $parent_accounting = null, $user_active = null, $user_custom_data = null, $two_factor_auth_required = null, $mobile_phone = null)
     {
         list($response) = $this->setUserInfoWithHttpInfo($user_id, $user_name, $new_user_name, $user_display_name, $user_password, $parent_accounting, $user_active, $user_custom_data, $two_factor_auth_required, $mobile_phone);
         return $response;
@@ -706,8 +682,8 @@ class ManagingUsersApi
      *
      * 
      *
-     * @param float $user_id The user to edit. (required)
-     * @param string $user_name Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (required)
+     * @param float $user_id The user to edit. (optional)
+     * @param string $user_name Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (optional)
      * @param string $new_user_name The new user name in format [a-z0-9][a-z0-9_-]{2,49} (optional)
      * @param string $user_display_name The new user display name. The length must be less than 256. (optional)
      * @param string $user_password The new user password. The length must be at least 6 symbols. (optional)
@@ -719,16 +695,8 @@ class ManagingUsersApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function setUserInfoWithHttpInfo($user_id, $user_name, $new_user_name = null, $user_display_name = null, $user_password = null, $parent_accounting = null, $user_active = null, $user_custom_data = null, $two_factor_auth_required = null, $mobile_phone = null)
+    public function setUserInfoWithHttpInfo($user_id = null, $user_name = null, $new_user_name = null, $user_display_name = null, $user_password = null, $parent_accounting = null, $user_active = null, $user_custom_data = null, $two_factor_auth_required = null, $mobile_phone = null)
     {
-        // verify the required parameter 'user_id' is set
-        if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling setUserInfo');
-        }
-        // verify the required parameter 'user_name' is set
-        if ($user_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_name when calling setUserInfo');
-        }
         // parse inputs
         $resourcePath = "/SetUserInfo";
         $httpBody = '';

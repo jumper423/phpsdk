@@ -227,12 +227,12 @@ class ManagingAdminRolesApi
      *
      * 
      *
-     * @param float $admin_role_id The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $admin_role_name The admin role name to delete, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (required)
+     * @param float $admin_role_id The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $admin_role_name The admin role name to delete, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function delAdminRole($admin_role_id, $admin_role_name)
+    public function delAdminRole($admin_role_id = null, $admin_role_name = null)
     {
         list($response) = $this->delAdminRoleWithHttpInfo($admin_role_id, $admin_role_name);
         return $response;
@@ -243,21 +243,13 @@ class ManagingAdminRolesApi
      *
      * 
      *
-     * @param float $admin_role_id The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $admin_role_name The admin role name to delete, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (required)
+     * @param float $admin_role_id The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $admin_role_name The admin role name to delete, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function delAdminRoleWithHttpInfo($admin_role_id, $admin_role_name)
+    public function delAdminRoleWithHttpInfo($admin_role_id = null, $admin_role_name = null)
     {
-        // verify the required parameter 'admin_role_id' is set
-        if ($admin_role_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $admin_role_id when calling delAdminRole');
-        }
-        // verify the required parameter 'admin_role_name' is set
-        if ($admin_role_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $admin_role_name when calling delAdminRole');
-        }
         // parse inputs
         $resourcePath = "/DelAdminRole";
         $httpBody = '';
@@ -487,8 +479,8 @@ class ManagingAdminRolesApi
      *
      * 
      *
-     * @param float $admin_role_id The admin user to edit. (required)
-     * @param string $admin_role_name The admin role to edit, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (required)
+     * @param float $admin_role_id The admin user to edit. (optional)
+     * @param string $admin_role_name The admin role to edit, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
      * @param string $new_admin_role_name The new admin role name. The length must be less than 50. (optional)
      * @param bool $admin_role_active The admin role enable flag. If false the allowed and denied entries have no affect. (optional)
      * @param string $entry_modification_mode The modification mode of the permission lists (allowed_entries and denied_entries). The following values are possible: add, del, set. (optional)
@@ -499,7 +491,7 @@ class ManagingAdminRolesApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function setAdminRoleInfo($admin_role_id, $admin_role_name, $new_admin_role_name = null, $admin_role_active = null, $entry_modification_mode = null, $allowed_entries = null, $denied_entries = null, $like_admin_role_id = null, $like_admin_role_name = null)
+    public function setAdminRoleInfo($admin_role_id = null, $admin_role_name = null, $new_admin_role_name = null, $admin_role_active = null, $entry_modification_mode = null, $allowed_entries = null, $denied_entries = null, $like_admin_role_id = null, $like_admin_role_name = null)
     {
         list($response) = $this->setAdminRoleInfoWithHttpInfo($admin_role_id, $admin_role_name, $new_admin_role_name, $admin_role_active, $entry_modification_mode, $allowed_entries, $denied_entries, $like_admin_role_id, $like_admin_role_name);
         return $response;
@@ -510,8 +502,8 @@ class ManagingAdminRolesApi
      *
      * 
      *
-     * @param float $admin_role_id The admin user to edit. (required)
-     * @param string $admin_role_name The admin role to edit, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (required)
+     * @param float $admin_role_id The admin user to edit. (optional)
+     * @param string $admin_role_name The admin role to edit, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
      * @param string $new_admin_role_name The new admin role name. The length must be less than 50. (optional)
      * @param bool $admin_role_active The admin role enable flag. If false the allowed and denied entries have no affect. (optional)
      * @param string $entry_modification_mode The modification mode of the permission lists (allowed_entries and denied_entries). The following values are possible: add, del, set. (optional)
@@ -522,16 +514,8 @@ class ManagingAdminRolesApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function setAdminRoleInfoWithHttpInfo($admin_role_id, $admin_role_name, $new_admin_role_name = null, $admin_role_active = null, $entry_modification_mode = null, $allowed_entries = null, $denied_entries = null, $like_admin_role_id = null, $like_admin_role_name = null)
+    public function setAdminRoleInfoWithHttpInfo($admin_role_id = null, $admin_role_name = null, $new_admin_role_name = null, $admin_role_active = null, $entry_modification_mode = null, $allowed_entries = null, $denied_entries = null, $like_admin_role_id = null, $like_admin_role_name = null)
     {
-        // verify the required parameter 'admin_role_id' is set
-        if ($admin_role_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $admin_role_id when calling setAdminRoleInfo');
-        }
-        // verify the required parameter 'admin_role_name' is set
-        if ($admin_role_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $admin_role_name when calling setAdminRoleInfo');
-        }
         // parse inputs
         $resourcePath = "/SetAdminRoleInfo";
         $httpBody = '';

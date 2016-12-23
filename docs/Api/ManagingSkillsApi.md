@@ -108,12 +108,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **skill_id** | **string**| The skill ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **skill_name** | **string**| Can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. The skill name list separated by the &#x60;;&#x60; symbol. |
- **user_id** | **string**| The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **user_name** | **string**| The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. |
- **acd_queue_id** | **string**| The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **acd_queue_name** | **string**| The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. |
+ **skill_id** | **string**| The skill ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **skill_name** | **string**| Can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. The skill name list separated by the &#x60;;&#x60; symbol. | [optional]
+ **user_id** | **string**| The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **user_name** | **string**| The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. | [optional]
+ **acd_queue_id** | **string**| The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **acd_queue_name** | **string**| The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. | [optional]
  **bind** | **bool**| Bind or unbind? | [optional]
 
 ### Return type
@@ -169,8 +169,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **skill_id** | **float**| The skill ID. |
- **skill_name** | **string**| The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. |
+ **skill_id** | **float**| The skill ID. | [optional]
+ **skill_name** | **string**| The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. | [optional]
 
 ### Return type
 
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setSkillInfo**
-> \Swagger\Client\Model\InlineResponse200 setSkillInfo($skill_id, $skill_name, $new_skill_name)
+> \Swagger\Client\Model\InlineResponse200 setSkillInfo($new_skill_name, $skill_id, $skill_name)
 
 
 
@@ -269,12 +269,12 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\ManagingSkillsApi();
+$new_skill_name = "new_skill_name_example"; // string | The new skill name. The length must be less than 512.
 $skill_id = 3.4; // float | The skill ID.
 $skill_name = "skill_name_example"; // string | The skill name that can be used instead of <b>skill_id</b>.
-$new_skill_name = "new_skill_name_example"; // string | The new skill name. The length must be less than 512.
 
 try {
-    $result = $api_instance->setSkillInfo($skill_id, $skill_name, $new_skill_name);
+    $result = $api_instance->setSkillInfo($new_skill_name, $skill_id, $skill_name);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ManagingSkillsApi->setSkillInfo: ', $e->getMessage(), PHP_EOL;
@@ -286,9 +286,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **skill_id** | **float**| The skill ID. |
- **skill_name** | **string**| The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. |
  **new_skill_name** | **string**| The new skill name. The length must be less than 512. |
+ **skill_id** | **float**| The skill ID. | [optional]
+ **skill_name** | **string**| The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. | [optional]
 
 ### Return type
 

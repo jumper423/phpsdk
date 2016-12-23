@@ -108,8 +108,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application_id** | **string**| The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **application_name** | **string**| The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. |
+ **application_id** | **string**| The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **application_name** | **string**| The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. | [optional]
 
 ### Return type
 
@@ -242,8 +242,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application_id** | **float**| The application ID. |
- **required_application_name** | **string**| Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. |
+ **application_id** | **float**| The application ID. | [optional]
+ **required_application_name** | **string**| Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. | [optional]
  **application_name** | **string**| The new short application name in format [a-z][a-z0-9-]{1,79} | [optional]
  **im_enabled** | **bool**| Is the instant messaging (IM) enabled? | [optional]
  **im_roster_type** | **string**| The roster type (IM users list type). The following values are possible: personal, group. | [optional]

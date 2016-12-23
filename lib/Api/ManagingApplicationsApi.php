@@ -215,12 +215,12 @@ class ManagingApplicationsApi
      *
      * 
      *
-     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $application_name The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. (required)
+     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $application_name The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function delApplication($application_id, $application_name)
+    public function delApplication($application_id = null, $application_name = null)
     {
         list($response) = $this->delApplicationWithHttpInfo($application_id, $application_name);
         return $response;
@@ -231,21 +231,13 @@ class ManagingApplicationsApi
      *
      * 
      *
-     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $application_name The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. (required)
+     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $application_name The application name list separated by the &#x60;;&#x60; symbol. Can be used instead of &lt;b&gt;appliction_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function delApplicationWithHttpInfo($application_id, $application_name)
+    public function delApplicationWithHttpInfo($application_id = null, $application_name = null)
     {
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling delApplication');
-        }
-        // verify the required parameter 'application_name' is set
-        if ($application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_name when calling delApplication');
-        }
         // parse inputs
         $resourcePath = "/DelApplication";
         $httpBody = '';
@@ -463,8 +455,8 @@ class ManagingApplicationsApi
      *
      * 
      *
-     * @param float $application_id The application ID. (required)
-     * @param string $required_application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $required_application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param string $application_name The new short application name in format [a-z][a-z0-9-]{1,79} (optional)
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
@@ -472,7 +464,7 @@ class ManagingApplicationsApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse20063
      */
-    public function setApplicationInfo($application_id, $required_application_name, $application_name = null, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
+    public function setApplicationInfo($application_id = null, $required_application_name = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
     {
         list($response) = $this->setApplicationInfoWithHttpInfo($application_id, $required_application_name, $application_name, $im_enabled, $im_roster_type, $busy_on_call);
         return $response;
@@ -483,8 +475,8 @@ class ManagingApplicationsApi
      *
      * 
      *
-     * @param float $application_id The application ID. (required)
-     * @param string $required_application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $required_application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param string $application_name The new short application name in format [a-z][a-z0-9-]{1,79} (optional)
      * @param bool $im_enabled Is the instant messaging (IM) enabled? (optional)
      * @param string $im_roster_type The roster type (IM users list type). The following values are possible: personal, group. (optional)
@@ -492,16 +484,8 @@ class ManagingApplicationsApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse20063, HTTP status code, HTTP response headers (array of strings)
      */
-    public function setApplicationInfoWithHttpInfo($application_id, $required_application_name, $application_name = null, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
+    public function setApplicationInfoWithHttpInfo($application_id = null, $required_application_name = null, $application_name = null, $im_enabled = null, $im_roster_type = null, $busy_on_call = null)
     {
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling setApplicationInfo');
-        }
-        // verify the required parameter 'required_application_name' is set
-        if ($required_application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $required_application_name when calling setApplicationInfo');
-        }
         // parse inputs
         $resourcePath = "/SetApplicationInfo";
         $httpBody = '';

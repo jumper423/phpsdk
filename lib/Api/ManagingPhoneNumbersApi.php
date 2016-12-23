@@ -106,19 +106,19 @@ class ManagingPhoneNumbersApi
      *
      * 
      *
-     * @param float $phone_count The phone count to attach. (required)
-     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_count&lt;/b&gt;. See the GetNewPhoneNumbers function. (required)
      * @param string $country_code The country code. (required)
      * @param string $phone_category_name The phone category name. See the GetPhoneNumberCategories function. (required)
      * @param float $phone_region_id The phone region ID. See the GetPhoneNumberRegions function. (required)
+     * @param float $phone_count The phone count to attach. (optional)
+     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_count&lt;/b&gt;. See the GetNewPhoneNumbers function. (optional)
      * @param string $country_state The country state. See the GetPhoneNumberCategories and GetPhoneNumberCountryStates functions. (optional)
      * @param float $regulation_address_id The phone regulation address ID. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse20014
      */
-    public function attachPhoneNumber($phone_count, $phone_number, $country_code, $phone_category_name, $phone_region_id, $country_state = null, $regulation_address_id = null)
+    public function attachPhoneNumber($country_code, $phone_category_name, $phone_region_id, $phone_count = null, $phone_number = null, $country_state = null, $regulation_address_id = null)
     {
-        list($response) = $this->attachPhoneNumberWithHttpInfo($phone_count, $phone_number, $country_code, $phone_category_name, $phone_region_id, $country_state, $regulation_address_id);
+        list($response) = $this->attachPhoneNumberWithHttpInfo($country_code, $phone_category_name, $phone_region_id, $phone_count, $phone_number, $country_state, $regulation_address_id);
         return $response;
     }
 
@@ -127,26 +127,18 @@ class ManagingPhoneNumbersApi
      *
      * 
      *
-     * @param float $phone_count The phone count to attach. (required)
-     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_count&lt;/b&gt;. See the GetNewPhoneNumbers function. (required)
      * @param string $country_code The country code. (required)
      * @param string $phone_category_name The phone category name. See the GetPhoneNumberCategories function. (required)
      * @param float $phone_region_id The phone region ID. See the GetPhoneNumberRegions function. (required)
+     * @param float $phone_count The phone count to attach. (optional)
+     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_count&lt;/b&gt;. See the GetNewPhoneNumbers function. (optional)
      * @param string $country_state The country state. See the GetPhoneNumberCategories and GetPhoneNumberCountryStates functions. (optional)
      * @param float $regulation_address_id The phone regulation address ID. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse20014, HTTP status code, HTTP response headers (array of strings)
      */
-    public function attachPhoneNumberWithHttpInfo($phone_count, $phone_number, $country_code, $phone_category_name, $phone_region_id, $country_state = null, $regulation_address_id = null)
+    public function attachPhoneNumberWithHttpInfo($country_code, $phone_category_name, $phone_region_id, $phone_count = null, $phone_number = null, $country_state = null, $regulation_address_id = null)
     {
-        // verify the required parameter 'phone_count' is set
-        if ($phone_count === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_count when calling attachPhoneNumber');
-        }
-        // verify the required parameter 'phone_number' is set
-        if ($phone_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_number when calling attachPhoneNumber');
-        }
         // verify the required parameter 'country_code' is set
         if ($country_code === null) {
             throw new \InvalidArgumentException('Missing the required parameter $country_code when calling attachPhoneNumber');
@@ -249,17 +241,17 @@ class ManagingPhoneNumbersApi
      *
      * 
      *
-     * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $phone_number The phone number list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (required)
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $phone_number The phone number list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function bindPhoneNumberToApplication($phone_id, $phone_number, $application_id, $application_name, $rule_id = null, $rule_name = null, $bind = null)
+    public function bindPhoneNumberToApplication($phone_id = null, $phone_number = null, $application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $bind = null)
     {
         list($response) = $this->bindPhoneNumberToApplicationWithHttpInfo($phone_id, $phone_number, $application_id, $application_name, $rule_id, $rule_name, $bind);
         return $response;
@@ -270,34 +262,18 @@ class ManagingPhoneNumbersApi
      *
      * 
      *
-     * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $phone_number The phone number list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (required)
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $phone_number The phone number list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function bindPhoneNumberToApplicationWithHttpInfo($phone_id, $phone_number, $application_id, $application_name, $rule_id = null, $rule_name = null, $bind = null)
+    public function bindPhoneNumberToApplicationWithHttpInfo($phone_id = null, $phone_number = null, $application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $bind = null)
     {
-        // verify the required parameter 'phone_id' is set
-        if ($phone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_id when calling bindPhoneNumberToApplication');
-        }
-        // verify the required parameter 'phone_number' is set
-        if ($phone_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_number when calling bindPhoneNumberToApplication');
-        }
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling bindPhoneNumberToApplication');
-        }
-        // verify the required parameter 'application_name' is set
-        if ($application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_name when calling bindPhoneNumberToApplication');
-        }
         // parse inputs
         $resourcePath = "/BindPhoneNumberToApplication";
         $httpBody = '';
@@ -388,12 +364,12 @@ class ManagingPhoneNumbersApi
      *
      * 
      *
-     * @param float $phone_id The phone ID. (required)
-     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (required)
+     * @param float $phone_id The phone ID. (optional)
+     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function deactivatePhoneNumber($phone_id, $phone_number)
+    public function deactivatePhoneNumber($phone_id = null, $phone_number = null)
     {
         list($response) = $this->deactivatePhoneNumberWithHttpInfo($phone_id, $phone_number);
         return $response;
@@ -404,21 +380,13 @@ class ManagingPhoneNumbersApi
      *
      * 
      *
-     * @param float $phone_id The phone ID. (required)
-     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (required)
+     * @param float $phone_id The phone ID. (optional)
+     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function deactivatePhoneNumberWithHttpInfo($phone_id, $phone_number)
+    public function deactivatePhoneNumberWithHttpInfo($phone_id = null, $phone_number = null)
     {
-        // verify the required parameter 'phone_id' is set
-        if ($phone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_id when calling deactivatePhoneNumber');
-        }
-        // verify the required parameter 'phone_number' is set
-        if ($phone_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_number when calling deactivatePhoneNumber');
-        }
         // parse inputs
         $resourcePath = "/DeactivatePhoneNumber";
         $httpBody = '';
@@ -1291,15 +1259,15 @@ class ManagingPhoneNumbersApi
      *
      * 
      *
-     * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (required)
      * @param bool $auto_charge Is auto charge enable? (required)
+     * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function setPhoneNumberInfo($phone_id, $phone_number, $auto_charge)
+    public function setPhoneNumberInfo($auto_charge, $phone_id = null, $phone_number = null)
     {
-        list($response) = $this->setPhoneNumberInfoWithHttpInfo($phone_id, $phone_number, $auto_charge);
+        list($response) = $this->setPhoneNumberInfoWithHttpInfo($auto_charge, $phone_id, $phone_number);
         return $response;
     }
 
@@ -1308,22 +1276,14 @@ class ManagingPhoneNumbersApi
      *
      * 
      *
-     * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (required)
      * @param bool $auto_charge Is auto charge enable? (required)
+     * @param float $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $phone_number The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function setPhoneNumberInfoWithHttpInfo($phone_id, $phone_number, $auto_charge)
+    public function setPhoneNumberInfoWithHttpInfo($auto_charge, $phone_id = null, $phone_number = null)
     {
-        // verify the required parameter 'phone_id' is set
-        if ($phone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_id when calling setPhoneNumberInfo');
-        }
-        // verify the required parameter 'phone_number' is set
-        if ($phone_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_number when calling setPhoneNumberInfo');
-        }
         // verify the required parameter 'auto_charge' is set
         if ($auto_charge === null) {
             throw new \InvalidArgumentException('Missing the required parameter $auto_charge when calling setPhoneNumberInfo');

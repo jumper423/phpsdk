@@ -294,13 +294,13 @@ class ManagingAuthorizedIPsApi
      *
      * 
      *
-     * @param string $authorized_ip The authorized IP4 or network to remove. Set the &#x60;all&#x60; value to remove the all items. (required)
-     * @param string $contains_ip Can be used instead of &lt;b&gt;autharized_ip&lt;/b&gt;. Specify the parameter to remove the networks that contains the particular IP4. (required)
+     * @param string $authorized_ip The authorized IP4 or network to remove. Set the &#x60;all&#x60; value to remove the all items. (optional)
+     * @param string $contains_ip Can be used instead of &lt;b&gt;autharized_ip&lt;/b&gt;. Specify the parameter to remove the networks that contains the particular IP4. (optional)
      * @param bool $allowed Set true to remove the network from the white list. Set false to remove the network from the black list. Omit the parameter to remove the network from the all lists. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse20020
      */
-    public function delAuthorizedAccountIP($authorized_ip, $contains_ip, $allowed = null)
+    public function delAuthorizedAccountIP($authorized_ip = null, $contains_ip = null, $allowed = null)
     {
         list($response) = $this->delAuthorizedAccountIPWithHttpInfo($authorized_ip, $contains_ip, $allowed);
         return $response;
@@ -311,22 +311,14 @@ class ManagingAuthorizedIPsApi
      *
      * 
      *
-     * @param string $authorized_ip The authorized IP4 or network to remove. Set the &#x60;all&#x60; value to remove the all items. (required)
-     * @param string $contains_ip Can be used instead of &lt;b&gt;autharized_ip&lt;/b&gt;. Specify the parameter to remove the networks that contains the particular IP4. (required)
+     * @param string $authorized_ip The authorized IP4 or network to remove. Set the &#x60;all&#x60; value to remove the all items. (optional)
+     * @param string $contains_ip Can be used instead of &lt;b&gt;autharized_ip&lt;/b&gt;. Specify the parameter to remove the networks that contains the particular IP4. (optional)
      * @param bool $allowed Set true to remove the network from the white list. Set false to remove the network from the black list. Omit the parameter to remove the network from the all lists. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse20020, HTTP status code, HTTP response headers (array of strings)
      */
-    public function delAuthorizedAccountIPWithHttpInfo($authorized_ip, $contains_ip, $allowed = null)
+    public function delAuthorizedAccountIPWithHttpInfo($authorized_ip = null, $contains_ip = null, $allowed = null)
     {
-        // verify the required parameter 'authorized_ip' is set
-        if ($authorized_ip === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $authorized_ip when calling delAuthorizedAccountIP');
-        }
-        // verify the required parameter 'contains_ip' is set
-        if ($contains_ip === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $contains_ip when calling delAuthorizedAccountIP');
-        }
         // parse inputs
         $resourcePath = "/DelAuthorizedAccountIP";
         $httpBody = '';

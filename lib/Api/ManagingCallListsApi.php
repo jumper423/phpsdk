@@ -106,17 +106,17 @@ class ManagingCallListsApi
      *
      * 
      *
-     * @param float $list_id The call list ID (required)
-     * @param string $list_name Can be used instead of &lt;b&gt;list_id&lt;/b&gt;. The unique name call list (required)
      * @param string $file_content Send as Body Request or multiform. (required)
+     * @param float $list_id The call list ID (optional)
+     * @param string $list_name Can be used instead of &lt;b&gt;list_id&lt;/b&gt;. The unique name call list (optional)
      * @param string $encoding Encoding file. The default is UTF-8. (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse20013
      */
-    public function appendToCallList($list_id, $list_name, $file_content, $encoding = null, $delimiter = null)
+    public function appendToCallList($file_content, $list_id = null, $list_name = null, $encoding = null, $delimiter = null)
     {
-        list($response) = $this->appendToCallListWithHttpInfo($list_id, $list_name, $file_content, $encoding, $delimiter);
+        list($response) = $this->appendToCallListWithHttpInfo($file_content, $list_id, $list_name, $encoding, $delimiter);
         return $response;
     }
 
@@ -125,24 +125,16 @@ class ManagingCallListsApi
      *
      * 
      *
-     * @param float $list_id The call list ID (required)
-     * @param string $list_name Can be used instead of &lt;b&gt;list_id&lt;/b&gt;. The unique name call list (required)
      * @param string $file_content Send as Body Request or multiform. (required)
+     * @param float $list_id The call list ID (optional)
+     * @param string $list_name Can be used instead of &lt;b&gt;list_id&lt;/b&gt;. The unique name call list (optional)
      * @param string $encoding Encoding file. The default is UTF-8. (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
      */
-    public function appendToCallListWithHttpInfo($list_id, $list_name, $file_content, $encoding = null, $delimiter = null)
+    public function appendToCallListWithHttpInfo($file_content, $list_id = null, $list_name = null, $encoding = null, $delimiter = null)
     {
-        // verify the required parameter 'list_id' is set
-        if ($list_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $list_id when calling appendToCallList');
-        }
-        // verify the required parameter 'list_name' is set
-        if ($list_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $list_name when calling appendToCallList');
-        }
         // verify the required parameter 'file_content' is set
         if ($file_content === null) {
             throw new \InvalidArgumentException('Missing the required parameter $file_content when calling appendToCallList');

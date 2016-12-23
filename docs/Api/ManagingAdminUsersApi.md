@@ -116,10 +116,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **required_admin_user_id** | **float**| The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **required_admin_user_name** | **string**| The admin user name to bind, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. |
- **admin_role_id** | **float**| The attached admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **admin_role_name** | **string**| The admin role name to attach, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. |
+ **required_admin_user_id** | **float**| The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **required_admin_user_name** | **string**| The admin user name to bind, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. | [optional]
+ **admin_role_id** | **float**| The attached admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **admin_role_name** | **string**| The admin role name to attach, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. | [optional]
  **mode** | **string**| The merge mode. The following values are possible: add, del, set. | [optional]
 
 ### Return type
@@ -175,8 +175,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **required_admin_user_id** | **float**| The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **required_admin_user_name** | **string**| The admin user name to delete, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. |
+ **required_admin_user_id** | **float**| The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **required_admin_user_name** | **string**| The admin user name to delete, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. | [optional]
 
 ### Return type
 
@@ -303,8 +303,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **required_admin_user_id** | **float**| The admin user to edit. |
- **required_admin_user_name** | **string**| The admin user to edit, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. |
+ **required_admin_user_id** | **float**| The admin user to edit. | [optional]
+ **required_admin_user_name** | **string**| The admin user to edit, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. | [optional]
  **new_admin_user_name** | **string**| The new admin user name. The length must be less than 50. | [optional]
  **admin_user_display_name** | **string**| The new admin user display name. The length must be less than 256. | [optional]
  **new_admin_user_password** | **string**| The new admin user password. The length must be at least 6 symbols. | [optional]

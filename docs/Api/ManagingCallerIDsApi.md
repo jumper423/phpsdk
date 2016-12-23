@@ -50,9 +50,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **callerid_id** | **float**| The id of the callerID object. |
- **callerid_number** | **string**| The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. |
- **verification_code** | **string**| The verification code, see the VerifyCallerID function. |
+ **callerid_id** | **float**| The id of the callerID object. | [optional]
+ **callerid_number** | **string**| The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. | [optional]
+ **verification_code** | **string**| The verification code, see the VerifyCallerID function. | [optional]
 
 ### Return type
 
@@ -106,7 +106,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **callerid_number** | **string**| The callerID number. |
+ **callerid_number** | **string**| The callerID number. | [optional]
 
 ### Return type
 
@@ -161,8 +161,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **callerid_id** | **float**| The id of the callerID object. |
- **callerid_number** | **string**| The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. |
+ **callerid_id** | **float**| The id of the callerID object. | [optional]
+ **callerid_number** | **string**| The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. | [optional]
 
 ### Return type
 
@@ -221,8 +221,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **callerid_id** | **float**| The id of the callerID object to filter. |
- **callerid_number** | **string**| The phone number to filter. |
+ **callerid_id** | **float**| The id of the callerID object to filter. | [optional]
+ **callerid_number** | **string**| The phone number to filter. | [optional]
  **active** | **bool**| The active flag to filter. | [optional]
  **order_by** | **string**| The following values are available: &#x60;caller_number&#x60; (ascent order), &#x60;verified_until&#x60; (ascent order). | [optional]
  **count** | **float**| The max returning record count. | [optional]
@@ -281,8 +281,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **callerid_id** | **float**| The id of the callerID object. |
- **callerid_number** | **string**| The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. |
+ **callerid_id** | **float**| The id of the callerID object. | [optional]
+ **callerid_number** | **string**| The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. | [optional]
 
 ### Return type
 

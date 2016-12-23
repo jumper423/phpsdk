@@ -106,12 +106,12 @@ class ManagingAccountsApi
      *
      * 
      *
-     * @param string $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (required)
-     * @param string $phone_number Can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. The phone number list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (required)
+     * @param string $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (optional)
+     * @param string $phone_number Can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. The phone number list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse20016
      */
-    public function chargeAccount($phone_id, $phone_number)
+    public function chargeAccount($phone_id = null, $phone_number = null)
     {
         list($response) = $this->chargeAccountWithHttpInfo($phone_id, $phone_number);
         return $response;
@@ -122,21 +122,13 @@ class ManagingAccountsApi
      *
      * 
      *
-     * @param string $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (required)
-     * @param string $phone_number Can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. The phone number list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (required)
+     * @param string $phone_id The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (optional)
+     * @param string $phone_number Can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. The phone number list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse20016, HTTP status code, HTTP response headers (array of strings)
      */
-    public function chargeAccountWithHttpInfo($phone_id, $phone_number)
+    public function chargeAccountWithHttpInfo($phone_id = null, $phone_number = null)
     {
-        // verify the required parameter 'phone_id' is set
-        if ($phone_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_id when calling chargeAccount');
-        }
-        // verify the required parameter 'phone_number' is set
-        if ($phone_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $phone_number when calling chargeAccount');
-        }
         // parse inputs
         $resourcePath = "/ChargeAccount";
         $httpBody = '';

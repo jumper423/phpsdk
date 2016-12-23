@@ -54,8 +54,8 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sip_registration_id** | **float**| The registration ID |
- **application_id** | **float**| The application ID. |
- **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. |
+ **application_id** | **float**| The application ID. | [optional]
+ **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. | [optional]
  **rule_id** | **float**| The rule ID. | [optional]
  **rule_name** | **string**| The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. | [optional]
  **bind** | **bool**| Bind or unbind? | [optional]

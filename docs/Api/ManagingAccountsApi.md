@@ -55,8 +55,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phone_id** | **string**| The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. |
- **phone_number** | **string**| Can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. The phone number list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. |
+ **phone_id** | **string**| The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. | [optional]
+ **phone_number** | **string**| Can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. The phone number list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. You should specify the phones having the auto_charge&#x3D;false. | [optional]
 
 ### Return type
 

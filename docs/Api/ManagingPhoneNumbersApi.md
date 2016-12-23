@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **attachPhoneNumber**
-> \Swagger\Client\Model\InlineResponse20014 attachPhoneNumber($phone_count, $phone_number, $country_code, $phone_category_name, $phone_region_id, $country_state, $regulation_address_id)
+> \Swagger\Client\Model\InlineResponse20014 attachPhoneNumber($country_code, $phone_category_name, $phone_region_id, $phone_count, $phone_number, $country_state, $regulation_address_id)
 
 
 
@@ -38,16 +38,16 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\ManagingPhoneNumbersApi();
-$phone_count = 3.4; // float | The phone count to attach.
-$phone_number = "phone_number_example"; // string | The phone number that can be used instead of <b>phone_count</b>. See the GetNewPhoneNumbers function.
 $country_code = "country_code_example"; // string | The country code.
 $phone_category_name = "phone_category_name_example"; // string | The phone category name. See the GetPhoneNumberCategories function.
 $phone_region_id = 3.4; // float | The phone region ID. See the GetPhoneNumberRegions function.
+$phone_count = 3.4; // float | The phone count to attach.
+$phone_number = "phone_number_example"; // string | The phone number that can be used instead of <b>phone_count</b>. See the GetNewPhoneNumbers function.
 $country_state = "country_state_example"; // string | The country state. See the GetPhoneNumberCategories and GetPhoneNumberCountryStates functions.
 $regulation_address_id = 3.4; // float | The phone regulation address ID.
 
 try {
-    $result = $api_instance->attachPhoneNumber($phone_count, $phone_number, $country_code, $phone_category_name, $phone_region_id, $country_state, $regulation_address_id);
+    $result = $api_instance->attachPhoneNumber($country_code, $phone_category_name, $phone_region_id, $phone_count, $phone_number, $country_state, $regulation_address_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ManagingPhoneNumbersApi->attachPhoneNumber: ', $e->getMessage(), PHP_EOL;
@@ -59,11 +59,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phone_count** | **float**| The phone count to attach. |
- **phone_number** | **string**| The phone number that can be used instead of &lt;b&gt;phone_count&lt;/b&gt;. See the GetNewPhoneNumbers function. |
  **country_code** | **string**| The country code. |
  **phone_category_name** | **string**| The phone category name. See the GetPhoneNumberCategories function. |
  **phone_region_id** | **float**| The phone region ID. See the GetPhoneNumberRegions function. |
+ **phone_count** | **float**| The phone count to attach. | [optional]
+ **phone_number** | **string**| The phone number that can be used instead of &lt;b&gt;phone_count&lt;/b&gt;. See the GetNewPhoneNumbers function. | [optional]
  **country_state** | **string**| The country state. See the GetPhoneNumberCategories and GetPhoneNumberCountryStates functions. | [optional]
  **regulation_address_id** | **float**| The phone regulation address ID. | [optional]
 
@@ -125,10 +125,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phone_id** | **float**| The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **phone_number** | **string**| The phone number list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. |
- **application_id** | **float**| The application ID. |
- **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. |
+ **phone_id** | **float**| The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **phone_number** | **string**| The phone number list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. | [optional]
+ **application_id** | **float**| The application ID. | [optional]
+ **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. | [optional]
  **rule_id** | **float**| The rule ID. | [optional]
  **rule_name** | **string**| The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. | [optional]
  **bind** | **bool**| Bind or unbind? | [optional]
@@ -186,8 +186,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phone_id** | **float**| The phone ID. |
- **phone_number** | **string**| The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. |
+ **phone_id** | **float**| The phone ID. | [optional]
+ **phone_number** | **string**| The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. | [optional]
 
 ### Return type
 
@@ -609,7 +609,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setPhoneNumberInfo**
-> \Swagger\Client\Model\InlineResponse200 setPhoneNumberInfo($phone_id, $phone_number, $auto_charge)
+> \Swagger\Client\Model\InlineResponse200 setPhoneNumberInfo($auto_charge, $phone_id, $phone_number)
 
 
 
@@ -630,12 +630,12 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\ManagingPhoneNumbersApi();
+$auto_charge = true; // bool | Is auto charge enable?
 $phone_id = 3.4; // float | The phone ID list separated by the `;` symbol or the `all` value.
 $phone_number = "phone_number_example"; // string | The phone number that can be used instead of <b>phone_id</b>.
-$auto_charge = true; // bool | Is auto charge enable?
 
 try {
-    $result = $api_instance->setPhoneNumberInfo($phone_id, $phone_number, $auto_charge);
+    $result = $api_instance->setPhoneNumberInfo($auto_charge, $phone_id, $phone_number);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ManagingPhoneNumbersApi->setPhoneNumberInfo: ', $e->getMessage(), PHP_EOL;
@@ -647,9 +647,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phone_id** | **float**| The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **phone_number** | **string**| The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. |
  **auto_charge** | **bool**| Is auto charge enable? |
+ **phone_id** | **float**| The phone ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **phone_number** | **string**| The phone number that can be used instead of &lt;b&gt;phone_id&lt;/b&gt;. | [optional]
 
 ### Return type
 

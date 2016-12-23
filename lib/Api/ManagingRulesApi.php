@@ -106,19 +106,19 @@ class ManagingRulesApi
      *
      * 
      *
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name, can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
      * @param string $rule_name The rule name. The length must be less than 512 (required)
      * @param string $rule_pattern The rule pattern regex. The length must be less than 64 KB. (required)
-     * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name, can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param string $rule_pattern_exclude The exclude pattern regex. The length must be less than 64 KB. (optional)
+     * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse2008
      */
-    public function addRule($application_id, $application_name, $rule_name, $rule_pattern, $scenario_id, $scenario_name, $rule_pattern_exclude = null)
+    public function addRule($rule_name, $rule_pattern, $application_id = null, $application_name = null, $rule_pattern_exclude = null, $scenario_id = null, $scenario_name = null)
     {
-        list($response) = $this->addRuleWithHttpInfo($application_id, $application_name, $rule_name, $rule_pattern, $scenario_id, $scenario_name, $rule_pattern_exclude);
+        list($response) = $this->addRuleWithHttpInfo($rule_name, $rule_pattern, $application_id, $application_name, $rule_pattern_exclude, $scenario_id, $scenario_name);
         return $response;
     }
 
@@ -127,26 +127,18 @@ class ManagingRulesApi
      *
      * 
      *
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name, can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
      * @param string $rule_name The rule name. The length must be less than 512 (required)
      * @param string $rule_pattern The rule pattern regex. The length must be less than 64 KB. (required)
-     * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name, can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param string $rule_pattern_exclude The exclude pattern regex. The length must be less than 64 KB. (optional)
+     * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse2008, HTTP status code, HTTP response headers (array of strings)
      */
-    public function addRuleWithHttpInfo($application_id, $application_name, $rule_name, $rule_pattern, $scenario_id, $scenario_name, $rule_pattern_exclude = null)
+    public function addRuleWithHttpInfo($rule_name, $rule_pattern, $application_id = null, $application_name = null, $rule_pattern_exclude = null, $scenario_id = null, $scenario_name = null)
     {
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling addRule');
-        }
-        // verify the required parameter 'application_name' is set
-        if ($application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_name when calling addRule');
-        }
         // verify the required parameter 'rule_name' is set
         if ($rule_name === null) {
             throw new \InvalidArgumentException('Missing the required parameter $rule_name when calling addRule');
@@ -154,14 +146,6 @@ class ManagingRulesApi
         // verify the required parameter 'rule_pattern' is set
         if ($rule_pattern === null) {
             throw new \InvalidArgumentException('Missing the required parameter $rule_pattern when calling addRule');
-        }
-        // verify the required parameter 'scenario_id' is set
-        if ($scenario_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $scenario_id when calling addRule');
-        }
-        // verify the required parameter 'scenario_name' is set
-        if ($scenario_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $scenario_name when calling addRule');
         }
         // parse inputs
         $resourcePath = "/AddRule";
@@ -253,14 +237,14 @@ class ManagingRulesApi
      *
      * 
      *
-     * @param string $rule_id The rule ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $rule_name Can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. The rule name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param string $rule_id The rule ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $rule_name Can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. The rule name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function delRule($rule_id, $rule_name, $application_id, $application_name)
+    public function delRule($rule_id = null, $rule_name = null, $application_id = null, $application_name = null)
     {
         list($response) = $this->delRuleWithHttpInfo($rule_id, $rule_name, $application_id, $application_name);
         return $response;
@@ -271,31 +255,15 @@ class ManagingRulesApi
      *
      * 
      *
-     * @param string $rule_id The rule ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $rule_name Can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. The rule name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param string $rule_id The rule ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $rule_name Can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. The rule name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function delRuleWithHttpInfo($rule_id, $rule_name, $application_id, $application_name)
+    public function delRuleWithHttpInfo($rule_id = null, $rule_name = null, $application_id = null, $application_name = null)
     {
-        // verify the required parameter 'rule_id' is set
-        if ($rule_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $rule_id when calling delRule');
-        }
-        // verify the required parameter 'rule_name' is set
-        if ($rule_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $rule_name when calling delRule');
-        }
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling delRule');
-        }
-        // verify the required parameter 'application_name' is set
-        if ($application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_name when calling delRule');
-        }
         // parse inputs
         $resourcePath = "/DelRule";
         $httpBody = '';
@@ -374,8 +342,8 @@ class ManagingRulesApi
      *
      * 
      *
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param float $rule_id The rule ID to filter (optional)
      * @param string $rule_name The rule name part to filter. (optional)
      * @param string $template Search for template matching (optional)
@@ -385,7 +353,7 @@ class ManagingRulesApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse20050
      */
-    public function getRules($application_id, $application_name, $rule_id = null, $rule_name = null, $template = null, $with_scenarios = null, $count = null, $offset = null)
+    public function getRules($application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $template = null, $with_scenarios = null, $count = null, $offset = null)
     {
         list($response) = $this->getRulesWithHttpInfo($application_id, $application_name, $rule_id, $rule_name, $template, $with_scenarios, $count, $offset);
         return $response;
@@ -396,8 +364,8 @@ class ManagingRulesApi
      *
      * 
      *
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param float $rule_id The rule ID to filter (optional)
      * @param string $rule_name The rule name part to filter. (optional)
      * @param string $template Search for template matching (optional)
@@ -407,16 +375,8 @@ class ManagingRulesApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse20050, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getRulesWithHttpInfo($application_id, $application_name, $rule_id = null, $rule_name = null, $template = null, $with_scenarios = null, $count = null, $offset = null)
+    public function getRulesWithHttpInfo($application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $template = null, $with_scenarios = null, $count = null, $offset = null)
     {
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling getRules');
-        }
-        // verify the required parameter 'application_name' is set
-        if ($application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_name when calling getRules');
-        }
         // parse inputs
         $resourcePath = "/GetRules";
         $httpBody = '';

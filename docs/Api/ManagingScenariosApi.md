@@ -113,12 +113,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **scenario_id** | **string**| The scenario ID list separated by the &#x60;;&#x60; symbol. |
- **scenario_name** | **string**| Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. |
- **rule_id** | **float**| The rule ID. |
- **rule_name** | **string**| The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. |
- **application_id** | **float**| The application ID. |
- **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. |
+ **scenario_id** | **string**| The scenario ID list separated by the &#x60;;&#x60; symbol. | [optional]
+ **scenario_name** | **string**| Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. | [optional]
+ **rule_id** | **float**| The rule ID. | [optional]
+ **rule_name** | **string**| The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. | [optional]
+ **application_id** | **float**| The application ID. | [optional]
+ **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. | [optional]
  **bind** | **bool**| Bind or unbind? | [optional]
 
 ### Return type
@@ -289,8 +289,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rule_id** | **float**| The rule ID. |
- **rule_name** | **string**| The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. |
+ **rule_id** | **float**| The rule ID. | [optional]
+ **rule_name** | **string**| The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. | [optional]
  **scenario_id** | **string**| The scenario ID list separated by the &#x60;;&#x60; symbol. | [optional]
 
 ### Return type
@@ -348,8 +348,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **scenario_id** | **float**| The scenario ID. |
- **required_scenario_name** | **string**| The name of the scenario to edit, can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. |
+ **scenario_id** | **float**| The scenario ID. | [optional]
+ **required_scenario_name** | **string**| The name of the scenario to edit, can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. | [optional]
  **scenario_name** | **string**| The new scenario name. The length must be less than 30 | [optional]
  **scenario_script** | **string**| The new scenario text. The length must be less than 128 KB. | [optional]
 

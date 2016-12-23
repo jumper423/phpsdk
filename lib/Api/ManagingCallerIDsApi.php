@@ -106,13 +106,13 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param float $callerid_id The id of the callerID object. (required)
-     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (required)
-     * @param string $verification_code The verification code, see the VerifyCallerID function. (required)
+     * @param float $callerid_id The id of the callerID object. (optional)
+     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
+     * @param string $verification_code The verification code, see the VerifyCallerID function. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function activateCallerID($callerid_id, $callerid_number, $verification_code)
+    public function activateCallerID($callerid_id = null, $callerid_number = null, $verification_code = null)
     {
         list($response) = $this->activateCallerIDWithHttpInfo($callerid_id, $callerid_number, $verification_code);
         return $response;
@@ -123,26 +123,14 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param float $callerid_id The id of the callerID object. (required)
-     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (required)
-     * @param string $verification_code The verification code, see the VerifyCallerID function. (required)
+     * @param float $callerid_id The id of the callerID object. (optional)
+     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
+     * @param string $verification_code The verification code, see the VerifyCallerID function. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function activateCallerIDWithHttpInfo($callerid_id, $callerid_number, $verification_code)
+    public function activateCallerIDWithHttpInfo($callerid_id = null, $callerid_number = null, $verification_code = null)
     {
-        // verify the required parameter 'callerid_id' is set
-        if ($callerid_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $callerid_id when calling activateCallerID');
-        }
-        // verify the required parameter 'callerid_number' is set
-        if ($callerid_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $callerid_number when calling activateCallerID');
-        }
-        // verify the required parameter 'verification_code' is set
-        if ($verification_code === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $verification_code when calling activateCallerID');
-        }
         // parse inputs
         $resourcePath = "/ActivateCallerID";
         $httpBody = '';
@@ -217,11 +205,11 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param string $callerid_number The callerID number. (required)
+     * @param string $callerid_number The callerID number. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse2004
      */
-    public function addCallerID($callerid_number)
+    public function addCallerID($callerid_number = null)
     {
         list($response) = $this->addCallerIDWithHttpInfo($callerid_number);
         return $response;
@@ -232,16 +220,12 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param string $callerid_number The callerID number. (required)
+     * @param string $callerid_number The callerID number. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
      */
-    public function addCallerIDWithHttpInfo($callerid_number)
+    public function addCallerIDWithHttpInfo($callerid_number = null)
     {
-        // verify the required parameter 'callerid_number' is set
-        if ($callerid_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $callerid_number when calling addCallerID');
-        }
         // parse inputs
         $resourcePath = "/AddCallerID";
         $httpBody = '';
@@ -308,12 +292,12 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param float $callerid_id The id of the callerID object. (required)
-     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (required)
+     * @param float $callerid_id The id of the callerID object. (optional)
+     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function delCallerID($callerid_id, $callerid_number)
+    public function delCallerID($callerid_id = null, $callerid_number = null)
     {
         list($response) = $this->delCallerIDWithHttpInfo($callerid_id, $callerid_number);
         return $response;
@@ -324,21 +308,13 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param float $callerid_id The id of the callerID object. (required)
-     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (required)
+     * @param float $callerid_id The id of the callerID object. (optional)
+     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function delCallerIDWithHttpInfo($callerid_id, $callerid_number)
+    public function delCallerIDWithHttpInfo($callerid_id = null, $callerid_number = null)
     {
-        // verify the required parameter 'callerid_id' is set
-        if ($callerid_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $callerid_id when calling delCallerID');
-        }
-        // verify the required parameter 'callerid_number' is set
-        if ($callerid_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $callerid_number when calling delCallerID');
-        }
         // parse inputs
         $resourcePath = "/DelCallerID";
         $httpBody = '';
@@ -409,8 +385,8 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param float $callerid_id The id of the callerID object to filter. (required)
-     * @param string $callerid_number The phone number to filter. (required)
+     * @param float $callerid_id The id of the callerID object to filter. (optional)
+     * @param string $callerid_number The phone number to filter. (optional)
      * @param bool $active The active flag to filter. (optional)
      * @param string $order_by The following values are available: &#x60;caller_number&#x60; (ascent order), &#x60;verified_until&#x60; (ascent order). (optional)
      * @param float $count The max returning record count. (optional)
@@ -418,7 +394,7 @@ class ManagingCallerIDsApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse20034
      */
-    public function getCallerIDs($callerid_id, $callerid_number, $active = null, $order_by = null, $count = null, $offset = null)
+    public function getCallerIDs($callerid_id = null, $callerid_number = null, $active = null, $order_by = null, $count = null, $offset = null)
     {
         list($response) = $this->getCallerIDsWithHttpInfo($callerid_id, $callerid_number, $active, $order_by, $count, $offset);
         return $response;
@@ -429,8 +405,8 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param float $callerid_id The id of the callerID object to filter. (required)
-     * @param string $callerid_number The phone number to filter. (required)
+     * @param float $callerid_id The id of the callerID object to filter. (optional)
+     * @param string $callerid_number The phone number to filter. (optional)
      * @param bool $active The active flag to filter. (optional)
      * @param string $order_by The following values are available: &#x60;caller_number&#x60; (ascent order), &#x60;verified_until&#x60; (ascent order). (optional)
      * @param float $count The max returning record count. (optional)
@@ -438,16 +414,8 @@ class ManagingCallerIDsApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse20034, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getCallerIDsWithHttpInfo($callerid_id, $callerid_number, $active = null, $order_by = null, $count = null, $offset = null)
+    public function getCallerIDsWithHttpInfo($callerid_id = null, $callerid_number = null, $active = null, $order_by = null, $count = null, $offset = null)
     {
-        // verify the required parameter 'callerid_id' is set
-        if ($callerid_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $callerid_id when calling getCallerIDs');
-        }
-        // verify the required parameter 'callerid_number' is set
-        if ($callerid_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $callerid_number when calling getCallerIDs');
-        }
         // parse inputs
         $resourcePath = "/GetCallerIDs";
         $httpBody = '';
@@ -534,12 +502,12 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param float $callerid_id The id of the callerID object. (required)
-     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (required)
+     * @param float $callerid_id The id of the callerID object. (optional)
+     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function verifyCallerID($callerid_id, $callerid_number)
+    public function verifyCallerID($callerid_id = null, $callerid_number = null)
     {
         list($response) = $this->verifyCallerIDWithHttpInfo($callerid_id, $callerid_number);
         return $response;
@@ -550,21 +518,13 @@ class ManagingCallerIDsApi
      *
      * 
      *
-     * @param float $callerid_id The id of the callerID object. (required)
-     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (required)
+     * @param float $callerid_id The id of the callerID object. (optional)
+     * @param string $callerid_number The callerID number that can be used instead of &lt;b&gt;callerid_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function verifyCallerIDWithHttpInfo($callerid_id, $callerid_number)
+    public function verifyCallerIDWithHttpInfo($callerid_id = null, $callerid_number = null)
     {
-        // verify the required parameter 'callerid_id' is set
-        if ($callerid_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $callerid_id when calling verifyCallerID');
-        }
-        // verify the required parameter 'callerid_number' is set
-        if ($callerid_number === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $callerid_number when calling verifyCallerID');
-        }
         // parse inputs
         $resourcePath = "/VerifyCallerID";
         $httpBody = '';

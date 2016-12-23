@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **appendToCallList**
-> \Swagger\Client\Model\InlineResponse20013 appendToCallList($list_id, $list_name, $file_content, $encoding, $delimiter)
+> \Swagger\Client\Model\InlineResponse20013 appendToCallList($file_content, $list_id, $list_name, $encoding, $delimiter)
 
 
 
@@ -36,14 +36,14 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\ManagingCallListsApi();
+$file_content = "file_content_example"; // string | Send as Body Request or multiform.
 $list_id = 3.4; // float | The call list ID
 $list_name = "list_name_example"; // string | Can be used instead of <b>list_id</b>. The unique name call list
-$file_content = "file_content_example"; // string | Send as Body Request or multiform.
 $encoding = "encoding_example"; // string | Encoding file. The default is UTF-8.
 $delimiter = "delimiter_example"; // string | Separator values. The default is `;`
 
 try {
-    $result = $api_instance->appendToCallList($list_id, $list_name, $file_content, $encoding, $delimiter);
+    $result = $api_instance->appendToCallList($file_content, $list_id, $list_name, $encoding, $delimiter);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ManagingCallListsApi->appendToCallList: ', $e->getMessage(), PHP_EOL;
@@ -55,9 +55,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **list_id** | **float**| The call list ID |
- **list_name** | **string**| Can be used instead of &lt;b&gt;list_id&lt;/b&gt;. The unique name call list |
  **file_content** | **string**| Send as Body Request or multiform. |
+ **list_id** | **float**| The call list ID | [optional]
+ **list_name** | **string**| Can be used instead of &lt;b&gt;list_id&lt;/b&gt;. The unique name call list | [optional]
  **encoding** | **string**| Encoding file. The default is UTF-8. | [optional]
  **delimiter** | **string**| Separator values. The default is &#x60;;&#x60; | [optional]
 

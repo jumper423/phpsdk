@@ -106,19 +106,19 @@ class ManagingPushCredentialsApi
      *
      * 
      *
-     * @param string $push_provider_name The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE. (required)
-     * @param int $push_provider_id The push provider id. (required)
      * @param string $external_app_name The application name. (required)
      * @param string $cert_content Public and private keys in PKCS12 format. (required)
      * @param string $cert_password The secret password for private key. (required)
      * @param bool $is_dev_mode Set true for use this certificate in apple&#x60;s sandbox environment (required)
+     * @param string $push_provider_name The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE. (optional)
+     * @param int $push_provider_id The push provider id. (optional)
      * @param string $cert_file_name The parameter is required, when set &#x60;cert_content&#x60; as POST body. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse2006
      */
-    public function addPushCredential($push_provider_name, $push_provider_id, $external_app_name, $cert_content, $cert_password, $is_dev_mode, $cert_file_name = null)
+    public function addPushCredential($external_app_name, $cert_content, $cert_password, $is_dev_mode, $push_provider_name = null, $push_provider_id = null, $cert_file_name = null)
     {
-        list($response) = $this->addPushCredentialWithHttpInfo($push_provider_name, $push_provider_id, $external_app_name, $cert_content, $cert_password, $is_dev_mode, $cert_file_name);
+        list($response) = $this->addPushCredentialWithHttpInfo($external_app_name, $cert_content, $cert_password, $is_dev_mode, $push_provider_name, $push_provider_id, $cert_file_name);
         return $response;
     }
 
@@ -127,26 +127,18 @@ class ManagingPushCredentialsApi
      *
      * 
      *
-     * @param string $push_provider_name The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE. (required)
-     * @param int $push_provider_id The push provider id. (required)
      * @param string $external_app_name The application name. (required)
      * @param string $cert_content Public and private keys in PKCS12 format. (required)
      * @param string $cert_password The secret password for private key. (required)
      * @param bool $is_dev_mode Set true for use this certificate in apple&#x60;s sandbox environment (required)
+     * @param string $push_provider_name The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE. (optional)
+     * @param int $push_provider_id The push provider id. (optional)
      * @param string $cert_file_name The parameter is required, when set &#x60;cert_content&#x60; as POST body. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse2006, HTTP status code, HTTP response headers (array of strings)
      */
-    public function addPushCredentialWithHttpInfo($push_provider_name, $push_provider_id, $external_app_name, $cert_content, $cert_password, $is_dev_mode, $cert_file_name = null)
+    public function addPushCredentialWithHttpInfo($external_app_name, $cert_content, $cert_password, $is_dev_mode, $push_provider_name = null, $push_provider_id = null, $cert_file_name = null)
     {
-        // verify the required parameter 'push_provider_name' is set
-        if ($push_provider_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $push_provider_name when calling addPushCredential');
-        }
-        // verify the required parameter 'push_provider_id' is set
-        if ($push_provider_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $push_provider_id when calling addPushCredential');
-        }
         // verify the required parameter 'external_app_name' is set
         if ($external_app_name === null) {
             throw new \InvalidArgumentException('Missing the required parameter $external_app_name when calling addPushCredential');

@@ -235,15 +235,15 @@ class ManagingAdminUsersApi
      *
      * 
      *
-     * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $required_admin_user_name The admin user name to bind, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (required)
-     * @param float $admin_role_id The attached admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $admin_role_name The admin role name to attach, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (required)
+     * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $required_admin_user_name The admin user name to bind, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (optional)
+     * @param float $admin_role_id The attached admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $admin_role_name The admin role name to attach, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
      * @param string $mode The merge mode. The following values are possible: add, del, set. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function attachAdminRole($required_admin_user_id, $required_admin_user_name, $admin_role_id, $admin_role_name, $mode = null)
+    public function attachAdminRole($required_admin_user_id = null, $required_admin_user_name = null, $admin_role_id = null, $admin_role_name = null, $mode = null)
     {
         list($response) = $this->attachAdminRoleWithHttpInfo($required_admin_user_id, $required_admin_user_name, $admin_role_id, $admin_role_name, $mode);
         return $response;
@@ -254,32 +254,16 @@ class ManagingAdminUsersApi
      *
      * 
      *
-     * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $required_admin_user_name The admin user name to bind, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (required)
-     * @param float $admin_role_id The attached admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $admin_role_name The admin role name to attach, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (required)
+     * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $required_admin_user_name The admin user name to bind, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (optional)
+     * @param float $admin_role_id The attached admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $admin_role_name The admin role name to attach, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
      * @param string $mode The merge mode. The following values are possible: add, del, set. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function attachAdminRoleWithHttpInfo($required_admin_user_id, $required_admin_user_name, $admin_role_id, $admin_role_name, $mode = null)
+    public function attachAdminRoleWithHttpInfo($required_admin_user_id = null, $required_admin_user_name = null, $admin_role_id = null, $admin_role_name = null, $mode = null)
     {
-        // verify the required parameter 'required_admin_user_id' is set
-        if ($required_admin_user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $required_admin_user_id when calling attachAdminRole');
-        }
-        // verify the required parameter 'required_admin_user_name' is set
-        if ($required_admin_user_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $required_admin_user_name when calling attachAdminRole');
-        }
-        // verify the required parameter 'admin_role_id' is set
-        if ($admin_role_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $admin_role_id when calling attachAdminRole');
-        }
-        // verify the required parameter 'admin_role_name' is set
-        if ($admin_role_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $admin_role_name when calling attachAdminRole');
-        }
         // parse inputs
         $resourcePath = "/AttachAdminRole";
         $httpBody = '';
@@ -362,12 +346,12 @@ class ManagingAdminUsersApi
      *
      * 
      *
-     * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $required_admin_user_name The admin user name to delete, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (required)
+     * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $required_admin_user_name The admin user name to delete, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function delAdminUser($required_admin_user_id, $required_admin_user_name)
+    public function delAdminUser($required_admin_user_id = null, $required_admin_user_name = null)
     {
         list($response) = $this->delAdminUserWithHttpInfo($required_admin_user_id, $required_admin_user_name);
         return $response;
@@ -378,21 +362,13 @@ class ManagingAdminUsersApi
      *
      * 
      *
-     * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $required_admin_user_name The admin user name to delete, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (required)
+     * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $required_admin_user_name The admin user name to delete, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function delAdminUserWithHttpInfo($required_admin_user_id, $required_admin_user_name)
+    public function delAdminUserWithHttpInfo($required_admin_user_id = null, $required_admin_user_name = null)
     {
-        // verify the required parameter 'required_admin_user_id' is set
-        if ($required_admin_user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $required_admin_user_id when calling delAdminUser');
-        }
-        // verify the required parameter 'required_admin_user_name' is set
-        if ($required_admin_user_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $required_admin_user_name when calling delAdminUser');
-        }
         // parse inputs
         $resourcePath = "/DelAdminUser";
         $httpBody = '';
@@ -592,8 +568,8 @@ class ManagingAdminUsersApi
      *
      * 
      *
-     * @param float $required_admin_user_id The admin user to edit. (required)
-     * @param string $required_admin_user_name The admin user to edit, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (required)
+     * @param float $required_admin_user_id The admin user to edit. (optional)
+     * @param string $required_admin_user_name The admin user to edit, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (optional)
      * @param string $new_admin_user_name The new admin user name. The length must be less than 50. (optional)
      * @param string $admin_user_display_name The new admin user display name. The length must be less than 256. (optional)
      * @param string $new_admin_user_password The new admin user password. The length must be at least 6 symbols. (optional)
@@ -601,7 +577,7 @@ class ManagingAdminUsersApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function setAdminUserInfo($required_admin_user_id, $required_admin_user_name, $new_admin_user_name = null, $admin_user_display_name = null, $new_admin_user_password = null, $admin_user_active = null)
+    public function setAdminUserInfo($required_admin_user_id = null, $required_admin_user_name = null, $new_admin_user_name = null, $admin_user_display_name = null, $new_admin_user_password = null, $admin_user_active = null)
     {
         list($response) = $this->setAdminUserInfoWithHttpInfo($required_admin_user_id, $required_admin_user_name, $new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active);
         return $response;
@@ -612,8 +588,8 @@ class ManagingAdminUsersApi
      *
      * 
      *
-     * @param float $required_admin_user_id The admin user to edit. (required)
-     * @param string $required_admin_user_name The admin user to edit, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (required)
+     * @param float $required_admin_user_id The admin user to edit. (optional)
+     * @param string $required_admin_user_name The admin user to edit, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (optional)
      * @param string $new_admin_user_name The new admin user name. The length must be less than 50. (optional)
      * @param string $admin_user_display_name The new admin user display name. The length must be less than 256. (optional)
      * @param string $new_admin_user_password The new admin user password. The length must be at least 6 symbols. (optional)
@@ -621,16 +597,8 @@ class ManagingAdminUsersApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function setAdminUserInfoWithHttpInfo($required_admin_user_id, $required_admin_user_name, $new_admin_user_name = null, $admin_user_display_name = null, $new_admin_user_password = null, $admin_user_active = null)
+    public function setAdminUserInfoWithHttpInfo($required_admin_user_id = null, $required_admin_user_name = null, $new_admin_user_name = null, $admin_user_display_name = null, $new_admin_user_password = null, $admin_user_active = null)
     {
-        // verify the required parameter 'required_admin_user_id' is set
-        if ($required_admin_user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $required_admin_user_id when calling setAdminUserInfo');
-        }
-        // verify the required parameter 'required_admin_user_name' is set
-        if ($required_admin_user_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $required_admin_user_name when calling setAdminUserInfo');
-        }
         // parse inputs
         $resourcePath = "/SetAdminUserInfo";
         $httpBody = '';

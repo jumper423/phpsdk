@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addPushCredential**
-> \Swagger\Client\Model\InlineResponse2006 addPushCredential($push_provider_name, $push_provider_id, $external_app_name, $cert_content, $cert_password, $is_dev_mode, $cert_file_name)
+> \Swagger\Client\Model\InlineResponse2006 addPushCredential($external_app_name, $cert_content, $cert_password, $is_dev_mode, $push_provider_name, $push_provider_id, $cert_file_name)
 
 
 
@@ -33,16 +33,16 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\ManagingPushCredentialsApi();
-$push_provider_name = "push_provider_name_example"; // string | The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE.
-$push_provider_id = 56; // int | The push provider id.
 $external_app_name = "external_app_name_example"; // string | The application name.
 $cert_content = "cert_content_example"; // string | Public and private keys in PKCS12 format.
 $cert_password = "cert_password_example"; // string | The secret password for private key.
 $is_dev_mode = true; // bool | Set true for use this certificate in apple`s sandbox environment
+$push_provider_name = "push_provider_name_example"; // string | The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE.
+$push_provider_id = 56; // int | The push provider id.
 $cert_file_name = "cert_file_name_example"; // string | The parameter is required, when set `cert_content` as POST body.
 
 try {
-    $result = $api_instance->addPushCredential($push_provider_name, $push_provider_id, $external_app_name, $cert_content, $cert_password, $is_dev_mode, $cert_file_name);
+    $result = $api_instance->addPushCredential($external_app_name, $cert_content, $cert_password, $is_dev_mode, $push_provider_name, $push_provider_id, $cert_file_name);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ManagingPushCredentialsApi->addPushCredential: ', $e->getMessage(), PHP_EOL;
@@ -54,12 +54,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **push_provider_name** | **string**| The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE. |
- **push_provider_id** | **int**| The push provider id. |
  **external_app_name** | **string**| The application name. |
  **cert_content** | **string**| Public and private keys in PKCS12 format. |
  **cert_password** | **string**| The secret password for private key. |
  **is_dev_mode** | **bool**| Set true for use this certificate in apple&#x60;s sandbox environment |
+ **push_provider_name** | **string**| The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE. | [optional]
+ **push_provider_id** | **int**| The push provider id. | [optional]
  **cert_file_name** | **string**| The parameter is required, when set &#x60;cert_content&#x60; as POST body. | [optional]
 
 ### Return type

@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addRule**
-> \Swagger\Client\Model\InlineResponse2008 addRule($application_id, $application_name, $rule_name, $rule_pattern, $scenario_id, $scenario_name, $rule_pattern_exclude)
+> \Swagger\Client\Model\InlineResponse2008 addRule($rule_name, $rule_pattern, $application_id, $application_name, $rule_pattern_exclude, $scenario_id, $scenario_name)
 
 
 
@@ -33,16 +33,16 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\ManagingRulesApi();
-$application_id = 3.4; // float | The application ID.
-$application_name = "application_name_example"; // string | The application name, can be used instead of <b>application_id</b>.
 $rule_name = "rule_name_example"; // string | The rule name. The length must be less than 512
 $rule_pattern = "rule_pattern_example"; // string | The rule pattern regex. The length must be less than 64 KB.
+$application_id = 3.4; // float | The application ID.
+$application_name = "application_name_example"; // string | The application name, can be used instead of <b>application_id</b>.
+$rule_pattern_exclude = "rule_pattern_exclude_example"; // string | The exclude pattern regex. The length must be less than 64 KB.
 $scenario_id = "scenario_id_example"; // string | The scenario ID list separated by the `;` symbol.
 $scenario_name = "scenario_name_example"; // string | Can be used instead of <b>scenario_id</b>. The scenario name list separated by the `;` symbol.
-$rule_pattern_exclude = "rule_pattern_exclude_example"; // string | The exclude pattern regex. The length must be less than 64 KB.
 
 try {
-    $result = $api_instance->addRule($application_id, $application_name, $rule_name, $rule_pattern, $scenario_id, $scenario_name, $rule_pattern_exclude);
+    $result = $api_instance->addRule($rule_name, $rule_pattern, $application_id, $application_name, $rule_pattern_exclude, $scenario_id, $scenario_name);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ManagingRulesApi->addRule: ', $e->getMessage(), PHP_EOL;
@@ -54,13 +54,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application_id** | **float**| The application ID. |
- **application_name** | **string**| The application name, can be used instead of &lt;b&gt;application_id&lt;/b&gt;. |
  **rule_name** | **string**| The rule name. The length must be less than 512 |
  **rule_pattern** | **string**| The rule pattern regex. The length must be less than 64 KB. |
- **scenario_id** | **string**| The scenario ID list separated by the &#x60;;&#x60; symbol. |
- **scenario_name** | **string**| Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. |
+ **application_id** | **float**| The application ID. | [optional]
+ **application_name** | **string**| The application name, can be used instead of &lt;b&gt;application_id&lt;/b&gt;. | [optional]
  **rule_pattern_exclude** | **string**| The exclude pattern regex. The length must be less than 64 KB. | [optional]
+ **scenario_id** | **string**| The scenario ID list separated by the &#x60;;&#x60; symbol. | [optional]
+ **scenario_name** | **string**| Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. | [optional]
 
 ### Return type
 
@@ -117,10 +117,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rule_id** | **string**| The rule ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **rule_name** | **string**| Can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. The rule name list separated by the &#x60;;&#x60; symbol. |
- **application_id** | **string**| The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **application_name** | **string**| Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. |
+ **rule_id** | **string**| The rule ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **rule_name** | **string**| Can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. The rule name list separated by the &#x60;;&#x60; symbol. | [optional]
+ **application_id** | **string**| The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **application_name** | **string**| Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. | [optional]
 
 ### Return type
 
@@ -181,8 +181,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application_id** | **float**| The application ID. |
- **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. |
+ **application_id** | **float**| The application ID. | [optional]
+ **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. | [optional]
  **rule_id** | **float**| The rule ID to filter | [optional]
  **rule_name** | **string**| The rule name part to filter. | [optional]
  **template** | **string**| Search for template matching | [optional]

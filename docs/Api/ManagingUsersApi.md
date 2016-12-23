@@ -121,10 +121,10 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_id** | **string**| The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **user_name** | **string**| Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. |
- **application_id** | **string**| The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **application_name** | **string**| Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. |
+ **user_id** | **string**| The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **user_name** | **string**| Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. | [optional]
+ **application_id** | **string**| The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **application_name** | **string**| Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. | [optional]
  **bind** | **bool**| Bind or unbind? | [optional]
 
 ### Return type
@@ -180,8 +180,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_id** | **string**| The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **user_name** | **string**| The user name list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. |
+ **user_id** | **string**| The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **user_name** | **string**| The user name list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. | [optional]
 
 ### Return type
 
@@ -338,8 +338,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_id** | **float**| The user to edit. |
- **user_name** | **string**| Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. |
+ **user_id** | **float**| The user to edit. | [optional]
+ **user_name** | **string**| Can be used instead of &lt;b&gt;user_id&lt;/b&gt;. | [optional]
  **new_user_name** | **string**| The new user name in format [a-z0-9][a-z0-9_-]{2,49} | [optional]
  **user_display_name** | **string**| The new user display name. The length must be less than 256. | [optional]
  **user_password** | **string**| The new user password. The length must be at least 6 symbols. | [optional]

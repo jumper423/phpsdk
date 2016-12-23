@@ -107,15 +107,15 @@ class ManagingSIPRegistrationApi
      * 
      *
      * @param float $sip_registration_id The registration ID (required)
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function bindSipRegistration($sip_registration_id, $application_id, $application_name, $rule_id = null, $rule_name = null, $bind = null)
+    public function bindSipRegistration($sip_registration_id, $application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $bind = null)
     {
         list($response) = $this->bindSipRegistrationWithHttpInfo($sip_registration_id, $application_id, $application_name, $rule_id, $rule_name, $bind);
         return $response;
@@ -127,27 +127,19 @@ class ManagingSIPRegistrationApi
      * 
      *
      * @param float $sip_registration_id The registration ID (required)
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function bindSipRegistrationWithHttpInfo($sip_registration_id, $application_id, $application_name, $rule_id = null, $rule_name = null, $bind = null)
+    public function bindSipRegistrationWithHttpInfo($sip_registration_id, $application_id = null, $application_name = null, $rule_id = null, $rule_name = null, $bind = null)
     {
         // verify the required parameter 'sip_registration_id' is set
         if ($sip_registration_id === null) {
             throw new \InvalidArgumentException('Missing the required parameter $sip_registration_id when calling bindSipRegistration');
-        }
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling bindSipRegistration');
-        }
-        // verify the required parameter 'application_name' is set
-        if ($application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_name when calling bindSipRegistration');
         }
         // parse inputs
         $resourcePath = "/BindSipRegistration";

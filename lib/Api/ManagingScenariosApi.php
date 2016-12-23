@@ -207,17 +207,17 @@ class ManagingScenariosApi
      *
      * 
      *
-     * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param float $rule_id The rule ID. (required)
-     * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (required)
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param float $rule_id The rule ID. (optional)
+     * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function bindScenario($scenario_id, $scenario_name, $rule_id, $rule_name, $application_id, $application_name, $bind = null)
+    public function bindScenario($scenario_id = null, $scenario_name = null, $rule_id = null, $rule_name = null, $application_id = null, $application_name = null, $bind = null)
     {
         list($response) = $this->bindScenarioWithHttpInfo($scenario_id, $scenario_name, $rule_id, $rule_name, $application_id, $application_name, $bind);
         return $response;
@@ -228,42 +228,18 @@ class ManagingScenariosApi
      *
      * 
      *
-     * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param float $rule_id The rule ID. (required)
-     * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (required)
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
+     * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $scenario_name Can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. The scenario name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param float $rule_id The rule ID. (optional)
+     * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function bindScenarioWithHttpInfo($scenario_id, $scenario_name, $rule_id, $rule_name, $application_id, $application_name, $bind = null)
+    public function bindScenarioWithHttpInfo($scenario_id = null, $scenario_name = null, $rule_id = null, $rule_name = null, $application_id = null, $application_name = null, $bind = null)
     {
-        // verify the required parameter 'scenario_id' is set
-        if ($scenario_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $scenario_id when calling bindScenario');
-        }
-        // verify the required parameter 'scenario_name' is set
-        if ($scenario_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $scenario_name when calling bindScenario');
-        }
-        // verify the required parameter 'rule_id' is set
-        if ($rule_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $rule_id when calling bindScenario');
-        }
-        // verify the required parameter 'rule_name' is set
-        if ($rule_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $rule_name when calling bindScenario');
-        }
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling bindScenario');
-        }
-        // verify the required parameter 'application_name' is set
-        if ($application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_name when calling bindScenario');
-        }
         // parse inputs
         $resourcePath = "/BindScenario";
         $httpBody = '';
@@ -550,13 +526,13 @@ class ManagingScenariosApi
      *
      * 
      *
-     * @param float $rule_id The rule ID. (required)
-     * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (required)
+     * @param float $rule_id The rule ID. (optional)
+     * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function reorderScenarios($rule_id, $rule_name, $scenario_id = null)
+    public function reorderScenarios($rule_id = null, $rule_name = null, $scenario_id = null)
     {
         list($response) = $this->reorderScenariosWithHttpInfo($rule_id, $rule_name, $scenario_id);
         return $response;
@@ -567,22 +543,14 @@ class ManagingScenariosApi
      *
      * 
      *
-     * @param float $rule_id The rule ID. (required)
-     * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (required)
+     * @param float $rule_id The rule ID. (optional)
+     * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function reorderScenariosWithHttpInfo($rule_id, $rule_name, $scenario_id = null)
+    public function reorderScenariosWithHttpInfo($rule_id = null, $rule_name = null, $scenario_id = null)
     {
-        // verify the required parameter 'rule_id' is set
-        if ($rule_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $rule_id when calling reorderScenarios');
-        }
-        // verify the required parameter 'rule_name' is set
-        if ($rule_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $rule_name when calling reorderScenarios');
-        }
         // parse inputs
         $resourcePath = "/ReorderScenarios";
         $httpBody = '';
@@ -657,14 +625,14 @@ class ManagingScenariosApi
      *
      * 
      *
-     * @param float $scenario_id The scenario ID. (required)
-     * @param string $required_scenario_name The name of the scenario to edit, can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. (required)
+     * @param float $scenario_id The scenario ID. (optional)
+     * @param string $required_scenario_name The name of the scenario to edit, can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. (optional)
      * @param string $scenario_name The new scenario name. The length must be less than 30 (optional)
      * @param string $scenario_script The new scenario text. The length must be less than 128 KB. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function setScenarioInfo($scenario_id, $required_scenario_name, $scenario_name = null, $scenario_script = null)
+    public function setScenarioInfo($scenario_id = null, $required_scenario_name = null, $scenario_name = null, $scenario_script = null)
     {
         list($response) = $this->setScenarioInfoWithHttpInfo($scenario_id, $required_scenario_name, $scenario_name, $scenario_script);
         return $response;
@@ -675,23 +643,15 @@ class ManagingScenariosApi
      *
      * 
      *
-     * @param float $scenario_id The scenario ID. (required)
-     * @param string $required_scenario_name The name of the scenario to edit, can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. (required)
+     * @param float $scenario_id The scenario ID. (optional)
+     * @param string $required_scenario_name The name of the scenario to edit, can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. (optional)
      * @param string $scenario_name The new scenario name. The length must be less than 30 (optional)
      * @param string $scenario_script The new scenario text. The length must be less than 128 KB. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function setScenarioInfoWithHttpInfo($scenario_id, $required_scenario_name, $scenario_name = null, $scenario_script = null)
+    public function setScenarioInfoWithHttpInfo($scenario_id = null, $required_scenario_name = null, $scenario_name = null, $scenario_script = null)
     {
-        // verify the required parameter 'scenario_id' is set
-        if ($scenario_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $scenario_id when calling setScenarioInfo');
-        }
-        // verify the required parameter 'required_scenario_name' is set
-        if ($required_scenario_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $required_scenario_name when calling setScenarioInfo');
-        }
         // parse inputs
         $resourcePath = "/SetScenarioInfo";
         $httpBody = '';

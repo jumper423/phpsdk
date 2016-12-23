@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addQueue**
-> \Swagger\Client\Model\InlineResponse2007 addQueue($application_id, $application_name, $acd_queue_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time)
+> \Swagger\Client\Model\InlineResponse2007 addQueue($acd_queue_name, $application_id, $application_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time)
 
 
 
@@ -33,9 +33,9 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('account_name', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\ManagingQueuesApi();
+$acd_queue_name = "acd_queue_name_example"; // string | The queue name. The length must be less than 100.
 $application_id = 3.4; // float | The application ID.
 $application_name = "application_name_example"; // string | The application name that can be used instead of <b>application_id</b>.
-$acd_queue_name = "acd_queue_name_example"; // string | The queue name. The length must be less than 100.
 $acd_queue_priority = 3.4; // float | The integer queue priority. The highest priority is 0.
 $auto_binding = true; // bool | Set false to disable the auto operators binding by skills comparing.
 $service_probability = 3.4; // float | The value in range [0.5 ... 1.0]. The value 1.0 means the service probability 100% in challenge with a lower priority queue.
@@ -44,7 +44,7 @@ $max_waiting_time = 3.4; // float | The max predicted waiting time in minutes. T
 $average_service_time = 3.4; // float | The average service time in seconds. Specify the parameter to correct or initialize the waiting time prediction.
 
 try {
-    $result = $api_instance->addQueue($application_id, $application_name, $acd_queue_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time);
+    $result = $api_instance->addQueue($acd_queue_name, $application_id, $application_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ManagingQueuesApi->addQueue: ', $e->getMessage(), PHP_EOL;
@@ -56,9 +56,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application_id** | **float**| The application ID. |
- **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. |
  **acd_queue_name** | **string**| The queue name. The length must be less than 100. |
+ **application_id** | **float**| The application ID. | [optional]
+ **application_name** | **string**| The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. | [optional]
  **acd_queue_priority** | **float**| The integer queue priority. The highest priority is 0. | [optional]
  **auto_binding** | **bool**| Set false to disable the auto operators binding by skills comparing. | [optional]
  **service_probability** | **float**| The value in range [0.5 ... 1.0]. The value 1.0 means the service probability 100% in challenge with a lower priority queue. | [optional]
@@ -119,8 +119,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acd_queue_id** | **float**| The ACD queue ID. |
- **acd_queue_name** | **string**| The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. |
+ **acd_queue_id** | **float**| The ACD queue ID. | [optional]
+ **acd_queue_name** | **string**| The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. | [optional]
 
 ### Return type
 
@@ -307,8 +307,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acd_queue_id** | **float**| The ACD queue ID. |
- **acd_queue_name** | **string**| The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. |
+ **acd_queue_id** | **float**| The ACD queue ID. | [optional]
+ **acd_queue_name** | **string**| The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. | [optional]
  **new_acd_queue_name** | **string**| The new queue name. The length must be less than 100. | [optional]
  **acd_queue_priority** | **float**| The integer queue priority. The highest priority is 0. | [optional]
  **auto_binding** | **bool**| Set false to disable the auto operators binding to the queue by skills comparing. | [optional]

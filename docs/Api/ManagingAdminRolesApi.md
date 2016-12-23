@@ -112,8 +112,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **admin_role_id** | **float**| The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. |
- **admin_role_name** | **string**| The admin role name to delete, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. |
+ **admin_role_id** | **float**| The admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. | [optional]
+ **admin_role_name** | **string**| The admin role name to delete, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. | [optional]
 
 ### Return type
 
@@ -253,8 +253,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **admin_role_id** | **float**| The admin user to edit. |
- **admin_role_name** | **string**| The admin role to edit, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. |
+ **admin_role_id** | **float**| The admin user to edit. | [optional]
+ **admin_role_name** | **string**| The admin role to edit, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. | [optional]
  **new_admin_role_name** | **string**| The new admin role name. The length must be less than 50. | [optional]
  **admin_role_active** | **bool**| The admin role enable flag. If false the allowed and denied entries have no affect. | [optional]
  **entry_modification_mode** | **string**| The modification mode of the permission lists (allowed_entries and denied_entries). The following values are possible: add, del, set. | [optional]

@@ -197,17 +197,17 @@ class ManagingSkillsApi
      *
      * 
      *
-     * @param string $skill_id The skill ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $skill_name Can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. The skill name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $user_name The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $acd_queue_id The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param string $skill_id The skill ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $skill_name Can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. The skill name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $user_name The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $acd_queue_id The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function bindSkill($skill_id, $skill_name, $user_id, $user_name, $acd_queue_id, $acd_queue_name, $bind = null)
+    public function bindSkill($skill_id = null, $skill_name = null, $user_id = null, $user_name = null, $acd_queue_id = null, $acd_queue_name = null, $bind = null)
     {
         list($response) = $this->bindSkillWithHttpInfo($skill_id, $skill_name, $user_id, $user_name, $acd_queue_id, $acd_queue_name, $bind);
         return $response;
@@ -218,42 +218,18 @@ class ManagingSkillsApi
      *
      * 
      *
-     * @param string $skill_id The skill ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $skill_name Can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. The skill name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $user_name The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. (required)
-     * @param string $acd_queue_id The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param string $skill_id The skill ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $skill_name Can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. The skill name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $user_name The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. The user name list separated by the &#x60;;&#x60; symbol. (optional)
+     * @param string $acd_queue_id The ACD queue ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
+     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param bool $bind Bind or unbind? (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function bindSkillWithHttpInfo($skill_id, $skill_name, $user_id, $user_name, $acd_queue_id, $acd_queue_name, $bind = null)
+    public function bindSkillWithHttpInfo($skill_id = null, $skill_name = null, $user_id = null, $user_name = null, $acd_queue_id = null, $acd_queue_name = null, $bind = null)
     {
-        // verify the required parameter 'skill_id' is set
-        if ($skill_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $skill_id when calling bindSkill');
-        }
-        // verify the required parameter 'skill_name' is set
-        if ($skill_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $skill_name when calling bindSkill');
-        }
-        // verify the required parameter 'user_id' is set
-        if ($user_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_id when calling bindSkill');
-        }
-        // verify the required parameter 'user_name' is set
-        if ($user_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $user_name when calling bindSkill');
-        }
-        // verify the required parameter 'acd_queue_id' is set
-        if ($acd_queue_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $acd_queue_id when calling bindSkill');
-        }
-        // verify the required parameter 'acd_queue_name' is set
-        if ($acd_queue_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $acd_queue_name when calling bindSkill');
-        }
         // parse inputs
         $resourcePath = "/BindSkill";
         $httpBody = '';
@@ -344,12 +320,12 @@ class ManagingSkillsApi
      *
      * 
      *
-     * @param float $skill_id The skill ID. (required)
-     * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (required)
+     * @param float $skill_id The skill ID. (optional)
+     * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function delSkill($skill_id, $skill_name)
+    public function delSkill($skill_id = null, $skill_name = null)
     {
         list($response) = $this->delSkillWithHttpInfo($skill_id, $skill_name);
         return $response;
@@ -360,21 +336,13 @@ class ManagingSkillsApi
      *
      * 
      *
-     * @param float $skill_id The skill ID. (required)
-     * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (required)
+     * @param float $skill_id The skill ID. (optional)
+     * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function delSkillWithHttpInfo($skill_id, $skill_name)
+    public function delSkillWithHttpInfo($skill_id = null, $skill_name = null)
     {
-        // verify the required parameter 'skill_id' is set
-        if ($skill_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $skill_id when calling delSkill');
-        }
-        // verify the required parameter 'skill_name' is set
-        if ($skill_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $skill_name when calling delSkill');
-        }
         // parse inputs
         $resourcePath = "/DelSkill";
         $httpBody = '';
@@ -550,15 +518,15 @@ class ManagingSkillsApi
      *
      * 
      *
-     * @param float $skill_id The skill ID. (required)
-     * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (required)
      * @param string $new_skill_name The new skill name. The length must be less than 512. (required)
+     * @param float $skill_id The skill ID. (optional)
+     * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function setSkillInfo($skill_id, $skill_name, $new_skill_name)
+    public function setSkillInfo($new_skill_name, $skill_id = null, $skill_name = null)
     {
-        list($response) = $this->setSkillInfoWithHttpInfo($skill_id, $skill_name, $new_skill_name);
+        list($response) = $this->setSkillInfoWithHttpInfo($new_skill_name, $skill_id, $skill_name);
         return $response;
     }
 
@@ -567,22 +535,14 @@ class ManagingSkillsApi
      *
      * 
      *
-     * @param float $skill_id The skill ID. (required)
-     * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (required)
      * @param string $new_skill_name The new skill name. The length must be less than 512. (required)
+     * @param float $skill_id The skill ID. (optional)
+     * @param string $skill_name The skill name that can be used instead of &lt;b&gt;skill_id&lt;/b&gt;. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function setSkillInfoWithHttpInfo($skill_id, $skill_name, $new_skill_name)
+    public function setSkillInfoWithHttpInfo($new_skill_name, $skill_id = null, $skill_name = null)
     {
-        // verify the required parameter 'skill_id' is set
-        if ($skill_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $skill_id when calling setSkillInfo');
-        }
-        // verify the required parameter 'skill_name' is set
-        if ($skill_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $skill_name when calling setSkillInfo');
-        }
         // verify the required parameter 'new_skill_name' is set
         if ($new_skill_name === null) {
             throw new \InvalidArgumentException('Missing the required parameter $new_skill_name when calling setSkillInfo');

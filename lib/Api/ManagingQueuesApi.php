@@ -106,9 +106,9 @@ class ManagingQueuesApi
      *
      * 
      *
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
      * @param string $acd_queue_name The queue name. The length must be less than 100. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param float $acd_queue_priority The integer queue priority. The highest priority is 0. (optional)
      * @param bool $auto_binding Set false to disable the auto operators binding by skills comparing. (optional)
      * @param float $service_probability The value in range [0.5 ... 1.0]. The value 1.0 means the service probability 100% in challenge with a lower priority queue. (optional)
@@ -118,9 +118,9 @@ class ManagingQueuesApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse2007
      */
-    public function addQueue($application_id, $application_name, $acd_queue_name, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null)
+    public function addQueue($acd_queue_name, $application_id = null, $application_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null)
     {
-        list($response) = $this->addQueueWithHttpInfo($application_id, $application_name, $acd_queue_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time);
+        list($response) = $this->addQueueWithHttpInfo($acd_queue_name, $application_id, $application_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time);
         return $response;
     }
 
@@ -129,9 +129,9 @@ class ManagingQueuesApi
      *
      * 
      *
-     * @param float $application_id The application ID. (required)
-     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (required)
      * @param string $acd_queue_name The queue name. The length must be less than 100. (required)
+     * @param float $application_id The application ID. (optional)
+     * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param float $acd_queue_priority The integer queue priority. The highest priority is 0. (optional)
      * @param bool $auto_binding Set false to disable the auto operators binding by skills comparing. (optional)
      * @param float $service_probability The value in range [0.5 ... 1.0]. The value 1.0 means the service probability 100% in challenge with a lower priority queue. (optional)
@@ -141,16 +141,8 @@ class ManagingQueuesApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse2007, HTTP status code, HTTP response headers (array of strings)
      */
-    public function addQueueWithHttpInfo($application_id, $application_name, $acd_queue_name, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null)
+    public function addQueueWithHttpInfo($acd_queue_name, $application_id = null, $application_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null)
     {
-        // verify the required parameter 'application_id' is set
-        if ($application_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_id when calling addQueue');
-        }
-        // verify the required parameter 'application_name' is set
-        if ($application_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $application_name when calling addQueue');
-        }
         // verify the required parameter 'acd_queue_name' is set
         if ($acd_queue_name === null) {
             throw new \InvalidArgumentException('Missing the required parameter $acd_queue_name when calling addQueue');
@@ -253,12 +245,12 @@ class ManagingQueuesApi
      *
      * 
      *
-     * @param float $acd_queue_id The ACD queue ID. (required)
-     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param float $acd_queue_id The ACD queue ID. (optional)
+     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function delQueue($acd_queue_id, $acd_queue_name)
+    public function delQueue($acd_queue_id = null, $acd_queue_name = null)
     {
         list($response) = $this->delQueueWithHttpInfo($acd_queue_id, $acd_queue_name);
         return $response;
@@ -269,21 +261,13 @@ class ManagingQueuesApi
      *
      * 
      *
-     * @param float $acd_queue_id The ACD queue ID. (required)
-     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (required)
+     * @param float $acd_queue_id The ACD queue ID. (optional)
+     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. The ACD queue name list separated by the &#x60;;&#x60; symbol. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function delQueueWithHttpInfo($acd_queue_id, $acd_queue_name)
+    public function delQueueWithHttpInfo($acd_queue_id = null, $acd_queue_name = null)
     {
-        // verify the required parameter 'acd_queue_id' is set
-        if ($acd_queue_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $acd_queue_id when calling delQueue');
-        }
-        // verify the required parameter 'acd_queue_name' is set
-        if ($acd_queue_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $acd_queue_name when calling delQueue');
-        }
         // parse inputs
         $resourcePath = "/DelQueue";
         $httpBody = '';
@@ -576,8 +560,8 @@ class ManagingQueuesApi
      *
      * 
      *
-     * @param float $acd_queue_id The ACD queue ID. (required)
-     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. (required)
+     * @param float $acd_queue_id The ACD queue ID. (optional)
+     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. (optional)
      * @param string $new_acd_queue_name The new queue name. The length must be less than 100. (optional)
      * @param float $acd_queue_priority The integer queue priority. The highest priority is 0. (optional)
      * @param bool $auto_binding Set false to disable the auto operators binding to the queue by skills comparing. (optional)
@@ -589,7 +573,7 @@ class ManagingQueuesApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return \Swagger\Client\Model\InlineResponse200
      */
-    public function setQueueInfo($acd_queue_id, $acd_queue_name, $new_acd_queue_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null, $application_id = null)
+    public function setQueueInfo($acd_queue_id = null, $acd_queue_name = null, $new_acd_queue_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null, $application_id = null)
     {
         list($response) = $this->setQueueInfoWithHttpInfo($acd_queue_id, $acd_queue_name, $new_acd_queue_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time, $application_id);
         return $response;
@@ -600,8 +584,8 @@ class ManagingQueuesApi
      *
      * 
      *
-     * @param float $acd_queue_id The ACD queue ID. (required)
-     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. (required)
+     * @param float $acd_queue_id The ACD queue ID. (optional)
+     * @param string $acd_queue_name The ACD queue name that can be used instead of &lt;b&gt;acd_queue_id&lt;/b&gt;. (optional)
      * @param string $new_acd_queue_name The new queue name. The length must be less than 100. (optional)
      * @param float $acd_queue_priority The integer queue priority. The highest priority is 0. (optional)
      * @param bool $auto_binding Set false to disable the auto operators binding to the queue by skills comparing. (optional)
@@ -613,16 +597,8 @@ class ManagingQueuesApi
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return array of \Swagger\Client\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
-    public function setQueueInfoWithHttpInfo($acd_queue_id, $acd_queue_name, $new_acd_queue_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null, $application_id = null)
+    public function setQueueInfoWithHttpInfo($acd_queue_id = null, $acd_queue_name = null, $new_acd_queue_name = null, $acd_queue_priority = null, $auto_binding = null, $service_probability = null, $max_queue_size = null, $max_waiting_time = null, $average_service_time = null, $application_id = null)
     {
-        // verify the required parameter 'acd_queue_id' is set
-        if ($acd_queue_id === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $acd_queue_id when calling setQueueInfo');
-        }
-        // verify the required parameter 'acd_queue_name' is set
-        if ($acd_queue_name === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $acd_queue_name when calling setQueueInfo');
-        }
         // parse inputs
         $resourcePath = "/SetQueueInfo";
         $httpBody = '';

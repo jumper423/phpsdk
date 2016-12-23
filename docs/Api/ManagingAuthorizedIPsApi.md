@@ -159,8 +159,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authorized_ip** | **string**| The authorized IP4 or network to remove. Set the &#x60;all&#x60; value to remove the all items. |
- **contains_ip** | **string**| Can be used instead of &lt;b&gt;autharized_ip&lt;/b&gt;. Specify the parameter to remove the networks that contains the particular IP4. |
+ **authorized_ip** | **string**| The authorized IP4 or network to remove. Set the &#x60;all&#x60; value to remove the all items. | [optional]
+ **contains_ip** | **string**| Can be used instead of &lt;b&gt;autharized_ip&lt;/b&gt;. Specify the parameter to remove the networks that contains the particular IP4. | [optional]
  **allowed** | **bool**| Set true to remove the network from the white list. Set false to remove the network from the black list. Omit the parameter to remove the network from the all lists. | [optional]
 
 ### Return type
