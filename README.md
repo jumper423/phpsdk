@@ -1,4 +1,4 @@
-# SwaggerClient-php
+# Voximplant-php-sdk
 Voximplant HTTP API description
 
 - API version: 1.0.0
