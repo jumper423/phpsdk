@@ -2,7 +2,6 @@
 Voximplant HTTP API description
 
 - API version: 1.0.0
-- Build package: class io.swagger.codegen.languages.PhpClientCodegen
 For more information, please visit [http://voximplant.com](http://voximplant.com)
 
 ## Requirements
@@ -46,11 +45,11 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: api_key
+// Configure API key: api_key
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 
-// Configure API key authorization: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_API_KEY');
+// Configure account name: account_name
+Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_ACCOUNT_NAME');
 
 $api_instance = new Swagger\Client\Api\AccountsAuthenticationApi();
 
@@ -296,8 +295,8 @@ Class | Method | HTTP request | Description
 
 ## account_name
 
-- **Type**: API key
-- **API key parameter name**: account_name
+- **Type**: Account name
+- **Account name parameter name**: account_name
 - **Location**: URL query string
 
 ## api_key
@@ -309,4 +308,4 @@ Class | Method | HTTP request | Description
 
 ## Author
 Dmitry Ivaneychik
-info@voximplant.com
+ivaneychik@zingaya.com
