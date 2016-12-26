@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **createRegulationAddress**
-> \Model\InlineResponse20018 createRegulationAddress($phone_category_name, $destination_country_code, $proof, $phone_owner_salutation, $phone_owner_zip_code, $phone_owner_city, $phone_owner_street, $phone_owner_building_number, $phone_owner_country_code, $phone_region_code, $phone_owner_first_name, $phone_owner_last_name, $phone_owner_company, $phone_owner_building_letter)
+> \Voximplant\Model\InlineResponse20018 createRegulationAddress($phone_category_name, $destination_country_code, $proof, $phone_owner_salutation, $phone_owner_zip_code, $phone_owner_city, $phone_owner_street, $phone_owner_building_number, $phone_owner_country_code, $phone_region_code, $phone_owner_first_name, $phone_owner_last_name, $phone_owner_company, $phone_owner_building_letter)
 
 
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20018**](../Model/InlineResponse20018.md)
+[**\Voximplant\Model\InlineResponse20018**](../Model/InlineResponse20018.md)
 
 ### Authorization
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAvailibleRegulations**
-> \Model\InlineResponse20030 getAvailibleRegulations($country_code, $phone_category_name, $phone_region_code)
+> \Voximplant\Model\InlineResponse20030 getAvailibleRegulations($country_code, $phone_category_name, $phone_region_code)
 
 
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20030**](../Model/InlineResponse20030.md)
+[**\Voximplant\Model\InlineResponse20030**](../Model/InlineResponse20030.md)
 
 ### Authorization
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCountries**
-> \Model\InlineResponse20035 getCountries($country_code)
+> \Voximplant\Model\InlineResponse20035 getCountries($country_code)
 
 
 
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20035**](../Model/InlineResponse20035.md)
+[**\Voximplant\Model\InlineResponse20035**](../Model/InlineResponse20035.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRegions**
-> \Model\InlineResponse20047 getRegions($country_code, $phone_category_name, $city_name, $count, $offset)
+> \Voximplant\Model\InlineResponse20047 getRegions($country_code, $phone_category_name, $city_name, $count, $offset)
 
 
 
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20047**](../Model/InlineResponse20047.md)
+[**\Voximplant\Model\InlineResponse20047**](../Model/InlineResponse20047.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRegulationsAddress**
-> \Model\InlineResponse20048 getRegulationsAddress($country_code, $phone_category_name, $phone_region_code, $regulation_address_id, $verified, $in_progress)
+> \Voximplant\Model\InlineResponse20048 getRegulationsAddress($country_code, $phone_category_name, $phone_region_code, $regulation_address_id, $verified, $in_progress)
 
 
 
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20048**](../Model/InlineResponse20048.md)
+[**\Voximplant\Model\InlineResponse20048**](../Model/InlineResponse20048.md)
 
 ### Authorization
 
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getZIPCodes**
-> \Model\InlineResponse20058 getZIPCodes($country_code, $phone_region_code, $count, $offset)
+> \Voximplant\Model\InlineResponse20058 getZIPCodes($country_code, $phone_region_code, $count, $offset)
 
 
 
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20058**](../Model/InlineResponse20058.md)
+[**\Voximplant\Model\InlineResponse20058**](../Model/InlineResponse20058.md)
 
 ### Authorization
 
@@ -393,7 +393,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **linkregulationAddress**
-> \Model\InlineResponse20059 linkregulationAddress($regulation_address_id, $phone_id, $phone_number)
+> \Voximplant\Model\InlineResponse20059 linkregulationAddress($regulation_address_id, $phone_id, $phone_number)
 
 
 
@@ -437,7 +437,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
+[**\Voximplant\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
 
 ### Authorization
 
@@ -451,7 +451,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **uploadProofOfAddress**
-> \Model\InlineResponse20059 uploadProofOfAddress($regulation_address_id, $proof)
+> \Voximplant\Model\InlineResponse20059 uploadProofOfAddress($regulation_address_id, $proof)
 
 
 
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
+[**\Voximplant\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
 
 ### Authorization
 

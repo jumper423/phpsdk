@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Model\ApplicationInfoType[]**](ApplicationInfoType.md) |  | [optional] 
+**result** | [**\Voximplant\Model\ApplicationInfoType[]**](ApplicationInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found application count. | [optional] 
 **count** | **int** | The returned application count. | [optional] 
 

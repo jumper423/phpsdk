@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addApplication**
-> \Model\InlineResponse2003 addApplication($application_name, $im_enabled, $im_roster_type, $busy_on_call)
+> \Voximplant\Model\InlineResponse2003 addApplication($application_name, $im_enabled, $im_roster_type, $busy_on_call)
 
 
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
+[**\Voximplant\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delApplication**
-> \Model\InlineResponse200 delApplication($application_id, $application_name)
+> \Voximplant\Model\InlineResponse200 delApplication($application_id, $application_name)
 
 
 
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getApplications**
-> \Model\InlineResponse20028 getApplications($application_id, $application_name, $im_enabled, $im_roster_type, $user_id, $excluded_user_id, $showing_user_id, $with_rules, $with_scenarios, $count, $offset)
+> \Voximplant\Model\InlineResponse20028 getApplications($application_id, $application_name, $im_enabled, $im_roster_type, $user_id, $excluded_user_id, $showing_user_id, $with_rules, $with_scenarios, $count, $offset)
 
 
 
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20028**](../Model/InlineResponse20028.md)
+[**\Voximplant\Model\InlineResponse20028**](../Model/InlineResponse20028.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setApplicationInfo**
-> \Model\InlineResponse20063 setApplicationInfo($application_id, $required_application_name, $application_name, $im_enabled, $im_roster_type, $busy_on_call)
+> \Voximplant\Model\InlineResponse20063 setApplicationInfo($application_id, $required_application_name, $application_name, $im_enabled, $im_roster_type, $busy_on_call)
 
 
 
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20063**](../Model/InlineResponse20063.md)
+[**\Voximplant\Model\InlineResponse20063**](../Model/InlineResponse20063.md)
 
 ### Authorization
 

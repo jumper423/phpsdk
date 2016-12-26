@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20027 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\AdminUserType[]',
+        'result' => '\Voximplant\Model\AdminUserType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20027 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\AdminUserType[]
+     * @return \Voximplant\Model\AdminUserType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20027 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\AdminUserType[] $result
+     * @param \Voximplant\Model\AdminUserType[] $result
      * @return $this
      */
     public function setResult($result)

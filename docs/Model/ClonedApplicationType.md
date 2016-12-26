@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **application_id** | **int** | The application ID. | 
 **application_name** | **string** | The full application name. | 
-**users** | [**\Model\ClonedRuleType[]**](ClonedRuleType.md) |  | [optional] 
+**users** | [**\Voximplant\Model\ClonedRuleType[]**](ClonedRuleType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

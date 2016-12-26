@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -76,7 +76,7 @@ class QueueInfoType implements ArrayAccess
         'max_queue_size' => 'int',
         'max_waiting_time' => 'int',
         'average_service_time' => 'int',
-        'skills' => '\Model\SkillInfoType[]',
+        'skills' => '\Voximplant\Model\SkillInfoType[]',
         'modified' => 'string'
     );
 
@@ -439,7 +439,7 @@ class QueueInfoType implements ArrayAccess
 
     /**
      * Gets skills
-     * @return \Model\SkillInfoType[]
+     * @return \Voximplant\Model\SkillInfoType[]
      */
     public function getSkills()
     {
@@ -448,7 +448,7 @@ class QueueInfoType implements ArrayAccess
 
     /**
      * Sets skills
-     * @param \Model\SkillInfoType[] $skills
+     * @param \Voximplant\Model\SkillInfoType[] $skills
      * @return $this
      */
     public function setSkills($skills)

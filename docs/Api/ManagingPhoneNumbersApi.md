@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **attachPhoneNumber**
-> \Model\InlineResponse20014 attachPhoneNumber($country_code, $phone_category_name, $phone_region_id, $phone_count, $phone_number, $country_state, $regulation_address_id)
+> \Voximplant\Model\InlineResponse20014 attachPhoneNumber($country_code, $phone_category_name, $phone_region_id, $phone_count, $phone_number, $country_state, $regulation_address_id)
 
 
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20014**](../Model/InlineResponse20014.md)
+[**\Voximplant\Model\InlineResponse20014**](../Model/InlineResponse20014.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bindPhoneNumberToApplication**
-> \Model\InlineResponse200 bindPhoneNumberToApplication($phone_id, $phone_number, $application_id, $application_name, $rule_id, $rule_name, $bind)
+> \Voximplant\Model\InlineResponse200 bindPhoneNumberToApplication($phone_id, $phone_number, $application_id, $application_name, $rule_id, $rule_name, $bind)
 
 
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deactivatePhoneNumber**
-> \Model\InlineResponse200 deactivatePhoneNumber($phone_id, $phone_number)
+> \Voximplant\Model\InlineResponse200 deactivatePhoneNumber($phone_id, $phone_number)
 
 
 
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getActualPhoneNumberRegion**
-> \Model\InlineResponse20025 getActualPhoneNumberRegion($country_code, $phone_category_name, $phone_region_id)
+> \Voximplant\Model\InlineResponse20025 getActualPhoneNumberRegion($country_code, $phone_category_name, $phone_region_id)
 
 
 
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20025**](../Model/InlineResponse20025.md)
+[**\Voximplant\Model\InlineResponse20025**](../Model/InlineResponse20025.md)
 
 ### Authorization
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getNewPhoneNumbers**
-> \Model\InlineResponse20039 getNewPhoneNumbers($country_code, $phone_category_name, $phone_region_id, $country_state, $count, $offset)
+> \Voximplant\Model\InlineResponse20039 getNewPhoneNumbers($country_code, $phone_category_name, $phone_region_id, $country_state, $count, $offset)
 
 
 
@@ -313,7 +313,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20039**](../Model/InlineResponse20039.md)
+[**\Voximplant\Model\InlineResponse20039**](../Model/InlineResponse20039.md)
 
 ### Authorization
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhoneNumberCategories**
-> \Model\InlineResponse20040 getPhoneNumberCategories($country_code, $sandbox)
+> \Voximplant\Model\InlineResponse20040 getPhoneNumberCategories($country_code, $sandbox)
 
 
 
@@ -369,7 +369,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20040**](../Model/InlineResponse20040.md)
+[**\Voximplant\Model\InlineResponse20040**](../Model/InlineResponse20040.md)
 
 ### Authorization
 
@@ -383,7 +383,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhoneNumberCountryStates**
-> \Model\InlineResponse20041 getPhoneNumberCountryStates($country_code, $phone_category_name, $country_state)
+> \Voximplant\Model\InlineResponse20041 getPhoneNumberCountryStates($country_code, $phone_category_name, $country_state)
 
 
 
@@ -427,7 +427,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20041**](../Model/InlineResponse20041.md)
+[**\Voximplant\Model\InlineResponse20041**](../Model/InlineResponse20041.md)
 
 ### Authorization
 
@@ -441,7 +441,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhoneNumberRegions**
-> \Model\InlineResponse20042 getPhoneNumberRegions($country_code, $phone_category_name, $country_state, $omit_empty, $phone_region_id, $phone_region_name, $phone_region_code)
+> \Voximplant\Model\InlineResponse20042 getPhoneNumberRegions($country_code, $phone_category_name, $country_state, $omit_empty, $phone_region_id, $phone_region_name, $phone_region_code)
 
 
 
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20042**](../Model/InlineResponse20042.md)
+[**\Voximplant\Model\InlineResponse20042**](../Model/InlineResponse20042.md)
 
 ### Authorization
 
@@ -507,7 +507,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPhoneNumbers**
-> \Model\InlineResponse20043 getPhoneNumbers($phone_id, $application_id, $application_name, $is_bound_to_application, $phone_template, $country_code, $phone_category_name, $canceled, $deactivated, $auto_charge, $from_phone_next_renewal, $to_phone_next_renewal, $from_phone_purchase_date, $to_phone_purchase_date, $child_account_id, $children_phones_only, $verification_name, $verification_status, $from_unverified_hold_until, $to_unverified_hold_until, $can_be_used, $order_by, $sandbox, $count, $offset)
+> \Voximplant\Model\InlineResponse20043 getPhoneNumbers($phone_id, $application_id, $application_name, $is_bound_to_application, $phone_template, $country_code, $phone_category_name, $canceled, $deactivated, $auto_charge, $from_phone_next_renewal, $to_phone_next_renewal, $from_phone_purchase_date, $to_phone_purchase_date, $child_account_id, $children_phones_only, $verification_name, $verification_status, $from_unverified_hold_until, $to_unverified_hold_until, $can_be_used, $order_by, $sandbox, $count, $offset)
 
 
 
@@ -595,7 +595,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20043**](../Model/InlineResponse20043.md)
+[**\Voximplant\Model\InlineResponse20043**](../Model/InlineResponse20043.md)
 
 ### Authorization
 
@@ -609,7 +609,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setPhoneNumberInfo**
-> \Model\InlineResponse200 setPhoneNumberInfo($auto_charge, $phone_id, $phone_number)
+> \Voximplant\Model\InlineResponse200 setPhoneNumberInfo($auto_charge, $phone_id, $phone_number)
 
 
 
@@ -653,7 +653,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

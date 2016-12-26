@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20056 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\TransactionInfoType[]',
+        'result' => '\Voximplant\Model\TransactionInfoType[]',
         'total_count' => 'int',
         'count' => 'int',
         'timezone' => 'string',
@@ -177,7 +177,7 @@ class InlineResponse20056 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\TransactionInfoType[]
+     * @return \Voximplant\Model\TransactionInfoType[]
      */
     public function getResult()
     {
@@ -186,7 +186,7 @@ class InlineResponse20056 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\TransactionInfoType[] $result
+     * @param \Voximplant\Model\TransactionInfoType[] $result
      * @return $this
      */
     public function setResult($result)

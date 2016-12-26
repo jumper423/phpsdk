@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -76,9 +76,9 @@ class UserInfoType implements ArrayAccess
         'mobile_phone' => 'string',
         'balance' => 'int',
         'user_custom_data' => 'string',
-        'applications' => '\Model\ApplicationInfoType[]',
-        'skills' => '\Model\SkillInfoType[]',
-        'acd_queues' => '\Model\ACDQueueOperatorInfoType[]',
+        'applications' => '\Voximplant\Model\ApplicationInfoType[]',
+        'skills' => '\Voximplant\Model\SkillInfoType[]',
+        'acd_queues' => '\Voximplant\Model\ACDQueueOperatorInfoType[]',
         'modified' => 'string'
     );
 
@@ -455,7 +455,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Gets applications
-     * @return \Model\ApplicationInfoType[]
+     * @return \Voximplant\Model\ApplicationInfoType[]
      */
     public function getApplications()
     {
@@ -464,7 +464,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Sets applications
-     * @param \Model\ApplicationInfoType[] $applications
+     * @param \Voximplant\Model\ApplicationInfoType[] $applications
      * @return $this
      */
     public function setApplications($applications)
@@ -476,7 +476,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Gets skills
-     * @return \Model\SkillInfoType[]
+     * @return \Voximplant\Model\SkillInfoType[]
      */
     public function getSkills()
     {
@@ -485,7 +485,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Sets skills
-     * @param \Model\SkillInfoType[] $skills
+     * @param \Voximplant\Model\SkillInfoType[] $skills
      * @return $this
      */
     public function setSkills($skills)
@@ -497,7 +497,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Gets acd_queues
-     * @return \Model\ACDQueueOperatorInfoType[]
+     * @return \Voximplant\Model\ACDQueueOperatorInfoType[]
      */
     public function getAcdQueues()
     {
@@ -506,7 +506,7 @@ class UserInfoType implements ArrayAccess
 
     /**
      * Sets acd_queues
-     * @param \Model\ACDQueueOperatorInfoType[] $acd_queues
+     * @param \Voximplant\Model\ACDQueueOperatorInfoType[] $acd_queues
      * @return $this
      */
     public function setAcdQueues($acd_queues)

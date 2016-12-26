@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20044 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\PstnBlackListInfoType[]',
+        'result' => '\Voximplant\Model\PstnBlackListInfoType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20044 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\PstnBlackListInfoType[]
+     * @return \Voximplant\Model\PstnBlackListInfoType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20044 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\PstnBlackListInfoType[] $result
+     * @param \Voximplant\Model\PstnBlackListInfoType[] $result
      * @return $this
      */
     public function setResult($result)

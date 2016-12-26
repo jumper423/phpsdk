@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **appendToCallList**
-> \Model\InlineResponse20013 appendToCallList($file_content, $list_id, $list_name, $encoding, $delimiter)
+> \Voximplant\Model\InlineResponse20013 appendToCallList($file_content, $list_id, $list_name, $encoding, $delimiter)
 
 
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
+[**\Voximplant\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createCallList**
-> \Model\InlineResponse20013 createCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds, $queue_id, $avg_waiting_sec, $encoding, $delimiter)
+> \Voximplant\Model\InlineResponse20013 createCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds, $queue_id, $avg_waiting_sec, $encoding, $delimiter)
 
 
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
+[**\Voximplant\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createManualCallList**
-> \Model\InlineResponse20013 createManualCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds, $encoding, $delimiter)
+> \Voximplant\Model\InlineResponse20013 createManualCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds, $encoding, $delimiter)
 
 
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
+[**\Voximplant\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCallListDetails**
-> \Model\InlineResponse20032 getCallListDetails($list_id, $count, $offset, $output, $encoding, $delimiter)
+> \Voximplant\Model\InlineResponse20032 getCallListDetails($list_id, $count, $offset, $output, $encoding, $delimiter)
 
 
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20032**](../Model/InlineResponse20032.md)
+[**\Voximplant\Model\InlineResponse20032**](../Model/InlineResponse20032.md)
 
 ### Authorization
 
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCallLists**
-> \Model\InlineResponse20033 getCallLists($name, $is_active, $from_date, $to_date, $type_list, $count, $offset)
+> \Voximplant\Model\InlineResponse20033 getCallLists($name, $is_active, $from_date, $to_date, $type_list, $count, $offset)
 
 
 
@@ -337,7 +337,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20033**](../Model/InlineResponse20033.md)
+[**\Voximplant\Model\InlineResponse20033**](../Model/InlineResponse20033.md)
 
 ### Authorization
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **recoverCallList**
-> \Model\InlineResponse20061 recoverCallList($list_id)
+> \Voximplant\Model\InlineResponse20061 recoverCallList($list_id)
 
 
 
@@ -391,7 +391,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20061**](../Model/InlineResponse20061.md)
+[**\Voximplant\Model\InlineResponse20061**](../Model/InlineResponse20061.md)
 
 ### Authorization
 
@@ -405,7 +405,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **startNextCallTask**
-> \Model\InlineResponse20065 startNextCallTask($list_id, $custom_params)
+> \Voximplant\Model\InlineResponse20065 startNextCallTask($list_id, $custom_params)
 
 
 
@@ -447,7 +447,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20065**](../Model/InlineResponse20065.md)
+[**\Voximplant\Model\InlineResponse20065**](../Model/InlineResponse20065.md)
 
 ### Authorization
 
@@ -461,7 +461,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **stopCallListProcessing**
-> \Model\InlineResponse20067 stopCallListProcessing($list_id)
+> \Voximplant\Model\InlineResponse20067 stopCallListProcessing($list_id)
 
 
 
@@ -501,7 +501,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20067**](../Model/InlineResponse20067.md)
+[**\Voximplant\Model\InlineResponse20067**](../Model/InlineResponse20067.md)
 
 ### Authorization
 

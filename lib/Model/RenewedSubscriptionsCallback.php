@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -67,7 +67,7 @@ class RenewedSubscriptionsCallback implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'subscriptions' => '\Model\RenewedSubscriptionsCallbackItem[]'
+        'subscriptions' => '\Voximplant\Model\RenewedSubscriptionsCallbackItem[]'
     );
 
     public static function swaggerTypes()
@@ -158,7 +158,7 @@ class RenewedSubscriptionsCallback implements ArrayAccess
 
     /**
      * Gets subscriptions
-     * @return \Model\RenewedSubscriptionsCallbackItem[]
+     * @return \Voximplant\Model\RenewedSubscriptionsCallbackItem[]
      */
     public function getSubscriptions()
     {
@@ -167,7 +167,7 @@ class RenewedSubscriptionsCallback implements ArrayAccess
 
     /**
      * Sets subscriptions
-     * @param \Model\RenewedSubscriptionsCallbackItem[] $subscriptions
+     * @param \Voximplant\Model\RenewedSubscriptionsCallbackItem[] $subscriptions
      * @return $this
      */
     public function setSubscriptions($subscriptions)

@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -67,7 +67,7 @@ class AccountCallbacks implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'callbacks' => '\Model\AccountCallback[]'
+        'callbacks' => '\Voximplant\Model\AccountCallback[]'
     );
 
     public static function swaggerTypes()
@@ -158,7 +158,7 @@ class AccountCallbacks implements ArrayAccess
 
     /**
      * Gets callbacks
-     * @return \Model\AccountCallback[]
+     * @return \Voximplant\Model\AccountCallback[]
      */
     public function getCallbacks()
     {
@@ -167,7 +167,7 @@ class AccountCallbacks implements ArrayAccess
 
     /**
      * Sets callbacks
-     * @param \Model\AccountCallback[] $callbacks
+     * @param \Voximplant\Model\AccountCallback[] $callbacks
      * @return $this
      */
     public function setCallbacks($callbacks)

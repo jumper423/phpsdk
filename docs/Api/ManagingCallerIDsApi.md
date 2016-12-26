@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **activateCallerID**
-> \Model\InlineResponse200 activateCallerID($callerid_id, $callerid_number, $verification_code)
+> \Voximplant\Model\InlineResponse200 activateCallerID($callerid_id, $callerid_number, $verification_code)
 
 
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addCallerID**
-> \Model\InlineResponse2004 addCallerID($callerid_number)
+> \Voximplant\Model\InlineResponse2004 addCallerID($callerid_number)
 
 
 
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
+[**\Voximplant\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delCallerID**
-> \Model\InlineResponse200 delCallerID($callerid_id, $callerid_number)
+> \Voximplant\Model\InlineResponse200 delCallerID($callerid_id, $callerid_number)
 
 
 
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCallerIDs**
-> \Model\InlineResponse20034 getCallerIDs($callerid_id, $callerid_number, $active, $order_by, $count, $offset)
+> \Voximplant\Model\InlineResponse20034 getCallerIDs($callerid_id, $callerid_number, $active, $order_by, $count, $offset)
 
 
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20034**](../Model/InlineResponse20034.md)
+[**\Voximplant\Model\InlineResponse20034**](../Model/InlineResponse20034.md)
 
 ### Authorization
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **verifyCallerID**
-> \Model\InlineResponse200 verifyCallerID($callerid_id, $callerid_number)
+> \Voximplant\Model\InlineResponse200 verifyCallerID($callerid_id, $callerid_number)
 
 
 
@@ -286,7 +286,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Model\NewPhoneInfoType[]**](NewPhoneInfoType.md) |  | [optional] 
+**result** | [**\Voximplant\Model\NewPhoneInfoType[]**](NewPhoneInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found phone count. | [optional] 
 **count** | **int** | The returned phone count. | [optional] 
 

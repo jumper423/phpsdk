@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -69,7 +69,7 @@ class ClonedApplicationType implements ArrayAccess
     protected static $swaggerTypes = array(
         'application_id' => 'int',
         'application_name' => 'string',
-        'users' => '\Model\ClonedRuleType[]'
+        'users' => '\Voximplant\Model\ClonedRuleType[]'
     );
 
     public static function swaggerTypes()
@@ -222,7 +222,7 @@ class ClonedApplicationType implements ArrayAccess
 
     /**
      * Gets users
-     * @return \Model\ClonedRuleType[]
+     * @return \Voximplant\Model\ClonedRuleType[]
      */
     public function getUsers()
     {
@@ -231,7 +231,7 @@ class ClonedApplicationType implements ArrayAccess
 
     /**
      * Sets users
-     * @param \Model\ClonedRuleType[] $users
+     * @param \Voximplant\Model\ClonedRuleType[] $users
      * @return $this
      */
     public function setUsers($users)

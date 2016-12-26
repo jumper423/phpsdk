@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20029 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\AuthorizedAccountIPType[]',
+        'result' => '\Voximplant\Model\AuthorizedAccountIPType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20029 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\AuthorizedAccountIPType[]
+     * @return \Voximplant\Model\AuthorizedAccountIPType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20029 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\AuthorizedAccountIPType[] $result
+     * @param \Voximplant\Model\AuthorizedAccountIPType[] $result
      * @return $this
      */
     public function setResult($result)

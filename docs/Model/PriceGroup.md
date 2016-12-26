@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **price** | **int** | The price for the &#39;num_resources_per_price&#39; resource count. | 
 **num_resources_per_price** | **int** | The resource count per price. | 
 **quantum** | **int** | The resource rounding quantum. | 
-**params** | [**\Model\ResourceParams**](ResourceParams.md) |  | [optional] 
+**params** | [**\Voximplant\Model\ResourceParams**](ResourceParams.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

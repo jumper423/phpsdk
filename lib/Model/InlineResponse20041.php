@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20041 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\PhoneNumberCountryStateInfoType[]'
+        'result' => '\Voximplant\Model\PhoneNumberCountryStateInfoType[]'
     );
 
     public static function swaggerTypes()
@@ -157,7 +157,7 @@ class InlineResponse20041 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\PhoneNumberCountryStateInfoType[]
+     * @return \Voximplant\Model\PhoneNumberCountryStateInfoType[]
      */
     public function getResult()
     {
@@ -166,7 +166,7 @@ class InlineResponse20041 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\PhoneNumberCountryStateInfoType[] $result
+     * @param \Voximplant\Model\PhoneNumberCountryStateInfoType[] $result
      * @return $this
      */
     public function setResult($result)

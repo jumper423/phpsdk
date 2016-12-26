@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20037 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\HistoryReportType[]',
+        'result' => '\Voximplant\Model\HistoryReportType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20037 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\HistoryReportType[]
+     * @return \Voximplant\Model\HistoryReportType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20037 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\HistoryReportType[] $result
+     * @param \Voximplant\Model\HistoryReportType[] $result
      * @return $this
      */
     public function setResult($result)

@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -67,7 +67,7 @@ class UnverifiedSubscriptionDetachedCallback implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'subscriptions' => '\Model\UnverifiedSubscriptionDetachedCallbackItem[]'
+        'subscriptions' => '\Voximplant\Model\UnverifiedSubscriptionDetachedCallbackItem[]'
     );
 
     public static function swaggerTypes()
@@ -158,7 +158,7 @@ class UnverifiedSubscriptionDetachedCallback implements ArrayAccess
 
     /**
      * Gets subscriptions
-     * @return \Model\UnverifiedSubscriptionDetachedCallbackItem[]
+     * @return \Voximplant\Model\UnverifiedSubscriptionDetachedCallbackItem[]
      */
     public function getSubscriptions()
     {
@@ -167,7 +167,7 @@ class UnverifiedSubscriptionDetachedCallback implements ArrayAccess
 
     /**
      * Sets subscriptions
-     * @param \Model\UnverifiedSubscriptionDetachedCallbackItem[] $subscriptions
+     * @param \Voximplant\Model\UnverifiedSubscriptionDetachedCallbackItem[] $subscriptions
      * @return $this
      */
     public function setSubscriptions($subscriptions)

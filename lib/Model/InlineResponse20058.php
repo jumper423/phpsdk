@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20058 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\ZipCode[]',
+        'result' => '\Voximplant\Model\ZipCode[]',
         'count' => 'int'
     );
 
@@ -162,7 +162,7 @@ class InlineResponse20058 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\ZipCode[]
+     * @return \Voximplant\Model\ZipCode[]
      */
     public function getResult()
     {
@@ -171,7 +171,7 @@ class InlineResponse20058 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\ZipCode[] $result
+     * @param \Voximplant\Model\ZipCode[] $result
      * @return $this
      */
     public function setResult($result)

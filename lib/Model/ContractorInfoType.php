@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -75,7 +75,7 @@ class ContractorInfoType implements ArrayAccess
         'correspondence_address' => 'string',
         'correspondence_email' => 'string',
         'correspondence_to' => 'string',
-        'contract' => '\Model\ContractInfoType'
+        'contract' => '\Voximplant\Model\ContractInfoType'
     );
 
     public static function swaggerTypes()
@@ -384,7 +384,7 @@ class ContractorInfoType implements ArrayAccess
 
     /**
      * Gets contract
-     * @return \Model\ContractInfoType
+     * @return \Voximplant\Model\ContractInfoType
      */
     public function getContract()
     {
@@ -393,7 +393,7 @@ class ContractorInfoType implements ArrayAccess
 
     /**
      * Sets contract
-     * @param \Model\ContractInfoType $contract
+     * @param \Voximplant\Model\ContractInfoType $contract
      * @return $this
      */
     public function setContract($contract)

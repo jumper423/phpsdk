@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -67,7 +67,7 @@ class SubscriptionIsFrozenCallback implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'subscriptions' => '\Model\SubscriptionIsFrozenCallbackItem[]'
+        'subscriptions' => '\Voximplant\Model\SubscriptionIsFrozenCallbackItem[]'
     );
 
     public static function swaggerTypes()
@@ -158,7 +158,7 @@ class SubscriptionIsFrozenCallback implements ArrayAccess
 
     /**
      * Gets subscriptions
-     * @return \Model\SubscriptionIsFrozenCallbackItem[]
+     * @return \Voximplant\Model\SubscriptionIsFrozenCallbackItem[]
      */
     public function getSubscriptions()
     {
@@ -167,7 +167,7 @@ class SubscriptionIsFrozenCallback implements ArrayAccess
 
     /**
      * Sets subscriptions
-     * @param \Model\SubscriptionIsFrozenCallbackItem[] $subscriptions
+     * @param \Voximplant\Model\SubscriptionIsFrozenCallbackItem[] $subscriptions
      * @return $this
      */
     public function setSubscriptions($subscriptions)

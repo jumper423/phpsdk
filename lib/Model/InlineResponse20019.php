@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -68,7 +68,7 @@ class InlineResponse20019 implements ArrayAccess
     protected static $swaggerTypes = array(
         'result' => 'int',
         'sip_registration_id' => 'int',
-        'account_info' => '\Model\ShortAccountInfoType'
+        'account_info' => '\Voximplant\Model\ShortAccountInfoType'
     );
 
     public static function swaggerTypes()
@@ -209,7 +209,7 @@ class InlineResponse20019 implements ArrayAccess
 
     /**
      * Gets account_info
-     * @return \Model\ShortAccountInfoType
+     * @return \Voximplant\Model\ShortAccountInfoType
      */
     public function getAccountInfo()
     {
@@ -218,7 +218,7 @@ class InlineResponse20019 implements ArrayAccess
 
     /**
      * Sets account_info
-     * @param \Model\ShortAccountInfoType $account_info
+     * @param \Voximplant\Model\ShortAccountInfoType $account_info
      * @return $this
      */
     public function setAccountInfo($account_info)

@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -73,7 +73,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
         'min_bank_card_amount_usd' => 'int',
         'robokassa_amount_rub' => 'int',
         'min_robokassa_amount_rub' => 'int',
-        'subscriptions' => '\Model\SubscriptionsToChargeType[]'
+        'subscriptions' => '\Voximplant\Model\SubscriptionsToChargeType[]'
     );
 
     public static function swaggerTypes()
@@ -326,7 +326,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
 
     /**
      * Gets subscriptions
-     * @return \Model\SubscriptionsToChargeType[]
+     * @return \Voximplant\Model\SubscriptionsToChargeType[]
      */
     public function getSubscriptions()
     {
@@ -335,7 +335,7 @@ class GetMoneyAmountToChargeResult implements ArrayAccess
 
     /**
      * Sets subscriptions
-     * @param \Model\SubscriptionsToChargeType[] $subscriptions
+     * @param \Voximplant\Model\SubscriptionsToChargeType[] $subscriptions
      * @return $this
      */
     public function setSubscriptions($subscriptions)

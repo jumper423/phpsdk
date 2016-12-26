@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Model\ScenarioInfoType[]**](ScenarioInfoType.md) |  | [optional] 
+**result** | [**\Voximplant\Model\ScenarioInfoType[]**](ScenarioInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found scenario count. | [optional] 
 **count** | **int** | The returned scenario count. | [optional] 
 

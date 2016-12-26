@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -73,7 +73,7 @@ class ApplicationInfoType implements ArrayAccess
         'im_roster_type' => 'string',
         'busy_on_call' => 'bool',
         'modified' => 'string',
-        'users' => '\Model\UserInfoType[]'
+        'users' => '\Voximplant\Model\UserInfoType[]'
     );
 
     public static function swaggerTypes()
@@ -350,7 +350,7 @@ class ApplicationInfoType implements ArrayAccess
 
     /**
      * Gets users
-     * @return \Model\UserInfoType[]
+     * @return \Voximplant\Model\UserInfoType[]
      */
     public function getUsers()
     {
@@ -359,7 +359,7 @@ class ApplicationInfoType implements ArrayAccess
 
     /**
      * Sets users
-     * @param \Model\UserInfoType[] $users
+     * @param \Voximplant\Model\UserInfoType[] $users
      * @return $this
      */
     public function setUsers($users)

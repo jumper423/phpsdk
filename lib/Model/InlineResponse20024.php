@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20024 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\AccountInfoType',
+        'result' => '\Voximplant\Model\AccountInfoType',
         'debugger_address' => 'string'
     );
 
@@ -162,7 +162,7 @@ class InlineResponse20024 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\AccountInfoType
+     * @return \Voximplant\Model\AccountInfoType
      */
     public function getResult()
     {
@@ -171,7 +171,7 @@ class InlineResponse20024 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\AccountInfoType $result
+     * @param \Voximplant\Model\AccountInfoType $result
      * @return $this
      */
     public function setResult($result)

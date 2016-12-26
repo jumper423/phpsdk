@@ -38,7 +38,7 @@
  * Do not edit the class manually.
  */
 
-namespace Api;
+namespace Voximplant\Api;
 
 use \Voximplant\Configuration;
 use \Voximplant\ApiClient;
@@ -213,7 +213,7 @@ class ManagingHistoryApi
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
      * @param string $output The output format. The following values available: json, csv (optional)
-     * @return \Model\InlineResponse20021
+     * @return \Voximplant\Model\InlineResponse20021
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getACDHistory($from_date, $to_date, $acd_session_history_id = null, $acd_queue_id = null, $user_id = null, $operator_hangup = null, $unserviced = null, $min_waiting_time = null, $rejected = null, $with_events = null, $with_header = null, $desc_order = null, $count = null, $offset = null, $output = null)
@@ -242,7 +242,7 @@ class ManagingHistoryApi
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
      * @param string $output The output format. The following values available: json, csv (optional)
-     * @return Array of \Model\InlineResponse20021, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20021, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getACDHistoryWithHttpInfo($from_date, $to_date, $acd_session_history_id = null, $acd_queue_id = null, $user_id = null, $operator_hangup = null, $unserviced = null, $min_waiting_time = null, $rejected = null, $with_events = null, $with_header = null, $desc_order = null, $count = null, $offset = null, $output = null)
@@ -355,15 +355,15 @@ class ManagingHistoryApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20021',
+                '\Voximplant\Model\InlineResponse20021',
                 '/GetACDHistory'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20021', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20021', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20021', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20021', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -399,7 +399,7 @@ class ManagingHistoryApi
      * @param float $offset The record count to omit. (optional)
      * @param string $output The output format. The following values available: json, csv (optional)
      * @param bool $is_async Set true to get records in the asynchronous mode (for csv output only). See GetHistoryReports, DownloadHistoryReport. (optional)
-     * @return \Model\InlineResponse20031
+     * @return \Voximplant\Model\InlineResponse20031
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getCallHistory($from_date, $to_date, $timezone = null, $call_session_history_id = null, $application_id = null, $application_name = null, $user_id = null, $rule_name = null, $remote_number = null, $local_number = null, $call_session_history_custom_data = null, $with_calls = null, $with_records = null, $with_other_resources = null, $child_account_id = null, $children_calls_only = null, $with_header = null, $desc_order = null, $count = null, $offset = null, $output = null, $is_async = null)
@@ -435,7 +435,7 @@ class ManagingHistoryApi
      * @param float $offset The record count to omit. (optional)
      * @param string $output The output format. The following values available: json, csv (optional)
      * @param bool $is_async Set true to get records in the asynchronous mode (for csv output only). See GetHistoryReports, DownloadHistoryReport. (optional)
-     * @return Array of \Model\InlineResponse20031, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20031, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getCallHistoryWithHttpInfo($from_date, $to_date, $timezone = null, $call_session_history_id = null, $application_id = null, $application_name = null, $user_id = null, $rule_name = null, $remote_number = null, $local_number = null, $call_session_history_custom_data = null, $with_calls = null, $with_records = null, $with_other_resources = null, $child_account_id = null, $children_calls_only = null, $with_header = null, $desc_order = null, $count = null, $offset = null, $output = null, $is_async = null)
@@ -576,15 +576,15 @@ class ManagingHistoryApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20031',
+                '\Voximplant\Model\InlineResponse20031',
                 '/GetCallHistory'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20031', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20031', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20031', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20031', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -606,7 +606,7 @@ class ManagingHistoryApi
      * @param bool $desc_order Set true to get records in the descent order. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Model\InlineResponse20037
+     * @return \Voximplant\Model\InlineResponse20037
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getHistoryReports($history_report_id = null, $history_type = null, $created_from = null, $created_to = null, $is_completed = null, $desc_order = null, $count = null, $offset = null)
@@ -628,7 +628,7 @@ class ManagingHistoryApi
      * @param bool $desc_order Set true to get records in the descent order. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Model\InlineResponse20037, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20037, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getHistoryReportsWithHttpInfo($history_report_id = null, $history_type = null, $created_from = null, $created_to = null, $is_completed = null, $desc_order = null, $count = null, $offset = null)
@@ -705,15 +705,15 @@ class ManagingHistoryApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20037',
+                '\Voximplant\Model\InlineResponse20037',
                 '/GetHistoryReports'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20037', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20037', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20037', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20037', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -742,7 +742,7 @@ class ManagingHistoryApi
      * @param float $offset The record count to omit. (optional)
      * @param string $output The output format. The following values available: json, csv (optional)
      * @param bool $is_async Set true to get records in the asynchronous mode (for csv output only). See GetHistoryReports, DownloadHistoryReport. (optional)
-     * @return \Model\InlineResponse20056
+     * @return \Voximplant\Model\InlineResponse20056
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getTransactionHistory($from_date, $to_date, $timezone = null, $transaction_id = null, $payment_reference = null, $transaction_type = null, $user_id = null, $child_account_id = null, $children_transactions_only = null, $users_transactions_only = null, $desc_order = null, $count = null, $offset = null, $output = null, $is_async = null)
@@ -771,7 +771,7 @@ class ManagingHistoryApi
      * @param float $offset The record count to omit. (optional)
      * @param string $output The output format. The following values available: json, csv (optional)
      * @param bool $is_async Set true to get records in the asynchronous mode (for csv output only). See GetHistoryReports, DownloadHistoryReport. (optional)
-     * @return Array of \Model\InlineResponse20056, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20056, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getTransactionHistoryWithHttpInfo($from_date, $to_date, $timezone = null, $transaction_id = null, $payment_reference = null, $transaction_type = null, $user_id = null, $child_account_id = null, $children_transactions_only = null, $users_transactions_only = null, $desc_order = null, $count = null, $offset = null, $output = null, $is_async = null)
@@ -884,15 +884,15 @@ class ManagingHistoryApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20056',
+                '\Voximplant\Model\InlineResponse20056',
                 '/GetTransactionHistory'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20056', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20056', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20056', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20056', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -72,7 +72,7 @@ class RuleInfoType implements ArrayAccess
         'rule_name' => 'string',
         'rule_pattern' => 'string',
         'rule_pattern_exclude' => 'string',
-        'scenarios' => '\Model\ScenarioInfoType[]',
+        'scenarios' => '\Voximplant\Model\ScenarioInfoType[]',
         'modified' => 'string'
     );
 
@@ -323,7 +323,7 @@ class RuleInfoType implements ArrayAccess
 
     /**
      * Gets scenarios
-     * @return \Model\ScenarioInfoType[]
+     * @return \Voximplant\Model\ScenarioInfoType[]
      */
     public function getScenarios()
     {
@@ -332,7 +332,7 @@ class RuleInfoType implements ArrayAccess
 
     /**
      * Sets scenarios
-     * @param \Model\ScenarioInfoType[] $scenarios
+     * @param \Voximplant\Model\ScenarioInfoType[] $scenarios
      * @return $this
      */
     public function setScenarios($scenarios)

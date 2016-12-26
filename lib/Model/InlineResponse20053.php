@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20053 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\SipWhiteListInfoType[]',
+        'result' => '\Voximplant\Model\SipWhiteListInfoType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20053 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\SipWhiteListInfoType[]
+     * @return \Voximplant\Model\SipWhiteListInfoType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20053 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\SipWhiteListInfoType[] $result
+     * @param \Voximplant\Model\SipWhiteListInfoType[] $result
      * @return $this
      */
     public function setResult($result)

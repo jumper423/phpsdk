@@ -38,7 +38,7 @@
  * Do not edit the class manually.
  */
 
-namespace Api;
+namespace Voximplant\Api;
 
 use \Voximplant\Configuration;
 use \Voximplant\ApiClient;
@@ -107,7 +107,7 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return \Model\InlineResponse20060
+     * @return \Voximplant\Model\InlineResponse20060
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function logon()
@@ -121,7 +121,7 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return Array of \Model\InlineResponse20060, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20060, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function logonWithHttpInfo()
@@ -166,15 +166,15 @@ class AccountsAuthenticationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20060',
+                '\Voximplant\Model\InlineResponse20060',
                 '/Logon'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20060', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20060', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20060', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20060', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -188,7 +188,7 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return \Model\InlineResponse200
+     * @return \Voximplant\Model\InlineResponse200
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function logout()
@@ -202,7 +202,7 @@ class AccountsAuthenticationApi
      *
      * 
      *
-     * @return Array of \Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function logoutWithHttpInfo()
@@ -247,15 +247,15 @@ class AccountsAuthenticationApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse200',
+                '\Voximplant\Model\InlineResponse200',
                 '/Logout'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

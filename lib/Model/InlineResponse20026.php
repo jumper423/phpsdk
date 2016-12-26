@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20026 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\AdminRoleType[]',
+        'result' => '\Voximplant\Model\AdminRoleType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20026 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\AdminRoleType[]
+     * @return \Voximplant\Model\AdminRoleType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20026 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\AdminRoleType[] $result
+     * @param \Voximplant\Model\AdminRoleType[] $result
      * @return $this
      */
     public function setResult($result)

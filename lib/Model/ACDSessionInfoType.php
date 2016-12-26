@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -76,7 +76,7 @@ class ACDSessionInfoType implements ArrayAccess
         'waiting_duration' => 'int',
         'in_service_duration' => 'int',
         'after_service_duration' => 'int',
-        'events' => '\Model\ACDSessionEventInfoType[]'
+        'events' => '\Voximplant\Model\ACDSessionEventInfoType[]'
     );
 
     public static function swaggerTypes()
@@ -416,7 +416,7 @@ class ACDSessionInfoType implements ArrayAccess
 
     /**
      * Gets events
-     * @return \Model\ACDSessionEventInfoType[]
+     * @return \Voximplant\Model\ACDSessionEventInfoType[]
      */
     public function getEvents()
     {
@@ -425,7 +425,7 @@ class ACDSessionInfoType implements ArrayAccess
 
     /**
      * Sets events
-     * @param \Model\ACDSessionEventInfoType[] $events
+     * @param \Voximplant\Model\ACDSessionEventInfoType[] $events
      * @return $this
      */
     public function setEvents($events)

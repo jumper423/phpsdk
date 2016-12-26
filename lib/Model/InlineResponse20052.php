@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20052 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\SIPRegistrationType[]',
+        'result' => '\Voximplant\Model\SIPRegistrationType[]',
         'count' => 'int'
     );
 
@@ -162,7 +162,7 @@ class InlineResponse20052 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\SIPRegistrationType[]
+     * @return \Voximplant\Model\SIPRegistrationType[]
      */
     public function getResult()
     {
@@ -171,7 +171,7 @@ class InlineResponse20052 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\SIPRegistrationType[] $result
+     * @param \Voximplant\Model\SIPRegistrationType[] $result
      * @return $this
      */
     public function setResult($result)

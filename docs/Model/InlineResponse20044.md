@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Model\PstnBlackListInfoType[]**](PstnBlackListInfoType.md) |  | [optional] 
+**result** | [**\Voximplant\Model\PstnBlackListInfoType[]**](PstnBlackListInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found phone numbers count. | [optional] 
 **count** | **int** | The returned phone numbers count. | [optional] 
 

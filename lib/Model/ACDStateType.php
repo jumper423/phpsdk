@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -67,7 +67,7 @@ class ACDStateType implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'acd_queues' => '\Model\ACDQueueStateType[]'
+        'acd_queues' => '\Voximplant\Model\ACDQueueStateType[]'
     );
 
     public static function swaggerTypes()
@@ -158,7 +158,7 @@ class ACDStateType implements ArrayAccess
 
     /**
      * Gets acd_queues
-     * @return \Model\ACDQueueStateType[]
+     * @return \Voximplant\Model\ACDQueueStateType[]
      */
     public function getAcdQueues()
     {
@@ -167,7 +167,7 @@ class ACDStateType implements ArrayAccess
 
     /**
      * Sets acd_queues
-     * @param \Model\ACDQueueStateType[] $acd_queues
+     * @param \Voximplant\Model\ACDQueueStateType[] $acd_queues
      * @return $this
      */
     public function setAcdQueues($acd_queues)

@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -80,7 +80,7 @@ class HistoryReportType implements ArrayAccess
         'store_until' => 'string',
         'session_count' => 'int',
         'total_session_count' => 'int',
-        'error' => '\Model\APIError',
+        'error' => '\Voximplant\Model\APIError',
         'filters' => 'object',
         'calculated_data' => 'object'
     );
@@ -524,7 +524,7 @@ class HistoryReportType implements ArrayAccess
 
     /**
      * Gets error
-     * @return \Model\APIError
+     * @return \Voximplant\Model\APIError
      */
     public function getError()
     {
@@ -533,7 +533,7 @@ class HistoryReportType implements ArrayAccess
 
     /**
      * Sets error
-     * @param \Model\APIError $error
+     * @param \Voximplant\Model\APIError $error
      * @return $this
      */
     public function setError($error)

@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,8 +66,8 @@ class InlineResponse20016 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\ChargeAccountResult',
-        'account_info' => '\Model\ShortAccountInfoType'
+        'result' => '\Voximplant\Model\ChargeAccountResult',
+        'account_info' => '\Voximplant\Model\ShortAccountInfoType'
     );
 
     public static function swaggerTypes()
@@ -162,7 +162,7 @@ class InlineResponse20016 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\ChargeAccountResult
+     * @return \Voximplant\Model\ChargeAccountResult
      */
     public function getResult()
     {
@@ -171,7 +171,7 @@ class InlineResponse20016 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\ChargeAccountResult $result
+     * @param \Voximplant\Model\ChargeAccountResult $result
      * @return $this
      */
     public function setResult($result)
@@ -183,7 +183,7 @@ class InlineResponse20016 implements ArrayAccess
 
     /**
      * Gets account_info
-     * @return \Model\ShortAccountInfoType
+     * @return \Voximplant\Model\ShortAccountInfoType
      */
     public function getAccountInfo()
     {
@@ -192,7 +192,7 @@ class InlineResponse20016 implements ArrayAccess
 
     /**
      * Sets account_info
-     * @param \Model\ShortAccountInfoType $account_info
+     * @param \Voximplant\Model\ShortAccountInfoType $account_info
      * @return $this
      */
     public function setAccountInfo($account_info)

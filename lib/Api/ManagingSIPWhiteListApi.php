@@ -38,7 +38,7 @@
  * Do not edit the class manually.
  */
 
-namespace Api;
+namespace Voximplant\Api;
 
 use \Voximplant\Configuration;
 use \Voximplant\ApiClient;
@@ -108,7 +108,7 @@ class ManagingSIPWhiteListApi
      * 
      *
      * @param string $sip_whitelist_network The network address in format A.B.C.D/L or A.B.C.D/a.b.c.d (example 192.168.1.5/16). (required)
-     * @return \Model\InlineResponse20010
+     * @return \Voximplant\Model\InlineResponse20010
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function addSipWhiteListItem($sip_whitelist_network)
@@ -123,7 +123,7 @@ class ManagingSIPWhiteListApi
      * 
      *
      * @param string $sip_whitelist_network The network address in format A.B.C.D/L or A.B.C.D/a.b.c.d (example 192.168.1.5/16). (required)
-     * @return Array of \Model\InlineResponse20010, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20010, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function addSipWhiteListItemWithHttpInfo($sip_whitelist_network)
@@ -176,15 +176,15 @@ class ManagingSIPWhiteListApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20010',
+                '\Voximplant\Model\InlineResponse20010',
                 '/AddSipWhiteListItem'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20010', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20010', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20010', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20010', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -199,7 +199,7 @@ class ManagingSIPWhiteListApi
      * 
      *
      * @param float $sip_whitelist_id The SIP white list item ID to delete. (required)
-     * @return \Model\InlineResponse200
+     * @return \Voximplant\Model\InlineResponse200
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function delSipWhiteListItem($sip_whitelist_id)
@@ -214,7 +214,7 @@ class ManagingSIPWhiteListApi
      * 
      *
      * @param float $sip_whitelist_id The SIP white list item ID to delete. (required)
-     * @return Array of \Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function delSipWhiteListItemWithHttpInfo($sip_whitelist_id)
@@ -267,15 +267,15 @@ class ManagingSIPWhiteListApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse200',
+                '\Voximplant\Model\InlineResponse200',
                 '/DelSipWhiteListItem'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -292,7 +292,7 @@ class ManagingSIPWhiteListApi
      * @param float $sip_whitelist_id The SIP white list item ID to filter (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Model\InlineResponse20053
+     * @return \Voximplant\Model\InlineResponse20053
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getSipWhiteList($sip_whitelist_id = null, $count = null, $offset = null)
@@ -309,7 +309,7 @@ class ManagingSIPWhiteListApi
      * @param float $sip_whitelist_id The SIP white list item ID to filter (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Model\InlineResponse20053, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20053, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getSipWhiteListWithHttpInfo($sip_whitelist_id = null, $count = null, $offset = null)
@@ -366,15 +366,15 @@ class ManagingSIPWhiteListApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20053',
+                '\Voximplant\Model\InlineResponse20053',
                 '/GetSipWhiteList'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20053', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20053', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20053', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20053', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -390,7 +390,7 @@ class ManagingSIPWhiteListApi
      *
      * @param float $sip_whitelist_id The SIP white list item ID (required)
      * @param string $sip_whitelist_network The new network address in format A.B.C.D/L or A.B.C.D/a.b.c.d (example 192.168.1.5/16) (required)
-     * @return \Model\InlineResponse200
+     * @return \Voximplant\Model\InlineResponse200
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function setSipWhiteListItem($sip_whitelist_id, $sip_whitelist_network)
@@ -406,7 +406,7 @@ class ManagingSIPWhiteListApi
      *
      * @param float $sip_whitelist_id The SIP white list item ID (required)
      * @param string $sip_whitelist_network The new network address in format A.B.C.D/L or A.B.C.D/a.b.c.d (example 192.168.1.5/16) (required)
-     * @return Array of \Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function setSipWhiteListItemWithHttpInfo($sip_whitelist_id, $sip_whitelist_network)
@@ -467,15 +467,15 @@ class ManagingSIPWhiteListApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse200',
+                '\Voximplant\Model\InlineResponse200',
                 '/SetSipWhiteListItem'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

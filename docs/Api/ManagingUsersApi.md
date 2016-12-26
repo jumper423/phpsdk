@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **addUser**
-> \Model\InlineResponse20012 addUser($user_name, $user_display_name, $user_password, $parent_accounting, $two_factor_auth_required, $mobile_phone, $user_active, $user_custom_data)
+> \Voximplant\Model\InlineResponse20012 addUser($user_name, $user_display_name, $user_password, $parent_accounting, $two_factor_auth_required, $mobile_phone, $user_active, $user_custom_data)
 
 
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20012**](../Model/InlineResponse20012.md)
+[**\Voximplant\Model\InlineResponse20012**](../Model/InlineResponse20012.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bindUser**
-> \Model\InlineResponse200 bindUser($user_id, $user_name, $application_id, $application_name, $bind)
+> \Voximplant\Model\InlineResponse200 bindUser($user_id, $user_name, $application_id, $application_name, $bind)
 
 
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delUser**
-> \Model\InlineResponse200 delUser($user_id, $user_name)
+> \Voximplant\Model\InlineResponse200 delUser($user_id, $user_name)
 
 
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUsers**
-> \Model\InlineResponse20057 getUsers($application_id, $excluded_application_id, $excluded_application_name, $skill_id, $excluded_skill_id, $acd_queue_id, $user_id, $user_name, $user_active, $user_display_name, $application_name, $with_applications, $with_skills, $with_queues, $acd_status, $showing_application_id, $showing_skill_id, $count, $offset, $order_by, $return_live_balance)
+> \Voximplant\Model\InlineResponse20057 getUsers($application_id, $excluded_application_id, $excluded_application_name, $skill_id, $excluded_skill_id, $acd_queue_id, $user_id, $user_name, $user_active, $user_display_name, $application_name, $with_applications, $with_skills, $with_queues, $acd_status, $showing_application_id, $showing_skill_id, $count, $offset, $order_by, $return_live_balance)
 
 
 
@@ -279,7 +279,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20057**](../Model/InlineResponse20057.md)
+[**\Voximplant\Model\InlineResponse20057**](../Model/InlineResponse20057.md)
 
 ### Authorization
 
@@ -293,7 +293,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setUserInfo**
-> \Model\InlineResponse200 setUserInfo($user_id, $user_name, $new_user_name, $user_display_name, $user_password, $parent_accounting, $user_active, $user_custom_data, $two_factor_auth_required, $mobile_phone)
+> \Voximplant\Model\InlineResponse200 setUserInfo($user_id, $user_name, $new_user_name, $user_display_name, $user_password, $parent_accounting, $user_active, $user_custom_data, $two_factor_auth_required, $mobile_phone)
 
 
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -365,7 +365,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **transferMoneyToUser**
-> \Model\InlineResponse20068 transferMoneyToUser($user_id, $amount, $currency, $strict_mode, $user_transaction_description, $account_transaction_description)
+> \Voximplant\Model\InlineResponse20068 transferMoneyToUser($user_id, $amount, $currency, $strict_mode, $user_transaction_description, $account_transaction_description)
 
 
 
@@ -415,7 +415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20068**](../Model/InlineResponse20068.md)
+[**\Voximplant\Model\InlineResponse20068**](../Model/InlineResponse20068.md)
 
 ### Authorization
 

@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -70,7 +70,7 @@ class AccountVerificationType implements ArrayAccess
         'verification_name' => 'string',
         'verification_status' => 'string',
         'unverified_hold_until' => 'string',
-        'documents' => '\Model\AccountVerificationDocument[]'
+        'documents' => '\Voximplant\Model\AccountVerificationDocument[]'
     );
 
     public static function swaggerTypes()
@@ -248,7 +248,7 @@ class AccountVerificationType implements ArrayAccess
 
     /**
      * Gets documents
-     * @return \Model\AccountVerificationDocument[]
+     * @return \Voximplant\Model\AccountVerificationDocument[]
      */
     public function getDocuments()
     {
@@ -257,7 +257,7 @@ class AccountVerificationType implements ArrayAccess
 
     /**
      * Sets documents
-     * @param \Model\AccountVerificationDocument[] $documents
+     * @param \Voximplant\Model\AccountVerificationDocument[] $documents
      * @return $this
      */
     public function setDocuments($documents)

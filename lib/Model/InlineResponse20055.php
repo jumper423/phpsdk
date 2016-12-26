@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20055 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\SubscriptionTemplateType[]'
+        'result' => '\Voximplant\Model\SubscriptionTemplateType[]'
     );
 
     public static function swaggerTypes()
@@ -157,7 +157,7 @@ class InlineResponse20055 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\SubscriptionTemplateType[]
+     * @return \Voximplant\Model\SubscriptionTemplateType[]
      */
     public function getResult()
     {
@@ -166,7 +166,7 @@ class InlineResponse20055 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\SubscriptionTemplateType[] $result
+     * @param \Voximplant\Model\SubscriptionTemplateType[] $result
      * @return $this
      */
     public function setResult($result)

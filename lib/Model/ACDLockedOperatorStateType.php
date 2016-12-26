@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -71,8 +71,8 @@ class ACDLockedOperatorStateType implements ArrayAccess
         'user_name' => 'string',
         'user_display_name' => 'string',
         'unreached' => 'string',
-        'locks' => '\Model\ACDLock[]',
-        'acd_calls' => '\Model\ACDOperatorCall[]'
+        'locks' => '\Voximplant\Model\ACDLock[]',
+        'acd_calls' => '\Voximplant\Model\ACDOperatorCall[]'
     );
 
     public static function swaggerTypes()
@@ -285,7 +285,7 @@ class ACDLockedOperatorStateType implements ArrayAccess
 
     /**
      * Gets locks
-     * @return \Model\ACDLock[]
+     * @return \Voximplant\Model\ACDLock[]
      */
     public function getLocks()
     {
@@ -294,7 +294,7 @@ class ACDLockedOperatorStateType implements ArrayAccess
 
     /**
      * Sets locks
-     * @param \Model\ACDLock[] $locks
+     * @param \Voximplant\Model\ACDLock[] $locks
      * @return $this
      */
     public function setLocks($locks)
@@ -306,7 +306,7 @@ class ACDLockedOperatorStateType implements ArrayAccess
 
     /**
      * Gets acd_calls
-     * @return \Model\ACDOperatorCall[]
+     * @return \Voximplant\Model\ACDOperatorCall[]
      */
     public function getAcdCalls()
     {
@@ -315,7 +315,7 @@ class ACDLockedOperatorStateType implements ArrayAccess
 
     /**
      * Sets acd_calls
-     * @param \Model\ACDOperatorCall[] $acd_calls
+     * @param \Voximplant\Model\ACDOperatorCall[] $acd_calls
      * @return $this
      */
     public function setAcdCalls($acd_calls)

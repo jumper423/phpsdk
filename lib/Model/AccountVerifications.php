@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -68,7 +68,7 @@ class AccountVerifications implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'account_id' => 'int',
-        'verifications' => '\Model\AccountVerificationType[]'
+        'verifications' => '\Voximplant\Model\AccountVerificationType[]'
     );
 
     public static function swaggerTypes()
@@ -190,7 +190,7 @@ class AccountVerifications implements ArrayAccess
 
     /**
      * Gets verifications
-     * @return \Model\AccountVerificationType[]
+     * @return \Voximplant\Model\AccountVerificationType[]
      */
     public function getVerifications()
     {
@@ -199,7 +199,7 @@ class AccountVerifications implements ArrayAccess
 
     /**
      * Sets verifications
-     * @param \Model\AccountVerificationType[] $verifications
+     * @param \Voximplant\Model\AccountVerificationType[] $verifications
      * @return $this
      */
     public function setVerifications($verifications)

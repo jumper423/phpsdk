@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20031 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\CallSessionInfoType[]',
+        'result' => '\Voximplant\Model\CallSessionInfoType[]',
         'total_count' => 'int',
         'count' => 'int',
         'timezone' => 'string',
@@ -177,7 +177,7 @@ class InlineResponse20031 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\CallSessionInfoType[]
+     * @return \Voximplant\Model\CallSessionInfoType[]
      */
     public function getResult()
     {
@@ -186,7 +186,7 @@ class InlineResponse20031 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\CallSessionInfoType[] $result
+     * @param \Voximplant\Model\CallSessionInfoType[] $result
      * @return $this
      */
     public function setResult($result)

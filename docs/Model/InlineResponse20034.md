@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Model\CallerIDInfoType[]**](CallerIDInfoType.md) |  | [optional] 
+**result** | [**\Voximplant\Model\CallerIDInfoType[]**](CallerIDInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found record count. | [optional] 
 **count** | **int** | The returned record count. | [optional] 
 

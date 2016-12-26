@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addPushCredential**
-> \Model\InlineResponse2006 addPushCredential($external_app_name, $cert_content, $cert_password, $is_dev_mode, $push_provider_name, $push_provider_id, $cert_file_name)
+> \Voximplant\Model\InlineResponse2006 addPushCredential($external_app_name, $cert_content, $cert_password, $is_dev_mode, $push_provider_name, $push_provider_id, $cert_file_name)
 
 
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
+[**\Voximplant\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bindPushCredential**
-> \Model\InlineResponse20015 bindPushCredential($push_credential_id, $application_id, $bind)
+> \Voximplant\Model\InlineResponse20015 bindPushCredential($push_credential_id, $application_id, $bind)
 
 
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20015**](../Model/InlineResponse20015.md)
+[**\Voximplant\Model\InlineResponse20015**](../Model/InlineResponse20015.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delPushCredential**
-> \Model\InlineResponse20015 delPushCredential($push_credential_id)
+> \Voximplant\Model\InlineResponse20015 delPushCredential($push_credential_id)
 
 
 
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20015**](../Model/InlineResponse20015.md)
+[**\Voximplant\Model\InlineResponse20015**](../Model/InlineResponse20015.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPushCredential**
-> \Model\InlineResponse20045 getPushCredential($push_credential_id, $push_provider_name, $push_provider_id, $application_name, $application_id, $external_app, $with_cert)
+> \Voximplant\Model\InlineResponse20045 getPushCredential($push_credential_id, $push_provider_name, $push_provider_id, $application_name, $application_id, $external_app, $with_cert)
 
 
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20045**](../Model/InlineResponse20045.md)
+[**\Voximplant\Model\InlineResponse20045**](../Model/InlineResponse20045.md)
 
 ### Authorization
 
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setPushCredential**
-> \Model\InlineResponse20015 setPushCredential($push_credential_id, $external_app_name, $cert_content, $cert_password, $is_dev_mode)
+> \Voximplant\Model\InlineResponse20015 setPushCredential($push_credential_id, $external_app_name, $cert_content, $cert_password, $is_dev_mode)
 
 
 
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Model\InlineResponse20015**](../Model/InlineResponse20015.md)
+[**\Voximplant\Model\InlineResponse20015**](../Model/InlineResponse20015.md)
 
 ### Authorization
 

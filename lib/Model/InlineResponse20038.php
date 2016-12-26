@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20038 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\GetMoneyAmountToChargeResult'
+        'result' => '\Voximplant\Model\GetMoneyAmountToChargeResult'
     );
 
     public static function swaggerTypes()
@@ -157,7 +157,7 @@ class InlineResponse20038 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\GetMoneyAmountToChargeResult
+     * @return \Voximplant\Model\GetMoneyAmountToChargeResult
      */
     public function getResult()
     {
@@ -166,7 +166,7 @@ class InlineResponse20038 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\GetMoneyAmountToChargeResult $result
+     * @param \Voximplant\Model\GetMoneyAmountToChargeResult $result
      * @return $this
      */
     public function setResult($result)

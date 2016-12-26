@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Model\QueueInfoType[]**](QueueInfoType.md) |  | [optional] 
+**result** | [**\Voximplant\Model\QueueInfoType[]**](QueueInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found queue count. | [optional] 
 **count** | **int** | The returned queue count. | [optional] 
 

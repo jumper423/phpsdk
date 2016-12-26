@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -68,7 +68,7 @@ class ResourcePrice implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'resource_type' => 'string',
-        'price_groups' => '\Model\PriceGroup[]'
+        'price_groups' => '\Voximplant\Model\PriceGroup[]'
     );
 
     public static function swaggerTypes()
@@ -190,7 +190,7 @@ class ResourcePrice implements ArrayAccess
 
     /**
      * Gets price_groups
-     * @return \Model\PriceGroup[]
+     * @return \Voximplant\Model\PriceGroup[]
      */
     public function getPriceGroups()
     {
@@ -199,7 +199,7 @@ class ResourcePrice implements ArrayAccess
 
     /**
      * Sets price_groups
-     * @param \Model\PriceGroup[] $price_groups
+     * @param \Voximplant\Model\PriceGroup[] $price_groups
      * @return $this
      */
     public function setPriceGroups($price_groups)

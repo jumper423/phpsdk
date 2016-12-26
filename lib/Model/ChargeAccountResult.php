@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -68,7 +68,7 @@ class ChargeAccountResult implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'charged_amount' => 'int',
-        'phones' => '\Model\ChargedPhoneType[]'
+        'phones' => '\Voximplant\Model\ChargedPhoneType[]'
     );
 
     public static function swaggerTypes()
@@ -190,7 +190,7 @@ class ChargeAccountResult implements ArrayAccess
 
     /**
      * Gets phones
-     * @return \Model\ChargedPhoneType[]
+     * @return \Voximplant\Model\ChargedPhoneType[]
      */
     public function getPhones()
     {
@@ -199,7 +199,7 @@ class ChargeAccountResult implements ArrayAccess
 
     /**
      * Sets phones
-     * @param \Model\ChargedPhoneType[] $phones
+     * @param \Voximplant\Model\ChargedPhoneType[] $phones
      * @return $this
      */
     public function setPhones($phones)

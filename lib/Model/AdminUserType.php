@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -73,7 +73,7 @@ class AdminUserType implements ArrayAccess
         'admin_user_active' => 'bool',
         'modified' => 'string',
         'access_entries' => 'string[]',
-        'admin_roles' => '\Model\AdminRoleType[]'
+        'admin_roles' => '\Voximplant\Model\AdminRoleType[]'
     );
 
     public static function swaggerTypes()
@@ -344,7 +344,7 @@ class AdminUserType implements ArrayAccess
 
     /**
      * Gets admin_roles
-     * @return \Model\AdminRoleType[]
+     * @return \Voximplant\Model\AdminRoleType[]
      */
     public function getAdminRoles()
     {
@@ -353,7 +353,7 @@ class AdminUserType implements ArrayAccess
 
     /**
      * Sets admin_roles
-     * @param \Model\AdminRoleType[] $admin_roles
+     * @param \Voximplant\Model\AdminRoleType[] $admin_roles
      * @return $this
      */
     public function setAdminRoles($admin_roles)

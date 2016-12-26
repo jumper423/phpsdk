@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -67,7 +67,7 @@ class InlineResponse20030 implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'result' => 'bool',
-        'availible_address' => '\Model\RegulationAddress[]',
+        'availible_address' => '\Voximplant\Model\RegulationAddress[]',
         'count_in_progress' => 'int'
     );
 
@@ -188,7 +188,7 @@ class InlineResponse20030 implements ArrayAccess
 
     /**
      * Gets availible_address
-     * @return \Model\RegulationAddress[]
+     * @return \Voximplant\Model\RegulationAddress[]
      */
     public function getAvailibleAddress()
     {
@@ -197,7 +197,7 @@ class InlineResponse20030 implements ArrayAccess
 
     /**
      * Sets availible_address
-     * @param \Model\RegulationAddress[] $availible_address
+     * @param \Voximplant\Model\RegulationAddress[] $availible_address
      * @return $this
      */
     public function setAvailibleAddress($availible_address)

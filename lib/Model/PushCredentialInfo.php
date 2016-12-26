@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -71,8 +71,8 @@ class PushCredentialInfo implements ArrayAccess
         'push_provider_id' => 'int',
         'push_provider_name' => 'string',
         'external_app_name' => 'string',
-        'cert_credential' => '\Model\CertCredentialType',
-        'applications' => '\Model\ApplicationInfoType[]'
+        'cert_credential' => '\Voximplant\Model\CertCredentialType',
+        'applications' => '\Voximplant\Model\ApplicationInfoType[]'
     );
 
     public static function swaggerTypes()
@@ -291,7 +291,7 @@ class PushCredentialInfo implements ArrayAccess
 
     /**
      * Gets cert_credential
-     * @return \Model\CertCredentialType
+     * @return \Voximplant\Model\CertCredentialType
      */
     public function getCertCredential()
     {
@@ -300,7 +300,7 @@ class PushCredentialInfo implements ArrayAccess
 
     /**
      * Sets cert_credential
-     * @param \Model\CertCredentialType $cert_credential
+     * @param \Voximplant\Model\CertCredentialType $cert_credential
      * @return $this
      */
     public function setCertCredential($cert_credential)
@@ -312,7 +312,7 @@ class PushCredentialInfo implements ArrayAccess
 
     /**
      * Gets applications
-     * @return \Model\ApplicationInfoType[]
+     * @return \Voximplant\Model\ApplicationInfoType[]
      */
     public function getApplications()
     {
@@ -321,7 +321,7 @@ class PushCredentialInfo implements ArrayAccess
 
     /**
      * Sets applications
-     * @param \Model\ApplicationInfoType[] $applications
+     * @param \Voximplant\Model\ApplicationInfoType[] $applications
      * @return $this
      */
     public function setApplications($applications)

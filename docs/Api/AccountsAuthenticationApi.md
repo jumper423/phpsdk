@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **logon**
-> \Model\InlineResponse20060 logon()
+> \Voximplant\Model\InlineResponse20060 logon()
 
 
 
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Model\InlineResponse20060**](../Model/InlineResponse20060.md)
+[**\Voximplant\Model\InlineResponse20060**](../Model/InlineResponse20060.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **logout**
-> \Model\InlineResponse200 logout()
+> \Voximplant\Model\InlineResponse200 logout()
 
 
 
@@ -95,7 +95,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

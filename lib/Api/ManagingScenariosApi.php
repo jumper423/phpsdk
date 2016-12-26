@@ -38,7 +38,7 @@
  * Do not edit the class manually.
  */
 
-namespace Api;
+namespace Voximplant\Api;
 
 use \Voximplant\Configuration;
 use \Voximplant\ApiClient;
@@ -109,7 +109,7 @@ class ManagingScenariosApi
      *
      * @param string $scenario_name The scenario name. The length must be less than 30 (required)
      * @param string $scenario_script The scenario text. The length must be less than 128 KB. (required)
-     * @return \Model\InlineResponse2009
+     * @return \Voximplant\Model\InlineResponse2009
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function addScenario($scenario_name, $scenario_script)
@@ -125,7 +125,7 @@ class ManagingScenariosApi
      *
      * @param string $scenario_name The scenario name. The length must be less than 30 (required)
      * @param string $scenario_script The scenario text. The length must be less than 128 KB. (required)
-     * @return Array of \Model\InlineResponse2009, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse2009, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function addScenarioWithHttpInfo($scenario_name, $scenario_script)
@@ -186,15 +186,15 @@ class ManagingScenariosApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse2009',
+                '\Voximplant\Model\InlineResponse2009',
                 '/AddScenario'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse2009', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse2009', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse2009', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse2009', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -215,7 +215,7 @@ class ManagingScenariosApi
      * @param float $application_id The application ID. (optional)
      * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return \Model\InlineResponse200
+     * @return \Voximplant\Model\InlineResponse200
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function bindScenario($scenario_id = null, $scenario_name = null, $rule_id = null, $rule_name = null, $application_id = null, $application_name = null, $bind = null)
@@ -236,7 +236,7 @@ class ManagingScenariosApi
      * @param float $application_id The application ID. (optional)
      * @param string $application_name The application name that can be used instead of &lt;b&gt;application_id&lt;/b&gt;. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return Array of \Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function bindScenarioWithHttpInfo($scenario_id = null, $scenario_name = null, $rule_id = null, $rule_name = null, $application_id = null, $application_name = null, $bind = null)
@@ -309,15 +309,15 @@ class ManagingScenariosApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse200',
+                '\Voximplant\Model\InlineResponse200',
                 '/BindScenario'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -332,7 +332,7 @@ class ManagingScenariosApi
      * 
      *
      * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @return \Model\InlineResponse200
+     * @return \Voximplant\Model\InlineResponse200
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function delScenario($scenario_id)
@@ -347,7 +347,7 @@ class ManagingScenariosApi
      * 
      *
      * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (required)
-     * @return Array of \Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function delScenarioWithHttpInfo($scenario_id)
@@ -400,15 +400,15 @@ class ManagingScenariosApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse200',
+                '\Voximplant\Model\InlineResponse200',
                 '/DelScenario'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -426,7 +426,7 @@ class ManagingScenariosApi
      * @param bool $with_script Set true to get the scenario text. You must specify the &#x60;scenario_id&#x60; too! (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Model\InlineResponse20051
+     * @return \Voximplant\Model\InlineResponse20051
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getScenarios($scenario_id = null, $with_script = null, $count = null, $offset = null)
@@ -444,7 +444,7 @@ class ManagingScenariosApi
      * @param bool $with_script Set true to get the scenario text. You must specify the &#x60;scenario_id&#x60; too! (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Model\InlineResponse20051, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20051, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getScenariosWithHttpInfo($scenario_id = null, $with_script = null, $count = null, $offset = null)
@@ -505,15 +505,15 @@ class ManagingScenariosApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20051',
+                '\Voximplant\Model\InlineResponse20051',
                 '/GetScenarios'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20051', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20051', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20051', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20051', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -530,7 +530,7 @@ class ManagingScenariosApi
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
-     * @return \Model\InlineResponse200
+     * @return \Voximplant\Model\InlineResponse200
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function reorderScenarios($rule_id = null, $rule_name = null, $scenario_id = null)
@@ -547,7 +547,7 @@ class ManagingScenariosApi
      * @param float $rule_id The rule ID. (optional)
      * @param string $rule_name The rule name that can be used instead of &lt;b&gt;rule_id&lt;/b&gt;. (optional)
      * @param string $scenario_id The scenario ID list separated by the &#x60;;&#x60; symbol. (optional)
-     * @return Array of \Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function reorderScenariosWithHttpInfo($rule_id = null, $rule_name = null, $scenario_id = null)
@@ -604,15 +604,15 @@ class ManagingScenariosApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse200',
+                '\Voximplant\Model\InlineResponse200',
                 '/ReorderScenarios'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -630,7 +630,7 @@ class ManagingScenariosApi
      * @param string $required_scenario_name The name of the scenario to edit, can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. (optional)
      * @param string $scenario_name The new scenario name. The length must be less than 30 (optional)
      * @param string $scenario_script The new scenario text. The length must be less than 128 KB. (optional)
-     * @return \Model\InlineResponse200
+     * @return \Voximplant\Model\InlineResponse200
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function setScenarioInfo($scenario_id = null, $required_scenario_name = null, $scenario_name = null, $scenario_script = null)
@@ -648,7 +648,7 @@ class ManagingScenariosApi
      * @param string $required_scenario_name The name of the scenario to edit, can be used instead of &lt;b&gt;scenario_id&lt;/b&gt;. (optional)
      * @param string $scenario_name The new scenario name. The length must be less than 30 (optional)
      * @param string $scenario_script The new scenario text. The length must be less than 128 KB. (optional)
-     * @return Array of \Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function setScenarioInfoWithHttpInfo($scenario_id = null, $required_scenario_name = null, $scenario_name = null, $scenario_script = null)
@@ -709,15 +709,15 @@ class ManagingScenariosApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse200',
+                '\Voximplant\Model\InlineResponse200',
                 '/SetScenarioInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -737,7 +737,7 @@ class ManagingScenariosApi
      * @param string $user_name The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. Run the scripts from the user if set. (optional)
      * @param string $script_custom_data The script custom data (like a script argument). (optional)
      * @param string $reference_ip IPv4 that will be used to find nearest media server. (optional)
-     * @return \Model\InlineResponse20064
+     * @return \Voximplant\Model\InlineResponse20064
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function startConference($conference_name, $rule_id, $user_id = null, $user_name = null, $script_custom_data = null, $reference_ip = null)
@@ -757,7 +757,7 @@ class ManagingScenariosApi
      * @param string $user_name The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. Run the scripts from the user if set. (optional)
      * @param string $script_custom_data The script custom data (like a script argument). (optional)
      * @param string $reference_ip IPv4 that will be used to find nearest media server. (optional)
-     * @return Array of \Model\InlineResponse20064, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20064, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function startConferenceWithHttpInfo($conference_name, $rule_id, $user_id = null, $user_name = null, $script_custom_data = null, $reference_ip = null)
@@ -834,15 +834,15 @@ class ManagingScenariosApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20064',
+                '\Voximplant\Model\InlineResponse20064',
                 '/StartConference'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20064', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20064', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20064', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20064', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -861,7 +861,7 @@ class ManagingScenariosApi
      * @param string $user_name The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. Run the scripts from the user if set. (optional)
      * @param string $script_custom_data The script custom data (like a script argument). (optional)
      * @param string $reference_ip IPv4 that will be used to find nearest media server. (optional)
-     * @return \Model\InlineResponse20066
+     * @return \Voximplant\Model\InlineResponse20066
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function startScenarios($rule_id, $user_id = null, $user_name = null, $script_custom_data = null, $reference_ip = null)
@@ -880,7 +880,7 @@ class ManagingScenariosApi
      * @param string $user_name The user name that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. Run the scripts from the user if set. (optional)
      * @param string $script_custom_data The script custom data (like a script argument). (optional)
      * @param string $reference_ip IPv4 that will be used to find nearest media server. (optional)
-     * @return Array of \Model\InlineResponse20066, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\InlineResponse20066, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function startScenariosWithHttpInfo($rule_id, $user_id = null, $user_name = null, $script_custom_data = null, $reference_ip = null)
@@ -949,15 +949,15 @@ class ManagingScenariosApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Model\InlineResponse20066',
+                '\Voximplant\Model\InlineResponse20066',
                 '/StartScenarios'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Model\InlineResponse20066', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20066', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Model\InlineResponse20066', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20066', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

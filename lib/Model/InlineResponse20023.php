@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20023 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\AccountVerifications[]'
+        'result' => '\Voximplant\Model\AccountVerifications[]'
     );
 
     public static function swaggerTypes()
@@ -157,7 +157,7 @@ class InlineResponse20023 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\AccountVerifications[]
+     * @return \Voximplant\Model\AccountVerifications[]
      */
     public function getResult()
     {
@@ -166,7 +166,7 @@ class InlineResponse20023 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\AccountVerifications[] $result
+     * @param \Voximplant\Model\AccountVerifications[] $result
      * @return $this
      */
     public function setResult($result)

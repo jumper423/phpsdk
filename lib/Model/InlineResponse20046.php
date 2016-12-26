@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20046 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\QueueInfoType[]',
+        'result' => '\Voximplant\Model\QueueInfoType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20046 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\QueueInfoType[]
+     * @return \Voximplant\Model\QueueInfoType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20046 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\QueueInfoType[] $result
+     * @param \Voximplant\Model\QueueInfoType[] $result
      * @return $this
      */
     public function setResult($result)

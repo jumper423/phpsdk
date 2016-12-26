@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -70,7 +70,7 @@ class PhoneNumberCountryInfoType implements ArrayAccess
         'country_code' => 'string',
         'phone_prefix' => 'string',
         'can_list_phone_numbers' => 'bool',
-        'phone_categories' => '\Model\PhoneNumberCountryCategoryInfoType[]'
+        'phone_categories' => '\Voximplant\Model\PhoneNumberCountryCategoryInfoType[]'
     );
 
     public static function swaggerTypes()
@@ -254,7 +254,7 @@ class PhoneNumberCountryInfoType implements ArrayAccess
 
     /**
      * Gets phone_categories
-     * @return \Model\PhoneNumberCountryCategoryInfoType[]
+     * @return \Voximplant\Model\PhoneNumberCountryCategoryInfoType[]
      */
     public function getPhoneCategories()
     {
@@ -263,7 +263,7 @@ class PhoneNumberCountryInfoType implements ArrayAccess
 
     /**
      * Sets phone_categories
-     * @param \Model\PhoneNumberCountryCategoryInfoType[] $phone_categories
+     * @param \Voximplant\Model\PhoneNumberCountryCategoryInfoType[] $phone_categories
      * @return $this
      */
     public function setPhoneCategories($phone_categories)

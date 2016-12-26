@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -74,7 +74,7 @@ class ContractorInvoiceType implements ArrayAccess
         'to_date' => 'string',
         'total_amount' => 'int',
         'paid_amount' => 'int',
-        'services' => '\Model\ContractorInvoiceServiceType'
+        'services' => '\Voximplant\Model\ContractorInvoiceServiceType'
     );
 
     public static function swaggerTypes()
@@ -364,7 +364,7 @@ class ContractorInvoiceType implements ArrayAccess
 
     /**
      * Gets services
-     * @return \Model\ContractorInvoiceServiceType
+     * @return \Voximplant\Model\ContractorInvoiceServiceType
      */
     public function getServices()
     {
@@ -373,7 +373,7 @@ class ContractorInvoiceType implements ArrayAccess
 
     /**
      * Sets services
-     * @param \Model\ContractorInvoiceServiceType $services
+     * @param \Voximplant\Model\ContractorInvoiceServiceType $services
      * @return $this
      */
     public function setServices($services)

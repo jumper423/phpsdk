@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Model\HistoryReportType[]**](HistoryReportType.md) |  | [optional] 
+**result** | [**\Voximplant\Model\HistoryReportType[]**](HistoryReportType.md) |  | [optional] 
 **total_count** | **int** | The total found reports count. | [optional] 
 **count** | **int** | The returned reports count. | [optional] 
 

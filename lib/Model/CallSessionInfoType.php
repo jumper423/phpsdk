@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -77,9 +77,9 @@ class CallSessionInfoType implements ArrayAccess
         'media_server_address' => 'string',
         'log_file_url' => 'string',
         'finish_reason' => 'string',
-        'calls' => '\Model\CallInfoType[]',
-        'other_resource_usage' => '\Model\ResourceUsageType[]',
-        'records' => '\Model\RecordType[]'
+        'calls' => '\Voximplant\Model\CallInfoType[]',
+        'other_resource_usage' => '\Voximplant\Model\ResourceUsageType[]',
+        'records' => '\Voximplant\Model\RecordType[]'
     );
 
     public static function swaggerTypes()
@@ -476,7 +476,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Gets calls
-     * @return \Model\CallInfoType[]
+     * @return \Voximplant\Model\CallInfoType[]
      */
     public function getCalls()
     {
@@ -485,7 +485,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Sets calls
-     * @param \Model\CallInfoType[] $calls
+     * @param \Voximplant\Model\CallInfoType[] $calls
      * @return $this
      */
     public function setCalls($calls)
@@ -497,7 +497,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Gets other_resource_usage
-     * @return \Model\ResourceUsageType[]
+     * @return \Voximplant\Model\ResourceUsageType[]
      */
     public function getOtherResourceUsage()
     {
@@ -506,7 +506,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Sets other_resource_usage
-     * @param \Model\ResourceUsageType[] $other_resource_usage
+     * @param \Voximplant\Model\ResourceUsageType[] $other_resource_usage
      * @return $this
      */
     public function setOtherResourceUsage($other_resource_usage)
@@ -518,7 +518,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Gets records
-     * @return \Model\RecordType[]
+     * @return \Voximplant\Model\RecordType[]
      */
     public function getRecords()
     {
@@ -527,7 +527,7 @@ class CallSessionInfoType implements ArrayAccess
 
     /**
      * Sets records
-     * @param \Model\RecordType[] $records
+     * @param \Voximplant\Model\RecordType[] $records
      * @return $this
      */
     public function setRecords($records)

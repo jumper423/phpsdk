@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20051 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\ScenarioInfoType[]',
+        'result' => '\Voximplant\Model\ScenarioInfoType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20051 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\ScenarioInfoType[]
+     * @return \Voximplant\Model\ScenarioInfoType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20051 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\ScenarioInfoType[] $result
+     * @param \Voximplant\Model\ScenarioInfoType[] $result
      * @return $this
      */
     public function setResult($result)

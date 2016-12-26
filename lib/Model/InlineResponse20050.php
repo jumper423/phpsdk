@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -66,7 +66,7 @@ class InlineResponse20050 implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'result' => '\Model\RuleInfoType[]',
+        'result' => '\Voximplant\Model\RuleInfoType[]',
         'total_count' => 'int',
         'count' => 'int'
     );
@@ -167,7 +167,7 @@ class InlineResponse20050 implements ArrayAccess
 
     /**
      * Gets result
-     * @return \Model\RuleInfoType[]
+     * @return \Voximplant\Model\RuleInfoType[]
      */
     public function getResult()
     {
@@ -176,7 +176,7 @@ class InlineResponse20050 implements ArrayAccess
 
     /**
      * Sets result
-     * @param \Model\RuleInfoType[] $result
+     * @param \Voximplant\Model\RuleInfoType[] $result
      * @return $this
      */
     public function setResult($result)

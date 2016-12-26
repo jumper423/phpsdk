@@ -39,7 +39,7 @@
  * Do not edit the class manually.
  */
 
-namespace Model;
+namespace Voximplant\Model;
 
 use \ArrayAccess;
 
@@ -68,10 +68,10 @@ class ACDQueueStateType implements ArrayAccess
       */
     protected static $swaggerTypes = array(
         'acd_queue_id' => 'int',
-        'ready_operators' => '\Model\ACDReadyOperatorStateType[]',
-        'locked_operators' => '\Model\ACDLockedOperatorStateType[]',
-        'servicing_calls' => '\Model\ACDServicingCallStateType[]',
-        'waiting_calls' => '\Model\ACDWaitingCallStateType[]'
+        'ready_operators' => '\Voximplant\Model\ACDReadyOperatorStateType[]',
+        'locked_operators' => '\Voximplant\Model\ACDLockedOperatorStateType[]',
+        'servicing_calls' => '\Voximplant\Model\ACDServicingCallStateType[]',
+        'waiting_calls' => '\Voximplant\Model\ACDWaitingCallStateType[]'
     );
 
     public static function swaggerTypes()
@@ -205,7 +205,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Gets ready_operators
-     * @return \Model\ACDReadyOperatorStateType[]
+     * @return \Voximplant\Model\ACDReadyOperatorStateType[]
      */
     public function getReadyOperators()
     {
@@ -214,7 +214,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Sets ready_operators
-     * @param \Model\ACDReadyOperatorStateType[] $ready_operators
+     * @param \Voximplant\Model\ACDReadyOperatorStateType[] $ready_operators
      * @return $this
      */
     public function setReadyOperators($ready_operators)
@@ -226,7 +226,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Gets locked_operators
-     * @return \Model\ACDLockedOperatorStateType[]
+     * @return \Voximplant\Model\ACDLockedOperatorStateType[]
      */
     public function getLockedOperators()
     {
@@ -235,7 +235,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Sets locked_operators
-     * @param \Model\ACDLockedOperatorStateType[] $locked_operators
+     * @param \Voximplant\Model\ACDLockedOperatorStateType[] $locked_operators
      * @return $this
      */
     public function setLockedOperators($locked_operators)
@@ -247,7 +247,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Gets servicing_calls
-     * @return \Model\ACDServicingCallStateType[]
+     * @return \Voximplant\Model\ACDServicingCallStateType[]
      */
     public function getServicingCalls()
     {
@@ -256,7 +256,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Sets servicing_calls
-     * @param \Model\ACDServicingCallStateType[] $servicing_calls
+     * @param \Voximplant\Model\ACDServicingCallStateType[] $servicing_calls
      * @return $this
      */
     public function setServicingCalls($servicing_calls)
@@ -268,7 +268,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Gets waiting_calls
-     * @return \Model\ACDWaitingCallStateType[]
+     * @return \Voximplant\Model\ACDWaitingCallStateType[]
      */
     public function getWaitingCalls()
     {
@@ -277,7 +277,7 @@ class ACDQueueStateType implements ArrayAccess
 
     /**
      * Sets waiting_calls
-     * @param \Model\ACDWaitingCallStateType[] $waiting_calls
+     * @param \Voximplant\Model\ACDWaitingCallStateType[] $waiting_calls
      * @return $this
      */
     public function setWaitingCalls($waiting_calls)
