@@ -46,12 +46,12 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key: api_key
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('api_key', 'YOUR_API_KEY');
 
 // Configure account name: account_name
-Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_ACCOUNT_NAME');
+Voximplant\Configuration::getDefaultConfiguration()->setApiKey('account_name', 'YOUR_ACCOUNT_NAME');
 
-$api_instance = new Swagger\Client\Api\AccountsAuthenticationApi();
+$api_instance = new \Voximplant\Api\AccountsAuthenticationApi();
 
 try {
     $result = $api_instance->logon();
