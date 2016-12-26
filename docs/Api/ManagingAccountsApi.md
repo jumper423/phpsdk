@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 
 # **chargeAccount**
-> \Swagger\Client\Model\InlineResponse20016 chargeAccount($phone_id, $phone_number)
+> \Model\InlineResponse20016 chargeAccount($phone_id, $phone_number)
 
 
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20016**](../Model/InlineResponse20016.md)
+[**\Model\InlineResponse20016**](../Model/InlineResponse20016.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **confirmAccountPasswordChange**
-> \Swagger\Client\Model\InlineResponse200 confirmAccountPasswordChange($code, $new_account_password)
+> \Model\InlineResponse200 confirmAccountPasswordChange($code, $new_account_password)
 
 
 
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -130,7 +130,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountDocuments**
-> \Swagger\Client\Model\InlineResponse20023 getAccountDocuments($with_details, $verification_name, $verification_status, $from_unverified_hold_until, $to_unverified_hold_until, $child_account_id, $children_verifications_only)
+> \Model\InlineResponse20023 getAccountDocuments($with_details, $verification_name, $verification_status, $from_unverified_hold_until, $to_unverified_hold_until, $child_account_id, $children_verifications_only)
 
 
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20023**](../Model/InlineResponse20023.md)
+[**\Model\InlineResponse20023**](../Model/InlineResponse20023.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountInfo**
-> \Swagger\Client\Model\InlineResponse20024 getAccountInfo($return_live_balance)
+> \Model\InlineResponse20024 getAccountInfo($return_live_balance)
 
 
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20024**](../Model/InlineResponse20024.md)
+[**\Model\InlineResponse20024**](../Model/InlineResponse20024.md)
 
 ### Authorization
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCurrencyRate**
-> \Swagger\Client\Model\InlineResponse20036 getCurrencyRate($currency, $date)
+> \Model\InlineResponse20036 getCurrencyRate($currency, $date)
 
 
 
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20036**](../Model/InlineResponse20036.md)
+[**\Model\InlineResponse20036**](../Model/InlineResponse20036.md)
 
 ### Authorization
 
@@ -306,7 +306,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getMoneyAmountToCharge**
-> \Swagger\Client\Model\InlineResponse20038 getMoneyAmountToCharge($currency, $charge_date)
+> \Model\InlineResponse20038 getMoneyAmountToCharge($currency, $charge_date)
 
 
 
@@ -348,7 +348,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20038**](../Model/InlineResponse20038.md)
+[**\Model\InlineResponse20038**](../Model/InlineResponse20038.md)
 
 ### Authorization
 
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getResourcePrice**
-> \Swagger\Client\Model\InlineResponse20049 getResourcePrice($resource_type, $price_group_id, $price_group_name, $resource_param)
+> \Model\InlineResponse20049 getResourcePrice($resource_type, $price_group_id, $price_group_name, $resource_param)
 
 
 
@@ -408,7 +408,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20049**](../Model/InlineResponse20049.md)
+[**\Model\InlineResponse20049**](../Model/InlineResponse20049.md)
 
 ### Authorization
 
@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSubscriptionPrice**
-> \Swagger\Client\Model\InlineResponse20055 getSubscriptionPrice($subscription_template_id, $subscription_template_type, $subscription_template_name, $count, $offset)
+> \Model\InlineResponse20055 getSubscriptionPrice($subscription_template_id, $subscription_template_type, $subscription_template_name, $count, $offset)
 
 
 
@@ -470,7 +470,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20055**](../Model/InlineResponse20055.md)
+[**\Model\InlineResponse20055**](../Model/InlineResponse20055.md)
 
 ### Authorization
 
@@ -484,7 +484,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sendAccountPasswordChangeRequest**
-> \Swagger\Client\Model\InlineResponse200 sendAccountPasswordChangeRequest()
+> \Model\InlineResponse200 sendAccountPasswordChangeRequest()
 
 
 
@@ -520,7 +520,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -534,7 +534,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setAccountDocument**
-> \Swagger\Client\Model\InlineResponse20062 setAccountDocument($account_document, $verification_name, $is_individual, $individual_full_name, $individual_birth_date, $individual_passport_series, $individual_passport_number, $individual_passport_issue_date, $individual_passport_issued_by, $individual_registration_address, $legal_entry_full_name, $legal_entry_phone, $legal_entry_address, $legal_entry_actual_address, $ogrn, $inn)
+> \Model\InlineResponse20062 setAccountDocument($account_document, $verification_name, $is_individual, $individual_full_name, $individual_birth_date, $individual_passport_series, $individual_passport_number, $individual_passport_issue_date, $individual_passport_issued_by, $individual_registration_address, $legal_entry_full_name, $legal_entry_phone, $legal_entry_address, $legal_entry_actual_address, $ogrn, $inn)
 
 
 
@@ -604,7 +604,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20062**](../Model/InlineResponse20062.md)
+[**\Model\InlineResponse20062**](../Model/InlineResponse20062.md)
 
 ### Authorization
 
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setAccountInfo**
-> \Swagger\Client\Model\InlineResponse200 setAccountInfo($new_account_email, $new_account_password, $language_code, $location, $account_first_name, $account_last_name, $min_balance_to_notify, $account_notifications, $tariff_changing_notifications, $news_notifications, $send_js_error, $billing_address_name, $billing_address_country_code, $billing_address_address, $billing_address_zip, $billing_address_phone, $account_custom_data)
+> \Model\InlineResponse200 setAccountInfo($new_account_email, $new_account_password, $language_code, $location, $account_first_name, $account_last_name, $min_balance_to_notify, $account_notifications, $tariff_changing_notifications, $news_notifications, $send_js_error, $billing_address_name, $billing_address_country_code, $billing_address_address, $billing_address_zip, $billing_address_phone, $account_custom_data)
 
 
 
@@ -690,7 +690,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

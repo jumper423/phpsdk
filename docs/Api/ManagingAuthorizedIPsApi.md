@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAuthorizedAccountIP**
-> \Swagger\Client\Model\InlineResponse200 addAuthorizedAccountIP($authorized_ip, $allowed)
+> \Model\InlineResponse200 addAuthorizedAccountIP($authorized_ip, $allowed)
 
 
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **checkAuthorizedAccountIP**
-> \Swagger\Client\Model\InlineResponse20017 checkAuthorizedAccountIP($authorized_ip)
+> \Model\InlineResponse20017 checkAuthorizedAccountIP($authorized_ip)
 
 
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20017**](../Model/InlineResponse20017.md)
+[**\Model\InlineResponse20017**](../Model/InlineResponse20017.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delAuthorizedAccountIP**
-> \Swagger\Client\Model\InlineResponse20020 delAuthorizedAccountIP($authorized_ip, $contains_ip, $allowed)
+> \Model\InlineResponse20020 delAuthorizedAccountIP($authorized_ip, $contains_ip, $allowed)
 
 
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20020**](../Model/InlineResponse20020.md)
+[**\Model\InlineResponse20020**](../Model/InlineResponse20020.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAuthorizedAccountIPs**
-> \Swagger\Client\Model\InlineResponse20029 getAuthorizedAccountIPs($contains_ip, $authorized_ip, $allowed, $count, $offset)
+> \Model\InlineResponse20029 getAuthorizedAccountIPs($contains_ip, $authorized_ip, $allowed, $count, $offset)
 
 
 
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20029**](../Model/InlineResponse20029.md)
+[**\Model\InlineResponse20029**](../Model/InlineResponse20029.md)
 
 ### Authorization
 

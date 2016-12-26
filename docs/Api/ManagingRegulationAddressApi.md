@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **createRegulationAddress**
-> \Swagger\Client\Model\InlineResponse20018 createRegulationAddress($phone_category_name, $destination_country_code, $proof, $phone_owner_salutation, $phone_owner_zip_code, $phone_owner_city, $phone_owner_street, $phone_owner_building_number, $phone_owner_country_code, $phone_region_code, $phone_owner_first_name, $phone_owner_last_name, $phone_owner_company, $phone_owner_building_letter)
+> \Model\InlineResponse20018 createRegulationAddress($phone_category_name, $destination_country_code, $proof, $phone_owner_salutation, $phone_owner_zip_code, $phone_owner_city, $phone_owner_street, $phone_owner_building_number, $phone_owner_country_code, $phone_region_code, $phone_owner_first_name, $phone_owner_last_name, $phone_owner_company, $phone_owner_building_letter)
 
 
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20018**](../Model/InlineResponse20018.md)
+[**\Model\InlineResponse20018**](../Model/InlineResponse20018.md)
 
 ### Authorization
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAvailibleRegulations**
-> \Swagger\Client\Model\InlineResponse20030 getAvailibleRegulations($country_code, $phone_category_name, $phone_region_code)
+> \Model\InlineResponse20030 getAvailibleRegulations($country_code, $phone_category_name, $phone_region_code)
 
 
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20030**](../Model/InlineResponse20030.md)
+[**\Model\InlineResponse20030**](../Model/InlineResponse20030.md)
 
 ### Authorization
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCountries**
-> \Swagger\Client\Model\InlineResponse20035 getCountries($country_code)
+> \Model\InlineResponse20035 getCountries($country_code)
 
 
 
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20035**](../Model/InlineResponse20035.md)
+[**\Model\InlineResponse20035**](../Model/InlineResponse20035.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRegions**
-> \Swagger\Client\Model\InlineResponse20047 getRegions($country_code, $phone_category_name, $city_name, $count, $offset)
+> \Model\InlineResponse20047 getRegions($country_code, $phone_category_name, $city_name, $count, $offset)
 
 
 
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20047**](../Model/InlineResponse20047.md)
+[**\Model\InlineResponse20047**](../Model/InlineResponse20047.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRegulationsAddress**
-> \Swagger\Client\Model\InlineResponse20048 getRegulationsAddress($country_code, $phone_category_name, $phone_region_code, $regulation_address_id, $verified, $in_progress)
+> \Model\InlineResponse20048 getRegulationsAddress($country_code, $phone_category_name, $phone_region_code, $regulation_address_id, $verified, $in_progress)
 
 
 
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20048**](../Model/InlineResponse20048.md)
+[**\Model\InlineResponse20048**](../Model/InlineResponse20048.md)
 
 ### Authorization
 
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getZIPCodes**
-> \Swagger\Client\Model\InlineResponse20058 getZIPCodes($country_code, $phone_region_code, $count, $offset)
+> \Model\InlineResponse20058 getZIPCodes($country_code, $phone_region_code, $count, $offset)
 
 
 
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20058**](../Model/InlineResponse20058.md)
+[**\Model\InlineResponse20058**](../Model/InlineResponse20058.md)
 
 ### Authorization
 
@@ -393,7 +393,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **linkregulationAddress**
-> \Swagger\Client\Model\InlineResponse20059 linkregulationAddress($regulation_address_id, $phone_id, $phone_number)
+> \Model\InlineResponse20059 linkregulationAddress($regulation_address_id, $phone_id, $phone_number)
 
 
 
@@ -437,7 +437,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
+[**\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
 
 ### Authorization
 
@@ -451,7 +451,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **uploadProofOfAddress**
-> \Swagger\Client\Model\InlineResponse20059 uploadProofOfAddress($regulation_address_id, $proof)
+> \Model\InlineResponse20059 uploadProofOfAddress($regulation_address_id, $proof)
 
 
 
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
+[**\Model\InlineResponse20059**](../Model/InlineResponse20059.md)
 
 ### Authorization
 

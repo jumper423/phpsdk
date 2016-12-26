@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAdminRole**
-> \Swagger\Client\Model\InlineResponse2001 addAdminRole($admin_role_name, $admin_role_active, $like_admin_role_id, $like_admin_role_name, $allowed_entries, $denied_entries)
+> \Model\InlineResponse2001 addAdminRole($admin_role_name, $admin_role_active, $like_admin_role_id, $like_admin_role_name, $allowed_entries, $denied_entries)
 
 
 
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delAdminRole**
-> \Swagger\Client\Model\InlineResponse200 delAdminRole($admin_role_id, $admin_role_name)
+> \Model\InlineResponse200 delAdminRole($admin_role_id, $admin_role_name)
 
 
 
@@ -117,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAdminRoles**
-> \Swagger\Client\Model\InlineResponse20026 getAdminRoles($admin_role_id, $admin_role_name, $admin_role_active, $with_entries, $with_account_roles, $with_parent_roles, $with_system_roles, $included_admin_user_id, $excluded_admin_user_id, $full_admin_users_matching, $showing_admin_user_id, $count, $offset)
+> \Model\InlineResponse20026 getAdminRoles($admin_role_id, $admin_role_name, $admin_role_active, $with_entries, $with_account_roles, $with_parent_roles, $with_system_roles, $included_admin_user_id, $excluded_admin_user_id, $full_admin_users_matching, $showing_admin_user_id, $count, $offset)
 
 
 
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20026**](../Model/InlineResponse20026.md)
+[**\Model\InlineResponse20026**](../Model/InlineResponse20026.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setAdminRoleInfo**
-> \Swagger\Client\Model\InlineResponse200 setAdminRoleInfo($admin_role_id, $admin_role_name, $new_admin_role_name, $admin_role_active, $entry_modification_mode, $allowed_entries, $denied_entries, $like_admin_role_id, $like_admin_role_name)
+> \Model\InlineResponse200 setAdminRoleInfo($admin_role_id, $admin_role_name, $new_admin_role_name, $admin_role_active, $entry_modification_mode, $allowed_entries, $denied_entries, $like_admin_role_id, $like_admin_role_name)
 
 
 
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

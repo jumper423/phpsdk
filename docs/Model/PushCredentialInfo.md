@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **push_provider_id** | **int** | The push provider id | 
 **push_provider_name** | **string** | The push provider name. Available values: APPLE, APPLE_VOIP, GOOGLE | 
 **external_app_name** | **string** | The push provider&#39;s application name. | 
-**cert_credential** | [**\Swagger\Client\Model\CertCredentialType**](CertCredentialType.md) |  | [optional] 
-**applications** | [**\Swagger\Client\Model\ApplicationInfoType[]**](ApplicationInfoType.md) |  | [optional] 
+**cert_credential** | [**\Model\CertCredentialType**](CertCredentialType.md) |  | [optional] 
+**applications** | [**\Model\ApplicationInfoType[]**](ApplicationInfoType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

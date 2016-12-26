@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Swagger\Client\Model\SipWhiteListInfoType[]**](SipWhiteListInfoType.md) |  | [optional] 
+**result** | [**\Model\SipWhiteListInfoType[]**](SipWhiteListInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found networks count. | [optional] 
 **count** | **int** | The returned networks count. | [optional] 
 

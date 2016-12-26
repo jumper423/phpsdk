@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addAdminUser**
-> \Swagger\Client\Model\InlineResponse2002 addAdminUser($new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active, $admin_role_id, $admin_role_name)
+> \Model\InlineResponse2002 addAdminUser($new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active, $admin_role_id, $admin_role_name)
 
 
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **attachAdminRole**
-> \Swagger\Client\Model\InlineResponse200 attachAdminRole($required_admin_user_id, $required_admin_user_name, $admin_role_id, $admin_role_name, $mode)
+> \Model\InlineResponse200 attachAdminRole($required_admin_user_id, $required_admin_user_name, $admin_role_id, $admin_role_name, $mode)
 
 
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delAdminUser**
-> \Swagger\Client\Model\InlineResponse200 delAdminUser($required_admin_user_id, $required_admin_user_name)
+> \Model\InlineResponse200 delAdminUser($required_admin_user_id, $required_admin_user_name)
 
 
 
@@ -180,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAdminUsers**
-> \Swagger\Client\Model\InlineResponse20027 getAdminUsers($required_admin_user_id, $required_admin_user_name, $admin_user_display_name, $admin_user_active, $with_roles, $with_access_entries, $count, $offset)
+> \Model\InlineResponse20027 getAdminUsers($required_admin_user_id, $required_admin_user_name, $admin_user_display_name, $admin_user_active, $with_roles, $with_access_entries, $count, $offset)
 
 
 
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20027**](../Model/InlineResponse20027.md)
+[**\Model\InlineResponse20027**](../Model/InlineResponse20027.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setAdminUserInfo**
-> \Swagger\Client\Model\InlineResponse200 setAdminUserInfo($required_admin_user_id, $required_admin_user_name, $new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active)
+> \Model\InlineResponse200 setAdminUserInfo($required_admin_user_id, $required_admin_user_name, $new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active)
 
 
 
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

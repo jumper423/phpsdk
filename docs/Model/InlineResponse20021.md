@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Swagger\Client\Model\ACDSessionInfoType[]**](ACDSessionInfoType.md) |  | [optional] 
+**result** | [**\Model\ACDSessionInfoType[]**](ACDSessionInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found ACD session count. | [optional] 
 **count** | **int** | The returned ACD session count. | [optional] 
 

@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **bindSipRegistration**
-> \Swagger\Client\Model\InlineResponse200 bindSipRegistration($sip_registration_id, $application_id, $application_name, $rule_id, $rule_name, $bind)
+> \Model\InlineResponse200 bindSipRegistration($sip_registration_id, $application_id, $application_name, $rule_id, $rule_name, $bind)
 
 
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSipRegistration**
-> \Swagger\Client\Model\InlineResponse20019 createSipRegistration($username, $proxy, $auth_user, $outbound_proxy, $password)
+> \Model\InlineResponse20019 createSipRegistration($username, $proxy, $auth_user, $outbound_proxy, $password)
 
 
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20019**](../Model/InlineResponse20019.md)
+[**\Model\InlineResponse20019**](../Model/InlineResponse20019.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSipRegistration**
-> \Swagger\Client\Model\InlineResponse200 deleteSipRegistration($sip_registration_id)
+> \Model\InlineResponse200 deleteSipRegistration($sip_registration_id)
 
 
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSipRegistrations**
-> \Swagger\Client\Model\InlineResponse20052 getSipRegistrations($sip_registration_id, $username, $deactivated)
+> \Model\InlineResponse20052 getSipRegistrations($sip_registration_id, $username, $deactivated)
 
 
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20052**](../Model/InlineResponse20052.md)
+[**\Model\InlineResponse20052**](../Model/InlineResponse20052.md)
 
 ### Authorization
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSipRegistration**
-> \Swagger\Client\Model\InlineResponse200 updateSipRegistration($sip_registration_id, $username, $proxy, $auth_user, $outbound_proxy, $password)
+> \Model\InlineResponse200 updateSipRegistration($sip_registration_id, $username, $proxy, $auth_user, $outbound_proxy, $password)
 
 
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

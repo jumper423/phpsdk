@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Swagger\Client\Model\CallListType[]**](CallListType.md) |  | [optional] 
+**result** | [**\Model\CallListType[]**](CallListType.md) |  | [optional] 
 **count** | **int** | The returned call list count. | [optional] 
 **total_count** | **int** | The total found call list count. | [optional] 
 

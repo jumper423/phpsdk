@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addRule**
-> \Swagger\Client\Model\InlineResponse2008 addRule($rule_name, $rule_pattern, $application_id, $application_name, $rule_pattern_exclude, $scenario_id, $scenario_name)
+> \Model\InlineResponse2008 addRule($rule_name, $rule_pattern, $application_id, $application_name, $rule_pattern_exclude, $scenario_id, $scenario_name)
 
 
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
+[**\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delRule**
-> \Swagger\Client\Model\InlineResponse200 delRule($rule_id, $rule_name, $application_id, $application_name)
+> \Model\InlineResponse200 delRule($rule_id, $rule_name, $application_id, $application_name)
 
 
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRules**
-> \Swagger\Client\Model\InlineResponse20050 getRules($application_id, $application_name, $rule_id, $rule_name, $template, $with_scenarios, $count, $offset)
+> \Model\InlineResponse20050 getRules($application_id, $application_name, $rule_id, $rule_name, $template, $with_scenarios, $count, $offset)
 
 
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20050**](../Model/InlineResponse20050.md)
+[**\Model\InlineResponse20050**](../Model/InlineResponse20050.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **reorderRules**
-> \Swagger\Client\Model\InlineResponse200 reorderRules($rule_id)
+> \Model\InlineResponse200 reorderRules($rule_id)
 
 
 
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRuleInfo**
-> \Swagger\Client\Model\InlineResponse200 setRuleInfo($rule_id, $rule_name, $rule_pattern, $rule_pattern_exclude)
+> \Model\InlineResponse200 setRuleInfo($rule_id, $rule_name, $rule_pattern, $rule_pattern_exclude)
 
 
 
@@ -306,7 +306,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

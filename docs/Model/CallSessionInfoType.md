@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 **media_server_address** | **string** | The media server IP address. | 
 **log_file_url** | **string** | The session log URL. | 
 **finish_reason** | **string** | The finish reason | [optional] 
-**calls** | [**\Swagger\Client\Model\CallInfoType[]**](CallInfoType.md) |  | [optional] 
-**other_resource_usage** | [**\Swagger\Client\Model\ResourceUsageType[]**](ResourceUsageType.md) |  | [optional] 
-**records** | [**\Swagger\Client\Model\RecordType[]**](RecordType.md) |  | [optional] 
+**calls** | [**\Model\CallInfoType[]**](CallInfoType.md) |  | [optional] 
+**other_resource_usage** | [**\Model\ResourceUsageType[]**](ResourceUsageType.md) |  | [optional] 
+**records** | [**\Model\RecordType[]**](RecordType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

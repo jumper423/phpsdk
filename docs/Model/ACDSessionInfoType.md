@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **waiting_duration** | **int** | The waiting duration in seconds. | [optional] 
 **in_service_duration** | **int** | The conversation duration in seconds. | [optional] 
 **after_service_duration** | **int** | The after service duration in seconds. | [optional] 
-**events** | [**\Swagger\Client\Model\ACDSessionEventInfoType[]**](ACDSessionEventInfoType.md) |  | [optional] 
+**events** | [**\Model\ACDSessionEventInfoType[]**](ACDSessionEventInfoType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

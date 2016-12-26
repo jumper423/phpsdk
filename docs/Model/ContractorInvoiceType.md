@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **to_date** | **string** | The to date in format: YYYY-MM-DD | [optional] 
 **total_amount** | **int** | The total invoice amount (RUR). | 
 **paid_amount** | **int** | The paid amount (RUR). | [optional] 
-**services** | [**\Swagger\Client\Model\ContractorInvoiceServiceType**](ContractorInvoiceServiceType.md) |  | [optional] 
+**services** | [**\Model\ContractorInvoiceServiceType**](ContractorInvoiceServiceType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

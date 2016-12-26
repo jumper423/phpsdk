@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Swagger\Client\Model\CallerIDInfoType[]**](CallerIDInfoType.md) |  | [optional] 
+**result** | [**\Model\CallerIDInfoType[]**](CallerIDInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found record count. | [optional] 
 **count** | **int** | The returned record count. | [optional] 
 

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\Swagger\Client\Model\TransactionInfoType[]**](TransactionInfoType.md) |  | [optional] 
+**result** | [**\Model\TransactionInfoType[]**](TransactionInfoType.md) |  | [optional] 
 **total_count** | **int** | The total found transaction count. | [optional] 
 **count** | **int** | The returned transaction count. | [optional] 
 **timezone** | **string** | The used timezone. | [optional] 

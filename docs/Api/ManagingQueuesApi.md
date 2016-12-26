@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addQueue**
-> \Swagger\Client\Model\InlineResponse2007 addQueue($acd_queue_name, $application_id, $application_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time)
+> \Model\InlineResponse2007 addQueue($acd_queue_name, $application_id, $application_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time)
 
 
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2007**](../Model/InlineResponse2007.md)
+[**\Model\InlineResponse2007**](../Model/InlineResponse2007.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delQueue**
-> \Swagger\Client\Model\InlineResponse200 delQueue($acd_queue_id, $acd_queue_name)
+> \Model\InlineResponse200 delQueue($acd_queue_id, $acd_queue_name)
 
 
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getACDState**
-> \Swagger\Client\Model\InlineResponse20022 getACDState($acd_queue_id)
+> \Model\InlineResponse20022 getACDState($acd_queue_id)
 
 
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20022**](../Model/InlineResponse20022.md)
+[**\Model\InlineResponse20022**](../Model/InlineResponse20022.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getQueues**
-> \Swagger\Client\Model\InlineResponse20046 getQueues($acd_queue_id, $acd_queue_name, $application_id, $skill_id, $excluded_skill_id, $with_skills, $showing_skill_id, $count, $offset)
+> \Model\InlineResponse20046 getQueues($acd_queue_id, $acd_queue_name, $application_id, $skill_id, $excluded_skill_id, $with_skills, $showing_skill_id, $count, $offset)
 
 
 
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse20046**](../Model/InlineResponse20046.md)
+[**\Model\InlineResponse20046**](../Model/InlineResponse20046.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setQueueInfo**
-> \Swagger\Client\Model\InlineResponse200 setQueueInfo($acd_queue_id, $acd_queue_name, $new_acd_queue_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time, $application_id)
+> \Model\InlineResponse200 setQueueInfo($acd_queue_id, $acd_queue_name, $new_acd_queue_name, $acd_queue_priority, $auto_binding, $service_probability, $max_queue_size, $max_waiting_time, $average_service_time, $application_id)
 
 
 
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
