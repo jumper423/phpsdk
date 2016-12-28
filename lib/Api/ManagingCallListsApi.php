@@ -112,7 +112,7 @@ class ManagingCallListsApi
      * @param string $list_name Can be used instead of &lt;b&gt;list_id&lt;/b&gt;. The unique name call list (optional)
      * @param string $encoding Encoding file. The default is UTF-8. (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
-     * @return \Voximplant\Model\InlineResponse20013
+     * @return \Voximplant\Model\AppendToCallListAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function appendToCallList($file_content, $list_id = null, $list_name = null, $encoding = null, $delimiter = null)
@@ -131,7 +131,7 @@ class ManagingCallListsApi
      * @param string $list_name Can be used instead of &lt;b&gt;list_id&lt;/b&gt;. The unique name call list (optional)
      * @param string $encoding Encoding file. The default is UTF-8. (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\AppendToCallListAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function appendToCallListWithHttpInfo($file_content, $list_id = null, $list_name = null, $encoding = null, $delimiter = null)
@@ -200,15 +200,15 @@ class ManagingCallListsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20013',
+                '\Voximplant\Model\AppendToCallListAPIResponse',
                 '/AppendToCallList'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20013', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\AppendToCallListAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20013', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\AppendToCallListAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -233,7 +233,7 @@ class ManagingCallListsApi
      * @param float $avg_waiting_sec Average waiting time in the queue(seconds). Default is 1 (optional)
      * @param string $encoding Encoding file. The default is UTF-8. (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
-     * @return \Voximplant\Model\InlineResponse20013
+     * @return \Voximplant\Model\AppendToCallListAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function createCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds = null, $queue_id = null, $avg_waiting_sec = null, $encoding = null, $delimiter = null)
@@ -258,7 +258,7 @@ class ManagingCallListsApi
      * @param float $avg_waiting_sec Average waiting time in the queue(seconds). Default is 1 (optional)
      * @param string $encoding Encoding file. The default is UTF-8. (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\AppendToCallListAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function createCallListWithHttpInfo($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds = null, $queue_id = null, $avg_waiting_sec = null, $encoding = null, $delimiter = null)
@@ -371,15 +371,15 @@ class ManagingCallListsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20013',
+                '\Voximplant\Model\AppendToCallListAPIResponse',
                 '/CreateCallList'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20013', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\AppendToCallListAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20013', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\AppendToCallListAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -402,7 +402,7 @@ class ManagingCallListsApi
      * @param float $interval_seconds Interval between call attempts in seconds. The default is 0. (optional)
      * @param string $encoding Encoding file. The default is UTF-8. (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
-     * @return \Voximplant\Model\InlineResponse20013
+     * @return \Voximplant\Model\AppendToCallListAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function createManualCallList($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds = null, $encoding = null, $delimiter = null)
@@ -425,7 +425,7 @@ class ManagingCallListsApi
      * @param float $interval_seconds Interval between call attempts in seconds. The default is 0. (optional)
      * @param string $encoding Encoding file. The default is UTF-8. (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\AppendToCallListAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function createManualCallListWithHttpInfo($rule_id, $priority, $max_simultaneous, $num_attempts, $name, $file_content, $interval_seconds = null, $encoding = null, $delimiter = null)
@@ -530,15 +530,15 @@ class ManagingCallListsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20013',
+                '\Voximplant\Model\AppendToCallListAPIResponse',
                 '/CreateManualCallList'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20013', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\AppendToCallListAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20013', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\AppendToCallListAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -558,7 +558,7 @@ class ManagingCallListsApi
      * @param string $output Output format (CSV/JSON/XLS). Default CSV (optional)
      * @param string $encoding Encoding of the output file. Default UTF-8 (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
-     * @return \Voximplant\Model\InlineResponse20032
+     * @return \Voximplant\Model\GetCallListDetailsAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getCallListDetails($list_id, $count = null, $offset = null, $output = null, $encoding = null, $delimiter = null)
@@ -578,7 +578,7 @@ class ManagingCallListsApi
      * @param string $output Output format (CSV/JSON/XLS). Default CSV (optional)
      * @param string $encoding Encoding of the output file. Default UTF-8 (optional)
      * @param string $delimiter Separator values. The default is &#x60;;&#x60; (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20032, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\GetCallListDetailsAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getCallListDetailsWithHttpInfo($list_id, $count = null, $offset = null, $output = null, $encoding = null, $delimiter = null)
@@ -651,15 +651,15 @@ class ManagingCallListsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20032',
+                '\Voximplant\Model\GetCallListDetailsAPIResponse',
                 '/GetCallListDetails'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20032', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\GetCallListDetailsAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20032', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\GetCallListDetailsAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -680,7 +680,7 @@ class ManagingCallListsApi
      * @param string $type_list The type of call list. Available values: AUTOMATIC and MANUAL (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplant\Model\InlineResponse20033
+     * @return \Voximplant\Model\GetCallListsAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getCallLists($name = null, $is_active = null, $from_date = null, $to_date = null, $type_list = null, $count = null, $offset = null)
@@ -701,7 +701,7 @@ class ManagingCallListsApi
      * @param string $type_list The type of call list. Available values: AUTOMATIC and MANUAL (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20033, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\GetCallListsAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getCallListsWithHttpInfo($name = null, $is_active = null, $from_date = null, $to_date = null, $type_list = null, $count = null, $offset = null)
@@ -774,15 +774,15 @@ class ManagingCallListsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20033',
+                '\Voximplant\Model\GetCallListsAPIResponse',
                 '/GetCallLists'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20033', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\GetCallListsAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20033', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\GetCallListsAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -797,7 +797,7 @@ class ManagingCallListsApi
      * 
      *
      * @param float $list_id The list Id. (required)
-     * @return \Voximplant\Model\InlineResponse20061
+     * @return \Voximplant\Model\RecoverCallListAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function recoverCallList($list_id)
@@ -812,7 +812,7 @@ class ManagingCallListsApi
      * 
      *
      * @param float $list_id The list Id. (required)
-     * @return Array of \Voximplant\Model\InlineResponse20061, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\RecoverCallListAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function recoverCallListWithHttpInfo($list_id)
@@ -865,15 +865,15 @@ class ManagingCallListsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20061',
+                '\Voximplant\Model\RecoverCallListAPIResponse',
                 '/RecoverCallList'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20061', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\RecoverCallListAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20061', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\RecoverCallListAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -889,7 +889,7 @@ class ManagingCallListsApi
      *
      * @param float $list_id The list Id. Сan use a set of identifiers with the separator \&quot;;\&quot; (required)
      * @param string $custom_params The custom param. Use to transfer the call initiator parameters to the scenario. (optional)
-     * @return \Voximplant\Model\InlineResponse20065
+     * @return \Voximplant\Model\StartNextCallTaskAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function startNextCallTask($list_id, $custom_params = null)
@@ -905,7 +905,7 @@ class ManagingCallListsApi
      *
      * @param float $list_id The list Id. Сan use a set of identifiers with the separator \&quot;;\&quot; (required)
      * @param string $custom_params The custom param. Use to transfer the call initiator parameters to the scenario. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20065, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\StartNextCallTaskAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function startNextCallTaskWithHttpInfo($list_id, $custom_params = null)
@@ -962,15 +962,15 @@ class ManagingCallListsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20065',
+                '\Voximplant\Model\StartNextCallTaskAPIResponse',
                 '/StartNextCallTask'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20065', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\StartNextCallTaskAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20065', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\StartNextCallTaskAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -985,7 +985,7 @@ class ManagingCallListsApi
      * 
      *
      * @param float $list_id The list Id. (required)
-     * @return \Voximplant\Model\InlineResponse20067
+     * @return \Voximplant\Model\StopCallListProcessingAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function stopCallListProcessing($list_id)
@@ -1000,7 +1000,7 @@ class ManagingCallListsApi
      * 
      *
      * @param float $list_id The list Id. (required)
-     * @return Array of \Voximplant\Model\InlineResponse20067, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\StopCallListProcessingAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function stopCallListProcessingWithHttpInfo($list_id)
@@ -1053,15 +1053,15 @@ class ManagingCallListsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20067',
+                '\Voximplant\Model\StopCallListProcessingAPIResponse',
                 '/StopCallListProcessing'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20067', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\StopCallListProcessingAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20067', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\StopCallListProcessingAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addSipWhiteListItem**
-> \Voximplant\Model\InlineResponse20010 addSipWhiteListItem($sip_whitelist_network)
+> \Voximplant\Model\AddSipWhiteListItemAPIResponse addSipWhiteListItem($sip_whitelist_network)
 
 
 
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20010**](../Model/InlineResponse20010.md)
+[**\Voximplant\Model\AddSipWhiteListItemAPIResponse**](../Model/AddSipWhiteListItemAPIResponse.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delSipWhiteListItem**
-> \Voximplant\Model\InlineResponse200 delSipWhiteListItem($sip_whitelist_id)
+> \Voximplant\Model\ActivateCallerIDAPIResponse delSipWhiteListItem($sip_whitelist_id)
 
 
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSipWhiteList**
-> \Voximplant\Model\InlineResponse20053 getSipWhiteList($sip_whitelist_id, $count, $offset)
+> \Voximplant\Model\GetSipWhiteListAPIResponse getSipWhiteList($sip_whitelist_id, $count, $offset)
 
 
 
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20053**](../Model/InlineResponse20053.md)
+[**\Voximplant\Model\GetSipWhiteListAPIResponse**](../Model/GetSipWhiteListAPIResponse.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setSipWhiteListItem**
-> \Voximplant\Model\InlineResponse200 setSipWhiteListItem($sip_whitelist_id, $sip_whitelist_network)
+> \Voximplant\Model\ActivateCallerIDAPIResponse setSipWhiteListItem($sip_whitelist_id, $sip_whitelist_network)
 
 
 
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 

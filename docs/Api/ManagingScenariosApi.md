@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **addScenario**
-> \Voximplant\Model\InlineResponse2009 addScenario($scenario_name, $scenario_script)
+> \Voximplant\Model\AddScenarioAPIResponse addScenario($scenario_name, $scenario_script)
 
 
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse2009**](../Model/InlineResponse2009.md)
+[**\Voximplant\Model\AddScenarioAPIResponse**](../Model/AddScenarioAPIResponse.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bindScenario**
-> \Voximplant\Model\InlineResponse200 bindScenario($scenario_id, $scenario_name, $rule_id, $rule_name, $application_id, $application_name, $bind)
+> \Voximplant\Model\ActivateCallerIDAPIResponse bindScenario($scenario_id, $scenario_name, $rule_id, $rule_name, $application_id, $application_name, $bind)
 
 
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delScenario**
-> \Voximplant\Model\InlineResponse200 delScenario($scenario_id)
+> \Voximplant\Model\ActivateCallerIDAPIResponse delScenario($scenario_id)
 
 
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getScenarios**
-> \Voximplant\Model\InlineResponse20051 getScenarios($scenario_id, $with_script, $count, $offset)
+> \Voximplant\Model\GetScenariosAPIResponse getScenarios($scenario_id, $with_script, $count, $offset)
 
 
 
@@ -237,7 +237,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20051**](../Model/InlineResponse20051.md)
+[**\Voximplant\Model\GetScenariosAPIResponse**](../Model/GetScenariosAPIResponse.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **reorderScenarios**
-> \Voximplant\Model\InlineResponse200 reorderScenarios($rule_id, $rule_name, $scenario_id)
+> \Voximplant\Model\ActivateCallerIDAPIResponse reorderScenarios($rule_id, $rule_name, $scenario_id)
 
 
 
@@ -295,7 +295,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -309,7 +309,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setScenarioInfo**
-> \Voximplant\Model\InlineResponse200 setScenarioInfo($scenario_id, $required_scenario_name, $scenario_name, $scenario_script)
+> \Voximplant\Model\ActivateCallerIDAPIResponse setScenarioInfo($scenario_id, $required_scenario_name, $scenario_name, $scenario_script)
 
 
 
@@ -355,7 +355,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -369,7 +369,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **startConference**
-> \Voximplant\Model\InlineResponse20064 startConference($conference_name, $rule_id, $user_id, $user_name, $script_custom_data, $reference_ip)
+> \Voximplant\Model\StartConferenceAPIResponse startConference($conference_name, $rule_id, $user_id, $user_name, $script_custom_data, $reference_ip)
 
 
 
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20064**](../Model/InlineResponse20064.md)
+[**\Voximplant\Model\StartConferenceAPIResponse**](../Model/StartConferenceAPIResponse.md)
 
 ### Authorization
 
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **startScenarios**
-> \Voximplant\Model\InlineResponse20066 startScenarios($rule_id, $user_id, $user_name, $script_custom_data, $reference_ip)
+> \Voximplant\Model\StartScenariosAPIResponse startScenarios($rule_id, $user_id, $user_name, $script_custom_data, $reference_ip)
 
 
 
@@ -481,7 +481,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20066**](../Model/InlineResponse20066.md)
+[**\Voximplant\Model\StartScenariosAPIResponse**](../Model/StartScenariosAPIResponse.md)
 
 ### Authorization
 

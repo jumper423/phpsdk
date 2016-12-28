@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addSkill**
-> \Voximplant\Model\InlineResponse20011 addSkill($skill_name)
+> \Voximplant\Model\AddSkillAPIResponse addSkill($skill_name)
 
 
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20011**](../Model/InlineResponse20011.md)
+[**\Voximplant\Model\AddSkillAPIResponse**](../Model/AddSkillAPIResponse.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bindSkill**
-> \Voximplant\Model\InlineResponse200 bindSkill($skill_id, $skill_name, $user_id, $user_name, $acd_queue_id, $acd_queue_name, $bind)
+> \Voximplant\Model\ActivateCallerIDAPIResponse bindSkill($skill_id, $skill_name, $user_id, $user_name, $acd_queue_id, $acd_queue_name, $bind)
 
 
 
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delSkill**
-> \Voximplant\Model\InlineResponse200 delSkill($skill_id, $skill_name)
+> \Voximplant\Model\ActivateCallerIDAPIResponse delSkill($skill_id, $skill_name)
 
 
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSkills**
-> \Voximplant\Model\InlineResponse20054 getSkills($skill_id, $skill_name, $count, $offset)
+> \Voximplant\Model\GetSkillsAPIResponse getSkills($skill_id, $skill_name, $count, $offset)
 
 
 
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20054**](../Model/InlineResponse20054.md)
+[**\Voximplant\Model\GetSkillsAPIResponse**](../Model/GetSkillsAPIResponse.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setSkillInfo**
-> \Voximplant\Model\InlineResponse200 setSkillInfo($new_skill_name, $skill_id, $skill_name)
+> \Voximplant\Model\ActivateCallerIDAPIResponse setSkillInfo($new_skill_name, $skill_id, $skill_name)
 
 
 
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 

@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addPstnBlackListItem**
-> \Voximplant\Model\InlineResponse2005 addPstnBlackListItem($pstn_blacklist_phone)
+> \Voximplant\Model\AddPstnBlackListItemAPIResponse addPstnBlackListItem($pstn_blacklist_phone)
 
 
 
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\Voximplant\Model\AddPstnBlackListItemAPIResponse**](../Model/AddPstnBlackListItemAPIResponse.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delPstnBlackListItem**
-> \Voximplant\Model\InlineResponse200 delPstnBlackListItem($pstn_blacklist_id)
+> \Voximplant\Model\ActivateCallerIDAPIResponse delPstnBlackListItem($pstn_blacklist_id)
 
 
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPstnBlackList**
-> \Voximplant\Model\InlineResponse20044 getPstnBlackList($pstn_blacklist_id, $pstn_blacklist_phone, $count, $offset)
+> \Voximplant\Model\GetPstnBlackListAPIResponse getPstnBlackList($pstn_blacklist_id, $pstn_blacklist_phone, $count, $offset)
 
 
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20044**](../Model/InlineResponse20044.md)
+[**\Voximplant\Model\GetPstnBlackListAPIResponse**](../Model/GetPstnBlackListAPIResponse.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setPstnBlackListItem**
-> \Voximplant\Model\InlineResponse200 setPstnBlackListItem($pstn_blacklist_id, $pstn_blacklist_phone)
+> \Voximplant\Model\ActivateCallerIDAPIResponse setPstnBlackListItem($pstn_blacklist_id, $pstn_blacklist_phone)
 
 
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 

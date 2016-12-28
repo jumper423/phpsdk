@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **bindSipRegistration**
-> \Voximplant\Model\InlineResponse200 bindSipRegistration($sip_registration_id, $application_id, $application_name, $rule_id, $rule_name, $bind)
+> \Voximplant\Model\ActivateCallerIDAPIResponse bindSipRegistration($sip_registration_id, $application_id, $application_name, $rule_id, $rule_name, $bind)
 
 
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createSipRegistration**
-> \Voximplant\Model\InlineResponse20019 createSipRegistration($username, $proxy, $auth_user, $outbound_proxy, $password)
+> \Voximplant\Model\CreateSipRegistrationAPIResponse createSipRegistration($username, $proxy, $auth_user, $outbound_proxy, $password)
 
 
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20019**](../Model/InlineResponse20019.md)
+[**\Voximplant\Model\CreateSipRegistrationAPIResponse**](../Model/CreateSipRegistrationAPIResponse.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteSipRegistration**
-> \Voximplant\Model\InlineResponse200 deleteSipRegistration($sip_registration_id)
+> \Voximplant\Model\ActivateCallerIDAPIResponse deleteSipRegistration($sip_registration_id)
 
 
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSipRegistrations**
-> \Voximplant\Model\InlineResponse20052 getSipRegistrations($sip_registration_id, $username, $deactivated)
+> \Voximplant\Model\GetSipRegistrationsAPIResponse getSipRegistrations($sip_registration_id, $username, $deactivated)
 
 
 
@@ -236,7 +236,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20052**](../Model/InlineResponse20052.md)
+[**\Voximplant\Model\GetSipRegistrationsAPIResponse**](../Model/GetSipRegistrationsAPIResponse.md)
 
 ### Authorization
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSipRegistration**
-> \Voximplant\Model\InlineResponse200 updateSipRegistration($sip_registration_id, $username, $proxy, $auth_user, $outbound_proxy, $password)
+> \Voximplant\Model\ActivateCallerIDAPIResponse updateSipRegistration($sip_registration_id, $username, $proxy, $auth_user, $outbound_proxy, $password)
 
 
 
@@ -300,7 +300,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 

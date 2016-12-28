@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addRule**
-> \Voximplant\Model\InlineResponse2008 addRule($rule_name, $rule_pattern, $application_id, $application_name, $rule_pattern_exclude, $scenario_id, $scenario_name)
+> \Voximplant\Model\AddRuleAPIResponse addRule($rule_name, $rule_pattern, $application_id, $application_name, $rule_pattern_exclude, $scenario_id, $scenario_name)
 
 
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
+[**\Voximplant\Model\AddRuleAPIResponse**](../Model/AddRuleAPIResponse.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delRule**
-> \Voximplant\Model\InlineResponse200 delRule($rule_id, $rule_name, $application_id, $application_name)
+> \Voximplant\Model\ActivateCallerIDAPIResponse delRule($rule_id, $rule_name, $application_id, $application_name)
 
 
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getRules**
-> \Voximplant\Model\InlineResponse20050 getRules($application_id, $application_name, $rule_id, $rule_name, $template, $with_scenarios, $count, $offset)
+> \Voximplant\Model\GetRulesAPIResponse getRules($application_id, $application_name, $rule_id, $rule_name, $template, $with_scenarios, $count, $offset)
 
 
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20050**](../Model/InlineResponse20050.md)
+[**\Voximplant\Model\GetRulesAPIResponse**](../Model/GetRulesAPIResponse.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **reorderRules**
-> \Voximplant\Model\InlineResponse200 reorderRules($rule_id)
+> \Voximplant\Model\ActivateCallerIDAPIResponse reorderRules($rule_id)
 
 
 
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setRuleInfo**
-> \Voximplant\Model\InlineResponse200 setRuleInfo($rule_id, $rule_name, $rule_pattern, $rule_pattern_exclude)
+> \Voximplant\Model\ActivateCallerIDAPIResponse setRuleInfo($rule_id, $rule_name, $rule_pattern, $rule_pattern_exclude)
 
 
 
@@ -306,7 +306,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 

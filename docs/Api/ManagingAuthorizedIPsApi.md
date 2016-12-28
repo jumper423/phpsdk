@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAuthorizedAccountIP**
-> \Voximplant\Model\InlineResponse200 addAuthorizedAccountIP($authorized_ip, $allowed)
+> \Voximplant\Model\ActivateCallerIDAPIResponse addAuthorizedAccountIP($authorized_ip, $allowed)
 
 
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Voximplant\Model\ActivateCallerIDAPIResponse**](../Model/ActivateCallerIDAPIResponse.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **checkAuthorizedAccountIP**
-> \Voximplant\Model\InlineResponse20017 checkAuthorizedAccountIP($authorized_ip)
+> \Voximplant\Model\CheckAuthorizedAccountIPAPIResponse checkAuthorizedAccountIP($authorized_ip)
 
 
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20017**](../Model/InlineResponse20017.md)
+[**\Voximplant\Model\CheckAuthorizedAccountIPAPIResponse**](../Model/CheckAuthorizedAccountIPAPIResponse.md)
 
 ### Authorization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **delAuthorizedAccountIP**
-> \Voximplant\Model\InlineResponse20020 delAuthorizedAccountIP($authorized_ip, $contains_ip, $allowed)
+> \Voximplant\Model\DelAuthorizedAccountIPAPIResponse delAuthorizedAccountIP($authorized_ip, $contains_ip, $allowed)
 
 
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20020**](../Model/InlineResponse20020.md)
+[**\Voximplant\Model\DelAuthorizedAccountIPAPIResponse**](../Model/DelAuthorizedAccountIPAPIResponse.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAuthorizedAccountIPs**
-> \Voximplant\Model\InlineResponse20029 getAuthorizedAccountIPs($contains_ip, $authorized_ip, $allowed, $count, $offset)
+> \Voximplant\Model\GetAuthorizedAccountIPsAPIResponse getAuthorizedAccountIPs($contains_ip, $authorized_ip, $allowed, $count, $offset)
 
 
 
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20029**](../Model/InlineResponse20029.md)
+[**\Voximplant\Model\GetAuthorizedAccountIPsAPIResponse**](../Model/GetAuthorizedAccountIPsAPIResponse.md)
 
 ### Authorization
 

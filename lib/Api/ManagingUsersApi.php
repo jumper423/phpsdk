@@ -115,7 +115,7 @@ class ManagingUsersApi
      * @param string $mobile_phone The user mobile phone. The length must be less than 50. (optional)
      * @param bool $user_active The user enable flag (optional)
      * @param string $user_custom_data Any string (optional)
-     * @return \Voximplant\Model\InlineResponse20012
+     * @return \Voximplant\Model\AddUserAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function addUser($user_name, $user_display_name, $user_password, $parent_accounting = null, $two_factor_auth_required = null, $mobile_phone = null, $user_active = null, $user_custom_data = null)
@@ -137,7 +137,7 @@ class ManagingUsersApi
      * @param string $mobile_phone The user mobile phone. The length must be less than 50. (optional)
      * @param bool $user_active The user enable flag (optional)
      * @param string $user_custom_data Any string (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20012, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\AddUserAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function addUserWithHttpInfo($user_name, $user_display_name, $user_password, $parent_accounting = null, $two_factor_auth_required = null, $mobile_phone = null, $user_active = null, $user_custom_data = null)
@@ -226,15 +226,15 @@ class ManagingUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20012',
+                '\Voximplant\Model\AddUserAPIResponse',
                 '/AddUser'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20012', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\AddUserAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20012', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\AddUserAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -253,7 +253,7 @@ class ManagingUsersApi
      * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return \Voximplant\Model\InlineResponse200
+     * @return \Voximplant\Model\ActivateCallerIDAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function bindUser($user_id = null, $user_name = null, $application_id = null, $application_name = null, $bind = null)
@@ -272,7 +272,7 @@ class ManagingUsersApi
      * @param string $application_id The application ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $application_name Can be used instead of &lt;b&gt;application_id&lt;/b&gt;. The application name list separated by the &#x60;;&#x60; symbol. (optional)
      * @param bool $bind Bind or unbind? (optional)
-     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\ActivateCallerIDAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function bindUserWithHttpInfo($user_id = null, $user_name = null, $application_id = null, $application_name = null, $bind = null)
@@ -337,15 +337,15 @@ class ManagingUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse200',
+                '\Voximplant\Model\ActivateCallerIDAPIResponse',
                 '/BindUser'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\ActivateCallerIDAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\ActivateCallerIDAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -361,7 +361,7 @@ class ManagingUsersApi
      *
      * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $user_name The user name list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (optional)
-     * @return \Voximplant\Model\InlineResponse200
+     * @return \Voximplant\Model\ActivateCallerIDAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function delUser($user_id = null, $user_name = null)
@@ -377,7 +377,7 @@ class ManagingUsersApi
      *
      * @param string $user_id The user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $user_name The user name list separated by the &#x60;;&#x60; symbol that can be used instead of &lt;b&gt;user_id&lt;/b&gt;. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\ActivateCallerIDAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function delUserWithHttpInfo($user_id = null, $user_name = null)
@@ -430,15 +430,15 @@ class ManagingUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse200',
+                '\Voximplant\Model\ActivateCallerIDAPIResponse',
                 '/DelUser'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\ActivateCallerIDAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\ActivateCallerIDAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -473,7 +473,7 @@ class ManagingUsersApi
      * @param float $offset The record count to omit. (optional)
      * @param string $order_by The following values are available: &#x60;user_id&#x60;, &#x60;user_name&#x60; and &#x60;user_display_name&#x60;. (optional)
      * @param bool $return_live_balance Set true to get the user live balance. (optional)
-     * @return \Voximplant\Model\InlineResponse20057
+     * @return \Voximplant\Model\GetUsersAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getUsers($application_id = null, $excluded_application_id = null, $excluded_application_name = null, $skill_id = null, $excluded_skill_id = null, $acd_queue_id = null, $user_id = null, $user_name = null, $user_active = null, $user_display_name = null, $application_name = null, $with_applications = null, $with_skills = null, $with_queues = null, $acd_status = null, $showing_application_id = null, $showing_skill_id = null, $count = null, $offset = null, $order_by = null, $return_live_balance = null)
@@ -508,7 +508,7 @@ class ManagingUsersApi
      * @param float $offset The record count to omit. (optional)
      * @param string $order_by The following values are available: &#x60;user_id&#x60;, &#x60;user_name&#x60; and &#x60;user_display_name&#x60;. (optional)
      * @param bool $return_live_balance Set true to get the user live balance. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20057, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\GetUsersAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getUsersWithHttpInfo($application_id = null, $excluded_application_id = null, $excluded_application_name = null, $skill_id = null, $excluded_skill_id = null, $acd_queue_id = null, $user_id = null, $user_name = null, $user_active = null, $user_display_name = null, $application_name = null, $with_applications = null, $with_skills = null, $with_queues = null, $acd_status = null, $showing_application_id = null, $showing_skill_id = null, $count = null, $offset = null, $order_by = null, $return_live_balance = null)
@@ -637,15 +637,15 @@ class ManagingUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20057',
+                '\Voximplant\Model\GetUsersAPIResponse',
                 '/GetUsers'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20057', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\GetUsersAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20057', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\GetUsersAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -669,7 +669,7 @@ class ManagingUsersApi
      * @param string $user_custom_data Any string (optional)
      * @param bool $two_factor_auth_required Is two factor authorization required? (optional)
      * @param string $mobile_phone The new user mobile phone. The length must be less than 50. (optional)
-     * @return \Voximplant\Model\InlineResponse200
+     * @return \Voximplant\Model\ActivateCallerIDAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function setUserInfo($user_id = null, $user_name = null, $new_user_name = null, $user_display_name = null, $user_password = null, $parent_accounting = null, $user_active = null, $user_custom_data = null, $two_factor_auth_required = null, $mobile_phone = null)
@@ -693,7 +693,7 @@ class ManagingUsersApi
      * @param string $user_custom_data Any string (optional)
      * @param bool $two_factor_auth_required Is two factor authorization required? (optional)
      * @param string $mobile_phone The new user mobile phone. The length must be less than 50. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\ActivateCallerIDAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function setUserInfoWithHttpInfo($user_id = null, $user_name = null, $new_user_name = null, $user_display_name = null, $user_password = null, $parent_accounting = null, $user_active = null, $user_custom_data = null, $two_factor_auth_required = null, $mobile_phone = null)
@@ -778,15 +778,15 @@ class ManagingUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse200',
+                '\Voximplant\Model\ActivateCallerIDAPIResponse',
                 '/SetUserInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\ActivateCallerIDAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\ActivateCallerIDAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -806,7 +806,7 @@ class ManagingUsersApi
      * @param bool $strict_mode Returns error if strict_mode is true and an user or the account hasn&#x60;t enough money. (optional)
      * @param string $user_transaction_description The user transaction description. (optional)
      * @param string $account_transaction_description The account transaction description. The following macro available: ${user_id}, ${user_name} (optional)
-     * @return \Voximplant\Model\InlineResponse20068
+     * @return \Voximplant\Model\TransferMoneyToUserAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function transferMoneyToUser($user_id, $amount, $currency, $strict_mode = null, $user_transaction_description = null, $account_transaction_description = null)
@@ -826,7 +826,7 @@ class ManagingUsersApi
      * @param bool $strict_mode Returns error if strict_mode is true and an user or the account hasn&#x60;t enough money. (optional)
      * @param string $user_transaction_description The user transaction description. (optional)
      * @param string $account_transaction_description The account transaction description. The following macro available: ${user_id}, ${user_name} (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20068, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\TransferMoneyToUserAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function transferMoneyToUserWithHttpInfo($user_id, $amount, $currency, $strict_mode = null, $user_transaction_description = null, $account_transaction_description = null)
@@ -907,15 +907,15 @@ class ManagingUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20068',
+                '\Voximplant\Model\TransferMoneyToUserAPIResponse',
                 '/TransferMoneyToUser'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20068', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\TransferMoneyToUserAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20068', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\TransferMoneyToUserAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

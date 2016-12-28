@@ -113,7 +113,7 @@ class ManagingAdminUsersApi
      * @param bool $admin_user_active The admin user enable flag. (optional)
      * @param string $admin_role_id The attaching admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $admin_role_name The attaching admin role name that can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
-     * @return \Voximplant\Model\InlineResponse2002
+     * @return \Voximplant\Model\AddAdminUserAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function addAdminUser($new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active = null, $admin_role_id = null, $admin_role_name = null)
@@ -133,7 +133,7 @@ class ManagingAdminUsersApi
      * @param bool $admin_user_active The admin user enable flag. (optional)
      * @param string $admin_role_id The attaching admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $admin_role_name The attaching admin role name that can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\AddAdminUserAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function addAdminUserWithHttpInfo($new_admin_user_name, $admin_user_display_name, $new_admin_user_password, $admin_user_active = null, $admin_role_id = null, $admin_role_name = null)
@@ -214,15 +214,15 @@ class ManagingAdminUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse2002',
+                '\Voximplant\Model\AddAdminUserAPIResponse',
                 '/AddAdminUser'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse2002', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\AddAdminUserAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse2002', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\AddAdminUserAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -241,7 +241,7 @@ class ManagingAdminUsersApi
      * @param float $admin_role_id The attached admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $admin_role_name The admin role name to attach, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
      * @param string $mode The merge mode. The following values are possible: add, del, set. (optional)
-     * @return \Voximplant\Model\InlineResponse200
+     * @return \Voximplant\Model\ActivateCallerIDAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function attachAdminRole($required_admin_user_id = null, $required_admin_user_name = null, $admin_role_id = null, $admin_role_name = null, $mode = null)
@@ -260,7 +260,7 @@ class ManagingAdminUsersApi
      * @param float $admin_role_id The attached admin role ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $admin_role_name The admin role name to attach, can be used instead of &lt;b&gt;admin_role_id&lt;/b&gt;. (optional)
      * @param string $mode The merge mode. The following values are possible: add, del, set. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\ActivateCallerIDAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function attachAdminRoleWithHttpInfo($required_admin_user_id = null, $required_admin_user_name = null, $admin_role_id = null, $admin_role_name = null, $mode = null)
@@ -325,15 +325,15 @@ class ManagingAdminUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse200',
+                '\Voximplant\Model\ActivateCallerIDAPIResponse',
                 '/AttachAdminRole'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\ActivateCallerIDAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\ActivateCallerIDAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -349,7 +349,7 @@ class ManagingAdminUsersApi
      *
      * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $required_admin_user_name The admin user name to delete, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (optional)
-     * @return \Voximplant\Model\InlineResponse200
+     * @return \Voximplant\Model\ActivateCallerIDAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function delAdminUser($required_admin_user_id = null, $required_admin_user_name = null)
@@ -365,7 +365,7 @@ class ManagingAdminUsersApi
      *
      * @param float $required_admin_user_id The admin user ID list separated by the &#x60;;&#x60; symbol or the &#x60;all&#x60; value. (optional)
      * @param string $required_admin_user_name The admin user name to delete, can be used instead of &lt;b&gt;required_admin_user_id&lt;/b&gt;. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\ActivateCallerIDAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function delAdminUserWithHttpInfo($required_admin_user_id = null, $required_admin_user_name = null)
@@ -418,15 +418,15 @@ class ManagingAdminUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse200',
+                '\Voximplant\Model\ActivateCallerIDAPIResponse',
                 '/DelAdminUser'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\ActivateCallerIDAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\ActivateCallerIDAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -448,7 +448,7 @@ class ManagingAdminUsersApi
      * @param bool $with_access_entries Set true to get the admin user permissions. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return \Voximplant\Model\InlineResponse20027
+     * @return \Voximplant\Model\GetAdminUsersAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getAdminUsers($required_admin_user_id = null, $required_admin_user_name = null, $admin_user_display_name = null, $admin_user_active = null, $with_roles = null, $with_access_entries = null, $count = null, $offset = null)
@@ -470,7 +470,7 @@ class ManagingAdminUsersApi
      * @param bool $with_access_entries Set true to get the admin user permissions. (optional)
      * @param float $count The max returning record count. (optional)
      * @param float $offset The record count to omit. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse20027, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\GetAdminUsersAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function getAdminUsersWithHttpInfo($required_admin_user_id = null, $required_admin_user_name = null, $admin_user_display_name = null, $admin_user_active = null, $with_roles = null, $with_access_entries = null, $count = null, $offset = null)
@@ -547,15 +547,15 @@ class ManagingAdminUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse20027',
+                '\Voximplant\Model\GetAdminUsersAPIResponse',
                 '/GetAdminUsers'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse20027', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\GetAdminUsersAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse20027', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\GetAdminUsersAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -575,7 +575,7 @@ class ManagingAdminUsersApi
      * @param string $admin_user_display_name The new admin user display name. The length must be less than 256. (optional)
      * @param string $new_admin_user_password The new admin user password. The length must be at least 6 symbols. (optional)
      * @param bool $admin_user_active The admin user enable flag. (optional)
-     * @return \Voximplant\Model\InlineResponse200
+     * @return \Voximplant\Model\ActivateCallerIDAPIResponse
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function setAdminUserInfo($required_admin_user_id = null, $required_admin_user_name = null, $new_admin_user_name = null, $admin_user_display_name = null, $new_admin_user_password = null, $admin_user_active = null)
@@ -595,7 +595,7 @@ class ManagingAdminUsersApi
      * @param string $admin_user_display_name The new admin user display name. The length must be less than 256. (optional)
      * @param string $new_admin_user_password The new admin user password. The length must be at least 6 symbols. (optional)
      * @param bool $admin_user_active The admin user enable flag. (optional)
-     * @return Array of \Voximplant\Model\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return Array of \Voximplant\Model\ActivateCallerIDAPIResponse, HTTP status code, HTTP response headers (array of strings)
      * @throws \Voximplant\ApiException on non-2xx response
      */
     public function setAdminUserInfoWithHttpInfo($required_admin_user_id = null, $required_admin_user_name = null, $new_admin_user_name = null, $admin_user_display_name = null, $new_admin_user_password = null, $admin_user_active = null)
@@ -664,15 +664,15 @@ class ManagingAdminUsersApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Voximplant\Model\InlineResponse200',
+                '\Voximplant\Model\ActivateCallerIDAPIResponse',
                 '/SetAdminUserInfo'
             );
 
-            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\InlineResponse200', $httpHeader), $statusCode, $httpHeader);
+            return array($this->apiClient->getSerializer()->deserialize($response, '\Voximplant\Model\ActivateCallerIDAPIResponse', $httpHeader), $statusCode, $httpHeader);
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\InlineResponse200', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Voximplant\Model\ActivateCallerIDAPIResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

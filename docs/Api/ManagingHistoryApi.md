@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getACDHistory**
-> \Voximplant\Model\InlineResponse20021 getACDHistory($from_date, $to_date, $acd_session_history_id, $acd_queue_id, $user_id, $operator_hangup, $unserviced, $min_waiting_time, $rejected, $with_events, $with_header, $desc_order, $count, $offset, $output)
+> \Voximplant\Model\GetACDHistoryAPIResponse getACDHistory($from_date, $to_date, $acd_session_history_id, $acd_queue_id, $user_id, $operator_hangup, $unserviced, $min_waiting_time, $rejected, $with_events, $with_header, $desc_order, $count, $offset, $output)
 
 
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20021**](../Model/InlineResponse20021.md)
+[**\Voximplant\Model\GetACDHistoryAPIResponse**](../Model/GetACDHistoryAPIResponse.md)
 
 ### Authorization
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCallHistory**
-> \Voximplant\Model\InlineResponse20031 getCallHistory($from_date, $to_date, $timezone, $call_session_history_id, $application_id, $application_name, $user_id, $rule_name, $remote_number, $local_number, $call_session_history_custom_data, $with_calls, $with_records, $with_other_resources, $child_account_id, $children_calls_only, $with_header, $desc_order, $count, $offset, $output, $is_async)
+> \Voximplant\Model\GetCallHistoryAPIResponse getCallHistory($from_date, $to_date, $timezone, $call_session_history_id, $application_id, $application_name, $user_id, $rule_name, $remote_number, $local_number, $call_session_history_custom_data, $with_calls, $with_records, $with_other_resources, $child_account_id, $children_calls_only, $with_header, $desc_order, $count, $offset, $output, $is_async)
 
 
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20031**](../Model/InlineResponse20031.md)
+[**\Voximplant\Model\GetCallHistoryAPIResponse**](../Model/GetCallHistoryAPIResponse.md)
 
 ### Authorization
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getHistoryReports**
-> \Voximplant\Model\InlineResponse20037 getHistoryReports($history_report_id, $history_type, $created_from, $created_to, $is_completed, $desc_order, $count, $offset)
+> \Voximplant\Model\GetHistoryReportsAPIResponse getHistoryReports($history_report_id, $history_type, $created_from, $created_to, $is_completed, $desc_order, $count, $offset)
 
 
 
@@ -298,7 +298,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20037**](../Model/InlineResponse20037.md)
+[**\Voximplant\Model\GetHistoryReportsAPIResponse**](../Model/GetHistoryReportsAPIResponse.md)
 
 ### Authorization
 
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTransactionHistory**
-> \Voximplant\Model\InlineResponse20056 getTransactionHistory($from_date, $to_date, $timezone, $transaction_id, $payment_reference, $transaction_type, $user_id, $child_account_id, $children_transactions_only, $users_transactions_only, $desc_order, $count, $offset, $output, $is_async)
+> \Voximplant\Model\GetTransactionHistoryAPIResponse getTransactionHistory($from_date, $to_date, $timezone, $transaction_id, $payment_reference, $transaction_type, $user_id, $child_account_id, $children_transactions_only, $users_transactions_only, $desc_order, $count, $offset, $output, $is_async)
 
 
 
@@ -380,7 +380,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Voximplant\Model\InlineResponse20056**](../Model/InlineResponse20056.md)
+[**\Voximplant\Model\GetTransactionHistoryAPIResponse**](../Model/GetTransactionHistoryAPIResponse.md)
 
 ### Authorization
 
