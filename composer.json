@@ -1,5 +1,5 @@
 {
-    "name": "voximplant/phpsdk",
+    "name": "jumper423/voximplant-phpsdk",
     "description": "Voximplant HTTP API php sdk",
     "keywords": [
         "swagger",
